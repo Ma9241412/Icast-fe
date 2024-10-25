@@ -1,10 +1,17 @@
 import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Icast from "./screens/Icast";
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello this is saad altaf qureshi</h1>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Icast />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
