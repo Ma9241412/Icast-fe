@@ -24,7 +24,7 @@ const ICast = () => {
   return (
     <>
       <IcastHeader />
-      <div style={{ padding: "20px" }}>
+      <div style={{ padding: "20px", }}>
         <div className="banner"></div>
 
         <div className="content-section">
