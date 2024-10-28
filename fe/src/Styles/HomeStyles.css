@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Apply Inter font to all elements */
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.home-layout {
+    min-height: 100vh;
+    /* Your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 50px;
+    height: 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.inline-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.inline-nav a {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.inline-nav a:hover {
+    color: #1890ff; /* Optional hover effect */
+}
+
+/* Hide the menu button on large screens */
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .inline-nav {
+      display: none;
+    }
+
+    .menu-button {
+      display: inline-block;
+    }
+
+    .header {
+      padding: 0 20px;
+    }
+}
+
+/* Drawer Navigation for Mobile */
+.drawer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.drawer-nav a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.drawer-nav a:hover {
+    color: #1890ff;
+}
+
+/* Content Section */
+.content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px; 
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.text-content h1 {
+    color: black;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.text-content .paragraph-text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-content h1 {
+      font-size: 36px;
+    }
+
+    .text-content .paragraph-text {
+      font-size: 30px;
+    }
+}
+
+.Title-text {
+    text-align: center;
+    font-size: 50px;
+}
+
+/*Glance Component Styles*/
+
+.glance-container {
+    padding: 50px 40px;  /* Increase padding on left and right */
+    max-width: 1500px;  /* Ensure the content does not get too wide on larger screens */
+    margin: 0 auto;  /* Center the content horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title Styling */
+.glance-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Underline Styling */
+.underline {
+    width: 50px;
+    height: 4px;
+    background-color: #00b4d8;
+    margin: 10px auto;
+}
+
+/* Description Styling */
+.glance-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Button Styling */
+.glance-button {
+    background-color: #1890ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Video Styling */
+.glance-video {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.glance-video iframe {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    aspect-ratio: 16 / 9;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .glance-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .glance-title {
+      text-align: left;
+    }
+
+    .underline {
+      margin-left: 0;
+    }
+
+    .glance-description {
+      text-align: left;
+    }
+
+    .glance-button {
+      margin-left: 0;
+    }
+
+    .glance-video {
+      margin-top: 0;
+    }
+}
+
+/*LABS Component Styles*/
+
+.labs-container {
+    padding: 50px 40px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circular Image Styling */
+.labs-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labs-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Title Styling */
+.labs-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.underline {
+    width: 50px;
+    height: 4px;
+    background-color: #00b4d8;
+    margin: 10px auto;
+}
+
+/* Description Styling */
+.labs-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Icons Horizontal Slider */
+.labs-icons-slider {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider-wrapper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    animation: slide-horizontal 15s linear infinite;
+}
+
+.icon {
+    max-width: 60px;
+    height: auto;
+}
+
+/* Horizontal Animation */
+@keyframes slide-horizontal {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+/* Button Styling */
+.labs-button {
+    background-color: #1890ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .labs-container {
+      padding: 20px 20px;
+    }
+
+    .labs-image {
+      max-width: 300px;
+    }
+
+    .labs-title {
+      font-size: 28px;
+    }
+
+    .labs-description {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .slider-wrapper {
+      gap: 10px;
+      animation: slide-horizontal 20s linear infinite;
+    }
+
+    .icon {
+      max-width: 50px;
+    }
+
+    .labs-button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .labs-title {
+      font-size: 24px;
+    }
+
+    .labs-description {
+      font-size: 14px;
+    }
+
+    .labs-image {
+      max-width: 250px;
+    }
+
+    .icon {
+      max-width: 40px;
+    }
+}
+
+/*Impact Component */
+
+
+.impact-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.impact-title {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+/* Styling for each impact item */
+.impact-item {
+  color: white;
+  text-align: center;
+}
+
+.impact-item h3 {
+  margin: 10px 0 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.impact-item p {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+.impact-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .impact-title {
+    font-size: 36px;
+  }
+
+  .impact-item h3 {
+    font-size: 28px;
+  }
+
+  .impact-item p {
+    font-size: 12px;
+  }
+
+  .impact-icon {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .impact-title {
+    font-size: 28px;
+  }
+
+  .impact-item h3 {
+    font-size: 24px;
+  }
+
+  .impact-item p {
+    font-size: 12px;
+  }
+
+  .impact-icon {
+    font-size: 36px;
+  }
+}
+
+
+/*L&O Component */
+
+
+.linkages-container {
+  padding: 50px 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title Styling */
+.linkages-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.underline {
+  width: 50px;
+  height: 4px;
+  background-color: #00b4d8;
+  margin: 10px 0;
+}
+
+/* Description Styling */
+.linkages-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Image Styling */
+.linkages-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Button Styling */
+.linkages-button {
+  background-color: #1890ff;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .linkages-title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .linkages-description {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .linkages-button {
+    display: block;
+    margin: 20px auto 0;
+  }
+
+  .linkages-image {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+
+/* Verse Component */
+
+/* Verse Section Styling */
+
+
+.verse-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make the text more readable */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.verse-text {
+  color: white;
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 400;
+  max-width: 900px; /* Limit the text width for readability */
+  display: inline-block;
+}
+
+.verse-reference {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .verse-text {
+    font-size: 16px;
+    max-width: 100%; /* Make the text take full width on smaller screens */
+  }
+
+  .verse-section {
+    height: auto; /* Allow the height to grow based on text size */
+    padding: 20px;
+  }
+
+  .verse-reference {
+    font-size: 16px;
+  }
+}
+
+
+
+
+/* Footer Section Styling */
+
+/* Footer section */
+.footer-section {
+  background-color: #404040; /* Dark grey background */
+  padding: 40px 80px;
+  color: white;
+  text-align: center;
+}
+
+/* Title Styling */
+.footer-title {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Text Styling */
+.footer-text {
+  display: block;
+  color: #FFFFFF99;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* Social Media Icons Styling */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Background colors for specific icons */
+.fb {
+  background-color: #3b5998; /* Facebook Blue */
+}
+
+.insta {
+  background-color: #C13584; /* Instagram Gradient */
+}
+
+.yt {
+  background-color: #FF0000; /* YouTube Red */
+}
+
+.linkedin {
+  background-color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-icon:hover {
+  background-color: #1890ff; /* Hover effect */
+}
+
+/* Logos Styling */
+.logos-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-social {
+    justify-content: space-around;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .logos-col {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    max-width: 80px; /* Adjust logo size on smaller screens */
+  }
+}

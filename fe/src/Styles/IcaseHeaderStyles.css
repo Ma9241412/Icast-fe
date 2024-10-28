@@ -1,0 +1,38 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .ant-menu-horizontal {
+    border-bottom: none;
+    background-color: #f0f0f0;
+  }
+  
+  .menu-link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 20px;
+    text-transform: none;
+  }
+  
+  .ant-menu-item:hover,
+  .ant-menu-item-selected {
+    color: #1a8cd8 !important;
+  }
+  
+  .ant-menu-item-selected::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #1a8cd8;
+    position: absolute;
+    bottom: 0;
+  }
+  

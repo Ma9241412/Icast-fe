@@ -1,7 +1,7 @@
 .banner {
   width: 100%;
   height: 400px; /* Adjust height as necessary */
-  background-image: url("../Assets/icastb.jpg"); /* Adjust path to your image */
+  background-image: url("../Assets/icase-banner.jpeg"); /* Adjust path to your image */
   background-size: contain; /* Ensures the image covers the whole area */
   background-position: center; /* Keeps the image centered */
   background-repeat: no-repeat; /* Ensures the image doesn't repeat */

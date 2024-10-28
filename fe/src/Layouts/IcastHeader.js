@@ -1,8 +1,9 @@
 import React from "react";
 import { Image, Layout, Menu } from "antd";
 import { Link } from "react-router-dom";
+import image from "../Assets/logoicast.jpeg"; // Logo image
 import "../Styles/IcaseHeaderStyles.css"; // Custom styles
-import image from "../Assets/logoicast.png"; // Logo image
+
 
 const { Header } = Layout;
 
@@ -22,7 +23,7 @@ const IcastHeader = () => {
       >
         <Image
           src={image}
-          alt="NCGSA Logo"
+          alt="logo ICast"
           style={{ height: "60px", marginRight: "15px" }}
         />
       </div>

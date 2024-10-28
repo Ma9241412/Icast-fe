@@ -1,19 +1,22 @@
 import React from "react";
 import { Row, Typography, Divider } from "antd";
-import "antd/dist/reset.css"; // Include Ant Design styles
-import "../../Styles/Linkages.css";
-import SpeakerCards from "./ICASE Components/SpeakerCard";
-import OnlineSessions from "./ICASE Components/OnlineSessions";
-import ToDoList from "./ICASE Components/ToDoList";
-import FooterComponent from "../../Layout/Footer";
-import ImportantDates from "./ICASE Components/ImportantDates";
-import RegistrationFee from "./ICASE Components/RegisterFee";
-import ConferenceHighlights from "./ICASE Components/ConferenceHighlights";
-import ConferenceRegistration from "./ICASE Components/ConferenceRegistration";
-import ManuscriptSubmission from "./ICASE Components/ManuscriptSubmission";
-import Downloads from "./ICASE Components/Downloads";
-import Proceedings from "./ICASE Components/Proceedings";
+import "antd/dist/reset.css"; 
+import "../Styles/Linkages.css";
+import SpeakerCards from "../Components/SpeakerCards";
+import ToDoList from "../Components/ToDoList";
+import ImportantDates from "../Components/ImportantDates";
+import RegistrationFee from "../Components/RegistrationFee";
+import ConferenceHighlights from "../Components/ConferenceHighlights";
+import ConferenceRegistration from "../Components/ConferenceRegistration";
+import ManuscriptSubmission from "../Components/ManuscriptSubmission";
+// import Downloads from "../Components/Downloads";
+import Proceedings from "../Components/Proceedings";
+import FooterComponent from "../Layouts/FooterComponent";
 import IcastHeader from "../Layouts/IcastHeader";
+
+
+
+
 
 const { Title, Paragraph } = Typography;
 
@@ -68,7 +71,7 @@ const ICast = () => {
         <ConferenceHighlights />
         <ConferenceRegistration />
         <ManuscriptSubmission />
-        <Downloads />
+        {/* <Downloads /> */}
         <Proceedings />
       </div>
       <FooterComponent />
