@@ -1,5 +1,5 @@
 import React from 'react';
-import { Collapse, Divider, List, Typography } from 'antd';
+import { Col, Collapse, Divider, List, Row, Typography } from 'antd';
 import { PlusSquareOutlined, MinusSquareOutlined } from '@ant-design/icons';
 
 import '../Styles/Linkages.css'; 
@@ -247,34 +247,40 @@ const todoData = [
 const ToDoList = () => {
   return (
     <div className="todo-list-container">
-    <Typography.Title style={{ fontSize: '48px', fontWeight: 'bold' }}>Conference Themes</Typography.Title>
-    <Divider className="ncgsa-divider" />
-    <Collapse
-      accordion
-      bordered={false}
-      defaultActiveKey={['1']}
-      ghost
-      expandIcon={({ isActive }) =>
-        isActive ? <MinusSquareOutlined style={{ fontSize: '24px', color: '#28a745' }} /> : <PlusSquareOutlined style={{ fontSize: '24px', color: '#28a745' }} />
-      }
-    >
-      {todoData.map((todo, index) => (
-        <Panel
-          header={<Text style={{ fontSize: 18, fontWeight: 'bold', color: '#28a745' }}>{todo.category}</Text>}
-          key={index + 1}
-        >
-          <List
-            dataSource={todo.items}
-            renderItem={(item, idx) => (
-              <List.Item key={idx} style={{ padding: '10px 0' }}>
-                <Text>{item}</Text>
-              </List.Item>
-            )}
-          />
-        </Panel>
-      ))}
-    </Collapse>
-  </div>
+      <Typography.Title style={{ fontSize: '48px', fontWeight: 'bold', textAlign: "start", color: "white" }}>Conference Themes</Typography.Title>
+      <Divider className="ncgsa-divider" />
+      <Row gutter={[16, 16]}>
+        {todoData.map((todo, index) => (
+          <Col xs={24} md={12} key={index}> {/* Dividing the categories into two columns */}
+            <Collapse
+              accordion
+              bordered={false}
+              ghost
+              expandIcon={({ isActive }) =>
+                isActive ? (
+                  <MinusSquareOutlined style={{ fontSize: '24px', color: '#28a745' }} />
+                ) : (
+                  <PlusSquareOutlined style={{ fontSize: '24px', color: '#28a745' }} />
+                )
+              }
+            >
+              <Panel
+                header={<Text style={{ fontSize: 18, fontWeight: 'bold', color: '#28a745' }}>{todo.category}</Text>}
+                key={index + 1}
+              >
+                <ul style={{ paddingLeft: "20px" }}>
+                  {todo.items.map((item, idx) => (
+                    <li key={idx} style={{ marginBottom: '8px' }}>
+                      <Text>{item}</Text>
+                    </li>
+                  ))}
+                </ul>
+              </Panel>
+            </Collapse>
+          </Col>
+        ))}
+      </Row>
+    </div>
   );
 };
 

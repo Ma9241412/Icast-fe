@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Typography, Divider } from "antd";
+import { Row, Typography, Divider, Col, Image } from "antd";
 import "antd/dist/reset.css"; 
 import "../Styles/Linkages.css";
 import SpeakerCards from "../Components/SpeakerCards";
@@ -13,6 +13,7 @@ import ManuscriptSubmission from "../Components/ManuscriptSubmission";
 import Proceedings from "../Components/Proceedings";
 import FooterComponent from "../Layouts/FooterComponent";
 import IcastHeader from "../Layouts/IcastHeader";
+import img from "../Assets/icastw.png"
 
 
 
@@ -24,44 +25,47 @@ const ICast = () => {
   return (
     <>
       <IcastHeader />
-      <div style={{ padding: "20px", }}>
+      <div style={{ padding: "20px", backgroundColor:"#272B3A"}}>
         <div className="banner"></div>
 
         <div className="content-section">
-          <Row justify="start" align="middle" gutter={[16, 16]}>
-            <Title style={{ fontSize: "48px", fontWeight: "bold" }}>
-              Introduction
-            </Title>
-            <Divider className="ncgsa-divider" />
-            <Paragraph style={{ lineHeight: "1.8rem", fontSize: "18px" }}>
-              International Conference on Applications of Space Science and
-              Technology (ICAST) is a regular biennial event to provide an
-              International forum in which scientists, researchers, engineers,
-              academicians, industry professionals, entrepreneurs, and students
-              from all over the world, get a chance to interact and discuss the
-              latest themes and trends related to Aerospace Science &
-              Engineering. It provides a platform to share experiences, foster
-              collaborations across industry and academia, and to evaluate
-              emerging technologies and developments across the globe in the
-              fields of space science, technology, and application. ICASE
-              facilitates in establishing dialogues leading to long-lasting
-              technical cooperation among the scientists and engineers of the
-              developing and developed countries.
-            </Paragraph>
+        <Row justify="start" align="top" gutter={[16, 16]} style={{ flexWrap: "nowrap" }}>
+      {/* Text Section */}
+      <Col xs={24} md={12}>
+        <Title style={{ fontSize: "45px", fontWeight: "bold", textAlign: "left" ,color:"#ffffff"}}>Introduction</Title>
+        <Divider className="ncgsa-divider" style={{ borderColor: "#1a8cd8", borderWidth: "2px" }} />
+        <Paragraph style={{ lineHeight: "1.6rem",letterSpacing:"0.05rem", fontSize: "20px", textAlign: "left",color:"#ffffff" }}>
+        The International Conference on Applications of Space Science and Technology (ICAST) 
+          is a regular biennial event that provides an international forum for scientists, 
+          researchers, engineers, academicians, industry professionals, entrepreneurs, and students 
+          from around the world. This conference facilitates interaction and discussion on the latest 
+          themes and trends in Aerospace Science & Engineering. It serves as a platform to share 
+          experiences, foster collaborations between industry and academia, and evaluate emerging 
+          technologies and developments globally in the fields of space science, technology, and 
+          application. ICAST helps establish dialogues leading to long-lasting technical cooperation 
+          among scientists and engineers from both developing and developed countries.
+        </Paragraph>
+      </Col>
+      
+      <Col xs={24} md={12}>
+  <Image
+    src={img} 
+    alt="ICAST Conference"
+    style={{
+      width: "100%", 
+      height: "auto",
+      maxHeight: "500px", 
+   
+    }}
+  />
+</Col>
 
-            {/* <Col xs={24} md={10} lg={8}>
-      <div className="video-container">
-        <iframe
-          width="100%"
-          height="250"
-          src="https://www.youtube.com/embed/video_id"
-          frameBorder="0"
-          allowFullScreen
-          title="ICASE Introduction Video"
-        ></iframe>
-      </div>
-    </Col> */}
-          </Row>
+    </Row>
+      
+      {/* Text Section */}
+    
+
+  
         </div>
         <SpeakerCards />
         {/* <OnlineSessions/> */}

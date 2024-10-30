@@ -7,7 +7,7 @@ import {
   PhoneOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
-import image from "../Assets/logoicast.png"; // Logo image
+import image from "../Assets/logow.png"; // Logo image
 import "../Styles/IcaseHeaderStyles.css"; // Custom styles
 
 const { Header } = Layout;
@@ -54,7 +54,7 @@ const IcastHeader = () => {
         className="header"
         style={{
           padding: "0 40px",
-          backgroundColor: "#030959",
+          backgroundColor: "#272B3A",
 
           display: "flex",
           alignItems: "center",
@@ -67,8 +67,9 @@ const IcastHeader = () => {
           <Image
             src={image}
             alt="logo ICast"
-            style={{ height: "50px" }}
-            preview={false}
+            width={180}
+            height={75}            
+            preview={true}
           />
 
         </div>
@@ -77,45 +78,45 @@ const IcastHeader = () => {
           mode="horizontal"
           defaultSelectedKeys={["1"]}
           style={{
-            flexGrow: 1, justifyContent: "center", backgroundColor: "#030959",
+            flexGrow: 1, justifyContent: "center", backgroundColor: "#272B3A",
           }}
         >
           <Menu.Item key="1" className="menu-link">
-            <Link to="/home">Home</Link>
+            <Link to="/home">About ICAST</Link>
           </Menu.Item>
           <Menu.Item key="2" className="menu-link">
-            <Link to="/about">About</Link>
+            <Link to="/about">Speakers</Link>
           </Menu.Item>
           <Menu.Item key="3" className="menu-link">
-            <Link to="/services">Services</Link>
+            <Link to="/services">Conference Themes</Link>
           </Menu.Item>
           <Menu.Item key="4" className="menu-link">
-            <Link to="/pages">Pages</Link>
+            <Link to="/pages">ImportantDates</Link>
           </Menu.Item>
           <Menu.Item key="5" className="menu-link">
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog">Gallery</Link>
           </Menu.Item>
-          <Menu.Item key="6" className="menu-link">
-            <Link to="/contact">Contact</Link>
-          </Menu.Item>
+         
         </Menu>
         <Link to="/quote">
-          <Button
-            style={{
-              background:
-                "linear-gradient(90deg, rgba(143,0,255,1) 0%, rgba(255,0,115,1) 100%)",
-              color: "white",
-              borderRadius: "4px",
-              marginLeft: "15px",
-              textDecoration: "none",
-padding: "10px 20px",
+  <Button
+    style={{
+      background:
+        "linear-gradient(90deg, rgba(180, 180, 180, 1) 0%, rgba(200, 200, 200, 1) 100%)",
+      color: "white",
+      borderRadius: "4px",
+      marginLeft: "15px",
+      textDecoration: "none",
+      padding: "20px 40px",
+      border: "none",
+    }}
+  >
+    Registration
+  </Button>
+</Link>
 
-              border: "none",
-            }}
-          >
-            Sign In
-          </Button>
-        </Link>
+
+
       </Header>
     </>
   );
