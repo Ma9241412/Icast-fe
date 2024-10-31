@@ -22,8 +22,9 @@ const ICast = () => {
   return (
     <>
       <IcastHeader />
-      <div style={{ padding: "20px", backgroundColor: "#272B3A" }}>
+      <div style={{ padding: "10px", backgroundColor: "#272B3A" }}>
         <div className="banner"></div>
+        <CountdownTimer/>
 
         <div className="content-section">
           <Row justify="start" align="top" gutter={[24, 8]}>
@@ -81,7 +82,6 @@ const ICast = () => {
           </Row>
 
         </div>
-        <CountdownTimer/>
         <SpeakerCards />
         {/* <OnlineSessions/> */}
         <ToDoList />

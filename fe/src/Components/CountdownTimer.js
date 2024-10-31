@@ -31,7 +31,6 @@ const CountdownTimer = () => {
 
   return (
     <div className="countdown-container">
-      <h2 className="countdown-title">Event Starts In</h2>
       <div className="countdown-timer">
         <div className="time-box">
           <span className="time">{timeLeft.days || "0"}</span>
