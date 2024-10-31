@@ -36,13 +36,13 @@ const SpeakerCards = () => {
       <Typography.Title
         level={2}
         style={{
-          fontSize: "32px",
+          fontSize: "45px",
           fontWeight: "bold",
           textAlign: "center",
           color: "#333",
         }}
       >
-        Speakers
+        Featured Speakers
         <Divider style={{ borderColor: "#1a8cd8", borderWidth: "2px" }} />
       </Typography.Title>
 
