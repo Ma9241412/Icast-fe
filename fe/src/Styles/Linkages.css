@@ -41,11 +41,14 @@
 }
 
 .custom-card {
-  background: #fff;
+  background: rgba(46, 50, 65, 1);
+  ;
+  ;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 30px 20px;
   border-radius: 8px;
+  border-color: #0022cc;
 }
 
 .custom-card h2 {
@@ -173,6 +176,34 @@ border: none;
   }
 }
 
+.custom-collapse {
+  border: none;
+  background-color: #2b2c3b; /* Dark tile background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the tile effect */
+  margin-bottom: 16px;
+}
+
+.custom-panel-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* Green color for text */
+}
+
+.panel-item {
+  font-size: 16px;
+  color: #e0e0e0; /* Light color for list items */
+  text-align: left;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.ant-collapse-content-box {
+  padding: 16px;
+}
 .todo-list-container {
   padding: 50px 20px;
   max-width: 1600px;
@@ -181,7 +212,8 @@ border: none;
 }
 
 .ant-collapse-header {
-  background-color: #f5f5f5;
+  background-color:  rgba(46, 50, 65, 1);
+  ;
   padding: 10px 20px;
   font-size: 18px;
   color: #28a745; /* Green color for the title */
@@ -217,10 +249,10 @@ border: none;
 }
 
 .important-dates-container {
-  width: 100%;
-
+  padding: 50px 20px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 20px;
+  background-color: #272B3A; 
 }
 
 .title {

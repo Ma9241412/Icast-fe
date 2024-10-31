@@ -102,7 +102,7 @@ const IcastHeader = () => {
   <Button
     style={{
       background:
-        "linear-gradient(90deg, rgba(180, 180, 180, 1) 0%, rgba(200, 200, 200, 1) 100%)",
+       "linear-gradient(180deg, #0072ff 0%, #00c6ff 100%)",
       color: "white",
       borderRadius: "4px",
       marginLeft: "15px",

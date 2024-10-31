@@ -61,7 +61,7 @@ const data = [
 const ImportantDates = () => {
   return (
     <div className="important-dates-container">
-      <Title style={{ fontSize: '48px', fontWeight: 'bold', }} className="title">
+      <Title style={{ fontSize: '48px', fontWeight: 'bold', textAlign:'left',color:"white"}} className="title">
         Important Dates
       </Title>
       <Divider className="ncgsa-divider" />
