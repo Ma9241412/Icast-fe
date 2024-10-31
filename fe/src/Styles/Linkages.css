@@ -11,7 +11,7 @@
 
 .content-section {
   padding: 50px 20px;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: 0 auto;
   background-color: #272B3A; /* Background color for contrast */
 }

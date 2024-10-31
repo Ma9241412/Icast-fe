@@ -14,6 +14,7 @@ import Proceedings from "../Components/Proceedings";
 import FooterComponent from "../Layouts/FooterComponent";
 import IcastHeader from "../Layouts/IcastHeader";
 import img from "../Assets/icastw.png";
+import CountdownTimer from "../Components/CountdownTimer";
 
 const { Title, Paragraph } = Typography;
 
@@ -80,6 +81,7 @@ const ICast = () => {
           </Row>
 
         </div>
+        <CountdownTimer/>
         <SpeakerCards />
         {/* <OnlineSessions/> */}
         <ToDoList />
