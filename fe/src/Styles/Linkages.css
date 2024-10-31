@@ -5,7 +5,7 @@
   background-size: contain; /* Ensures the image covers the whole area */
   background-position: center; /* Keeps the image centered */
   background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-  margin-top: 80px; /* Adds visible spacing from the header */
+  margin-top: 60px; /* Adds visible spacing from the header */
   background-color: #272B3A;
 }
 
@@ -253,6 +253,7 @@ border: none;
   max-width: 1600px;
   margin: 0 auto;
   background-color: #272B3A; 
+  
 }
 
 .title {
