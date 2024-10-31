@@ -1,17 +1,18 @@
 .banner {
   width: 100%;
-  height: 400px; /* Adjust height as necessary */
+  height:52vh; /* Full viewport height */
   background-image: url("../Assets/banner.png"); /* Adjust path to your image */
-  background-size: contain; /* Ensures the image covers the whole area */
-  background-position: center; /* Keeps the image centered */
+  background-size: cover; /* Ensures the image fills the whole area */
+  background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-  margin-top: 60px; /* Adds visible spacing from the header */
+  margin-top: 100px; /* Removes any margin above */
   background-color: #272B3A;
 }
 
 .content-section {
-  padding: 50px 0px;
-  /* max-width: 1600px; */
+  padding: 50px 20px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
   background-color: #272B3A; /* Background color for contrast */
 }
 
@@ -519,12 +520,24 @@ border: none;
   margin: 10px 0;
 }
 
+/* Linkages.css */
+
 .proceedings-container {
-  padding: 40px;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ncgsa-divider {
+  margin: 20px 0;
 }
 
 .proceedings-table .ant-table-thead > tr > th {
-  background-color: #9dc9e2; /* Light blue for table headers */
+  background-color: #9dc9e2;
   font-size: 16px;
   font-weight: bold;
   color: black;
@@ -534,6 +547,46 @@ border: none;
 .ant-table-tbody > tr > td {
   text-align: center;
 }
+
+.buttons-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.secretariat-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.custom-button {
+  background-color: #0041c2;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 24px;
+  }
+
+  .proceedings-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 20px;
+  }
+
+  .buttons-section {
+    flex-direction: column;
+  }
+}
+
 
 .conference-secretariat {
   margin-top: 50px;

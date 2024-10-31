@@ -1,18 +1,26 @@
 /* Custom Header Styles */
+.header {
+  padding: 0 40px;
+  background-color: #272B3A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+/* Logo Styling */
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 15px;
 }
 
-.logo img {
-  height: 50px;
-}
-
-.ant-menu-horizontal {
-  border-bottom: none;
-  background-color: #1a1a2e;
+/* Desktop Menu Styles */
+.desktop-menu {
+  flex-grow: 1;
+  justify-content: flex-end;
+  background-color: #272B3A;
+  display: flex;
 }
 
 .menu-link {
@@ -21,19 +29,67 @@
   font-weight: 500;
   padding: 0 20px;
   text-transform: none;
+  transition: background-color 0.3s;
 }
 
-.ant-menu-item:hover,
-.ant-menu-item-selected {
-  color: #1a8cd8 !important;
+.menu-link.active,
+.menu-link:hover {
+  background-color: #676A75 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  border-color: white ;
 }
 
-.ant-menu-item-selected::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #1a8cd8;
-  position: absolute;
-  bottom: 0;
+/* Button style on selected menu */
+.menu-link.active {
+  background-color: #676A75;
+  color: #fff !important;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  color: #f0f0f0;
+  font-size: 24px;
+}
+
+/* Drawer Styles */
+.ant-drawer-body {
+  padding: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .logo {
+    flex: 1;
+    justify-content: center;
+  }
+}
+.custom-menu .ant-menu-item a {
+  color: white; /* Keep the text color white */
+}
+
+.custom-menu .ant-menu-item:hover {
+  background-color: #676A75 !important; /* Change hover background color */
+}
+
+.custom-menu .ant-menu-item-selected {
+  background-color: #676A75 !important; /* Change selected item background color */
+  color: white; /* Keep selected text color white */
+}
+
+.custom-menu .ant-menu-item-selected a {
+  color: white !important; /* Ensure selected link text stays white */
 }

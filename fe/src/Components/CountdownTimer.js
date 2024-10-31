@@ -34,19 +34,19 @@ const CountdownTimer = () => {
       <div className="countdown-timer">
         <div className="time-box">
           <span className="time">{timeLeft.days || "0"}</span>
-          <span className="label">Days</span>
+          <span className="label">DAYS</span>
         </div>
         <div className="time-box">
           <span className="time">{timeLeft.hours || "0"}</span>
-          <span className="label">Hours</span>
+          <span className="label">HOURS</span>
         </div>
         <div className="time-box">
           <span className="time">{timeLeft.minutes || "0"}</span>
-          <span className="label">Minutes</span>
+          <span className="label">MINUTES</span>
         </div>
         <div className="time-box">
           <span className="time">{timeLeft.seconds || "0"}</span>
-          <span className="label">Seconds</span>
+          <span className="label">SECONDS</span>
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Table, Button, Typography, Divider,  } from 'antd';
-import '../Styles/Linkages.css'; 
-
+import { Table, Button, Typography, Divider, Row, Col } from 'antd';
+import '../Styles/Linkages.css';
 
 const { Title } = Typography;
 
@@ -54,35 +53,49 @@ const columns = [
 const Proceedings = () => {
   return (
     <div className="proceedings-container">
-      <Title style={{ fontSize: '48px', fontWeight: 'bold', }}>ICASE Proceedings</Title>
-      <Divider className="ncgsa-divider" />
-      <Table
-        columns={columns}
-        dataSource={data}
-        pagination={false}
-        bordered
-        className="proceedings-table"
-      />
-
-      {/* Conference Secretariat Section */}
-      <div className="conference-secretariat">
-        <Title style={{ fontSize: '48px', fontWeight: 'bold', }}>Conference Secretariat</Title>
-        <div className="buttons-section">
-          <Button style={{backgroundColor:"#0041c2",color:"white"}} type="primary">Share Feedback Online ➤</Button>
-          <Button style={{backgroundColor:"#0041c2",color:"white"}} type="primary">Download Feedback Form ➤</Button>
-        </div>
-        <div className="secretariat-details">
-          <p>National Center of GIS & Space Applications</p>
-          <p>Institute of Space Technology</p>
-          <p>1, Islamabad Highway, Islamabad 44000 Pakistan</p>
-          <p>+92 -(0)51-9075799, +92333-2662857</p>
-          <p>Fax: +92 (0) 519273310</p>
-          <p>icase2021@yahoo.com</p>
-          <p>
-            facebook.com/ncgsa.ist, facebook.com/ICASE.IST/
-          </p>
-        </div>
-      </div>
+      <Row justify="center">
+        <Col xs={24} md={18}>
+          <Title className="page-title">ICASE Proceedings</Title>
+          <Divider className="ncgsa-divider" />
+          <Table
+            columns={columns}
+            dataSource={data}
+            pagination={false}
+            bordered
+            className="proceedings-table"
+            scroll={{ x: 500 }}
+          />
+          {/* Conference Secretariat Section */}
+          <div className="conference-secretariat">
+            <Title className="page-title">Conference Secretariat</Title>
+            <div className="buttons-section">
+              <Button
+                className="custom-button"
+                type="primary"
+              >
+                Share Feedback Online ➤
+              </Button>
+              <Button
+                className="custom-button"
+                type="primary"
+              >
+                Download Feedback Form ➤
+              </Button>
+            </div>
+            <div className="secretariat-details">
+              <p>National Center of GIS & Space Applications</p>
+              <p>Institute of Space Technology</p>
+              <p>1, Islamabad Highway, Islamabad 44000 Pakistan</p>
+              <p>+92 -(0)51-9075799, +92333-2662857</p>
+              <p>Fax: +92 (0) 519273310</p>
+              <p>icase2021@yahoo.com</p>
+              <p>
+                facebook.com/ncgsa.ist, facebook.com/ICASE.IST/
+              </p>
+            </div>
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 };

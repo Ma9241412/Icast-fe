@@ -27,13 +27,12 @@ const ICast = () => {
         <CountdownTimer/>
 
         <div className="content-section">
-          <Row justify="start" align="top" gutter={[24, 8]}>
-            <Col xs={24} md={12}>
+  
               <Title
                 style={{
                   fontSize: "45px",
                   fontWeight: "bold",
-                  textAlign: "left",
+                  textAlign: "center",
                   color: "#ffffff",
                 }}
               >
@@ -43,13 +42,15 @@ const ICast = () => {
                 className="ncgsa-divider"
                 style={{ borderColor: "#1a8cd8", borderWidth: "2px" }}
               />
-              <Paragraph
+             <div>
+             <Paragraph
                 style={{
                   lineHeight: "1.6rem",
                   letterSpacing: "0.05rem",
                   fontSize: "20px",
                   textAlign: "left",
                   color: "#ffffff",
+                  lineHeight:"3rem",
                 }}
               >
                 The International Conference on Applications of Space Science
@@ -66,20 +67,9 @@ const ICast = () => {
                 long-lasting technical cooperation among scientists and
                 engineers from both developing and developed countries.
               </Paragraph>
-            </Col>
-
-            <Col xs={24} md={12}>
-              <Image
-                src={img}
-                alt="ICAST Conference"
-                style={{
-                  width: "90%",
-                  height: "auto",
-                  maxHeight: "500px",
-                }}
-              />
-            </Col>
-          </Row>
+             </div>
+         
+   
 
         </div>
         <SpeakerCards />
