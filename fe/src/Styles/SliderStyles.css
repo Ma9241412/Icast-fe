@@ -1,0 +1,17 @@
+.carousel-image {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-image {
+      height: 300px; /* Smaller height for tablets and medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-image {
+      height: 200px; /* Even smaller height for mobile screens */
+    }
+  }
+  

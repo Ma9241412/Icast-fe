@@ -15,6 +15,7 @@ import FooterComponent from "../Layouts/FooterComponent";
 import IcastHeader from "../Layouts/IcastHeader";
 import img from "../Assets/icastw.png";
 import CountdownTimer from "../Components/CountdownTimer";
+import FullWidthCarousel from "../Components/Slider";
 
 const { Title, Paragraph } = Typography;
 
@@ -23,7 +24,7 @@ const ICast = () => {
     <>
       <IcastHeader />
       <div style={{ padding: "10px", backgroundColor: "#272B3A" }}>
-        <div className="banner"></div>
+      <FullWidthCarousel/>
         <CountdownTimer/>
 
         <div className="content-section">
