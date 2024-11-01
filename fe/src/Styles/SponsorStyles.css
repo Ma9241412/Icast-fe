@@ -1,0 +1,36 @@
+.sponsors-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .sponsors-title {
+    color: #2f2f2f;
+    font-size: 45px !important;
+    font-weight: bold !important;
+    margin-bottom: 20px;
+  }
+  
+  .sponsor-card {
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sponsor-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .sponsor-name {
+    color: #2f2f2f;
+    font-size: 20px !important;    margin: 0;
+  }
+  
+  .sponsor-company {
+    color: #6c6c6c;
+  }
+  
