@@ -19,46 +19,50 @@ const { Text, Link } = Typography;
 const Footer = () => {
   return (
     <div className="footer-container">
-      <Row gutter={[16, 16]} justify="space-around" align="middle">
+      <Row gutter={[24, 24]} justify="center" align="middle">
         
         {/* Left Section: ICAST Logo */}
-        <Col xs={24} sm={8} md={6} className="footer-logo">
-          <Image src={footerLogo} alt="ICAST Logo" preview={false} className="icast-logo" />
+        <Col xs={24} sm={8} md={8} className="footer-logo" style={{ textAlign: 'center' }}>
+          <Image className='icast-logo' src={footerLogo} alt="ICAST Logo" preview={false} />
         </Col>
         
         {/* Center Section: Contact Information */}
-        <Col xs={24} sm={8} md={8} className="footer-contact">
-          <Text className="footer-title">NCGSA Secretariat</Text>
-          <Text>Institute of Space Technology</Text>
-          <Text>1, Islamabad Highway, Islamabad 44000</Text>
-          <Space direction="vertical" className="contact-info">
-            <Space>
-              <PhoneOutlined />
-              <Text>+92-51-9075799</Text>
-            </Space>
-            <Space>
-              <MailOutlined />
-              <Text>info@ncgsa.org.pk</Text>
+        <Col xs={24} sm={8} md={8} lg={8} className="footer-contact" style={{ textAlign: 'center' }}>
+          <Space direction='vertical'>
+            <Text style={{color:"white",fontSize:"20px"}} className="footer-title">NCGSA Secretariat</Text>
+            <Text style={{color:"white",fontSize:"20px"}}>Institute of Space Technology</Text>
+            <Text style={{color:"white",fontSize:"20px"}}>1, Islamabad Highway, Islamabad 44000</Text>
+            <Space direction="vertical" className="contact-info">
+              <Space>
+                <PhoneOutlined />
+                <Text style={{color:"white",fontSize:"20px"}}>+92-51-9075799</Text>
+              </Space>
+              <Space>
+                <MailOutlined />
+                <Text style={{color:"white"}}>info@ncgsa.org.pk</Text>
+              </Space>
             </Space>
           </Space>
         </Col>
 
         {/* Right Section: Partner Logos and Social Media Links */}
-        <Col xs={24} sm={8} md={6} className="footer-partners">
-          <Space className="partner-logos">
-            <Image src={suparcoLogo} alt="SUPARCO Logo" preview={false} className="partner-logo" />
-            <Image src={istLogo} alt="IST Logo" preview={false} className="partner-logo" />
-          </Space>
-          <Space className="social-media-icons">
-            <Link href="#" target="_blank"><TwitterOutlined /></Link>
-            <Link href="#" target="_blank"><FacebookOutlined /></Link>
-            <Link href="#" target="_blank"><InstagramOutlined /></Link>
-            <Link href="#" target="_blank"><LinkedinOutlined /></Link>
-            <Link href="#" target="_blank"><YoutubeOutlined /></Link>
-          </Space>
-          <Space className="footer-links">
-            <Link href="#" className="footer-link">CONTACT US</Link>
-            <Link href="#" className="footer-link">SITEMAP</Link>
+        <Col xs={24} sm={8} md={8} className="footer-partners" style={{ textAlign: 'center' }}>
+          <Space direction='vertical'>
+            <Space className="partner-logos">
+              <Image src={suparcoLogo} alt="SUPARCO Logo" preview={false} className="partner-logo" />
+              <Image src={istLogo} alt="IST Logo" preview={false} className="partner-logo" />
+            </Space>
+            <Space className="social-media-icons">
+              <Link href="#" target="_blank"><TwitterOutlined /></Link>
+              <Link href="#" target="_blank"><FacebookOutlined /></Link>
+              <Link href="#" target="_blank"><InstagramOutlined /></Link>
+              <Link href="#" target="_blank"><LinkedinOutlined /></Link>
+              <Link href="#" target="_blank"><YoutubeOutlined /></Link>
+            </Space>
+            <Space className="footer-links">
+              <Link href="#" className="footer-link">CONTACT US</Link>
+              <Link href="#" className="footer-link">SITEMAP</Link>
+            </Space>
           </Space>
         </Col>
       </Row>
