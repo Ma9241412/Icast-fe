@@ -41,7 +41,7 @@ const data = [
 const ICastForum = () => {
   return (
     <div className="icast-container">
-      <Title level={3} className="icast-title">ICAST Forum By the Numbers</Title>
+      <Title  className="icast-title">ICAST Forum By the Numbers</Title>
       <Card className="icast-card">
         <Row gutter={[16, 16]} justify="space-between">
           {data.map((item, index) => (

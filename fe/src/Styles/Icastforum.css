@@ -6,7 +6,7 @@
   
   .icast-title {
     color: #ffffff !important;
-    margin-bottom: 20px;
+    margin-bottom: 45px !important;
   }
   
   .icast-card {
@@ -24,11 +24,14 @@
   }
   
   .icast-value {
+    font-size: 19px !important;
+
     color: #ffffff !important;
     margin-top: 10px;
   }
   
   .icast-label {
     color: white !important;
+    font-size: 19px !important;
   }
   
