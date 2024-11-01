@@ -17,7 +17,7 @@ const ICast = () => {
       <IcastHeader />
       <div style={{ backgroundColor: "#272B3A",  }}>
         <FullWidthCarousel />
-        <CountdownTimer />
+        {/* <CountdownTimer /> */}
         <div className="content-section">
           <Title
             style={{

@@ -39,3 +39,86 @@
     height: 30vh; /* Smaller height for mobile devices */
   }
 }
+
+/* Countdown Timer Overlay - Centered at Bottom */
+.timer-overlay {
+  position: absolute;
+  bottom:22%; /* Adjust as needed to position closer to the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(180deg, rgba(77, 75, 75, 0.4), rgba(0, 0, 0, 0.8));
+  padding: 15px 30px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  z-index: 1;
+}
+
+/* Timer Box Styling */
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b1b1b;
+  border-radius: 15px;
+  padding: 16px;
+  min-width: 50px;
+}
+
+/* Timer Text Styling */
+.timer-box span {
+  font-size: 14px;
+  color: #b3c6ff; /* Light blue for labels */
+  margin-top: 5px;
+}
+
+/* Timer Number Styling */
+.timer-box .timer-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive adjustments for the countdown timer */
+@media (max-width: 768px) {
+  .timer-overlay {
+    font-size: 16px;
+    padding: 12px 20px;
+    gap: 10px;
+    bottom: 2%; /* Adjust positioning for mobile screens */
+    flex-direction: row; /* Ensure timer remains horizontal */
+  }
+
+  .timer-box {
+    padding: 10px 15px;
+    min-width: 70px;
+  }
+
+  .timer-box .timer-number {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer-overlay {
+    font-size: 14px;
+    padding: 10px 15px;
+    gap: 8px;
+    flex-direction: row; /* Keep horizontal layout on smaller screens */
+    bottom: 72%; /* Position closer to bottom */
+  }
+
+  .timer-box {
+    padding: 5px 7px;
+    min-width: 40px;
+  }
+
+  .timer-box .timer-number {
+    font-size: 15px;
+  }
+}

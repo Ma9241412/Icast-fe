@@ -18,7 +18,7 @@ const IcastHeader = () => {
   return (
     <header className="header">
       <div className="logo">
-        <Image src={logo} width={400} alt="ICAST Logo" className="logo-image" />
+        <Image src={logo} width={380} alt="ICAST Logo" className="logo-image" />
       </div>
 
       {/* Background bar for the menu with tilt */}

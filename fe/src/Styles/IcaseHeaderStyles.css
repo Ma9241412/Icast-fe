@@ -43,7 +43,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 67.5%;
+  width: 72.5%;
   padding: 10px 20px;
   background-color: #222533;
   z-index: 1; /* Place behind menu items */
@@ -65,10 +65,10 @@
 
 .menu-link {
   color: #f0f0f0;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 500;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 22px;
   background-color: #4A4D57;
   border-radius: 5px;
   transition: background-color 0.3s;
