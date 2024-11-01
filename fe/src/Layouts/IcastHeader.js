@@ -27,9 +27,10 @@ const IcastHeader = () => {
         <Link to="/about" className="menu-link">ABOUT ICAST</Link>
         <Link to="/themes" className="menu-link">CONFERENCE THEMES</Link>
         <Link to="/content" className="menu-link">CALL FOR CONTENT</Link>
-        <Link to="/content" className="menu-link">REGISTRATION</Link>
-        <Link to="/registration" className="menu-link">EXPOSTION & SPONSORS</Link>
+        <Link to="/registration" className="menu-link">REGISTRATION</Link>
+        <Link to="/sponsors" className="menu-link">EXPOSTION & SPONSORS</Link>
         <Link to="/program" className="menu-link">PROGRAMME</Link>
+        <Link to="/download" className="menu-link">DOWNLOAD</Link>
       </nav>
 
       </div>

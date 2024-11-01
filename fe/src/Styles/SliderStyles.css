@@ -1,11 +1,7 @@
 /* Carousel container: full width with no extra space */
 .carousel-container {
   width: 100%;
-  max-width: 100vw;
   overflow: hidden;
-  
-
-  padding: 0;
 }
 
 /* Carousel slide */
@@ -18,9 +14,9 @@
 /* Image styling for responsive heights */
 .carousel-image {
   width: 100%;
-  object-fit: contain;
-  /* display: block; */
-  height: 60vh; /* Default height for large screens (60% of viewport height) */
+  object-fit: cover;
+  display: block;
+  height: 100vh; /* Default height for large screens (60% of viewport height) */
 }
 
 /* Adjustments for larger screens */
