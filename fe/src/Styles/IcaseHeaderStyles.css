@@ -1,61 +1,131 @@
-/* Custom Header Styles */
+/* General Header Styles */
 .header {
-  padding: 2px 30px;
-  background-color: #272B3A;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 30px;
+  background-color: #272B3A;
+  position: relative;
+  height: 120px;
 }
 
-/* Logo Styling */
+/* Logo and Event Information Section */
 .logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
 }
 
-/* Desktop Menu Styles */
+.logo-image {
+  width: 180px; /* Adjust for larger display on desktop */
+  margin-right: 15px;
+}
+
+.event-info {
+  color: #fff;
+}
+
+.event-date {
+  background-color: #3a7d33; /* Green background */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.event-location {
+  font-size: 12px;
+  color: #f0f0f0;
+}
+
+/* Menu Background Bar with Tilt */
+.menu-background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 67.5%;
+  padding: 10px 20px;
+  background-color: #222533;
+  transform: skew(-8deg);
+  z-index: 1; /* Place behind menu items */
+}
+
+/* Desktop Menu Styling */
 .desktop-menu {
-  flex-grow: 1;
-  justify-content: flex-end;
-  background-color: #272B3A;
   display: flex;
+  gap: 15px;
+  position: relative;
+  padding: 10px;
+  align-items: flex-end;
+  z-index: 2; /* Place above the tilted background */
 }
 
 .menu-link {
-  color: #f0f0f0 !important;
-  font-size: 16px;
+  color: #f0f0f0;
+  font-size: 13px;
   font-weight: 500;
-  padding: 0 20px;
-  text-transform: none;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #4A4D57;
+  border-radius: 5px;
   transition: background-color 0.3s;
 }
 
-.menu-link.active,
-.menu-link:hover {
-  background-color: #676A75 !important;
-  color: #fff !important;
-  border-radius: 10px !important;
-  border-color: white ;
-}
-
-/* Button style on selected menu */
+.menu-link:hover,
 .menu-link.active {
   background-color: #676A75;
-  color: #fff !important;
+  color: #fff;
 }
 
-/* Mobile Menu Icon */
+/* Mobile Menu Toggle Button */
 .menu-icon {
   display: none;
-  color: #f0f0f0;
   font-size: 24px;
+  color: #f0f0f0;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-/* Drawer Styles */
-.ant-drawer-body {
-  padding: 0;
+/* Mobile Menu Drawer */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  background-color: #272B3A;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+.close-icon {
+  align-self: flex-end;
+  margin: 10px 15px;
+  font-size: 24px;
+  color: #f0f0f0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile-menu-links .menu-link {
+  color: #f0f0f0;
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Responsive Styles */
@@ -65,31 +135,10 @@
   }
 
   .menu-icon {
-    display: inline-block;
+    display: block;
   }
 
-  .header {
-    padding: 0 20px;
+  .event-info {
+    display: none; /* Hide event info on small screens */
   }
-
-  .logo {
-    flex: 1;
-    justify-content: center;
-  }
-}
-.custom-menu .ant-menu-item a {
-  color: white; /* Keep the text color white */
-}
-
-.custom-menu .ant-menu-item:hover {
-  background-color: #676A75 !important; /* Change hover background color */
-}
-
-.custom-menu .ant-menu-item-selected {
-  background-color: #676A75 !important; /* Change selected item background color */
-  color: white; /* Keep selected text color white */
-}
-
-.custom-menu .ant-menu-item-selected a {
-  color: white !important; /* Ensure selected link text stays white */
 }

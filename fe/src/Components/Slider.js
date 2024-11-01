@@ -16,7 +16,7 @@ const FullWidthCarousel = () => {
       <Carousel autoplay>
         {images.map((image, index) => (
           <div key={index}>
-            <img 
+            <Image 
               src={image} 
               alt={`Slide ${index + 1}`} 
               style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'cover', display: 'block' }} 

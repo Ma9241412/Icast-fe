@@ -1,122 +1,60 @@
 import React, { useState } from "react";
-import { Image, Layout, Menu, Button, Drawer, Grid } from "antd";
 import { Link } from "react-router-dom";
-import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
-import image from "../Assets/logow.png";
+import logo from "../Assets/logow.png";
 import "../Styles/IcaseHeaderStyles.css";
-
-const { Header } = Layout;
-const { useBreakpoint } = Grid;
+import { Image } from "antd";
 
 const IcastHeader = () => {
-  const [current, setCurrent] = useState("1");
-  const [drawerVisible, setDrawerVisible] = useState(false);
-  const screens = useBreakpoint();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleClick = (e) => {
-    setCurrent(e.key);
+  const handleMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const showDrawer = () => {
-    setDrawerVisible(true);
-  };
-
-  const onClose = () => {
-    setDrawerVisible(false);
+  const handleCloseMenu = () => {
+    setIsMobileMenuOpen(false);
   };
 
   return (
-    <>
-      <Header className="header">
-        <div className="logo">
-          <Image
-            src={image}
-            alt="logo ICast"
-            width={screens.xs ? 250 : 300} // Adjust logo width based on screen size
-            preview={false}
-          />
+    <header className="header">
+      <div className="logo">
+        <Image src={logo} width={400} alt="ICAST Logo" className="logo-image" />
+      </div>
+
+      {/* Background bar for the menu with tilt */}
+      <div className="menu-background">
+      <nav className="desktop-menu">
+        <Link to="/about" className="menu-link">ABOUT ICAST</Link>
+        <Link to="/themes" className="menu-link">CONFERENCE THEMES</Link>
+        <Link to="/content" className="menu-link">CALL FOR CONTENT</Link>
+        <Link to="/content" className="menu-link">REGISTRATION</Link>
+        <Link to="/registration" className="menu-link">EXPOSTION & SPONSORS</Link>
+        <Link to="/program" className="menu-link">PROGRAMME</Link>
+      </nav>
+
+      </div>
+
+      {/* Desktop Menu */}
+     
+      {/* Mobile Menu Toggle Button */}
+      <button className="menu-icon" onClick={handleMenuToggle}>
+        ☰
+      </button>
+
+      {/* Mobile Menu Drawer */}
+      {isMobileMenuOpen && (
+        <div className="mobile-menu">
+          <button className="close-icon" onClick={handleCloseMenu}>✖</button>
+          <nav className="mobile-menu-links">
+            <Link to="/about" onClick={handleCloseMenu} className="menu-link">About ICAST</Link>
+            <Link to="/themes" onClick={handleCloseMenu} className="menu-link">Conference Theme</Link>
+            <Link to="/content" onClick={handleCloseMenu} className="menu-link">Call for Content</Link>
+            <Link to="/registration" onClick={handleCloseMenu} className="menu-link">Exposition & Sponsors</Link>
+            <Link to="/program" onClick={handleCloseMenu} className="menu-link">Program</Link>
+          </nav>
         </div>
-
-        {/* Desktop Menu */}
-        <Menu
-          onClick={handleClick}
-          selectedKeys={[current]}
-          mode="horizontal"
-          className="desktop-menu"
-        >
-          <Menu.Item key="1" className={`menu-link ${current === "1" ? "active" : ""}`}>
-            <Link to="/about">About ICAST</Link>
-          </Menu.Item>
-          <Menu.Item key="3" className={`menu-link ${current === "3" ? "active" : ""}`}>
-            <Link to="/themes">Conference Themes</Link>
-          </Menu.Item>
-          <Menu.Item key="2" className={`menu-link ${current === "2" ? "active" : ""}`}>
-            <Link to="/content">Call for Content</Link>
-          </Menu.Item>
-          <Menu.Item key="4" className={`menu-link ${current === "4" ? "active" : ""}`}>
-            <Link to="/registration">Registration</Link>
-          </Menu.Item>
-          <Menu.Item key="5" className={`menu-link ${current === "5" ? "active" : ""}`}>
-            <Link to="/sponsorship">Exposition & Sponsorship</Link>
-          </Menu.Item>
-          <Menu.Item key="6" className={`menu-link ${current === "6" ? "active" : ""}`}>
-            <Link to="/programme">Programme</Link>
-          </Menu.Item>
-        </Menu>
-
-        {/* Mobile Menu Button */}
-        <Button
-          className="menu-icon"
-          type="text"
-          icon={<MenuOutlined />}
-          onClick={showDrawer}
-        />
-
-        {/* Drawer for Mobile Menu */}
-        <Drawer
-      title={
-        <div style={{ textAlign: "center", backgroundColor: "#272B3A" }}>
-          <Image src={image} alt="logo ICast" width={200} preview={false} />
-        </div>
-      }
-      style={{ backgroundColor: "#272B3A" }}
-      placement="right"
-      onClose={onClose}
-      visible={drawerVisible}
-      closeIcon={<CloseOutlined style={{ color: 'white' }} />}
-    >
-      <Menu
-        onClick={(e) => {
-          handleClick(e);
-          onClose();
-        }}
-        style={{ backgroundColor: "#272B3A", color: "white" }}
-        selectedKeys={[current]}
-        mode="vertical"
-        className="custom-menu" // Add a class name to target with CSS
-      >
-        <Menu.Item key="1">
-          <Link style={{ color: "white" }} to="/about">About ICAST</Link>
-        </Menu.Item>
-        <Menu.Item key="3">
-          <Link style={{ color: "white" }} to="/themes">Conference Themes</Link>
-        </Menu.Item>
-        <Menu.Item key="2">
-          <Link style={{ color: "white" }} to="/content">Call for Content</Link>
-        </Menu.Item>
-        <Menu.Item key="4">
-          <Link style={{ color: "white" }} to="/registration">Registration</Link>
-        </Menu.Item>
-        <Menu.Item key="5">
-          <Link style={{ color: "white" }} to="/sponsorship">Exposition & Sponsorship</Link>
-        </Menu.Item>
-        <Menu.Item key="6">
-          <Link style={{ color: "white" }} to="/programme">Programme</Link>
-        </Menu.Item>
-      </Menu>
-    </Drawer>
-      </Header>
-    </>
+      )}
+    </header>
   );
 };
 
