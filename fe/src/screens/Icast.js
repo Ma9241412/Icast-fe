@@ -8,6 +8,7 @@ import IcastHeader from "../Layouts/IcastHeader";
 import CountdownTimer from "../Components/CountdownTimer";
 import FullWidthCarousel from "../Components/Slider";
 import ICastEvents from "../Components/ICastEvents";
+import EventCarousel from "../Components/EventCarousel";
 
 const { Title, Paragraph } = Typography;
 
@@ -17,7 +18,7 @@ const ICast = () => {
       <IcastHeader />
       <div style={{ backgroundColor: "#272B3A",  }}>
         <FullWidthCarousel />
-        {/* <CountdownTimer /> */}
+    <EventCarousel/>
         <div className="content-section">
           <Title
             style={{

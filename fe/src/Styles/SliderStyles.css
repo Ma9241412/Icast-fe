@@ -43,7 +43,7 @@
 /* Countdown Timer Overlay - Centered at Bottom */
 .timer-overlay {
   position: absolute;
-  bottom:22%; /* Adjust as needed to position closer to the bottom */
+  bottom:17%; /* Adjust as needed to position closer to the bottom */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -110,7 +110,7 @@
     padding: 10px 15px;
     gap: 8px;
     flex-direction: row; /* Keep horizontal layout on smaller screens */
-    bottom: 72%; /* Position closer to bottom */
+    bottom: 68%; /* Position closer to bottom */
   }
 
   .timer-box {
