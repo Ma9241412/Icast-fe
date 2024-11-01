@@ -15,14 +15,11 @@
 .carousel-image {
   width: 100%;
   object-fit: cover;
-  display: block;
-  height: 100vh; /* Default height for large screens (60% of viewport height) */
 }
 
 /* Adjustments for larger screens */
 @media (min-width: 1024px) {
   .carousel-image {
-    height: 80vh; /* Increase height for larger screens */
   }
 }
 
@@ -43,21 +40,40 @@
 /* Countdown Timer Overlay - Centered at Bottom */
 .timer-overlay {
   position: absolute;
-  bottom:17%; /* Adjust as needed to position closer to the bottom */
+  bottom:32%; /* Adjust as needed to position closer to the bottom */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 20px;
-  background: linear-gradient(180deg, rgba(77, 75, 75, 0.4), rgba(0, 0, 0, 0.8));
-  padding: 15px 30px;
-  border-radius: 25px;
+  background: rgba(39, 38, 38, 0.6);
+  backdrop-filter: blur(10px);
+  
+
+  padding: 5px 15px;
+  border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
   font-family: Arial, sans-serif;
-  font-size: 20px;
+  font-size: 13px;
   color: white;
   z-index: 1;
 }
+.ant-carousel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, Edge */
+}
+
+.ant-carousel {
+  -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none;     /* Hide scrollbar in Firefox */
+}
+.ant-carousel .slick-track {
+  overflow: hidden;
+}
+
+.ant-carousel .slick-list {
+  overflow: hidden;
+}
+
 
 /* Timer Box Styling */
 .timer-box {
@@ -66,20 +82,20 @@
   align-items: center;
   background-color: #1b1b1b;
   border-radius: 15px;
-  padding: 16px;
-  min-width: 50px;
+  padding: 8px 15px;
+  min-width: 40px;
 }
 
 /* Timer Text Styling */
 .timer-box span {
-  font-size: 14px;
+  font-size: 12px;
   color: #b3c6ff; /* Light blue for labels */
   margin-top: 5px;
 }
 
 /* Timer Number Styling */
 .timer-box .timer-number {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
 }
@@ -110,7 +126,7 @@
     padding: 10px 15px;
     gap: 8px;
     flex-direction: row; /* Keep horizontal layout on smaller screens */
-    bottom: 68%; /* Position closer to bottom */
+    bottom: 75%; /* Position closer to bottom */
   }
 
   .timer-box {

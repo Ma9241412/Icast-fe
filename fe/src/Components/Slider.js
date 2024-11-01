@@ -37,7 +37,7 @@ const FullWidthCarousel = () => {
 
   return (
     <div className="carousel-container">
-      <Carousel autoplay>
+      <Carousel dots={false} arrows={false} autoplay>
         {images.map((image, index) => (
           <div key={index} className="carousel-slide">
             <Image 
