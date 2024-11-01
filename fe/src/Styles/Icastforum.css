@@ -1,0 +1,34 @@
+.icast-container {
+    background-color: #1a1a2e;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .icast-title {
+    color: #ffffff !important;
+    margin-bottom: 20px;
+  }
+  
+  .icast-card {
+    background-color: #1f1f30;
+    border-radius: 12px;
+    padding: 30px;
+  }
+  
+  .icast-col {
+    text-align: center;
+  }
+  
+  .icast-item {
+    color: #b0b0b0;
+  }
+  
+  .icast-value {
+    color: #ffffff !important;
+    margin-top: 10px;
+  }
+  
+  .icast-label {
+    color: white !important;
+  }
+  

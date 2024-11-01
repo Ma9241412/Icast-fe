@@ -10,6 +10,7 @@ import FullWidthCarousel from "../Components/Slider";
 import ICastEvents from "../Components/ICastEvents";
 import EventCarousel from "../Components/EventCarousel";
 import ConferenceIntro from "../Components/ConferenceIntro";
+import ICastForum from "../Components/ICastForum";
 
 const { Title, Paragraph } = Typography;
 
@@ -23,6 +24,7 @@ const ICast = () => {
       <EventCarousel />
       <ConferenceIntro/>
         <SpeakerCards />
+        <ICastForum/>
         <ICastEvents />
       </div>
       </div>
