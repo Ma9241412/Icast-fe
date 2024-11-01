@@ -32,7 +32,7 @@ const IcastHeader = () => {
           <Image
             src={image}
             alt="logo ICast"
-            width={screens.xs ? 250 : 300} // Adjust logo width based on screen size
+            width={screens.xs ? 250 : 600} // Adjust logo width based on screen size
             preview={false}
           />
         </div>

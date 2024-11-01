@@ -16,6 +16,7 @@ import IcastHeader from "../Layouts/IcastHeader";
 import img from "../Assets/icastw.png";
 import CountdownTimer from "../Components/CountdownTimer";
 import FullWidthCarousel from "../Components/Slider";
+import ICastEvents from "../Components/ICastEvents";
 
 const { Title, Paragraph } = Typography;
 
@@ -39,10 +40,10 @@ const ICast = () => {
               >
                 Introduction
               </Title>
-              <Divider
+              {/* <Divider
                 className="ncgsa-divider"
                 style={{ borderColor: "#1a8cd8", borderWidth: "2px" }}
-              />
+              /> */}
              <div>
              <Paragraph
                 style={{
@@ -74,15 +75,16 @@ const ICast = () => {
 
         </div>
         <SpeakerCards />
+        <ICastEvents/>
         {/* <OnlineSessions/> */}
-        <ToDoList />
-        <ImportantDates />
-        <RegistrationFee />
-        <ConferenceHighlights />
-        <ConferenceRegistration />
-        <ManuscriptSubmission />
+        {/* <ToDoList /> */}
+        {/* <ImportantDates /> */}
+        {/* <RegistrationFee /> */}
+        {/* <ConferenceHighlights /> */}
+        {/* <ConferenceRegistration /> */}
+        {/* <ManuscriptSubmission /> */}
         {/* <Downloads /> */}
-        <Proceedings />
+        {/* <Proceedings /> */}
       </div>
       <FooterComponent />
     </>

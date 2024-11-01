@@ -12,17 +12,14 @@ const images = [image1, image2, image3, image4];
 
 const FullWidthCarousel = () => {
   return (
-    <div style={{ width: '100%', maxWidth: '100vw', overflow: 'hidden', }}>
-      <Carousel autoplay>
+    <div className="carousel-container">
+      <Carousel arrows autoplay>
         {images.map((image, index) => (
-          <div key={index}>
-            <Image 
-            height={650}
-            preview={false}
-
+          <div key={index} className="carousel-slide">
+            <img 
               src={image} 
               alt={`Slide ${index + 1}`} 
-              style={{ width: '100%', objectFit: 'contain' }} 
+              className="carousel-image"
             />
           </div>
         ))}

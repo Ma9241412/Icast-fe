@@ -1,32 +1,37 @@
 import React from 'react';
 import { Row, Col, Card, Typography, Divider } from 'antd';
-import { LinkedinOutlined } from '@ant-design/icons';
 import '../Styles/Linkages.css';
+
+// Import images from the assets folder
+import image1 from '../Assets/pic1.png';
+import image2 from '../Assets/pic2.png';
+import image3 from '../Assets/pic3.png';
+import image4 from '../Assets/pic2.png';
 
 const SpeakerCards = () => {
   const speakers = [
     {
       name: "Eleanor Pena",
       title: "TechPartners",
-      imageUrl: "link_to_image_1", // Replace with actual image URL
+      imageUrl: image1,
       linkedin: true,
     },
     {
       name: "Esther Howard",
       title: "Binford Ltd.",
-      imageUrl: "link_to_image_2", // Replace with actual image URL
+      imageUrl: image2,
       linkedin: false,
     },
     {
       name: "Esther Howard",
       title: "Binford Ltd.",
-      imageUrl: "link_to_image_3", // Replace with actual image URL
+      imageUrl: image3,
       linkedin: false,
     },
     {
       name: "Marvin McKinney",
       title: "Big Kahuna Burger Ltd.",
-      imageUrl: "link_to_image_4", // Replace with actual image URL
+      imageUrl: image4,
       linkedin: false,
     },
   ];
@@ -43,7 +48,7 @@ const SpeakerCards = () => {
         }}
       >
         Featured Speakers
-        <Divider style={{ borderColor: "#1a8cd8", borderWidth: "2px" }} />
+        {/* <Divider className="ncgsa-divider" style={{ borderColor: "#1a8cd8", borderWidth: "2px" }} /> */}
       </Typography.Title>
 
       <Row gutter={[16, 16]} justify="center">
@@ -57,19 +62,14 @@ const SpeakerCards = () => {
                   <img
                     alt={speaker.name}
                     src={speaker.imageUrl}
-                    style={{ width: "100%", height: "300px", objectFit: "cover", borderRadius: "8px 8px 0 0" }}
+                    style={{
+                      width: "100%",
+                      height: "300px",
+                      objectFit: "cover",
+                      borderRadius: "8px 8px 0 0",
+                    }}
                   />
-                  {speaker.linkedin && (
-                    <LinkedinOutlined
-                      style={{
-                        position: "absolute",
-                        top: "10px",
-                        left: "10px",
-                        fontSize: "24px",
-                        color: "#0077b5",
-                      }}
-                    />
-                  )}
+              
                 </div>
               }
               bordered={false}

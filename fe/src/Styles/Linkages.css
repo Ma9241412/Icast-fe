@@ -1,13 +1,4 @@
-.banner {
-  width: 100%;
-  height:52vh; /* Full viewport height */
-  background-image: url("../Assets/banner.png"); /* Adjust path to your image */
-  background-size: contain; /* Ensures the image fills the whole area */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-  margin-top: 100px; /* Removes any margin above */
-  background-color: #272B3A;
-}
+
 
 .content-section {
   padding: 50px 20px;
