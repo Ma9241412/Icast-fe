@@ -24,7 +24,7 @@ const ICast = () => {
   return (
     <>
       <IcastHeader />
-      <div style={{ backgroundColor: "#272B3A",marginTop:"80px" }}>
+      <div style={{ backgroundColor: "#272B3A",marginTop:"85px" }}>
       <FullWidthCarousel/>
         <CountdownTimer/>
 
