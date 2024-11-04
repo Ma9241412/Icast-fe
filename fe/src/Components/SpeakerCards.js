@@ -1,12 +1,6 @@
 import React from "react";
-import { Row, Col, Card, Typography, Divider, Grid, Image } from "antd";
+import { Row, Col, Card, Typography, Grid } from "antd";
 import "../Styles/Linkages.css";
-
-// Import images from the assets folder
-import image1 from "../Assets/pic1.png";
-import image2 from "../Assets/pic2.png";
-import image3 from "../Assets/pic3.png";
-import image4 from "../Assets/pic2.png";
 
 const SpeakerCards = () => {
   const { useBreakpoint } = Grid;
@@ -18,7 +12,7 @@ const SpeakerCards = () => {
     : screens.md
     ? "35px"
     : "28px";
-    const paragraphFontSize = screens.xl
+  const paragraphFontSize = screens.xl
     ? "19px"
     : screens.lg
     ? "18px"
@@ -29,25 +23,25 @@ const SpeakerCards = () => {
     {
       name: "Eleanor Pena",
       title: "TechPartners",
-      imageUrl: image1,
+      imageUrl: require("../Assets/pic1.png"),
       linkedin: true,
     },
     {
       name: "Esther Howard",
       title: "Binford Ltd.",
-      imageUrl: image2,
+      imageUrl: require("../Assets/pic2.png"),
       linkedin: false,
     },
     {
       name: "Esther Howard",
       title: "Binford Ltd.",
-      imageUrl: image3,
+      imageUrl: require("../Assets/pic3.png"),
       linkedin: false,
     },
     {
       name: "Marvin McKinney",
       title: "Big Kahuna Burger Ltd.",
-      imageUrl: image4,
+      imageUrl: require("../Assets/pic1.png"),
       linkedin: false,
     },
   ];
@@ -56,7 +50,7 @@ const SpeakerCards = () => {
     <div className="speaker-cards-container">
       <Typography.Title
         style={{
-          fontSize:titleFontSize,
+          fontSize: titleFontSize,
           fontWeight: "bold",
           textAlign: "center",
           color: "#fff",
@@ -69,8 +63,7 @@ const SpeakerCards = () => {
         {speakers.map((speaker, index) => (
           <Col xs={24} sm={12} md={6} lg={6} key={index}>
             <Card
-            size="small"
-
+              size="small"
               className="custom-card"
               hoverable
               cover={
@@ -95,7 +88,7 @@ const SpeakerCards = () => {
                   color: "#333",
                   margin: 0,
                   textAlign: "center",
-                  fontSize:paragraphFontSize
+                  fontSize: paragraphFontSize,
                 }}
               >
                 {speaker.name}
