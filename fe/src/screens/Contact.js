@@ -44,21 +44,13 @@ const ContactForm = () => {
       <IcastHeader />
       <div className="contact-form-container">
         <Card title="Contact Us" className="contact-card">
-          <Form
-            layout="vertical"
-            onFinish={onFinish}
-            initialValues={{
-              firstName: "John",
-              lastName: "Doe",
-              email: "johndoe@example.com",
-              phone: "+1234567890",
-              messageContent: "Hello, this is a sample message.",
-            }}
-          >
+          <Form layout="vertical" onFinish={onFinish}>
             <Form.Item
               label="First Name"
               name="firstName"
-              rules={[{ required: true, message: "Please enter your first name" }]}
+              rules={[
+                { required: true, message: "Please enter your first name" },
+              ]}
             >
               <Input />
             </Form.Item>
@@ -66,7 +58,9 @@ const ContactForm = () => {
             <Form.Item
               label="Last Name"
               name="lastName"
-              rules={[{ required: true, message: "Please enter your last name" }]}
+              rules={[
+                { required: true, message: "Please enter your last name" },
+              ]}
             >
               <Input />
             </Form.Item>
@@ -85,7 +79,9 @@ const ContactForm = () => {
             <Form.Item
               label="Phone"
               name="phone"
-              rules={[{ required: true, message: "Please enter your phone number" }]}
+              rules={[
+                { required: true, message: "Please enter your phone number" },
+              ]}
             >
               <Input />
             </Form.Item>
