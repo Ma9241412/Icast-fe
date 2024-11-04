@@ -4,6 +4,7 @@ import IcastHeader from "../Layouts/IcastHeader";
 import FooterComponent from "../Layouts/FooterComponent";
 
 const ContactForm = () => {
+  const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
 
   const onFinish = async (values) => {
@@ -27,9 +28,17 @@ const ContactForm = () => {
       });
 
       const result = await response.json();
+      console.log(result);
+
       if (result.status === "success") {
         message.success("Thank you for contacting us!");
+        form.resetFields();
       } else {
+        if (result && result.errors && Array.isArray(result.errors)) {
+          const errros = result.errors;
+          Object.keys(errros).forEach((err) => message.error(errros[err]));
+          return;
+        }
         message.error(result.message || "Failed to send message.");
       }
     } catch (error) {
@@ -44,7 +53,7 @@ const ContactForm = () => {
       <IcastHeader />
       <div className="contact-form-container">
         <Card title="Contact Us" className="contact-card">
-          <Form layout="vertical" onFinish={onFinish}>
+          <Form layout="vertical" onFinish={onFinish} form={form}>
             <Form.Item
               label="First Name"
               name="firstName"
