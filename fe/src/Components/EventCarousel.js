@@ -16,9 +16,8 @@ const EventCarousel = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleImages, setVisibleImages] = useState(3); // Default to 3 images for desktop
+  const [visibleImages, setVisibleImages] = useState(3); 
 
-  // Adjust the number of visible images based on screen size
   useEffect(() => {
     const updateVisibleImages = () => {
       setVisibleImages(window.innerWidth <= 768 ? 1 : 3);

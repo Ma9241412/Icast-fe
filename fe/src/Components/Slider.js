@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Carousel, Image } from 'antd';
+import { Image } from 'antd';
 import '../Styles/SliderStyles.css';
 
 // Import images from assets folder
@@ -27,6 +27,7 @@ const calculateTimeLeft = () => {
 
 const FullWidthCarousel = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -35,20 +36,28 @@ const FullWidthCarousel = () => {
     return () => clearInterval(timer);
   }, []);
 
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
   return (
     <div className="carousel-container">
-      <Carousel dots={false} arrows={false} autoplay>
-        {images.map((image, index) => (
-          <div key={index} className="carousel-slide">
-            <Image 
-              src={image} 
-              preview={false}
-              alt={`Slide ${index + 1}`} 
-              className="carousel-image"
-            />
-          </div>
-        ))}
-      </Carousel>
+      <div className="carousel-slide">
+        <Image
+          src={images[currentIndex]}
+          preview={false}
+          alt={`Slide ${currentIndex + 1}`}
+          className="carousel-image"
+        />
+      </div>
+
+      {/* Left and Right Navigation Icons */}
+      <button className="nav-button left" onClick={handlePrevious}>&lt;</button>
+      <button className="nav-button right" onClick={handleNext}>&gt;</button>
 
       {/* Countdown Timer Overlay */}
       <div className="timer-overlay">
@@ -64,7 +73,6 @@ const FullWidthCarousel = () => {
           <div className="timer-number">{timeLeft.minutes}</div>
           <span>MINUTES</span>
         </div>
-      
       </div>
     </div>
   );
