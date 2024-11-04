@@ -29,25 +29,25 @@ const SpeakerCards = () => {
     {
       name: "Eleanor Pena",
       title: "TechPartners",
-      imageUrl: image1,
+      imageUrl: '/images/pic1.png',
       linkedin: true,
     },
     {
       name: "Esther Howard",
       title: "Binford Ltd.",
-      imageUrl: image2,
+      imageUrl: '/images/pic2.png',
       linkedin: false,
     },
     {
       name: "Esther Howard",
       title: "Binford Ltd.",
-      imageUrl: image3,
+      imageUrl: '/images/pic3.png',
       linkedin: false,
     },
     {
       name: "Marvin McKinney",
       title: "Big Kahuna Burger Ltd.",
-      imageUrl: image4,
+      imageUrl: '/images/pic4.png',
       linkedin: false,
     },
   ];

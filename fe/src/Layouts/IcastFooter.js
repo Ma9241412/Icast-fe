@@ -10,7 +10,7 @@ import {
   YoutubeOutlined,
 } from '@ant-design/icons';
 import '../Styles/IcastFooterStyles.css';
-import footerLogo from '../Assets/icastf.png';
+import footerLogo from '../Assets/icastw.png';
 import suparcoLogo from '../Assets/suparco.png';
 import istLogo from '../Assets/ist-logo.png';
 
@@ -27,30 +27,31 @@ const Footer = () => {
         </Col>
         
         {/* Center Section: Contact Information */}
-        <Col xs={24} sm={8} md={8} style={{ textAlign: 'center' }}>
-          <Space direction='vertical'>
-            <Text style={{color:"white", fontSize:"20px"}}>NCGSA Secretariat</Text>
-            <Text style={{color:"white", fontSize:"20px"}}>Institute of Space Technology</Text>
-            <Text style={{color:"white", fontSize:"20px"}}>1, Islamabad Highway, Islamabad 44000</Text>
-            <Space direction="vertical" className="contact-info">
-              <Space>
-                <PhoneOutlined />
-                <Text style={{color:"white", fontSize:"20px"}}>+92-51-9075799</Text>
-              </Space>
-              <Space>
-                <MailOutlined />
-                <Text style={{color:"white"}}>info@ncgsa.org.pk</Text>
-              </Space>
-            </Space>
-          </Space>
-        </Col>
+        <Col xs={24} sm={8} md={8}>
+  <Space align="start" direction="vertical">
+    <Text style={{ color: "white", fontSize: "20px" }}>NCGSA Secretariat</Text>
+    <Text style={{ color: "white", fontSize: "20px" }}>Institute of Space Technology</Text>
+    <Text style={{ color: "white", fontSize: "20px" }}>1, Islamabad Highway, Islamabad 44000</Text>
+    <Space direction="vertical" align="start"> 
+      <Space>
+        <MailOutlined />
+        <Text style={{ color: "white", fontSize: "20px" }}>icast.pakistan@gmail.com</Text>
+      </Space>
+      <Space>
+        <PhoneOutlined />
+        <Text style={{ color: "white", fontSize: "20px" }}>+92-51-9075799</Text>
+      </Space>
+    </Space>
+  </Space>
+</Col>
+
 
         {/* Right Section: Partner Logos and Social Media Links */}
         <Col xs={24} sm={8} md={8} style={{ textAlign: 'center' }}>
           <Space direction='vertical'>
             <Space className="partner-logos">
-              <Image src={suparcoLogo} alt="SUPARCO Logo" preview={false} className="partner-logo" />
-              <Image src={istLogo} alt="IST Logo" preview={false} className="partner-logo" />
+              <img src={suparcoLogo} alt="SUPARCO Logo" preview={false} className="partner-logo" />
+              <img src={istLogo} alt="IST Logo" preview={false} className="partner-logo" />
             </Space>
             <Space className="social-media-icons">
               <Link href="#" target="_blank"><TwitterOutlined /></Link>
