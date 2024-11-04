@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Form, Input, Button, message } from "antd";
+import { Form, Input, Button, Card, message } from "antd";
+import IcastHeader from "../Layouts/IcastHeader";
+import FooterComponent from "../Layouts/FooterComponent";
 
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -38,66 +40,88 @@ const ContactForm = () => {
   };
 
   return (
-    <Form
-      layout="vertical"
-      onFinish={onFinish}
-      initialValues={{
-        firstName: "John",
-        lastName: "Doe",
-        email: "johndoe@example.com",
-        phone: "+1234567890",
-        messageContent: "Hello, this is a sample message.",
-      }}
-    >
-      <Form.Item
-        label="First Name"
-        name="firstName"
-        rules={[{ required: true, message: "Please enter your first name" }]}
-      >
-        <Input />
-      </Form.Item>
+    <>
+      <IcastHeader />
+      <div className="contact-form-container">
+        <Card title="Contact Us" className="contact-card">
+          <Form
+            layout="vertical"
+            onFinish={onFinish}
+            initialValues={{
+              firstName: "John",
+              lastName: "Doe",
+              email: "johndoe@example.com",
+              phone: "+1234567890",
+              messageContent: "Hello, this is a sample message.",
+            }}
+          >
+            <Form.Item
+              label="First Name"
+              name="firstName"
+              rules={[{ required: true, message: "Please enter your first name" }]}
+            >
+              <Input />
+            </Form.Item>
 
-      <Form.Item
-        label="Last Name"
-        name="lastName"
-        rules={[{ required: true, message: "Please enter your last name" }]}
-      >
-        <Input />
-      </Form.Item>
+            <Form.Item
+              label="Last Name"
+              name="lastName"
+              rules={[{ required: true, message: "Please enter your last name" }]}
+            >
+              <Input />
+            </Form.Item>
 
-      <Form.Item
-        label="Email"
-        name="email"
-        rules={[
-          { required: true, message: "Please enter your email" },
-          { type: "email", message: "Please enter a valid email" },
-        ]}
-      >
-        <Input />
-      </Form.Item>
+            <Form.Item
+              label="Email"
+              name="email"
+              rules={[
+                { required: true, message: "Please enter your email" },
+                { type: "email", message: "Please enter a valid email" },
+              ]}
+            >
+              <Input />
+            </Form.Item>
 
-      <Form.Item
-        label="Phone"
-        name="phone"
-        rules={[{ required: true, message: "Please enter your phone number" }]}
-      >
-        <Input />
-      </Form.Item>
+            <Form.Item
+              label="Phone"
+              name="phone"
+              rules={[{ required: true, message: "Please enter your phone number" }]}
+            >
+              <Input />
+            </Form.Item>
 
-      <Form.Item
-        label="Message"
-        name="messageContent"
-        rules={[{ required: true, message: "Please enter your message" }]}
-      >
-        <Input.TextArea rows={4} />
-      </Form.Item>
+            <Form.Item
+              label="Message"
+              name="messageContent"
+              rules={[{ required: true, message: "Please enter your message" }]}
+            >
+              <Input.TextArea rows={4} />
+            </Form.Item>
 
-      <Form.Item>
-        <Button type="primary" htmlType="submit" loading={loading}>
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
+            <Form.Item>
+              <Button type="primary" htmlType="submit" loading={loading}>
+                Submit
+              </Button>
+            </Form.Item>
+          </Form>
+        </Card>
+      </div>
+      <FooterComponent />
+      <style jsx>{`
+        .contact-form-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 80vh;
+          padding: 20px;
+        }
+        .contact-card {
+          width: 100%;
+          max-width: 600px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+      `}</style>
+    </>
   );
 };
 

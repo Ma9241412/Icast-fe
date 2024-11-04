@@ -61,7 +61,7 @@ const Footer = () => {
               <Link href="#" target="_blank"><YoutubeOutlined /></Link>
             </Space>
             <Space className="footer-links">
-              <Link href="#" className="footer-link">CONTACT US</Link>
+              <Link href="/contact" className="footer-link">CONTACT US</Link>
               <Link href="#" className="footer-link">SITEMAP</Link>
             </Space>
           </Space>
