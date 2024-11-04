@@ -38,7 +38,6 @@ const Sponsors = () => {
           fontWeight: "bold",
           textAlign: "center",
           color: "black",
-          textDecoration: "underline",
         }}
       >
         Executive Sponsors
@@ -49,6 +48,7 @@ const Sponsors = () => {
             <Card className="sponsor-card" hoverable>
               <div className="sponsor-logo">
                 <Image
+                preview={false}
                   width={200}
                   src={sponsor.logo}
                   alt={`${sponsor.name} logo`}

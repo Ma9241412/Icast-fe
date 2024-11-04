@@ -9,7 +9,6 @@ const IcastHeader = () => {
   const screens = useBreakpoint();
   const logoWidth = screens.lg ? 380 : screens.md ? 250 : 250;
 
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -23,25 +22,21 @@ const IcastHeader = () => {
   return (
     <header className="header">
       <div className="logo">
-        <Image src={logo} width={logoWidth} alt="ICAST Logo" className="logo-image" />
+        <Image preview={false} src={logo} width={logoWidth} alt="ICAST Logo" className="logo-image" />
       </div>
 
       {/* Background bar for the menu with tilt */}
       <div className="menu-background">
-      <nav className="desktop-menu">
-        <Link to="/about" className="menu-link">ABOUT ICAST</Link>
-        <Link to="/themes" className="menu-link">CONFERENCE THEMES</Link>
-        <Link to="/content" className="menu-link">CALL FOR CONTENT</Link>
-        <Link to="/registration" className="menu-link">REGISTRATION PORTAL</Link>
-        <Link to="/sponsors" className="menu-link">EXPOSTION & SPONSORS</Link>
-        {/* <Link to="/program" className="menu-link">PROGRAMME</Link> */}
-        <Link to="/download" className="menu-link">DOWNLOADS & MANUALS</Link>
-      </nav>
-
+        <nav className="desktop-menu">
+          <Link to="/about" className="menu-link">ABOUT ICAST</Link>
+          <Link to="/themes" className="menu-link">CONFERENCE THEMES</Link>
+          <Link to="/content" className="menu-link">CALL FOR CONTENT</Link>
+          <Link to="/registration" className="menu-link">REGISTRATION PORTAL</Link>
+          <Link to="/sponsors" className="menu-link">EXPOSITION & SPONSORS</Link>
+          <Link to="/download" className="menu-link">DOWNLOADS & MANUALS</Link>
+        </nav>
       </div>
 
-      {/* Desktop Menu */}
-     
       {/* Mobile Menu Toggle Button */}
       <button className="menu-icon" onClick={handleMenuToggle}>
         ☰

@@ -5,7 +5,10 @@
   justify-content: space-between;
   padding: 40px 30px;
   background-color: #272B3A;
-  position: relative;
+  position: sticky; /* Make header sticky */
+  top: 0; /* Stick to the top of the page */
+  z-index: 100; /* Ensure header stays above other elements */
+  width: 100%;
 }
 
 /* Logo and Event Information Section */
@@ -48,9 +51,6 @@
   z-index: 1; /* Place behind menu items */
   clip-path: polygon(2% 0, 100% 0, 100% 100%, 0% 100%); /* Slight tilt from the left */
 }
-
-
-
 
 /* Desktop Menu Styling */
 .desktop-menu {

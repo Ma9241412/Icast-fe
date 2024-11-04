@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #1a1a1a !important; /* Dark background similar to image */
+  background-color: #272B3A !important; /* Dark background similar to image */
   padding: 40px 20px !important;
   color: #ffffff !important;
   max-width: 100% !important;
@@ -12,7 +12,7 @@
 }
 
 .icast-logo {
-  width: 200px !important; /* Adjusted width based on the image */
+  width: 300px !important; /* Adjusted width based on the image */
 }
 
 .footer-title {
