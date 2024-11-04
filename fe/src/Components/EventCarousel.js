@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Button } from 'antd';
+import { Typography, Button, Space, Grid } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import '../Styles/EventCarousel.css';
 import Image1 from '../Assets/01.jpg';
@@ -7,8 +7,19 @@ import Image2 from '../Assets/02.jpg';
 import Image3 from '../Assets/03.jpg';
 
 const { Title } = Typography;
+const { useBreakpoint } = Grid;
+
 
 const EventCarousel = () => {
+  const screens = useBreakpoint();
+
+  const titleFontSize = screens.xl
+  ? "45px"
+  : screens.lg
+  ? "40px"
+  : screens.md
+  ? "35px"
+  : "28px";
   const eventImages = [
     { src: Image1, alt: 'Event 1' },
     { src: Image2, alt: 'Event 2' },
@@ -43,7 +54,20 @@ const EventCarousel = () => {
 
   return (
     <div className="event-carousel-container">
-      <Button
+      
+     <Space direction='vertical'>
+     <Typography.Title
+              style={{
+                fontSize: titleFontSize ,
+                color: "black",
+                fontFamily: "Arial, sans-serif",
+                letterSpacing: "1px",
+              }}
+            >
+              Why Should You Attend?
+            </Typography.Title>
+   <Space>
+   <Button
         icon={<LeftOutlined />}
         onClick={handlePrev}
         disabled={currentIndex === 0}
@@ -53,9 +77,9 @@ const EventCarousel = () => {
         {eventImages.slice(currentIndex, currentIndex + visibleImages).map((image, index) => (
           <div key={index} className="carousel-slide">
             <img src={image.src} alt={image.alt} className="carousel-image" />
-            <Title level={5} style={{textDecoration:"underline"}} className="carousel-caption">
-              WHY YOU SHOULD ATTEND?
-            </Title>
+            <Button level={5} style={{fontWeight:"bold"}} className="carousel-caption">
+              Explore this.
+            </Button>
           </div>
         ))}
       </div>
@@ -65,6 +89,8 @@ const EventCarousel = () => {
         disabled={currentIndex >= eventImages.length - visibleImages}
         className="nav-button right-button"
       />
+   </Space>
+     </Space>
     </div>
   );
 };

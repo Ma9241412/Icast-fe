@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { Image } from 'antd';
-import '../Styles/SliderStyles.css';
+import React, { useState, useEffect } from "react";
+import { Image } from "antd";
+import "../Styles/SliderStyles.css";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 // Import images from assets folder
-import image1 from '../Assets/banner.png';
-import image2 from '../Assets/01.jpg';
-import image3 from '../Assets/02.jpg';
-import image4 from '../Assets/03.jpg';
+import image1 from "../Assets/banner.png";
+import image2 from "../Assets/01.jpg";
+import image3 from "../Assets/02.jpg";
+import image4 from "../Assets/03.jpg";
 
 const images = [image1, image2, image3, image4];
 
 const calculateTimeLeft = () => {
-  const eventDate = new Date('November 18, 2025 00:00:00').getTime();
+  const eventDate = new Date("November 18, 2025 00:00:00").getTime();
   const now = new Date().getTime();
   const difference = eventDate - now;
 
@@ -41,7 +42,9 @@ const FullWidthCarousel = () => {
   };
 
   const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   };
 
   return (
@@ -56,8 +59,12 @@ const FullWidthCarousel = () => {
       </div>
 
       {/* Left and Right Navigation Icons */}
-      <button className="nav-button left" onClick={handlePrevious}>&lt;</button>
-      <button className="nav-button right" onClick={handleNext}>&gt;</button>
+      <button className="nav-button left" onClick={handlePrevious}>
+        <LeftOutlined />
+      </button>
+      <button className="nav-button right" onClick={handleNext}>
+        <RightOutlined />
+      </button>
 
       {/* Countdown Timer Overlay */}
       <div className="timer-overlay">

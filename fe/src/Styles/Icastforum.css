@@ -1,38 +1,65 @@
 .icast-container {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .icast-title {
-    color: black !important;
-    font-size: 45px !important;
-    font-weight: bold !important;
-  }
-  
-  .icast-card {
-    background-color: #1f1f30;
-    border-radius: 12px;
-    padding: 30px;
-  }
-  
-  .icast-col {
-    text-align: center;
-  }
-  
-  .icast-item {
-    color: #b0b0b0;
-  }
-  
-  .icast-value {
-    font-size: 19px !important;
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
 
-    color: #ffffff !important;
-    margin-top: 10px;
+.icast-title {
+  color: black !important;
+  font-size: 45px !important;
+  font-weight: bold !important;
+}
+
+.icast-card {
+  background-color:white;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.icast-item-card {
+  background-color: #2c2c3e;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.icast-item-card:hover {
+  transform: scale(1.05);
+}
+
+.icast-item {
+  color: #b0b0b0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icast-value {
+  font-size: 22px !important;
+  color: #ffffff !important;
+  margin-top: 10px;
+}
+
+.icast-label {
+  color: white !important;
+  font-size: 16px !important;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .icast-container {
+    padding: 30px 10px;
   }
-  
+
+  .icast-value {
+    font-size: 18px !important;
+  }
+
   .icast-label {
-    color: white !important;
-    font-size: 19px !important;
+    font-size: 14px !important;
   }
-  
+}

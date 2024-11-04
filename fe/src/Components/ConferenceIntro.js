@@ -63,7 +63,6 @@ const ConferenceIntro = () => {
                 color: "white",
                 fontFamily: "Arial, sans-serif",
                 letterSpacing: "1px",
-                textDecoration:"underline"
               }}
             >
               Introduction

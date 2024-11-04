@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, Typography, Divider, Grid } from "antd";
+import { Row, Col, Card, Typography, Divider, Grid, Image } from "antd";
 import "../Styles/Linkages.css";
 
 // Import images from the assets folder
@@ -60,7 +60,6 @@ const SpeakerCards = () => {
           fontWeight: "bold",
           textAlign: "center",
           color: "#fff",
-          textDecoration:"underline"
         }}
       >
         Featured Speakers
@@ -70,6 +69,8 @@ const SpeakerCards = () => {
         {speakers.map((speaker, index) => (
           <Col xs={24} sm={12} md={6} lg={6} key={index}>
             <Card
+            size="small"
+
               className="custom-card"
               hoverable
               cover={

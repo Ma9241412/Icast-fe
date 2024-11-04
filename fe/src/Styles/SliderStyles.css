@@ -35,7 +35,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   color: white;
   border: none;
   font-size: 2rem;
@@ -46,10 +46,18 @@
 
 .nav-button.left {
   left: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  padding: 10px;
 }
 
 .nav-button.right {
   right: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  padding: 10px;
 }
 
 /* Countdown Timer Overlay */
