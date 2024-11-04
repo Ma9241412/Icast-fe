@@ -1,9 +1,10 @@
 import React from 'react';
-import { Card, Row, Col, Typography } from 'antd';
+import { Card, Row, Col, Typography, Grid } from 'antd';
 import { DesktopOutlined, EnvironmentOutlined, FileTextOutlined, DatabaseOutlined, SyncOutlined, TeamOutlined } from '@ant-design/icons';
 import '../Styles/Icastforum.css';
 
-const { Title, Text } = Typography;
+
+
 
 const data = [
   {
@@ -39,9 +40,13 @@ const data = [
 ];
 
 const ICastForum = () => {
+  const { Title, Text } = Typography;
+const { useBreakpoint } = Grid;
+const screens = useBreakpoint();
+const titleFontSize = screens.xl ? "45px" : screens.lg ? "40px" : screens.md ? "35px" : "28px";
   return (
     <div className="icast-container">
-      <Title  className="icast-title">ICAST Forum By the Numbers</Title>
+      <Title style={{fontSize:titleFontSize,fontWeight:"bold",textDecoration:"underline"}}>ICAST Forum Numbers</Title>
       <Card className="icast-card">
         <Row gutter={[16, 16]} justify="space-between">
           {data.map((item, index) => (

@@ -1,14 +1,30 @@
-import React from 'react';
-import { Row, Col, Card, Typography, Divider } from 'antd';
-import '../Styles/Linkages.css';
+import React from "react";
+import { Row, Col, Card, Typography, Divider, Grid } from "antd";
+import "../Styles/Linkages.css";
 
 // Import images from the assets folder
-import image1 from '../Assets/pic1.png';
-import image2 from '../Assets/pic2.png';
-import image3 from '../Assets/pic3.png';
-import image4 from '../Assets/pic2.png';
+import image1 from "../Assets/pic1.png";
+import image2 from "../Assets/pic2.png";
+import image3 from "../Assets/pic3.png";
+import image4 from "../Assets/pic2.png";
 
 const SpeakerCards = () => {
+  const { useBreakpoint } = Grid;
+  const screens = useBreakpoint();
+  const titleFontSize = screens.xl
+    ? "45px"
+    : screens.lg
+    ? "40px"
+    : screens.md
+    ? "35px"
+    : "28px";
+    const paragraphFontSize = screens.xl
+    ? "19px"
+    : screens.lg
+    ? "18px"
+    : screens.md
+    ? "16px"
+    : "14px";
   const speakers = [
     {
       name: "Eleanor Pena",
@@ -39,16 +55,15 @@ const SpeakerCards = () => {
   return (
     <div className="speaker-cards-container">
       <Typography.Title
-        level={2}
         style={{
-          fontSize: "45px",
+          fontSize:titleFontSize,
           fontWeight: "bold",
           textAlign: "center",
-          color: "#333",
+          color: "#fff",
+          textDecoration:"underline"
         }}
       >
         Featured Speakers
-        {/* <Divider className="ncgsa-divider" style={{ borderColor: "#1a8cd8", borderWidth: "2px" }} /> */}
       </Typography.Title>
 
       <Row gutter={[16, 16]} justify="center">
@@ -69,18 +84,17 @@ const SpeakerCards = () => {
                       borderRadius: "8px 8px 0 0",
                     }}
                   />
-              
                 </div>
               }
               bordered={false}
             >
               <Typography.Title
-                level={4}
                 style={{
                   fontWeight: "bold",
                   color: "#333",
                   margin: 0,
                   textAlign: "center",
+                  fontSize:paragraphFontSize
                 }}
               >
                 {speaker.name}

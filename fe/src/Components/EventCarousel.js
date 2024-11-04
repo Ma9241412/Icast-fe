@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Typography, Button } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import '../Styles/EventCarousel.css';
@@ -13,11 +13,24 @@ const EventCarousel = () => {
     { src: Image1, alt: 'Event 1' },
     { src: Image2, alt: 'Event 2' },
     { src: Image3, alt: 'Event 3' },
-    // Add more images if needed
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const visibleImages = 3; // Number of images to show at a time
+  const [visibleImages, setVisibleImages] = useState(3); // Default to 3 images for desktop
+
+  // Adjust the number of visible images based on screen size
+  useEffect(() => {
+    const updateVisibleImages = () => {
+      setVisibleImages(window.innerWidth <= 768 ? 1 : 3);
+    };
+
+    updateVisibleImages();
+    window.addEventListener('resize', updateVisibleImages);
+
+    return () => {
+      window.removeEventListener('resize', updateVisibleImages);
+    };
+  }, []);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
@@ -41,8 +54,8 @@ const EventCarousel = () => {
         {eventImages.slice(currentIndex, currentIndex + visibleImages).map((image, index) => (
           <div key={index} className="carousel-slide">
             <img src={image.src} alt={image.alt} className="carousel-image" />
-            <Title level={5} className="carousel-caption">
-              WHY YOU SHOULD ATTEND
+            <Title level={5} style={{textDecoration:"underline"}} className="carousel-caption">
+              WHY YOU SHOULD ATTEND?
             </Title>
           </div>
         ))}

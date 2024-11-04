@@ -19,23 +19,23 @@ const { Text, Link } = Typography;
 const Footer = () => {
   return (
     <div className="footer-container">
-      <Row gutter={[24, 24]} justify="center" align="middle">
+      <Row gutter={[16, 16]} justify="space-between" align="middle">
         
         {/* Left Section: ICAST Logo */}
-        <Col xs={24} sm={8} md={8} className="footer-logo" style={{ textAlign: 'center' }}>
+        <Col xs={24} sm={8} md={8} style={{ textAlign: 'center' }}>
           <Image className='icast-logo' src={footerLogo} alt="ICAST Logo" preview={false} />
         </Col>
         
         {/* Center Section: Contact Information */}
-        <Col xs={24} sm={8} md={8} lg={8} className="footer-contact" style={{ textAlign: 'center' }}>
+        <Col xs={24} sm={8} md={8} style={{ textAlign: 'center' }}>
           <Space direction='vertical'>
-            <Text style={{color:"white",fontSize:"20px"}} className="footer-title">NCGSA Secretariat</Text>
-            <Text style={{color:"white",fontSize:"20px"}}>Institute of Space Technology</Text>
-            <Text style={{color:"white",fontSize:"20px"}}>1, Islamabad Highway, Islamabad 44000</Text>
+            <Text style={{color:"white", fontSize:"20px"}}>NCGSA Secretariat</Text>
+            <Text style={{color:"white", fontSize:"20px"}}>Institute of Space Technology</Text>
+            <Text style={{color:"white", fontSize:"20px"}}>1, Islamabad Highway, Islamabad 44000</Text>
             <Space direction="vertical" className="contact-info">
               <Space>
                 <PhoneOutlined />
-                <Text style={{color:"white",fontSize:"20px"}}>+92-51-9075799</Text>
+                <Text style={{color:"white", fontSize:"20px"}}>+92-51-9075799</Text>
               </Space>
               <Space>
                 <MailOutlined />
@@ -46,7 +46,7 @@ const Footer = () => {
         </Col>
 
         {/* Right Section: Partner Logos and Social Media Links */}
-        <Col xs={24} sm={8} md={8} className="footer-partners" style={{ textAlign: 'center' }}>
+        <Col xs={24} sm={8} md={8} style={{ textAlign: 'center' }}>
           <Space direction='vertical'>
             <Space className="partner-logos">
               <Image src={suparcoLogo} alt="SUPARCO Logo" preview={false} className="partner-logo" />

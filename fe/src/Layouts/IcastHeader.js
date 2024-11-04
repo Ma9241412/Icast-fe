@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/logow.png";
 import "../Styles/IcaseHeaderStyles.css";
-import { Image } from "antd";
+import { Grid, Image } from "antd";
+const { useBreakpoint } = Grid;
 
 const IcastHeader = () => {
+  const screens = useBreakpoint();
+  const logoWidth = screens.lg ? 380 : screens.md ? 250 : 250;
+
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -18,7 +23,7 @@ const IcastHeader = () => {
   return (
     <header className="header">
       <div className="logo">
-        <Image src={logo} width={380} alt="ICAST Logo" className="logo-image" />
+        <Image src={logo} width={logoWidth} alt="ICAST Logo" className="logo-image" />
       </div>
 
       {/* Background bar for the menu with tilt */}
@@ -27,10 +32,10 @@ const IcastHeader = () => {
         <Link to="/about" className="menu-link">ABOUT ICAST</Link>
         <Link to="/themes" className="menu-link">CONFERENCE THEMES</Link>
         <Link to="/content" className="menu-link">CALL FOR CONTENT</Link>
-        <Link to="/registration" className="menu-link">REGISTRATION</Link>
+        <Link to="/registration" className="menu-link">REGISTRATION PORTAL</Link>
         <Link to="/sponsors" className="menu-link">EXPOSTION & SPONSORS</Link>
-        <Link to="/program" className="menu-link">PROGRAMME</Link>
-        <Link to="/download" className="menu-link">DOWNLOAD</Link>
+        {/* <Link to="/program" className="menu-link">PROGRAMME</Link> */}
+        <Link to="/download" className="menu-link">DOWNLOADS & MANUALS</Link>
       </nav>
 
       </div>

@@ -1,12 +1,13 @@
 .icast-container {
-    background-color: #1a1a2e;
+    background-color: white;
     padding: 20px;
     text-align: center;
   }
   
   .icast-title {
-    color: #ffffff !important;
-    margin-bottom: 45px !important;
+    color: black !important;
+    font-size: 45px !important;
+    font-weight: bold !important;
   }
   
   .icast-card {
