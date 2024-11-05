@@ -3,13 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px; /* Space between logo and menu */
+  gap: 10px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 100px 20px; /* Increased padding: 60px top and bottom, 30px left and right */
+  padding: 110px 30px;
   background-color: #272B3A;
   position: sticky;
   top: 0;
@@ -18,12 +18,15 @@
 }
 
 .logo {
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .desktop-menu {
   display: flex;
-  gap: 15px; /* Space between menu items */
+  gap: 15px;
 }
 
 .menu-link {
@@ -97,7 +100,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header {
-    padding: 20px 15px; /* Reduced padding for mobile screens */
+    padding: 20px 15px;
   }
 
   .desktop-menu {
