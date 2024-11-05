@@ -80,6 +80,10 @@ const FullWidthCarousel = () => {
           <div className="timer-number">{timeLeft.minutes}</div>
           <span>MINUTES</span>
         </div>
+        <div className="timer-box">
+          <div className="timer-number">{timeLeft.seconds}</div>
+          <span>SECONDS</span>
+        </div>
       </div>
     </div>
   );
