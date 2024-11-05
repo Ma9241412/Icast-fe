@@ -3,6 +3,13 @@ import { Row, Col, Carousel, Typography, Grid } from "antd";
 import m1 from "../Assets/m1.jpg";
 import m2 from "../Assets/m2.jpg";
 import m3 from "../Assets/m3.jpg";
+import m4 from "../Assets/m4.jpg";
+import m5 from "../Assets/m5.jpg";
+import m6 from "../Assets/m6.jpg";
+import m7 from "../Assets/m7.jpg";
+import m8 from "../Assets/m8.jpg";
+import m9 from "../Assets/m9.jpg";
+import m10 from "../Assets/m10.jpg";
 
 const { Title, Paragraph, Link } = Typography;
 const { useBreakpoint } = Grid;
@@ -144,6 +151,90 @@ const ConferenceIntro = () => {
             <div>
               <img
                 src={m3}
+                alt="Conference Image 3"
+                style={{
+                  width: "100%",
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+              />
+            </div>    <div>
+              <img
+                src={m4}
+                alt="Conference Image 3"
+                style={{
+                  width: "100%",
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src={m5}
+                alt="Conference Image 3"
+                style={{
+                  width: "100%",
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src={m6}
+                alt="Conference Image 3"
+                style={{
+                  width: "100%",
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src={m7}
+                alt="Conference Image 3"
+                style={{
+                  width: "100%",
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+              />
+              
+            </div>
+            <div>
+              <img
+                src={m8}
+                alt="Conference Image 3"
+                style={{
+                  width: "100%",
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src={m9}
+                alt="Conference Image 3"
+                style={{
+                  width: "100%",
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+              />
+            </div>
+            <div>
+              <img
+                src={m10}
                 alt="Conference Image 3"
                 style={{
                   width: "100%",
