@@ -46,10 +46,18 @@
 
 .nav-button.left {
   left: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  padding:15px
 }
 
 .nav-button.right {
   right: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  padding:15px
 }
 
 /* Countdown Timer Overlay */
