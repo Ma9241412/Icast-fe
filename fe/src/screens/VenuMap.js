@@ -1,46 +1,112 @@
 import React from 'react';
-import { Card } from 'antd';
+import { Card, Row, Col } from 'antd';
+import { PhoneOutlined, MailOutlined, EnvironmentOutlined } from '@ant-design/icons';
+import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 import IcastHeader from '../Layouts/IcastHeader';
 import Footer from '../Layouts/IcastFooter';
 
+const containerStyle = {
+  width: '100%',
+  height: '400px',
+  borderRadius: '8px',
+};
+
+const center = {
+  lat: 33.519404573362294, // Latitude for IST
+  lng: 73.17496607549269,  // Longitude for IST
+};
+
 const VenuMap = () => {
+  const { isLoaded, loadError } = useJsApiLoader({
+    googleMapsApiKey: 'AIzaSyAo1viD-Ut0TzXTyihevwuf-9tv_J3dPa0' // Use your API key here
+  });
+
+  if (loadError) {
+    return <div style={{ textAlign: 'center', margin: '20px 0' }}>Error loading map. Please check the API key and restrictions.</div>;
+  }
+
   return (
-<>
-<IcastHeader/>
-<Card title="Event Venue Map" className="venue-map-card">
-      <div className="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.306936238965!2d73.17496607549269!3d33.519404573362294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dff206d49e3247%3A0xc36973d93ffa92c5!2sInstitute%20of%20Space%20Technology%20(IST)!5e0!3m2!1sen!2s!4v1730780938231!5m2!1sen!2s"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </Card>
-    <Footer/>
-        <style jsx>{`
-          .venue-map-card {
-  max-width: 100%;
-  margin: 0 auto;
-}
+    <>
+      <IcastHeader />
+      <Card title="Event Venue Map" className="venue-map-card">
+        <Row gutter={[16, 16]} justify="start" align="top">
+          <Col xs={24} md={10} className="info-column">
+            <Card bordered={true} className="contact-card">
+              <div className="contact-info">
+                <p><PhoneOutlined /> +92-51-9075100</p>
+                <p><PhoneOutlined /> +92-51-9273310</p>
+                <p><MailOutlined /> info@ist.edu.pk</p>
+                <p><EnvironmentOutlined /> 1, Islamabad Expressway, Islamabad</p>
+                <p><EnvironmentOutlined /> G59H+P2 Islamabad</p>
+              </div>
+            </Card>
+          </Col>
+          <Col xs={24} md={12} className="map-column">
+            <div className="map-container">
+              {!isLoaded ? (
+                <div style={{ textAlign: 'center', padding: '20px' }}>Loading map...</div>
+              ) : (
+                <GoogleMap
+                  mapContainerStyle={containerStyle}
+                  center={center}
+                  zoom={15}
+                  options={{
+                    disableDefaultUI: true, // Disables default map controls
+                    clickableIcons: false, // Disables POI icons
+                  }}
+                >
+                  <Marker position={center} />
+                </GoogleMap>
+              )}
+            </div>
+          </Col>
+        </Row>
+      </Card>
+      <Footer />
+      <style jsx>{`
+        .venue-map-card {
+          max-width: 80%;
+          margin: 20px auto;
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+        }
 
-.map-container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
-}
+        .venue-map-card .ant-card-head-title {
+          font-size: 24px; /* Adjust font size as desired */
+          font-weight: bold;
+          color: #333; /* Customize color if needed */
+        }
 
-.map-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+        .contact-card {
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          height: 100%; /* Ensures it aligns with the map card */
+        }
 
-          `}</style>
-</>
+        .contact-info p {
+          font-size: 16px;
+          margin: 10px 0;
+          display: flex;
+          align-items: center;
+          color: #4a4a4a;
+        }
+
+        .contact-info p .anticon {
+          margin-right: 8px;
+          color: #1890ff;
+        }
+
+        .map-container {
+          position: relative;
+          width: 100%;
+          height: 400px; /* Set a fixed height for map container */
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+      `}</style>
+    </>
   );
 };
 

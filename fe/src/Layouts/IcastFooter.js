@@ -29,7 +29,7 @@ const Footer = () => {
         {/* Center Section: Contact Information */}
         <Col xs={24} sm={8} md={8}>
   <Space align="start" direction="vertical">
-    <Text style={{ color: "white", fontSize: "20px" }}>NCGSA Secretariat</Text>
+    <Text style={{ color: "white", fontSize: "20px" }}>Conference Secretariat</Text>
     <Text style={{ color: "white", fontSize: "20px" }}>Institute of Space Technology</Text>
     <Text style={{ color: "white", fontSize: "20px" }}>1, Islamabad Highway, Islamabad 44000</Text>
     <Space direction="vertical" align="start"> 

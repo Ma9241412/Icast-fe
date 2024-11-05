@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Input, Button, Card, message } from "antd";
 import IcastHeader from "../Layouts/IcastHeader";
 import FooterComponent from "../Layouts/FooterComponent";
+import Footer from "../Layouts/IcastFooter";
 
 const ContactForm = () => {
   const [form] = Form.useForm();
@@ -111,7 +112,7 @@ const ContactForm = () => {
           </Form>
         </Card>
       </div>
-      <FooterComponent />
+      <Footer />
       <style jsx>{`
         .contact-form-container {
           display: flex;

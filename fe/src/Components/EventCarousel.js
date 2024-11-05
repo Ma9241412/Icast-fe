@@ -64,7 +64,7 @@ const EventCarousel = () => {
                 letterSpacing: "1px",
               }}
             >
-              Why Should You Attend?
+              Latest Updates
             </Typography.Title>
    <Space>
    <Button
