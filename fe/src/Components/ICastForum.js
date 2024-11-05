@@ -6,33 +6,43 @@ import '../Styles/Icastforum.css';
 const data = [
   {
     icon: <DesktopOutlined style={{ fontSize: '24px' }} />,
-    value: '435',
-    label: 'Research Impact Factor',
+    value: '18',
+    label: 'Technical Session',
   },
   {
     icon: <EnvironmentOutlined style={{ fontSize: '24px' }} />,
-    value: '286',
-    label: 'Geographical Models and Maps',
+    value: '03',
+    label: 'Thematic Plenary Session',
   },
   {
     icon: <FileTextOutlined style={{ fontSize: '24px' }} />,
-    value: '175',
-    label: 'Research Publications',
+    value: '03',
+    label: 'Astronauts Meet',
   },
   {
     icon: <DatabaseOutlined style={{ fontSize: '24px' }} />,
-    value: '28',
-    label: 'Software and Hardware Solution',
+    value: '03',
+    label: 'Symposium / Seminars',
   },
   {
     icon: <SyncOutlined style={{ fontSize: '24px' }} />,
-    value: '20',
-    label: 'Industry Academia Linkages',
+    value: '06',
+    label: 'Panel Discussions / Forums',
   },
   {
     icon: <TeamOutlined style={{ fontSize: '24px' }} />,
     value: '11231',
-    label: 'Research Impact Factor',
+    label: 'Workshops & Trainings',
+  },
+  {
+    icon: <TeamOutlined style={{ fontSize: '24px' }} />,
+    value: '03',
+    label: 'Product Exhibition & Technology Demonstration Seminars',
+  },
+  {
+    icon: <TeamOutlined style={{ fontSize: '24px' }} />,
+    value: '11231',
+    label: 'Cultural Visit & SightSeeing',
   },
 ];
 

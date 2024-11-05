@@ -35,7 +35,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   font-size: 2rem;
@@ -46,18 +46,10 @@
 
 .nav-button.left {
   left: 10px;
-  color: white;
-  background-color: black;
-  border-radius: 40px;
-  padding: 10px;
 }
 
 .nav-button.right {
   right: 10px;
-  color: white;
-  background-color: black;
-  border-radius: 40px;
-  padding: 10px;
 }
 
 /* Countdown Timer Overlay */
@@ -68,8 +60,8 @@
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
-  background: rgba(39, 38, 38, 0.6);
-  padding: 5px 15px;
+  background: rgba(96, 94, 94, 0.6);
+  padding: 15px 15px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
@@ -83,7 +75,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1b1b1b;
+  background-color: #eeebeb;
   border-radius: 15px;
   padding: 25px;
   min-width: 40px;
@@ -91,14 +83,14 @@
 
 .timer-box span {
   font-size: 12px;
-  color: #b3c6ff;
+  color: #0e0e0f;
   margin-top: 5px;
 }
 
 .timer-box .timer-number {
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: rgb(7, 7, 7);
 }
 
 /* Tablet Screen Adjustments */
