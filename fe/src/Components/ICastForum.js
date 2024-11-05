@@ -1,6 +1,16 @@
 import React from 'react';
 import { Card, Row, Col, Typography, Grid } from 'antd';
-import { DesktopOutlined, EnvironmentOutlined, FileTextOutlined, DatabaseOutlined, SyncOutlined, TeamOutlined } from '@ant-design/icons';
+import {
+  DesktopOutlined,
+  EnvironmentOutlined,
+  RocketOutlined,
+  FileTextOutlined,
+  ProfileOutlined,
+  SyncOutlined,
+  TeamOutlined,
+  SolutionOutlined,
+  CameraOutlined,
+} from '@ant-design/icons';
 import '../Styles/Icastforum.css';
 
 const data = [
@@ -15,12 +25,12 @@ const data = [
     label: 'Thematic Plenary Session',
   },
   {
-    icon: <FileTextOutlined style={{ fontSize: '24px' }} />,
+    icon: <RocketOutlined style={{ fontSize: '24px' }} />,
     value: '03',
     label: 'Astronauts Meet',
   },
   {
-    icon: <DatabaseOutlined style={{ fontSize: '24px' }} />,
+    icon: <FileTextOutlined style={{ fontSize: '24px' }} />,
     value: '03',
     label: 'Symposium / Seminars',
   },
@@ -30,17 +40,17 @@ const data = [
     label: 'Panel Discussions / Forums',
   },
   {
-    icon: <TeamOutlined style={{ fontSize: '24px' }} />,
+    icon: <ProfileOutlined style={{ fontSize: '24px' }} />,
     value: '11231',
     label: 'Workshops & Trainings',
   },
   {
-    icon: <TeamOutlined style={{ fontSize: '24px' }} />,
+    icon: <SolutionOutlined style={{ fontSize: '24px' }} />,
     value: '03',
     label: 'Product Exhibition & Technology Demonstration Seminars',
   },
   {
-    icon: <TeamOutlined style={{ fontSize: '24px' }} />,
+    icon: <CameraOutlined style={{ fontSize: '24px' }} />,
     value: '11231',
     label: 'Cultural Visit & SightSeeing',
   },
