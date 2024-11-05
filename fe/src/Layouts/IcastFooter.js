@@ -62,7 +62,7 @@ const Footer = () => {
             </Space>
             <Space className="footer-links">
               <Link href="/contact" className="footer-link">CONTACT US</Link>
-              <Link href="#" className="footer-link">SITEMAP</Link>
+              <Link href="/map" className="footer-link">VENU MAP</Link>
             </Space>
           </Space>
         </Col>
