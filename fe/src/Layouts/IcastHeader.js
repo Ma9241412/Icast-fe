@@ -21,18 +21,17 @@ const IcastHeader = () => {
 
   return (
     <header className="header">
-      <div className="logo">
-        <Image preview={false} src={logo} width={logoWidth} alt="ICAST Logo" className="logo-image" />
-      </div>
-
-      {/* Background bar for the menu with tilt */}
-      <div className="menu-background">
+      <div className="header-left">
+        <div className="logo">
+          <Image preview={false} src={logo} width={logoWidth} alt="ICAST Logo" className="logo-image" />
+        </div>
         <nav className="desktop-menu">
           <Link to="/about" className="menu-link">ABOUT ICAST</Link>
           <Link to="/themes" className="menu-link">CONFERENCE THEMES</Link>
           <Link to="/content" className="menu-link">CALL FOR CONTENT</Link>
-          <Link to="/registration" className="menu-link">REGISTRATION PORTAL</Link>
+          <Link to="/registration" className="menu-link">REGISTRATION </Link>
           <Link to="/sponsors" className="menu-link">EXPOSITION & SPONSORS</Link>
+          <Link to="/program" className="menu-link">PROGRAMME</Link>
           <Link to="/download" className="menu-link">DOWNLOADS & MANUALS</Link>
         </nav>
       </div>

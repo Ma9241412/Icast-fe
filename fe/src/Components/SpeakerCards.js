@@ -56,7 +56,7 @@ const SpeakerCards = () => {
           color: "#fff",
         }}
       >
-        Featured Speakers
+        Key Note Speakers
       </Typography.Title>
 
       <Row gutter={[16, 16]} justify="center">

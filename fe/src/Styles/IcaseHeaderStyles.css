@@ -1,73 +1,37 @@
-/* General Header Styles */
+/* Header Left Section */
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px; /* Space between logo and menu */
+}
+
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 40px 30px;
+  padding: 80px 30px; /* Increased padding: 60px top and bottom, 30px left and right */
   background-color: #272B3A;
-  position: sticky; /* Make header sticky */
-  top: 0; /* Stick to the top of the page */
-  z-index: 100; /* Ensure header stays above other elements */
+  position: sticky;
+  top: 0;
+  z-index: 100;
   width: 100%;
 }
 
-/* Logo and Event Information Section */
 .logo {
-  display: flex;
-  align-items: center;
+  margin-bottom: 10px;
 }
 
-.logo-image {
-  width: 180px; /* Adjust for larger display on desktop */
-  margin-right: 15px;
-}
-
-.event-info {
-  color: #fff;
-}
-
-.event-date {
-  background-color: #3a7d33; /* Green background */
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 14px;
-  margin-bottom: 3px;
-}
-
-.event-location {
-  font-size: 12px;
-  color: #f0f0f0;
-}
-
-/* Menu Background Bar with Tilt */
-.menu-background {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 72.5%;
-  padding: 10px 20px;
-  background-color: #222533;
-  z-index: 1; /* Place behind menu items */
-  clip-path: polygon(2% 0, 100% 0, 100% 100%, 0% 100%); /* Slight tilt from the left */
-}
-
-/* Desktop Menu Styling */
 .desktop-menu {
   display: flex;
-  gap: 15px;
-  position: relative;
-  padding: 10px 30px;
-  align-items: flex-end;
-  z-index: 2; /* Place above the tilted background */
+  gap: 15px; /* Space between menu items */
 }
 
 .menu-link {
-  color: #f0f0f0;
-  font-size: 13px;
+  color: white;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none;
-  padding: 4px 22px;
+  padding: 18px 22px;
   background-color: #4A4D57;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -141,6 +105,6 @@
   }
 
   .event-info {
-    display: none; /* Hide event info on small screens */
+    display: none;
   }
 }

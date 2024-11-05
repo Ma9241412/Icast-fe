@@ -18,11 +18,7 @@
 
 .icast-item-card {
   background-color: #2c2c3e;
-  border: none;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
+  padding: 0px;
   text-align: center;
 }
 
@@ -38,15 +34,16 @@
 }
 
 .icast-value {
-  font-size: 22px !important;
+  font-size: 18px !important;
   color: #ffffff !important;
   margin-top: 10px;
 }
 
 .icast-label {
   color: white !important;
-  font-size: 16px !important;
+  font-size: 18px !important;
   margin-top: 5px;
+  font-weight: 500 !important;
 }
 
 /* Responsive adjustments */

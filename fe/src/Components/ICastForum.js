@@ -7,7 +7,7 @@ import {
   FileTextOutlined,
   ProfileOutlined,
   SyncOutlined,
-  TeamOutlined,
+  ScheduleOutlined,
   SolutionOutlined,
   CameraOutlined,
 } from '@ant-design/icons';
@@ -15,42 +15,42 @@ import '../Styles/Icastforum.css';
 
 const data = [
   {
-    icon: <DesktopOutlined style={{ fontSize: '24px' }} />,
+    icon: <DesktopOutlined style={{ fontSize: '24px',color:"white" }} />,
     value: '18',
     label: 'Technical Session',
   },
   {
-    icon: <EnvironmentOutlined style={{ fontSize: '24px' }} />,
+    icon: <ScheduleOutlined style={{ fontSize: '24px',color:"white" }} />,
     value: '03',
     label: 'Thematic Plenary Session',
   },
   {
-    icon: <RocketOutlined style={{ fontSize: '24px' }} />,
+    icon: <RocketOutlined style={{ fontSize: '24px',color:"white" }} />,
     value: '03',
     label: 'Astronauts Meet',
   },
   {
-    icon: <FileTextOutlined style={{ fontSize: '24px' }} />,
+    icon: <FileTextOutlined style={{ fontSize: '24px' ,color:"white"}} />,
     value: '03',
     label: 'Symposium / Seminars',
   },
   {
-    icon: <SyncOutlined style={{ fontSize: '24px' }} />,
+    icon: <SyncOutlined style={{ fontSize: '24px' ,color:"white"}} />,
     value: '06',
     label: 'Panel Discussions / Forums',
   },
   {
-    icon: <ProfileOutlined style={{ fontSize: '24px' }} />,
+    icon: <ProfileOutlined style={{ fontSize: '24px',color:"white" }} />,
     value: '11231',
     label: 'Workshops & Trainings',
   },
   {
-    icon: <SolutionOutlined style={{ fontSize: '24px' }} />,
+    icon: <SolutionOutlined style={{ fontSize: '24px' ,color:"white"}} />,
     value: '03',
     label: 'Product Exhibition & Technology Demonstration Seminars',
   },
   {
-    icon: <CameraOutlined style={{ fontSize: '24px' }} />,
+    icon: <CameraOutlined style={{ fontSize: '24px' ,color:"white"}} />,
     value: '11231',
     label: 'Cultural Visit & SightSeeing',
   },
@@ -64,12 +64,12 @@ const ICastForum = () => {
 
   return (
     <div className="icast-container">
-      <Title style={{ fontSize: titleFontSize, fontWeight: "bold" }}>ICAST Forum Numbers</Title>
+      <Title style={{ fontSize: titleFontSize, fontWeight: "bold" }}>ICAST By Numbers</Title>
       <Card className="icast-card">
         <Row gutter={[16, 16]} justify="center">
           {data.map((item, index) => (
-            <Col xs={24} sm={12} md={12} lg={8} xl={8} key={index}>
-              <Card className="icast-item-card">
+            <Col xs={24} sm={12} md={12} lg={6} xl={6} key={index}>
+              <Card size='small' className="icast-item-card">
                 <div className="icast-item">
                   {item.icon}
                   <Title level={3} className="icast-value">{item.value}</Title>
