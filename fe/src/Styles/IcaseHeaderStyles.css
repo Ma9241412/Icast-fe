@@ -9,7 +9,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 80px 30px; /* Increased padding: 60px top and bottom, 30px left and right */
+  padding: 100px 20px; /* Increased padding: 60px top and bottom, 30px left and right */
   background-color: #272B3A;
   position: sticky;
   top: 0;
@@ -29,7 +29,7 @@
 .menu-link {
   color: white;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   padding: 18px 22px;
   background-color: #4A4D57;
@@ -96,6 +96,10 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .header {
+    padding: 20px 15px; /* Reduced padding for mobile screens */
+  }
+
   .desktop-menu {
     display: none;
   }
