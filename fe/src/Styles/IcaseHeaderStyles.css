@@ -1,33 +1,71 @@
 /* Header Left Section */
 .header-left {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stacks the logo and menu vertically */
   align-items: flex-start;
   gap: 10px;
+  width: 100%;
 }
 
+/* Header Container */
 .header {
   display: flex;
-  padding: 110px 20px;
+  justify-content: center;
+  padding: 100px 20px;
   background-color: #272B3A;
   position: sticky;
   top: 0;
   z-index: 100;
   width: 100%;
+
 }
 
-.logo {
+/* Logo Styling */
+/* Logo Section Styling */
+.logo-section {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
 }
 
+.logo-left,
+.logo-center,
+.logo-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo-left {
+  flex: 1; /* Align to the left */
+}
+
+.logo-center {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center the theme image */
+}
+
+.logo-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+}
+
+/* Theme Image */
+.theme-image {
+  max-width: 150px; /* Restrict the theme image size */
+}
+
+/* Desktop Menu */
 .desktop-menu {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap; /* Wraps items if screen width is limited */
 }
 
+/* Menu Links */
 .menu-link {
   color: white;
   font-size: 15px;
@@ -108,9 +146,5 @@
 
   .menu-icon {
     display: block;
-  }
-
-  .event-info {
-    display: none;
   }
 }
