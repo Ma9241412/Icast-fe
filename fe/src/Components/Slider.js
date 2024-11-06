@@ -4,7 +4,7 @@ import "../Styles/SliderStyles.css";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 // Import images from assets folder
-import image1 from "../Assets/banner.png";
+import image1 from "../Assets/banner.svg";
 import image2 from "../Assets/01.jpg";
 import image3 from "../Assets/02.jpg";
 import image4 from "../Assets/03.jpg";
@@ -67,7 +67,7 @@ const FullWidthCarousel = () => {
       </button>
 
       {/* Countdown Timer Overlay */}
-      <div className="timer-overlay">
+      {/* <div className="timer-overlay">
         <div className="timer-box">
           <div className="timer-number">{timeLeft.days}</div>
           <span>DAYS</span>
@@ -84,7 +84,7 @@ const FullWidthCarousel = () => {
           <div className="timer-number">{timeLeft.seconds}</div>
           <span>SECONDS</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
