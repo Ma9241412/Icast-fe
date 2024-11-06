@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, Space, Grid } from "antd";
-import logo from "../Assets/logoicast.png";
-import theme from '../Assets/theme.png';
+import logo from "../Assets/logoicast.svg";
+import theme from '../Assets/theme.svg';
 import suparco from '../Assets/suparco.png';
 import ist from '../Assets/ist-logo.png';
 
@@ -9,7 +9,7 @@ const { useBreakpoint } = Grid;
 
 const LogoSection = () => {
   const screens = useBreakpoint();
-  const logoWidth = screens.lg ? 200 : screens.md ? 250 : 150;
+  const logoWidth = screens.lg ? 150 : screens.md ? 250 : 150;
 
   return (
     <div className="logo-section">
@@ -27,7 +27,7 @@ const LogoSection = () => {
       {/* Center Theme Image */}
       {screens.md && (
         <div className="logo-center">
-          <Image src={theme} alt="Theme Logo" style={{ maxWidth: 400 }} />
+          <Image width={350} preview={false} src={theme}  alt="Theme Logo"  />
         </div>
       )}
 
@@ -35,8 +35,8 @@ const LogoSection = () => {
       {screens.md && (
         <div className="logo-right">
           <Space size="small">
-            <Image width={100} src={suparco} alt="Suparco Logo" />
-            <Image width={150} src={ist} alt="IST Logo" />
+            <Image preview={false} width={80} src={suparco} alt="Suparco Logo" />
+            <Image preview={false}  width={110}  src={ist} alt="IST Logo" />
           </Space>
         </div>
       )}
