@@ -9,12 +9,12 @@ const { Title, Text } = Typography;
 
 const sponsors = [
   {
-    name: "NCGSA",
+    name: "NATIONAL CENTER OF GIS AND SPACE APPLICATIONS, PAKISTAN",
     company: "",
     logo: img, // replace with actual logo URLs
   },
   {
-    name: "HEC",
+    name: "HIGHER EDUCATION COMMISSION, PAKISTAN",
     company: "",
     logo: img1,
   },
@@ -54,7 +54,7 @@ const Sponsors = () => {
                   alt={`${sponsor.name} logo`}
                 />
               </div>
-              <Title level={5} className="sponsor-name">
+              <Title style={{fontSize:"12px"}} className="sponsor-name">
                 {sponsor.name}
               </Title>
               <Text className="sponsor-company">{sponsor.company}</Text>

@@ -4,6 +4,7 @@ import logo from "../Assets/logoicast.svg";
 import theme from '../Assets/theme.svg';
 import suparco from '../Assets/suparco.png';
 import ist from '../Assets/ist-logo.png';
+import { Link } from "react-router-dom";
 
 const { useBreakpoint } = Grid;
 
@@ -15,13 +16,15 @@ const LogoSection = () => {
     <div className="logo-section">
       {/* Left Logo - ICAST */}
       <div className="logo-left">
-        <Image
-          preview={false}
-          src={logo}
-          width={screens.xs ? 150 : logoWidth}
-          alt="ICAST Logo"
-          className="logo-image"
-        />
+      <Link to="/">
+  <Image
+    preview={false}
+    src={logo}
+    width={screens.xs ? 150 : logoWidth}
+    alt="ICAST Logo"
+    className="logo-image"
+  />
+</Link>
       </div>
       
       {/* Center Theme Image */}
@@ -35,8 +38,13 @@ const LogoSection = () => {
       {screens.md && (
         <div className="logo-right">
           <Space size="small">
-            <Image preview={false} width={80} src={suparco} alt="Suparco Logo" />
-            <Image preview={false}  width={110}  src={ist} alt="IST Logo" />
+          <Link to="https://suparco.gov.pk/">
+          <Image preview={false} width={80} src={suparco} alt="Suparco Logo" />
+          </Link>
+          <Link to="https://www.ist.edu.pk/">
+          <Image preview={false}  width={110}  src={ist} alt="IST Logo" />
+
+          </Link>
           </Space>
         </div>
       )}
