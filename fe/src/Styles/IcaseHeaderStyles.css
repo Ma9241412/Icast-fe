@@ -6,6 +6,12 @@
   gap: 10px;
   width: 100%;
 }
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Align logo to the left and menu icon to the right */
+  align-items: center;
+  width: 100%;
+}
 
 /* Header Container */
 .header {
@@ -60,7 +66,7 @@
 
 /* Desktop Menu */
 .desktop-menu {
-  display: flex;
+  display: nnne;
   gap: 15px;
   flex-wrap: wrap; /* Wraps items if screen width is limited */
 }
