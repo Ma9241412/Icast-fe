@@ -8,8 +8,7 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
-  padding: 110px 30px;
+  padding: 110px 20px;
   background-color: #272B3A;
   position: sticky;
   top: 0;

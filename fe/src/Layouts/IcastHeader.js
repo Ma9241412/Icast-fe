@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/logoicast.png";
 import "../Styles/IcaseHeaderStyles.css";
-import { Divider, Grid, Image, Space, Typography } from "antd";
+import {  Grid, Image, Space, Typography } from "antd";
 import suparco from '../Assets/suparco.png';
 import ist from '../Assets/ist-logo.png';
+import theme from '../Assets/theme.png';
 
 const { useBreakpoint } = Grid;
 
 const IcastHeader = () => {
   const screens = useBreakpoint();
-  const logoWidth = screens.lg ? 250 : screens.md ? 250 : 150;
+  const logoWidth = screens.lg ? 200 : screens.md ? 250 : 150;
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -35,17 +36,7 @@ const IcastHeader = () => {
               className="logo-image"
             />
             {screens.md && (
-              <Space align="start" direction="vertical" className="event-info">
-                <Typography.Title style={{ color: "white", fontSize: "15px" }}>
-                  INTERNATIONAL CONFERENCE ON APPLICATION OF SPACE SCIENCE AND TECHNOLOGY
-                </Typography.Title>
-                <Typography.Title style={{ color: "white", fontSize: "15px" }}>
-                  SPACE AND SUSTAINABLE DEVELOPMENT
-                </Typography.Title>
-                <Typography.Title style={{ color: "white", fontSize: "15px" }}>
-                  NOV 18-20 ,2025
-                </Typography.Title>
-              </Space>
+            <Image src={theme} alt="" />
             )}
             {screens.md && (
               <Space size={20}>
