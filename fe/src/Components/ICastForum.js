@@ -41,7 +41,7 @@ const data = [
   },
   {
     icon: <ProfileOutlined style={{ fontSize: '24px',color:"white" }} />,
-    value: '11231',
+    value: '05',
     label: 'Workshops & Trainings',
   },
   {
@@ -51,7 +51,7 @@ const data = [
   },
   {
     icon: <CameraOutlined style={{ fontSize: '24px' ,color:"white"}} />,
-    value: '11231',
+    value: '02',
     label: 'Cultural Visit & SightSeeing',
   },
 ];

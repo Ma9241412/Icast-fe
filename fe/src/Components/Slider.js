@@ -70,19 +70,19 @@ const FullWidthCarousel = () => {
       <div className="timer-overlay">
         <div className="timer-box">
           <div className="timer-number">{timeLeft.days}</div>
-          <span>DAYS</span>
+          <span style={{fontSize:"8px"}}>DAYS</span>
         </div>
         <div className="timer-box">
           <div className="timer-number">{timeLeft.hours}</div>
-          <span>HOURS</span>
+          <span style={{fontSize:"8px"}}>HOURS</span>
         </div>
         <div className="timer-box">
           <div className="timer-number">{timeLeft.minutes}</div>
-          <span>MINUTES</span>
+          <span style={{fontSize:"8px"}}>MINUTES</span>
         </div>
         <div className="timer-box">
           <div className="timer-number">{timeLeft.seconds}</div>
-          <span>SECONDS</span>
+          <span style={{fontSize:"8px",padding:"0px 2px"}}>SECONDS</span>
         </div>
       </div>
     </div>
