@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Row, Col, Typography, Image, Grid } from "antd";
+import { Link } from "react-router-dom"; // For React Router. Use `next/link` if you're using Next.js.
 import img from "../Assets/ncgsa.png";
 import img1 from "../Assets/hec.png";
 
@@ -11,12 +12,14 @@ const sponsors = [
   {
     name: "NATIONAL CENTER OF GIS AND SPACE APPLICATIONS, PAKISTAN",
     company: "",
-    logo: img, // replace with actual logo URLs
+    logo: img,
+    link: "https://ncgsa.org.pk/", // Replace with the actual URL you want
   },
   {
     name: "HIGHER EDUCATION COMMISSION, PAKISTAN",
     company: "",
     logo: img1,
+    link: "https://www.hec.gov.pk/", // Replace with the actual URL you want
   },
 ];
 
@@ -30,6 +33,7 @@ const Sponsors = () => {
     : screens.md
     ? "35px"
     : "28px";
+    
   return (
     <div className="sponsors-container">
       <Title
@@ -47,14 +51,16 @@ const Sponsors = () => {
           <Col xs={24} sm={12} md={8} lg={6} key={index}>
             <Card className="sponsor-card" hoverable>
               <div className="sponsor-logo">
-                <Image
-                preview={false}
-                  width={200}
-                  src={sponsor.logo}
-                  alt={`${sponsor.name} logo`}
-                />
+                <Link to={sponsor.link}> {/* Wrap Image with Link */}
+                  <Image
+                    preview={false}
+                    width={200}
+                    src={sponsor.logo}
+                    alt={`${sponsor.name} logo`}
+                  />
+                </Link>
               </div>
-              <Title style={{fontSize:"12px"}} className="sponsor-name">
+              <Title className="sponsor-name">
                 {sponsor.name}
               </Title>
               <Text className="sponsor-company">{sponsor.company}</Text>

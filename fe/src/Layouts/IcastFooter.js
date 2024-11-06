@@ -100,10 +100,10 @@ const Footer = () => {
               </Link>
             </Space>
             <Space className="footer-links">
-              <Link href="/contact" className="footer-link">
+              <Link to="/contact" className="footer-link">
                 CONTACT US
               </Link>
-              <Link href="/map" className="footer-link">
+              <Link to="/map" className="footer-link">
                 VENU MAP
               </Link>
             </Space>
