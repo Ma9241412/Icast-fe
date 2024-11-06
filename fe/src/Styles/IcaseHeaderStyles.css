@@ -1,32 +1,24 @@
-/* Header Left Section */
-.header-left {
-  display: flex;
-  flex-direction: column; /* Stacks the logo and menu vertically */
-  align-items: flex-start;
-  gap: 10px;
-  width: 100%;
-}
-.header-content {
-  display: flex;
-  justify-content: space-between; /* Align logo to the left and menu icon to the right */
-  align-items: center;
-  width: 100%;
-}
-
 /* Header Container */
 .header {
   display: flex;
   justify-content: center;
-  padding: 100px 20px;
+  padding: 100px 15px;
   background-color: #272B3A;
   position: sticky;
   top: 0;
   z-index: 100;
   width: 100%;
-
 }
 
-/* Logo Styling */
+/* Header Left Section */
+.header-left {
+  display: flex;
+  flex-direction: column; /* Aligns the logo and menu horizontally on desktop */
+  justify-content: space-between; /* Space between logo and menu */
+  width: 100%;
+  gap: 10px;
+}
+
 /* Logo Section Styling */
 .logo-section {
   display: flex;
@@ -66,7 +58,7 @@
 
 /* Desktop Menu */
 .desktop-menu {
-  display: nnne;
+  display: flex;
   gap: 15px;
   flex-wrap: wrap; /* Wraps items if screen width is limited */
 }
@@ -92,7 +84,7 @@
 /* Mobile Menu Toggle Button */
 .menu-icon {
   display: none;
-  font-size: 24px;
+  font-size: 30px;
   color: #f0f0f0;
   background: none;
   border: none;
@@ -146,11 +138,17 @@
     padding: 20px 15px;
   }
 
+  .header-left {
+    flex-direction: row; /* Stacks logo and menu vertically on mobile */
+    align-items: center;
+  }
+
   .desktop-menu {
-    display: none;
+    display: none; /* Hide full menu on mobile */
   }
 
   .menu-icon {
     display: block;
+    font-size: 24px; /* Show menu icon on mobile */
   }
 }
