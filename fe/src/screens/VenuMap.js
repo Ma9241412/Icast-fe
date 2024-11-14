@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col } from 'antd';
+import { Card, Row, Col, Grid, Typography } from 'antd';
 import { PhoneOutlined, MailOutlined, EnvironmentOutlined } from '@ant-design/icons';
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 import IcastHeader from '../Layouts/IcastHeader';
@@ -15,8 +15,19 @@ const center = {
   lat: 33.519404573362294, // Latitude for IST
   lng: 73.17496607549269,  // Longitude for IST
 };
+const { useBreakpoint } = Grid;
+
 
 const VenuMap = () => {
+  const screens = useBreakpoint();
+
+  const titleFontSize = screens.xl
+  ? "45px"
+  : screens.lg
+  ? "40px"
+  : screens.md
+  ? "35px"
+  : "28px";
   const { isLoaded, loadError } = useJsApiLoader({
     googleMapsApiKey: 'AIzaSyAo1viD-Ut0TzXTyihevwuf-9tv_J3dPa0' // Use your API key here
   });
@@ -28,16 +39,16 @@ const VenuMap = () => {
   return (
     <>
       <IcastHeader />
-      <Card title="Event Venue Map" className="venue-map-card">
+      <Card   className="venue-map-card">
+        <Typography.Title style={{fontSize:titleFontSize,fontWeight:"bold"}}> Event Venue Map</Typography.Title>
         <Row gutter={[16, 16]} justify="start" align="top">
           <Col xs={24} md={10} className="info-column">
             <Card bordered={true} className="contact-card">
               <div className="contact-info">
-                <p><PhoneOutlined /> +92-51-9075100</p>
-                <p><PhoneOutlined /> +92-51-9273310</p>
-                <p><MailOutlined /> info@ist.edu.pk</p>
-                <p><EnvironmentOutlined /> 1, Islamabad Expressway, Islamabad</p>
-                <p><EnvironmentOutlined /> G59H+P2 Islamabad</p>
+                <p style={{color:'white'}}><PhoneOutlined /> +92-51-9075100 | +92-51-9273310</p>
+                <p style={{color:'white'}}><MailOutlined />  info@icast.pk</p>
+                <p style={{color:'white'}}><EnvironmentOutlined /> 1, Islamabad Expressway, Islamabad</p>
+                <p style={{color:'white'}}><EnvironmentOutlined /> G59H+P2 Islamabad</p>
               </div>
             </Card>
           </Col>

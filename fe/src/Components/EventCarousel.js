@@ -6,7 +6,6 @@ import Image1 from '../Assets/01.jpg';
 import Image2 from '../Assets/02.jpg';
 import Image3 from '../Assets/03.jpg';
 
-const { Title } = Typography;
 const { useBreakpoint } = Grid;
 
 
@@ -60,8 +59,8 @@ const EventCarousel = () => {
               style={{
                 fontSize: titleFontSize ,
                 color: "black",
-                fontFamily: "Arial, sans-serif",
                 letterSpacing: "1px",
+                fontWeight:"bold"
               }}
             >
               Latest Updates

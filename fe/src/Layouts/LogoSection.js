@@ -1,54 +1,85 @@
-import React from "react";
-import { Image, Space, Grid } from "antd";
-import logo from "../Assets/logoicast.svg";
-import theme from '../Assets/theme.svg';
-import suparco from '../Assets/suparco.png';
+import React, { useState } from 'react';
+import { Menu, Drawer, Button, Image } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
+import '../Styles/IcaseHeaderStyles.css';
+import logo from '../Assets/logoicast.svg';
+import supcarco from '../Assets/suparco.png';
 import ist from '../Assets/ist-logo.png';
-import { Link } from "react-router-dom";
-
-const { useBreakpoint } = Grid;
+import { Link } from 'react-router-dom';
 
 const LogoSection = () => {
-  const screens = useBreakpoint();
-  const logoWidth = screens.lg ? 150 : screens.md ? 250 : 150;
+  const [drawerVisible, setDrawerVisible] = useState(false);
+
+  const showDrawer = () => {
+    setDrawerVisible(true);
+  };
+
+  const closeDrawer = () => {
+    setDrawerVisible(false);
+  };
 
   return (
-    <div className="logo-section">
-      {/* Left Logo - ICAST */}
-      <div className="logo-left">
-      <Link to="/">
-  <Image
-    preview={false}
-    src={logo}
-    width={screens.xs ? 150 : logoWidth}
-    alt="ICAST Logo"
-    className="logo-image"
-  />
-</Link>
+   <>
+   <header className="header-container">
+      {/* Left Section with a Separate Background Color */}
+      <div className="left-section">
+        <Link to={"/"}>
+        <img src={logo} alt="ICAST Logo" className="main-logo" />
+        </Link>
+        <div className="header-text">
+          <h1>INTERNATIONAL CONFERENCE ON APPLICATIONS OF SPACE SCIENCE & TECHNOLOGY</h1>
+          <h2>"Space for Sustainable Development"</h2>
+          <h3>Institute of Space Technology, Islamabad, Pakistan</h3>
+          <button className="date-button">November 18-20, 2025</button>
+        </div>
       </div>
-      
-      {/* Center Theme Image */}
-      {screens.md && (
-        <div className="logo-center">
-          <Image width={350} preview={false} src={theme}  alt="Theme Logo"  />
-        </div>
-      )}
 
-      {/* Right Logos - Suparco and IST */}
-      {screens.md && (
-        <div className="logo-right">
-          <Space size="small">
+      {/* Right Section with a Different Background Color */}
+      <div className="right-section">
+        <div className="partners-background">
           <Link to="https://suparco.gov.pk/">
-          <Image preview={false} width={80} src={suparco} alt="Suparco Logo" />
-          </Link>
-          <Link to="https://www.ist.edu.pk/">
-          <Image preview={false}  width={110}  src={ist} alt="IST Logo" />
+          <Image preview={false} src={supcarco} alt="SUPARCO Logo" className="partner-logo" />
 
           </Link>
-          </Space>
+          <Link to={"https://ist.edu.pk/"}>
+          <Image preview={false} src={ist} alt="IST Logo" className="partner-logo" />
+
+          </Link>
         </div>
-      )}
-    </div>
+
+        {/* Mobile Menu Icon */}
+        <Button
+          type="text"
+          icon={<MenuOutlined />}
+          className="mobile-menu-icon"
+          onClick={showDrawer}
+        />
+      </div>
+
+      {/* Mobile Drawer Menu */}
+      <Drawer
+        title="ICAST Menu"
+        placement="right"
+        onClose={closeDrawer}
+        visible={drawerVisible}
+      >
+        <Menu mode="vertical">
+         <Link to={'/'}>
+         <Menu.Item key="about">About ICAST</Menu.Item>
+         </Link>
+          <Menu.Item key="theme">Conference Theme</Menu.Item>
+          <Link to={"/content"}>
+          <Menu.Item key="content">Call for Content</Menu.Item>
+          </Link>
+          <Menu.Item key="sponsors">Exposition & Sponsors</Menu.Item>
+          <Menu.Item key="program">Program</Menu.Item>
+          <Menu.Item key="downloads">Downloads</Menu.Item>
+        </Menu>
+      </Drawer>
+    </header>
+
+   </>
+
   );
 };
 

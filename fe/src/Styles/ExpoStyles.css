@@ -1,0 +1,99 @@
+
+.expo-content {
+    text-align: left;
+}
+
+.expo-header {
+    text-align: left;
+    font-weight: bold;
+    background-color: #EFF0F2;
+    padding: 20px 40px;
+    color: black !important;
+}
+
+.expo-con {
+    background-color: #EFF0F2 !important;
+}
+
+.expo-subtitle {
+    display: block;
+    color: black;
+    padding: 10px 40px;
+    font-weight: 500;
+}
+
+.expo-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: black;
+
+}
+.contact-card {
+    background-color: #EFF0F2;
+    border: none !important;
+}
+
+.contact-title {
+    background-color: #1f5223;
+    padding: 15px;
+    border-radius: 5px;
+    color: black !important;
+}
+
+.contact-entry {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+
+}
+
+.contact-details {
+    font-size: 14px;
+    color: black;
+
+}
+
+.get-started-btn {
+    background-color: #1f5223;
+    font-weight: 500;
+    margin-top: 2rem;
+    padding: 10px 15px !important;
+}
+
+.action-section {
+    text-align: left;
+    padding: 10px;
+}
+
+.action-card {
+    background-color: #1E2634;
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.action-icon {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.action-card-text {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: white;
+}
+
+.action-button {
+    background-color: #1f5223;
+    border-color: #1f5223;
+    margin-top: 1rem;
+}

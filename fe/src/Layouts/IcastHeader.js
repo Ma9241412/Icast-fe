@@ -5,12 +5,13 @@ import "../Styles/IcaseHeaderStyles.css";
 
 const IcastHeader = () => {
   return (
-    <header className="header">
-      <div className="header-left">
+
+   
+     <>
         <LogoSection />
         <MenuSection />
-      </div>
-    </header>
+     </>
+ 
   );
 };
 

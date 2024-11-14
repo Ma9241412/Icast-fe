@@ -1,0 +1,92 @@
+.desktop-menu-container {
+  display: flex;
+  justify-content: right;
+}
+
+.desktop-menu {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  color: white;
+  border-bottom: none;
+}
+
+.desktop-menu .ant-menu-item {
+  font-size: 1rem;
+  color: black;
+  position: relative; /* Needed for positioning the underline */
+  transition: color 0.3s ease;
+}
+
+.desktop-menu .ant-menu-item:hover {
+  color: #0e86d4;
+}
+
+/* Underline effect */
+.desktop-menu .ant-menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; /* Position the underline slightly below the text */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0e86d4; /* Color of the underline */
+  transition: width 0.3s ease; /* Animation for the underline */
+}
+
+.desktop-menu .ant-menu-item:hover::after {
+  width: 100%; /* Expand the underline on hover */
+}
+
+@media (max-width: 768px) {
+  .desktop-menu-container {
+      display: none;
+  }
+}
+
+.menu-item-with-drawer {
+  position: relative; /* Position the submenu drawer relative to the parent menu item */
+}
+
+.submenu-drawer {
+  position: absolute;
+  top: 100%; /* Place the submenu drawer directly below the parent menu */
+  left: 50%; /* Center the drawer horizontally relative to the parent */
+  transform: translateX(-50%); /* Adjust to center */
+  background-color: #fff; /* Background color of the drawer */
+  border: 1px solid #ddd; /* Light border for clarity */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure it stays above other elements */
+  padding: 10px 20px; /* Add some padding for better spacing inside the drawer */
+  min-width: 180px; /* Ensure the drawer has a minimum width */
+  text-align: center; /* Center-align the content */
+}
+
+.submenu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  gap: 8px; /* Add space between each menu item */
+}
+
+.submenu-item a {
+  text-decoration: none;
+  color: #186814; /* Default link color */
+  font-size: 16px; /* Adjust font size */
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.submenu-item a:hover {
+  color: #0056b3; /* Change link color on hover */
+}
+
+/* Optional: Adjust hover state of the parent menu item */
+.menu-item-with-drawer:hover > .submenu-drawer {
+  display: block; /* Ensure the drawer is visible on hover */
+}
+

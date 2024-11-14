@@ -1,0 +1,106 @@
+body {
+    font-family: 'Inter', sans-serif;
+  }
+.call-for-content-layout {
+    background-color: white;
+}
+
+.call-for-content-container {
+    margin: auto;
+}
+
+.call-for-content-title {
+    background-color: #EFF0F2;
+    text-align: left;
+    padding: 20px 30px;
+    font-size: 24px;
+    color: black !important;
+}
+
+.breadcrumb {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+.call-for-content-text {
+    background-color: #EFF0F2;
+    color: black !important;
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 20px 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button-group .ant-btn {
+    background-color: #1F5223;
+    color: #fff;
+    border: 1px solid #ccc;
+    font-weight: 500;
+}
+
+/* .button-group .ant-btn:hover {
+    background-color: #24282c;
+    color: #ffffff;
+    border-color: #0073e6;
+} */
+
+.additional-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.dates-card,
+.additional-resources {
+    background-color: #1E2634;
+    padding: 10px 0px;
+    border-radius: 8px;
+    width: 48%;
+}
+
+.dates-card h4,
+.additional-resources h4 {
+    font-size: 18px;
+    color: white !important;
+    margin-bottom: 15px;
+}
+
+.additional-resources ul {
+    padding-left: 20px;
+    color: #666;
+}
+
+.additional-resources ul li {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .additional-content {
+        flex-direction: column;
+    }
+
+    .dates-card,
+    .additional-resources {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

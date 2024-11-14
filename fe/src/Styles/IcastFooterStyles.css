@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #272B3A !important; /* Dark background similar to image */
+  background-color: #1E2634 !important; /* Dark background similar to image */
   padding: 40px 20px !important;
   color: #ffffff !important;
   max-width: 100% !important;
@@ -60,5 +60,124 @@
   .footer-logo, .footer-contact, .footer-partners {
       text-align: center !important;
       margin-bottom: 20px !important;
+  }
+}
+
+/* Footer Container */
+.footer-container {
+  background-color: #404040; /* Dark grey background */
+  padding: 20px 40px;
+  color: white;
+}
+
+/* Footer Logo */
+.footer-logo-container {
+  text-align: center;
+}
+
+.icast-logo {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Contact Information */
+.footer-contact-container {
+  text-align: center;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/* Social Media Icons */
+.footer-social-container {
+  text-align: center;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.partner-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 20px;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.fb {
+  background-color: #3b5998;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.social-icon:hover {
+  background-color: #1890ff;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #1890ff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-logo-container,
+  .footer-contact-container,
+  .footer-social-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .partner-logos {
+    flex-wrap: wrap;
+  }
+  .icast-logo{
+    max-width: 150px;
+    height: auto;
+  }
+
+  .partner-logo {
+    max-width: 60px;
+  }
+
+  .social-media-icons {
+    gap: 10px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+    text-align: center;
   }
 }

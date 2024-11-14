@@ -3,11 +3,8 @@ import { Row, Col, Typography, Space, Image } from "antd";
 import {
   PhoneOutlined,
   MailOutlined,
-  TwitterOutlined,
   FacebookOutlined,
-  InstagramOutlined,
   LinkedinOutlined,
-  YoutubeOutlined,
 } from "@ant-design/icons";
 import "../Styles/IcastFooterStyles.css";
 import footerLogo from "../Assets/icastw.png";
@@ -15,15 +12,14 @@ import suparcoLogo from "../Assets/suparco.png";
 import istLogo from "../Assets/ist-logo.png";
 import { Link } from "react-router-dom";
 
-
-const { Text, } = Typography;
+const { Text } = Typography;
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      <Row gutter={[16, 16]} justify="space-between" align="middle">
+      <Row gutter={[16, 16]} justify="center" align="middle">
         {/* Left Section: ICAST Logo */}
-        <Col xs={24} sm={8} md={8} style={{ textAlign: "center" }}>
+        <Col xs={24} sm={8} md={8} className="footer-logo-container">
           <Image
             className="icast-logo"
             src={footerLogo}
@@ -33,70 +29,54 @@ const Footer = () => {
         </Col>
 
         {/* Center Section: Contact Information */}
-        <Col xs={24} sm={8} md={8}>
+        <Col xs={24} sm={8} md={8} className="footer-contact-container">
           <Space align="start" direction="vertical">
-            <Text style={{ color: "white", fontSize: "20px" }}>
-              Conference Secretariat
-            </Text>
-            <Text style={{ color: "white", fontSize: "20px" }}>
-              Institute of Space Technology
-            </Text>
-            <Text style={{ color: "white", fontSize: "20px" }}>
+            <Text className="footer-text">Conference Secretariat</Text>
+            <Text className="footer-text">Institute of Space Technology</Text>
+            <Text className="footer-text">
               1, Islamabad Highway, Islamabad 44000
             </Text>
             <Space direction="vertical" align="start">
               <Space>
                 <MailOutlined />
-                <Text style={{ color: "white", fontSize: "20px" }}>
-                  icast.pakistan@gmail.com
-                </Text>
+                <Text className="footer-text">icast.pakistan@gmail.com</Text>
               </Space>
               <Space>
                 <PhoneOutlined />
-                <Text style={{ color: "white", fontSize: "20px" }}>
-                  +92-51-9075799
-                </Text>
+                <Text className="footer-text">+92-51-9075799</Text>
               </Space>
             </Space>
           </Space>
         </Col>
 
         {/* Right Section: Partner Logos and Social Media Links */}
-        <Col xs={24} sm={8} md={8} style={{ textAlign: "center" }}>
-          <Space direction="vertical">
+        <Col xs={24} sm={8} md={8} className="footer-social-container">
+          <Space direction="vertical" size={20}>
             <Space className="partner-logos">
               <Link to="https://suparco.gov.pk/">
                 <img
                   src={suparcoLogo}
                   alt="SUPARCO Logo"
-                  preview={false}
                   className="partner-logo"
                 />
-              </Link>{" "}
-             <Link to="https://ist.edu.pk/">
-             <img
-                src={istLogo}
-                alt="IST Logo"
-                preview={false}
-                className="partner-logo"
-              />
-             </Link>
+              </Link>
+              <Link to="https://ist.edu.pk/">
+                <img
+                  src={istLogo}
+                  alt="IST Logo"
+                  className="partner-logo"
+                />
+              </Link>
             </Space>
             <Space className="social-media-icons">
-              <Link href="#" target="_blank">
-                <TwitterOutlined />
+              <Link to="https://www.facebook.com/ICAST.Pakistan" target="_blank">
+                <FacebookOutlined className="social-icon fb" />
               </Link>
-              <Link href="#" target="_blank">
-                <FacebookOutlined />
-              </Link>
-              <Link href="#" target="_blank">
-                <InstagramOutlined />
-              </Link>
-              <Link href="#" target="_blank">
-                <LinkedinOutlined />
-              </Link>
-              <Link href="#" target="_blank">
-                <YoutubeOutlined />
+              <Link
+                to="https://www.linkedin.com/company/icast-pakistan/"
+                target="_blank"
+              >
+                <LinkedinOutlined className="social-icon linkedin" />
               </Link>
             </Space>
             <Space className="footer-links">
@@ -104,7 +84,7 @@ const Footer = () => {
                 CONTACT US
               </Link>
               <Link to="/map" className="footer-link">
-                VENU MAP
+                VENUE MAP
               </Link>
             </Space>
           </Space>

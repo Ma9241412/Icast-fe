@@ -1,61 +1,58 @@
 import React, { useState } from "react";
+import { Menu } from "antd";
+import "../Styles/DesktopMenuStyles.css";
 import { Link } from "react-router-dom";
-import { Grid } from "antd";
-import "../Styles/IcaseHeaderStyles.css";
 
-const { useBreakpoint } = Grid;
+const DesktopMenu = () => {
+  const [showDrawer, setShowDrawer] = useState(false);
 
-const MenuSection = () => {
-  const screens = useBreakpoint();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const handleMenuToggle = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const handleCloseMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+  // Submenu items for "ABOUT ICAST"
+  const aboutSubMenus = [
+    { key: "aims & objectives", label: "Aims & Objectives", link: "/aims" },
+    { key: "governance", label: "ICAST Governance", link: "/governance" },
+  ];
 
   return (
-    <div className="menu-section">
-      {/* Desktop Menu */}
-      {screens.md ? (
-        <nav className="desktop-menu">
-          <Link to="/about" className="menu-link">ABOUT ICAST</Link>
-          <Link to="/themes" className="menu-link">CONFERENCE THEMES</Link>
-          <Link to="/content" className="menu-link">CALL FOR CONTENT</Link>
-          <Link to="/registration" className="menu-link">REGISTRATION</Link>
-          <Link to="/sponsors" className="menu-link">EXPOSITION & SPONSORS</Link>
-          <Link to="/program" className="menu-link">PROGRAMME</Link>
-          <Link to="/download" className="menu-link">DOWNLOADS & MANUALS</Link>
-        </nav>
-      ) : (
-        <>
-          {/* Mobile Menu Toggle Button */}
-          <button className="menu-icon" onClick={handleMenuToggle}>
-            ☰
-          </button>
+    <div className="desktop-menu-container">
+      <Menu mode="horizontal" className="desktop-menu">
+        {/* About ICAST Menu Item */}
+        <div
+          className="menu-item-with-drawer"
+          onMouseEnter={() => setShowDrawer(true)}
+          onMouseLeave={() => setShowDrawer(false)}
+        >
+          <Link to={'/'}>
+          <Menu.Item key="about">ABOUT ICAST</Menu.Item>
+          </Link>
 
-          {/* Mobile Menu Drawer */}
-          {isMobileMenuOpen && (
-            <div className="mobile-menu">
-              <button className="close-icon" onClick={handleCloseMenu}>✖</button>
-              <nav className="mobile-menu-links">
-                <Link to="/about" onClick={handleCloseMenu} className="menu-link">ABOUT ICAST</Link>
-                <Link to="/themes" onClick={handleCloseMenu} className="menu-link">CONFERENCE THEMES</Link>
-                <Link to="/content" onClick={handleCloseMenu} className="menu-link">CALL FOR CONTENT</Link>
-                <Link to="/registration" onClick={handleCloseMenu} className="menu-link">REGISTRATION</Link>
-                <Link to="/sponsors" onClick={handleCloseMenu} className="menu-link">EXPOSITION & SPONSORS</Link>
-                <Link to="/program" onClick={handleCloseMenu} className="menu-link">PROGRAMME</Link>
-                <Link to="/download" onClick={handleCloseMenu} className="menu-link">DOWNLOADS & MANUALS</Link>
-              </nav>
+          {/* Submenu Drawer */}
+          {showDrawer && (
+            <div className="submenu-drawer">
+              <ul className="submenu-list">
+                {aboutSubMenus.map((item) => (
+                  <li key={item.key} className="submenu-item">
+                    <Link to={item.link}>{item.label}</Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
-        </>
-      )}
+        </div>
+
+        {/* Other Menu Items */}
+        <Link to="/content">
+          <Menu.Item key="content">CALL FOR CONTENT</Menu.Item>
+        </Link>
+        <Link to={"/expo"}>
+          <Menu.Item key="sponsors">EXPOSITION & SPONSORS</Menu.Item>
+        </Link>
+        <Menu.Item key="register">REGISTRATION</Menu.Item>
+        <Menu.Item key="theme">CONFERENCE THEME</Menu.Item>
+        <Menu.Item key="program">PROGRAMME</Menu.Item>
+        <Menu.Item key="downloads">DOWNLOADS</Menu.Item>
+      </Menu>
     </div>
   );
 };
 
-export default MenuSection;
+export default DesktopMenu;

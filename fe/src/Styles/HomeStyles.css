@@ -570,93 +570,116 @@ body {
 /* Footer Section Styling */
 
 /* Footer section */
-.footer-section {
+/* Footer Container */
+.footer-container {
   background-color: #404040; /* Dark grey background */
-  padding: 40px 80px;
+  padding: 20px 40px;
   color: white;
+}
+
+/* Footer Logo */
+.footer-logo-container {
   text-align: center;
 }
 
-/* Title Styling */
-.footer-title {
-  color: white;
-  font-size: 26px;
-  margin-bottom: 20px;
+.icast-logo {
+  max-width: 150px;
+  height: auto;
 }
 
-/* Text Styling */
+/* Contact Information */
+.footer-contact-container {
+  text-align: center;
+}
+
 .footer-text {
-  display: block;
-  color: #FFFFFF99;
-  font-size: 17px;
-  font-weight: 400;
+  color: #fff !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
 }
 
-/* Social Media Icons Styling */
-.footer-social {
+/* Social Media Icons */
+.footer-social-container {
+  text-align: center;
+}
+
+.partner-logos {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.partner-logo {
+  max-width: 80px;
+  height: auto;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .social-icon {
-  font-size: 24px;
+  font-size: 20px;
   color: white;
-  padding: 10px;
+  padding: 8px;
   border-radius: 50%;
-  transition: color 0.3s, background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Background colors for specific icons */
 .fb {
-  background-color: #3b5998; /* Facebook Blue */
-}
-
-.insta {
-  background-color: #C13584; /* Instagram Gradient */
-}
-
-.yt {
-  background-color: #FF0000; /* YouTube Red */
+  background-color: #3b5998;
 }
 
 .linkedin {
-  background-color: #0077b5; /* LinkedIn Blue */
+  background-color: #0077b5;
 }
 
 .social-icon:hover {
-  background-color: #1890ff; /* Hover effect */
+  background-color: #1890ff;
 }
 
-/* Logos Styling */
-.logos-col {
+/* Footer Links */
+.footer-links {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 
-.footer-logo {
-  max-width: 100px;
-  height: auto;
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #1890ff;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .footer-social {
-    justify-content: space-around;
-  }
-
-  .footer-col {
+  .footer-logo-container,
+  .footer-contact-container,
+  .footer-social-container {
     text-align: center;
+    margin-bottom: 20px;
   }
 
-  .logos-col {
-    justify-content: center;
+  .partner-logos {
+    flex-wrap: wrap;
   }
 
-  .footer-logo {
-    max-width: 80px; /* Adjust logo size on smaller screens */
+  .partner-logo {
+    max-width: 60px;
+  }
+
+  .social-media-icons {
+    gap: 10px;
+  }
+
+  .footer-text {
+    font-size: 14px;
   }
 }

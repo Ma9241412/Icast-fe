@@ -1,151 +1,95 @@
-/* Header Container */
-.header {
-  display: flex;
-  justify-content: center;
-  padding: 80px 30px;
-  background-color: #272B3A;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  width: 100%;
-}
-
-/* Header Left Section */
-.header-left {
-  display: flex;
-  flex-direction: column; /* Aligns the logo and menu horizontally on desktop */
-  justify-content: space-between; /* Space between logo and menu */
-  width: 100%;
-  gap: 10px;
-}
-
-/* Logo Section Styling */
-.logo-section {
+.header-container {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: stretch;
   width: 100%;
-  padding: 10px 0;
+  background-color: #1E2634;
 }
 
-.logo-left,
-.logo-center,
-.logo-right {
+.left-section {
   display: flex;
-  align-items: start;
-}
-
-.logo-left {
-  flex: 1; /* Align to the left */
-}
-
-.logo-center {
-}
-
-.logo-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end; /* Align to the right */
-}
-
-/* Theme Image */
-.theme-image {
-  max-width: 150px; /* Restrict the theme image size */
-}
-
-/* Desktop Menu */
-.desktop-menu {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap; /* Wraps items if screen width is limited */
-}
-
-/* Menu Links */
-.menu-link {
-  color: #FFFFFF;
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 12px 22px;
-  background-color: #4A4D57; /* Bright white background */
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.menu-link:hover,
-.menu-link.active {
-  background-color: #676A75;
-  color: #fff;
-}
-
-/* Mobile Menu Toggle Button */
-.menu-icon {
-  display: none;
-  font-size: 30px;
-  color: #FFFFFF;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* Mobile Menu Drawer */
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 80%;
-  max-width: 300px;
-  height: 100%;
-  background-color: #272B3A;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-top: 20px;
-  z-index: 1000;
+  background-color: #1e2634; /* Left section background color */
+  color: white;
+  padding: 10px 30px;
+  flex: 1;
 }
 
-.close-icon {
-  align-self: flex-end;
-  margin: 10px 15px;
-  font-size: 24px;
-  color: #f0f0f0;
-  background: none;
-  border: none;
-  cursor: pointer;
+.main-logo {
+  height: 70px;
+  margin-right: 20px;
 }
 
-.mobile-menu-links {
+.header-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+  margin-left: 60px;
+
+}
+
+.header-text h1 {
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: left;
+  letter-spacing:0.03em;
+}
+
+.header-text h2 {
+  font-size: 1rem;
+  color: #055EDD;
+  margin: 0;
+  text-align: left;
+  font-style: italic;
+}
+
+.header-text h3 {
+  font-size: 0.9rem;
+  margin: 5px 0 10px;
+  text-align: left;
+}
+
+.date-button {
+  background-color: #055EDD;
+  border: none;
+  color: white;
+  padding: 2px 15px;
+  font-size: 0.85rem;
+  text-align: center;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  background-color:  #4f5056;
+  padding: 10px 60px;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%); /* Skew on the left side */
+}
+
+.partners-background {
+  display: flex;
+  align-items: center;
   gap: 15px;
 }
 
-.mobile-menu-links .menu-link {
-  color: #f0f0f0;
-  font-size: 16px;
-  padding: 10px 20px;
-  width: 100%;
-  text-align: center;
+/* .partner-logo {
+  height: 50
+} */
+
+.mobile-menu-icon {
+  display: none;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
-  .header {
-    padding: 20px 15px;
+  .header-text,
+  .partners-background {
+    display: none;
   }
-
-  .header-left {
-    flex-direction: row; /* Stacks logo and menu vertically on mobile */
-    align-items: center;
-  }
-
-  .desktop-menu {
-    display: none; /* Hide full menu on mobile */
-  }
-
-  .menu-icon {
-    display: block;
-    font-size: 24px; /* Show menu icon on mobile */
+  .mobile-menu-icon {
+    display: inline-flex;
+    margin-left: auto;
   }
 }

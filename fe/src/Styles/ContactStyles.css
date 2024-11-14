@@ -1,0 +1,111 @@
+/* Overall container */
+body {
+  font-family: 'Inter', sans-serif;
+}
+.contact-form-container {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left column styles */
+  .contact-info {
+    background-color: #1E2634;
+    padding:  40px;
+    color: #fff;
+    border-radius: 20px;
+
+
+  }
+  
+  .info-title {
+    color: #fff !important;
+  }
+  
+  .info-description {
+    color: #ccc;
+    text-align: center !important;
+  }
+  
+  .info-details {
+    margin: 20px 0;
+
+   
+  }
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .info-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #1890ff;
+  }
+  
+  /* Right column styles */
+  .form-container {
+    padding: 40px;
+  }
+  
+  .form-title {
+    color: #333;
+  }
+  
+  .form-description {
+    color: #666;
+  }
+  
+  .ant-input,
+  .ant-input-textarea {
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    background-color: #1F5223 !important; /* Green background */
+    color: white !important; /* White text */
+    border: none !important; /* Remove border */
+    border-radius: 5px !important; /* Rounded corners */
+    padding: 8px 16px !important; /* Adjust padding */
+    font-size: 16px !important; /* Adjust font size */
+    cursor: pointer !important; /* Pointer cursor */
+    transition: background-color 0.3s ease !important; /* Smooth transition */
+  }
+  
+  .submit-button:hover {
+    background-color: #17471C !important; /* Darker green on hover */
+  }
+  
+  .submit-button:disabled {
+    background-color: #A0A0A0 !important; /* Gray background when loading */
+    cursor: not-allowed !important; /* Not allowed cursor when disabled */
+  }
+  
+  
+  

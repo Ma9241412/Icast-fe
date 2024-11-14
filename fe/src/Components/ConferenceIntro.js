@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Carousel, Typography, Grid } from "antd";
+import { Row, Col, Carousel, Typography, Grid, Image } from "antd";
 import m1 from "../Assets/m1.jpg";
 import m2 from "../Assets/m2.jpg";
 import m3 from "../Assets/m3.jpg";
@@ -85,11 +85,16 @@ const ConferenceIntro = () => {
                 padding: paragraphPadding,
               }}
             >
-              International Conference on Applications of Space Science and
-              Technology (ICAST) is a regular biennial event to provide an
-              International forum for scientists, researchers, engineers,
-              academicians, industry professionals, entrepreneurs, and students
-              worldwide.
+              The International Conference on Applications of Space Science and
+              Technology (ICAST) stands as an eminent convergence of
+              distinguished global leaders, visionary researchers, and
+              pioneering industry experts, dedicated to advancing the frontiers
+              of space science, technology, and their far-reaching applications.
+              This event combines the legacies of IST’s International Conference
+              on Aerospace Science and Engineering (ICASE) and SUPARCO’s
+              International Conference on Space (ICS), uniting these platforms
+              into a biennial global forum that embodies excellence,
+              intellectual rigor, and forward-thinking collaboration.
             </Paragraph>
             <Paragraph
               style={{
@@ -102,11 +107,10 @@ const ConferenceIntro = () => {
                 padding: paragraphPadding,
               }}
             >
-              The event allows participants to interact and discuss the latest
-              themes and trends related to Aerospace Science & Engineering. It
-              serves as a platform to share experiences, foster collaborations,
-              and evaluate emerging technologies across the globe in the fields
-              of space science, technology, and application.
+              ICAST aspires to create an unparalleled environment for the
+              exchange of groundbreaking ideas, transformative research, and the
+              exploration of interdisciplinary space applications that hold the
+              potential to reshape our collective future.
             </Paragraph>
             <Link
               href="#"
@@ -116,6 +120,7 @@ const ConferenceIntro = () => {
                 letterSpacing: "0.5px",
                 marginTop: screens.md ? "20px" : "10px",
                 display: "block",
+                textAlign:"start"
               }}
             >
               Read more
@@ -125,9 +130,10 @@ const ConferenceIntro = () => {
         <Col xs={24} md={12}>
           <Carousel arrows>
             <div>
-              <img
+              <Image
+                preview={false}
                 src={m1}
-                alt="Conference Image 1"
+                alt=""
                 style={{
                   width: "100%",
                   maxWidth: "100%",
@@ -139,7 +145,7 @@ const ConferenceIntro = () => {
             <div>
               <img
                 src={m2}
-                alt="Conference Image 2"
+                alt=""
                 style={{
                   width: "100%",
                   maxWidth: "100%",
@@ -151,7 +157,7 @@ const ConferenceIntro = () => {
             <div>
               <img
                 src={m3}
-                alt="Conference Image 3"
+                alt=""
                 style={{
                   width: "100%",
                   maxWidth: "100%",
@@ -159,10 +165,11 @@ const ConferenceIntro = () => {
                   borderRadius: "10px",
                 }}
               />
-            </div>    <div>
+            </div>{" "}
+            <div>
               <img
                 src={m4}
-                alt="Conference Image 3"
+                alt=""
                 style={{
                   width: "100%",
                   maxWidth: "100%",
@@ -174,7 +181,7 @@ const ConferenceIntro = () => {
             <div>
               <img
                 src={m5}
-                alt="Conference Image 3"
+                alt=""
                 style={{
                   width: "100%",
                   maxWidth: "100%",
@@ -186,7 +193,7 @@ const ConferenceIntro = () => {
             <div>
               <img
                 src={m6}
-                alt="Conference Image 3"
+                alt=""
                 style={{
                   width: "100%",
                   maxWidth: "100%",
@@ -198,7 +205,7 @@ const ConferenceIntro = () => {
             <div>
               <img
                 src={m7}
-                alt="Conference Image 3"
+                alt=""
                 style={{
                   width: "100%",
                   maxWidth: "100%",
@@ -206,12 +213,11 @@ const ConferenceIntro = () => {
                   borderRadius: "10px",
                 }}
               />
-              
             </div>
             <div>
               <img
                 src={m8}
-                alt="Conference Image 3"
+                alt=""
                 style={{
                   width: "100%",
                   maxWidth: "100%",

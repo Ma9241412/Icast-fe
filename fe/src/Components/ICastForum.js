@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Row, Col, Typography, Grid } from 'antd';
 import {
   DesktopOutlined,
-  EnvironmentOutlined,
   RocketOutlined,
   FileTextOutlined,
   ProfileOutlined,
@@ -65,11 +64,11 @@ const ICastForum = () => {
   return (
     <div className="icast-container">
       <Title style={{ fontSize: titleFontSize, fontWeight: "bold" }}>ICAST By Numbers</Title>
-      <Card className="icast-card">
+      <Card bordered={false} className="icast-card">
         <Row gutter={[16, 16]} justify="center">
           {data.map((item, index) => (
             <Col xs={24} sm={12} md={12} lg={6} xl={6} key={index}>
-              <Card size='small' className="icast-item-card">
+              <Card bordered={false} size='small' className="icast-item-card">
                 <div className="icast-item">
                   {item.icon}
                   <Title level={3} className="icast-value">{item.value}</Title>
