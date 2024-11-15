@@ -49,7 +49,10 @@ const DesktopMenu = () => {
         <Link to={"/registration"}>
         <Menu.Item key="register">REGISTRATION</Menu.Item>
         </Link>
-        <Menu.Item key="theme">CONFERENCE THEME</Menu.Item>
+       <Link to={'/theme'}>
+       <Menu.Item key="theme">CONFERENCE THEME</Menu.Item>
+       </Link>
+
         <Menu.Item key="program">PROGRAMME</Menu.Item>
         <Menu.Item key="downloads">DOWNLOADS</Menu.Item>
       </Menu>

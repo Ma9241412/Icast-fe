@@ -9,6 +9,7 @@ import Expositions from "./screens/Expositions";
 import AimsPage from "./screens/Aims";
 import Registration from "./screens/Registration";
 import GovernancePage from "./screens/Governance";
+import ThemePage from "./screens/Themes";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/aims" element={<AimsPage/>}/>
           <Route path="/governance" element={<GovernancePage/>}/>
           <Route path="/registration" element={<Registration/>}/>
+          <Route path="/theme" element={<ThemePage/>}/>
 
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/map" element={<VenuMap />} />

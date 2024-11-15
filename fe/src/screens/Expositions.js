@@ -83,7 +83,6 @@ const paragraphFontSize = screens.xl
               </Text>
             </Col>
 
-            {/* Right Column - Contact Info */}
             <Col xs={24} md={8} lg={8}>
                 <div className="contact-card"
                   style={{
@@ -245,10 +244,7 @@ const paragraphFontSize = screens.xl
           </div>
             </Col>
           </Row>
-
-         
         </div>
-
       <Footer />
     </>
   );
