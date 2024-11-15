@@ -8,6 +8,7 @@ import CallForContent from "./screens/CallForContent";
 import Expositions from "./screens/Expositions";
 import AimsPage from "./screens/Aims";
 import Registration from "./screens/Registration";
+import GovernancePage from "./screens/Governance";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/content" element={<CallForContent/>}/>
           <Route path="/expo" element={<Expositions/>}/>
           <Route path="/aims" element={<AimsPage/>}/>
+          <Route path="/governance" element={<GovernancePage/>}/>
           <Route path="/registration" element={<Registration/>}/>
 
           <Route path="/contact" element={<ContactForm />} />

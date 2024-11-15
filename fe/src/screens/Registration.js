@@ -81,7 +81,7 @@ const Registration = () => {
           </Paragraph>
         </div>
         <div style={{ padding: "10px 20px" }}>
-          <Card
+          <Card 
             title={
               <span
                 style={{
@@ -227,7 +227,8 @@ const Registration = () => {
                 border: "none",
                 borderRadius: "5px",
                 padding: "8px 16px",
-                fontSize: "16px",
+                fontSize: "16px",width:"300px"
+                
               }}>
             Register Now
           </Button>
