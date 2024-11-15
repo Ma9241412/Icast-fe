@@ -85,7 +85,6 @@ const paragraphFontSize = screens.xl
 
             {/* Right Column - Contact Info */}
             <Col xs={24} md={8} lg={8}>
-              <Card bordered={false} className="contact-card">
                 <div className="contact-card"
                   style={{
                     backgroundColor: "#1f5223",
@@ -123,7 +122,6 @@ const paragraphFontSize = screens.xl
                   <Text className="contact-details">ElizabethJ@aiaa.org</Text>
                   <Text className="contact-details">Cell: 571.439.4672</Text>
                 </div>
-              </Card>
             </Col>
             <Col>
             <div style={{ textAlign: "left",padding:"10px 0px" }}>

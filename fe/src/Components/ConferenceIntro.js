@@ -46,6 +46,7 @@ const ConferenceIntro = () => {
       }}
     >
       <Row
+      align={"top"}
         gutter={[16, 16]}
         style={{
           backgroundColor: "#272B3A",
@@ -81,7 +82,7 @@ const ConferenceIntro = () => {
                 lineHeight: paragraphLineHeight,
                 letterSpacing: "0.5px",
                 fontSize: paragraphFontSize,
-                textAlign: "justify",
+                textAlign: "start",
                 padding: paragraphPadding,
               }}
             >
@@ -120,7 +121,7 @@ const ConferenceIntro = () => {
                 letterSpacing: "0.5px",
                 marginTop: screens.md ? "20px" : "10px",
                 display: "block",
-                textAlign:"start"
+                textAlign:"center"
               }}
             >
               Read more

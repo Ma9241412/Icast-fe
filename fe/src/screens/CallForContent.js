@@ -234,7 +234,6 @@ const CallForContent = () => {
     </Space>
     </Col>
             </Row>
-           
           </div>
         </Content>
       </Layout>

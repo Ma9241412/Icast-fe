@@ -1,15 +1,10 @@
 import React from "react";
-import { Layout, Typography, Row, Col, Button, Card, Image, Grid } from "antd";
+import { Layout, Typography, Row, Col, Card, Image, Button, Grid } from "antd";
 import m1 from "../Assets/m1.jpg";
 import m2 from "../Assets/m2.jpg";
 import m3 from "../Assets/m3.jpg";
-import m4 from "../Assets/m4.jpg";
-import m5 from "../Assets/m5.jpg";
-import m6 from "../Assets/m6.jpg";
-import m7 from "../Assets/m7.jpg";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
-
 const { Content } = Layout;
 const { Title, Paragraph } = Typography;
 const { useBreakpoint } = Grid;
@@ -20,55 +15,47 @@ const aimsData = [
     title: "Drive Global Collaboration",
     description:
       "Create an international platform where scientists, researchers, and industry experts can exchange insights and collaborate on innovative space technologies that address today's global challenges.",
-    image: m1,
   },
   {
     id: 2,
     title: "Advance Research and Innovation",
     description:
       "Support pioneering research in space science by providing participants with opportunities to present, share, and publish their work, fostering a culture of innovation with SUPARCO and IST at the forefront.",
-    image: m2,
   },
   {
     id: 3,
     title: "Promote Space Technology for Sustainable Development",
     description:
       "Emphasize the role of space technology in addressing sustainability goals, including climate monitoring, disaster management, and environmental protection, with SUPARCO leading these critical initiatives.",
-    image: m3,
   },
   {
     id: 4,
     title: "Engage and Inspire the Next Generation",
     description:
       "Encourage youth involvement in space science through specialized sessions and interactive forums, promoting STEM education and empowering the next generation of space leaders.",
-    image: m4,
   },
   {
     id: 5,
     title: "Facilitate Dialogue on Space Policy and Law",
     description:
       "Foster discussions on space law, governance, and sustainability among policymakers, researchers, and industry leaders, reinforcing SUPARCO's role in shaping international space policy.",
-    image: m5,
   },
   {
     id: 6,
     title: "Strengthen Skills through Hands-On Training",
     description:
       "Empower participants with hands-on experience in advanced space technologies through interactive workshops and training sessions, equipping them to apply these skills across scientific, commercial, and societal projects.",
-    image: m6,
   },
   {
     id: 7,
     title: "Highlight SUPARCO and IST's Leadership in Space Science",
     description:
       "Showcase SUPARCO and the Institute of Space Technology (IST) as leaders in space science and technology, featuring their groundbreaking research, collaborations, and contributions to global and national space missions.",
-    image: m7,
   },
 ];
 
 const AimsPage = () => {
   const screens = useBreakpoint();
-
   const titleFontSize = screens.xl
     ? "45px"
     : screens.lg
@@ -82,7 +69,7 @@ const AimsPage = () => {
     ? "30px"
     : screens.md
     ? "25px"
-    : "25px";
+    : "22px";
   const paragraphFontSize = screens.xl
     ? "19px"
     : screens.lg
@@ -90,11 +77,12 @@ const AimsPage = () => {
     : screens.md
     ? "19px"
     : "22px";
+
   return (
     <>
       <IcastHeader />
       <Layout style={{ overflowX: "hidden", backgroundColor: "white" }}>
-        <Content style={{ margin: "0 auto", backgroundColor: "white" }}>
+        <Content style={{ margin: "0 auto" }}>
           {/* Page Title */}
           <Title
             style={{
@@ -115,50 +103,81 @@ const AimsPage = () => {
               fontSize: paragraphFontSize,
               color: "#595959",
               padding: "0px 20px",
+              fontWeight:"bold"
             }}
           >
             ICAST Forum and Exposition / About ICAST / Aims & Objectives
           </Paragraph>
 
-          {/* Aims List */}
-          <Row gutter={[16, 24]} justify="center">
-            {aimsData.map((aim, index) => (
-              <React.Fragment key={aim.id}>
-                <Col xs={24} md={14} lg={20}>
-                  <Card bordered={false} style={{ backgroundColor: "#EFF0F2" }}>
-                    <Title
-                      style={{ marginBottom: "10px", textAlign: "start" ,fontSize:paragraphFontSize,fontWeight:"bold"}}
-                    >
-                      {index + 1}. {aim.title}
-                    </Title>
-                    <Paragraph
-                      style={{
-                        fontSize: paragraphFontSize,
-                        lineHeight: "1.8",
-                        color: "#595959",
-                        textAlign: "start",
-                      }}
-                    >
-                      {aim.description}
-                    </Paragraph>
-                  </Card>
-                </Col>
-                <Col xs={24} md={10} lg={4}>
-                  <Image
-                    preview={false}
-                    alt={aim.title}
-                    src={aim.image}
+          <Row gutter={[16, 24]}>
+            <Col xs={24} lg={16}>
+              {aimsData.map((aim, index) => (
+                <Card
+                  key={aim.id}
+                  bordered={false}
+                  style={{ marginBottom: "20px", backgroundColor: "#EFF0F2" }}
+                >
+                  <Title
+                    level={4}
                     style={{
-                      borderRadius: "8px",
-                      height: "auto",
-                      maxHeight: "170px",
-                      width: "100%", // Updated for full responsiveness
-                      objectFit: "cover",
+                      marginBottom: "10px",
+                      textAlign: "start",
+                      fontSize: paragraphFontSize,
+                      fontWeight: "bold",
                     }}
-                  />
-                </Col>
-              </React.Fragment>
-            ))}
+                  >
+                    {index + 1}. {aim.title}
+                  </Title>
+                  <Paragraph
+                    style={{
+                      fontSize: paragraphFontSize,
+                      lineHeight: "1.8",
+                      color: "#595959",
+                      textAlign: "start",
+                    }}
+                  >
+                    {aim.description}
+                  </Paragraph>
+                </Card>
+              ))}
+            </Col>
+
+            {/* Right Column: Three images */}
+            <Col xs={24} lg={8} style={{ textAlign: "center" }}>
+              <Image
+                src={m1}
+                alt="Drive Global Collaboration"
+                preview={false}
+                style={{
+                  borderRadius: "8px",
+                  width: "100%",
+                  marginBottom: "20px",
+                  objectFit: "cover",
+                }}
+              />
+              <Image
+                src={m2}
+                alt="Advance Research and Innovation"
+                preview={false}
+                style={{
+                  borderRadius: "8px",
+                  width: "100%",
+                  marginBottom: "20px",
+                  objectFit: "cover",
+                }}
+              />
+              <Image
+                src={m3}
+                alt="Promote Space Technology"
+                preview={false}
+                style={{
+                  borderRadius: "8px",
+                  width: "100%",
+                  marginBottom: "20px",
+                  objectFit: "cover",
+                }}
+              />
+            </Col>
           </Row>
 
           {/* Footer Section */}
@@ -171,7 +190,7 @@ const AimsPage = () => {
               borderTop: "1px solid #d9d9d9",
             }}
           >
-            <Title style={{ fontSize: titleMedium,fontWeight:"bold" }}>
+            <Title style={{ fontSize: titleMedium, fontWeight: "bold" }}>
               Building Your Network and Have Fun While Doing It
             </Title>
             <Paragraph
@@ -204,7 +223,6 @@ const AimsPage = () => {
           </div>
         </Content>
       </Layout>
-
       <Footer />
     </>
   );
