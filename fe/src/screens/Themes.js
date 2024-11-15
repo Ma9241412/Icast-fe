@@ -88,7 +88,7 @@ const ThemePage = () => {
                 fontWeight: "bold",
               }}
             >
-              ICAST Forum and Exposition / Registration
+              ICAST Forum and Exposition / ICAST Themes
             </Paragraph>
         </div>
 
@@ -107,6 +107,7 @@ const ThemePage = () => {
                 style={{
                   fontSize: '16px',
                   color: isActive ? '#1890ff' : '#000', // Change color based on active state
+                  textAlign:"center"
                 }}
                 rotate={isActive ? 90 : 0}
               />

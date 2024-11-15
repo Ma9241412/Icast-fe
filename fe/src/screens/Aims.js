@@ -106,7 +106,7 @@ const AimsPage = () => {
               fontWeight:"bold"
             }}
           >
-            ICAST Forum and Exposition / About ICAST / Aims & Objectives
+            ICAST / About ICAST / Aims & Objectives
           </Paragraph>
 
           <Row gutter={[16, 24]}>
@@ -115,15 +115,15 @@ const AimsPage = () => {
                 <Card
                   key={aim.id}
                   bordered={false}
-                  style={{ marginBottom: "20px", backgroundColor: "#EFF0F2" }}
+                  style={{ backgroundColor: "#EFF0F2" }}
                 >
                   <Title
                     level={4}
                     style={{
-                      marginBottom: "10px",
                       textAlign: "start",
                       fontSize: paragraphFontSize,
                       fontWeight: "bold",
+                      color:"black"
                     }}
                   >
                     {index + 1}. {aim.title}
@@ -181,46 +181,7 @@ const AimsPage = () => {
           </Row>
 
           {/* Footer Section */}
-          <div
-            style={{
-              backgroundColor: "#f9f9f9",
-              padding: "30px",
-              textAlign: "start",
-              marginTop: "40px",
-              borderTop: "1px solid #d9d9d9",
-            }}
-          >
-            <Title style={{ fontSize: titleMedium, fontWeight: "bold" }}>
-              Building Your Network and Have Fun While Doing It
-            </Title>
-            <Paragraph
-              style={{
-                fontSize: paragraphFontSize,
-                color: "#595959",
-                marginBottom: "20px",
-              }}
-            >
-              At the forum, you'll have networking opportunities including a
-              happy hour, luncheons, coffee breaks, and other special events.
-              You'll be able to connect with peers, engage with industry
-              leadership, build your network, and discuss the latest
-              developments coming out of the forum.
-            </Paragraph>
-            <Button
-              type="primary"
-              size="large"
-              style={{
-                backgroundColor: "#1F5223",
-                color: "white",
-                border: "none",
-                borderRadius: "5px",
-                padding: "8px 16px",
-                fontSize: "16px",
-              }}
-            >
-              Register Now
-            </Button>
-          </div>
+        
         </Content>
       </Layout>
       <Footer />

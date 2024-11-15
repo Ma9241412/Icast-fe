@@ -121,7 +121,7 @@ const GovernancePage = () => {
             fontWeight: "bold",
           }}
         >
-          ICAST Forum and Exposition / About ICAST / ICAST Governance
+          ICAST / About ICAST / ICAST Governance
         </Paragraph>
         <div style={{padding:"10px 40px"}}>
         <Row gutter={[16, 16]}>
