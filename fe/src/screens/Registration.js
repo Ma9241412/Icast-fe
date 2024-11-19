@@ -1,7 +1,13 @@
 import React from "react";
-import { Card, Button, Typography, List, Grid } from "antd";
+import { Card, Button, Typography, List, Grid, Row, Col, Image } from "antd";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
+import '../Styles/Resgister.css'
+import m1 from "../Assets/m4.jpg";
+import m2 from "../Assets/m5.jpg";
+import m3 from "../Assets/m6.jpg";
+import m4 from "../Assets/m7.jpg";
+
 const { Title, Text, Paragraph } = Typography;
 const { useBreakpoint } = Grid;
 
@@ -32,106 +38,136 @@ const Registration = () => {
   return (
     <>
       <IcastHeader />
-      <div style={{ background: "#FFFFFF" }}>
-        <div style={{ textAlign: "start", marginBottom: "20px" }}>
-          <div style={{ backgroundColor: "#EEF0F2" }}>
-            <Title
-              style={{
-                textAlign: "start",
-                marginBottom: "30px",
-                backgroundColor: "#EFF0F2",
-                padding: "20px 40px",
-                fontWeight: "bold",
-                fontSize: titleFontSize,
-              }}
-            >
-              Registration
-            </Title>
-          </div>
-          <div>
+      <div
+        style={{
+          background: "#FFFFFF",
+          overflowX: "hidden", 
+          margin: "0 auto" ,
+          
+        }}
+      >
+        <Title
+          style={{
+            textAlign: "start",
+            marginBottom: "30px",
+            backgroundColor: "#EEF0F2",
+            padding: "20px",
+            fontWeight: "bold",
+            fontSize: titleFontSize,
+          }}
+        >
+          Registration
+        </Title>
+        <Row align={"top"} gutter={[16, 16]}>
+          {/* Left Column */}
+          <Col xs={24} md={16}>
             <Paragraph
               style={{
                 textAlign: "start",
                 marginBottom: "30px",
                 fontSize: paragraphFontSize,
-                color: "#595959",
-                padding: "0px 40px",
+                color: "black",
+                fontWeight: "bold",
+            padding: "0px 20px",
+
+              }}
+            >
+              ICAST  / Registration
+            </Paragraph>
+            <Paragraph
+              strong
+              style={{
+                color: "#186814",
+                textAlign: "start",
+                fontSize: paragraphFontSize,
+                backgroundColor: "#EFF0F2",
+                padding: "15px",
                 fontWeight: "bold",
               }}
             >
-              ICAST Forum and Exposition / Registration
+              Registration Deadline: September 1, 2025
             </Paragraph>
-          </div>
-        </div>
 
-        <div style={{ marginBottom: "20px" }}>
-          <Paragraph
-            strong
-            style={{
-              color: "#186814",
-              textAlign: "start",
-              fontSize: paragraphFontSize,
-              backgroundColor: "#EFF0F2",
-              padding: "15px 40px",
-              fontWeight: "bold"
-
-            }}
-          >
-            Registration Deadline: September 1, 2025
-          </Paragraph>
-        </div>
-        <div style={{ padding: "10px 20px" }}>
-          <Card 
-            title={
-              <span
-                style={{
-                  textAlign: "left",
-                  display: "block",
-                  fontSize: titleMedium,
-                }}
+            {/* Cards */}
+            <div>
+              {/* Paper Presentation/Author */}
+              <Card
+                title={
+                  <span
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: titleMedium,
+                    }}
+                  >
+                    Paper Presenters / Author
+                  </span>
+                }
+                style={{ marginBottom: "20px" }}
               >
-                Paper Presentation/Author
-              </span>
-            }
-            style={{ marginBottom: "20px" }}
-          >
-            <List>
-              <List.Item>
-                <Text style={{ fontSize: paragraphFontSize }}>
-                  Pakistani Professionals
-                </Text>
-                <Text strong style={{ marginLeft: "auto",fontSize: paragraphFontSize }}>
-                  10,000 PKR
-                </Text>
-              </List.Item>
-              <List.Item>
-                <Text style={{ fontSize: paragraphFontSize }}>Pakistani Students</Text>
-                <Text strong style={{ marginLeft: "auto" ,fontSize: paragraphFontSize}}>
-                  5,000 PKR
-                </Text>
-              </List.Item>
-              <List.Item>
-                <Text style={{ fontSize: paragraphFontSize }}>International Professionals</Text>
-                <Text strong style={{ marginLeft: "auto",fontSize: paragraphFontSize }}>
-                  200 USD
-                </Text>
-              </List.Item>
-              <List.Item>
-                <Text style={{ fontSize: paragraphFontSize }}>International Students</Text>
-                <Text strong style={{ marginLeft: "auto" ,fontSize: paragraphFontSize}}>
-                  100 USD
-                </Text>
-              </List.Item>
-            </List>
-            <div style={{backgroundColor:"#EFF6FF"}}>
-            <Paragraph style={{padding:"10px",fontSize:paragraphFontSize,color:"black",textAlign:"center"}} type="secondary">
-            <strong>Note:</strong>  All paper presenters/authors are entitled to attend all
-              conference sessions from Tuesday to Thursday, excluding workshops.
-            </Paragraph>
-            </div>
-          </Card>
-
-          <Card   title={
+                <List>
+                  <List.Item>
+                    <Text style={{ fontSize: paragraphFontSize }}>
+                      Pakistani Professionals
+                    </Text>
+                    <Text
+                      strong
+                      style={{ marginLeft: "auto", fontSize: paragraphFontSize }}
+                    >
+                      10,000 PKR
+                    </Text>
+                  </List.Item>
+                  <List.Item>
+                    <Text style={{ fontSize: paragraphFontSize }}>
+                      Pakistani Students
+                    </Text>
+                    <Text
+                      strong
+                      style={{ marginLeft: "auto", fontSize: paragraphFontSize }}
+                    >
+                      5,000 PKR
+                    </Text>
+                  </List.Item>
+                  <List.Item>
+                    <Text style={{ fontSize: paragraphFontSize }}>
+                      International Professionals
+                    </Text>
+                    <Text
+                      strong
+                      style={{ marginLeft: "auto", fontSize: paragraphFontSize }}
+                    >
+                      200 USD
+                    </Text>
+                  </List.Item>
+                  <List.Item>
+                    <Text style={{ fontSize: paragraphFontSize }}>
+                      International Students
+                    </Text>
+                    <Text
+                      strong
+                      style={{ marginLeft: "auto", fontSize: paragraphFontSize }}
+                    >
+                      100 USD
+                    </Text>
+                  </List.Item>
+                </List>
+                <div style={{ backgroundColor: "#EFF6FF" }}>
+                  <Paragraph
+                    style={{
+                      padding: "10px",
+                      fontSize: paragraphFontSize,
+                      color: "black",
+                      textAlign: "center",
+                    }}
+                    type="secondary"
+                  >
+                    <strong>Note:</strong> All paper presenters/authors are
+                    entitled to attend all conference sessions from Tuesday to
+                    Thursday, excluding workshops.
+                  </Paragraph>
+                </div>
+              </Card>
+              <Card   title={
               <span
                 style={{
                   textAlign: "left",
@@ -173,7 +209,7 @@ const Registration = () => {
                   fontSize: titleMedium,
                 }}
               >
-                Visitor
+                Visitors
               </span>
             } style={{ marginBottom: "20px" }}>
             <List>
@@ -198,7 +234,6 @@ const Registration = () => {
             </Paragraph>
            </div>
           </Card>
-
           <Card title={
               <span
                 style={{
@@ -218,25 +253,81 @@ const Registration = () => {
               <List.Item  style={{ fontSize: paragraphFontSize}}>✓ Excursion Trip (Invite Guests Only)</List.Item>
             </List>
           </Card>
-        </div>
+              {/* Additional Cards */}
+              {/* Add other cards here if needed */}
+            </div>
 
-        <div style={{ textAlign: "center", margin: "20px 0" }}>
-          <Button type="primary" size="large"  style={{
-                backgroundColor: "#1F5223",
-                color: "white",
-                border: "none",
-                borderRadius: "5px",
-                padding: "8px 16px",
-                fontSize: "16px",width:"300px"
-                
-              }}>
-            Register Now
-          </Button>
-          <p style={{ marginTop: "10px" }}>
-            Please register by <strong>September 1, 2025</strong> to secure your
-            place at this prestigious event.
-          </p>
-        </div>
+            <div style={{ textAlign: "start", margin: "20px ",
+             }}>
+              <Button
+                type="primary"
+                size="large"
+                style={{
+                  backgroundColor: "#1F5223",
+                  color: "white",
+                  border: "none",
+                  borderRadius: "5px",
+                  padding: "8px 16px",
+                  fontSize: "16px",
+                  width: "280px",
+                }}
+              >
+                Register Now
+              </Button>
+              <p style={{ marginTop: "10px",fontSize:paragraphFontSize }}>
+                Please register by <strong>September 1, 2025</strong> to secure
+                your place at this prestigious event.
+              </p>
+            </div>
+          </Col>
+
+          {/* Right Column */}
+          <Col xs={24} md={8} style={{ textAlign: "center", }}>
+            <Image
+              src={m1}
+              alt="Image 1"
+              preview={false}
+              style={{
+                width: "90%",
+                height: "auto",
+                marginBottom: "16px",
+                borderRadius: "8px",
+              }}
+            />
+            <Image
+              src={m2}
+              alt="Image 2"
+              preview={false}
+              style={{
+                width: "90%",
+                height: "auto",
+                marginBottom: "16px",
+                borderRadius: "8px",
+              }}
+            />
+            <Image
+              src={m3}
+              alt="Image 3"
+              preview={false}
+              style={{
+                width: "90%",
+                height: "auto",
+                marginBottom: "16px",
+                borderRadius: "8px",
+              }}
+            />
+            <Image
+              src={m4}
+              alt="Image 4"
+              preview={false}
+              style={{
+                width: "90%",
+                height: "auto",
+                borderRadius: "8px",
+              }}
+            />
+          </Col>
+        </Row>
       </div>
       <Footer />
     </>

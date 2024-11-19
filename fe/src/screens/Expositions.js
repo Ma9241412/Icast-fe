@@ -47,10 +47,10 @@ const paragraphFontSize = screens.xl
             Exposition & Sponsors
           </Title>
           <Text
-            style={{ fontSize: paragraphFontSize }}
+            style={{ fontSize: paragraphFontSize, }}
             className="expo-subtitle"
           >
-            ICAST Forum and Exposition / Exposition & Sponsors
+            ICAST / Exposition & Sponsors
           </Text>
 
           {/* Description and Contact Section */}
@@ -59,7 +59,7 @@ const paragraphFontSize = screens.xl
           align={"top"}
           >
             {/* Left Column */}
-            <Col xs={24} md={16} lg={16}>
+            <Col xs={24} md={16} lg={18}>
               <Text
                 style={{ fontSize: paragraphFontSize ,}}
                 className="expo-description"
@@ -83,45 +83,74 @@ const paragraphFontSize = screens.xl
               </Text>
             </Col>
 
-            <Col xs={24} md={8} lg={8}>
-                <div className="contact-card"
-                  style={{
-                    backgroundColor: "#1f5223",
-                    padding: "10px 15px",
-                    borderRadius: "5px",
-                    display: "inline-block",
-                  }}
-                >
-                  <Title
-                    style={{
-                      fontSize: paragraphFontSize,
-                      color: "white",
-                      margin: 0,
-                      fontWeight:500
-                    }}
-                  >
-                    Contact Our Team
-                  </Title>
-                </div>
-                <div className="contact-entry">
-                  <Text className="contact-name">Elizabeth Just</Text>
-                  <Text className="contact-details">
-                    Sr. Manager, Client Executive and Sales Capture
-                  </Text>
-                  <Text className="contact-details">New Clients A-N</Text>
-                  <Text className="contact-details">ElizabethJ@aiaa.org</Text>
-                  <Text className="contact-details">Cell: 571.439.4672</Text>
-                </div>
-                <div className="contact-entry">
-                  <Text className="contact-name">Brian Williams</Text>
-                  <Text className="contact-details">
-                    Sr. Manager, Client Executive and Sales Capture
-                  </Text>
-                  <Text className="contact-details">New Clients A-N</Text>
-                  <Text className="contact-details">ElizabethJ@aiaa.org</Text>
-                  <Text className="contact-details">Cell: 571.439.4672</Text>
-                </div>
-            </Col>
+            <Col xs={24} md={8} lg={6}>
+  <Card
+    style={{
+      backgroundColor: "white",
+      borderRadius: "0px", // No border radius
+      boxShadow: "none", // Remove shadow
+      border: "none", // Ensure no borders
+    }}
+  >
+    <div
+      className="contact-card"
+      style={{
+        backgroundColor: "#1f5223",
+        padding: "10px 15px",
+        borderRadius: "5px", // Keep the inner element rounded
+        display: "inline-block",
+      }}
+    >
+      <Title
+        style={{
+          fontSize: paragraphFontSize,
+          color: "white",
+          margin: 0,
+          fontWeight: 500,
+        }}
+      >
+        Contact Our Team
+      </Title>
+    </div>
+    <div className="contact-entry"  >
+      <Text className="contact-name" style={{ fontWeight: "bold" }}>
+        Elizabeth Just
+      </Text>
+      <br />
+      <Text className="contact-details" style={{ display: "block" }}>
+        Sr. Manager, Client Executive and Sales Capture
+      </Text>
+      <Text className="contact-details" style={{ display: "block" }}>
+        New Clients A-N
+      </Text>
+      <Text className="contact-details" style={{ display: "block" }}>
+        ElizabethJ@aiaa.org
+      </Text>
+      <Text className="contact-details" style={{ display: "block" }}>
+        Cell: 571.439.4672
+      </Text>
+    </div>
+    <div className="contact-entry" style={{ marginTop: "20px" }}>
+      <Text className="contact-name" style={{ fontWeight: "bold" }}>
+        Brian Williams
+      </Text>
+      <br />
+      <Text className="contact-details" style={{ display: "block" }}>
+        Sr. Manager, Client Executive and Sales Capture
+      </Text>
+      <Text className="contact-details" style={{ display: "block" }}>
+        New Clients A-N
+      </Text>
+      <Text className="contact-details" style={{ display: "block" }}>
+        ElizabethJ@aiaa.org
+      </Text>
+      <Text className="contact-details" style={{ display: "block" }}>
+        Cell: 571.439.4672
+      </Text>
+    </div>
+  </Card>
+</Col>
+
             <Col>
             <div style={{ textAlign: "left",padding:"10px 0px" }}>
  
@@ -159,9 +188,9 @@ const paragraphFontSize = screens.xl
              <Space direction="vertical">
              <Space align="start">
                 <FileTextOutlined
-                    style={{ fontSize: "24px", color: "white" }}
+                    style={{ fontSize: "24px", color: "black" }}
                   />
-                  <Text style={{  color: "white" }} className="action-card-text">
+                  <Text style={{  color: "black" }} className="action-card-text">
                     Step 1. Find the Right Opportunity For Your Organization.
                   </Text>
                 </Space>
@@ -181,9 +210,9 @@ const paragraphFontSize = screens.xl
                 <Space direction="vertical">
                 <Space align="start">
                  <MessageOutlined
-                    style={{ fontSize: "24px", color: "white" }}
+                    style={{ fontSize: "24px", color: "black" }}
                   />
-                  <Text  style={{  color: "white" }} className="action-card-text">
+                  <Text  style={{  color: "black" }} className="action-card-text">
                     Step 2. See Who’s Attending and Find Your Space In the Expo
                     Hall.
                   </Text>
@@ -202,9 +231,9 @@ const paragraphFontSize = screens.xl
            <Space direction="vertical">
            <Space align="start">
                     <FileTextOutlined
-                    style={{ fontSize: "24px", color: "white" }}
+                    style={{ fontSize: "24px", color: "black" }}
                   />
-                  <Text style={{  color: "white" }} className="action-card-text">
+                  <Text style={{  color: "black" }} className="action-card-text">
                     Step 3. Complete a Sponsor or Exhibitor Contract In Minutes.
                   </Text>
                   </Space>
@@ -224,9 +253,9 @@ const paragraphFontSize = screens.xl
                 <Space direction="vertical">
                 <Space  align="start">
                   <MessageOutlined
-                    style={{ fontSize: paragraphFontSize, color: "white" }}
+                    style={{ fontSize: paragraphFontSize, color: "black" }}
                   />
-                  <Text style={{  color: "white" }} className="action-card-text">
+                  <Text style={{  color: "black" }} className="action-card-text">
                     Step 4. Have Questions Before You Sign? Get in Touch With
                     Our Team.
                   </Text>

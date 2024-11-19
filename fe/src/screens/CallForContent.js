@@ -48,10 +48,14 @@ const CallForContent = () => {
             style={{ fontSize: paragraphFontSize }}
             className="breadcrumb"
           >
-            ICAST Forum and Exposition / Call For Content
+            ICAST / Call For Content
           </Paragraph>
           <div className="call-for-content-text">
-            <Row align={"top"} gutter={[16, 16]} style={{ marginBottom: "20px" }}>
+            <Row
+              align={"top"}
+              gutter={[16, 16]}
+              style={{ marginBottom: "20px" }}
+            >
               {/* First Column for Text */}
               <Col xs={24} lg={16}>
                 <Paragraph
@@ -62,177 +66,175 @@ const CallForContent = () => {
                   }}
                 >
                   Presentations and papers can be an effective way to hone
-                  scientific and technical ideas, introduce your work to aerospace
-                  colleagues, and refine your research questions. Forum paper
-                  presentations typically consist of a written document and an oral
-                  presentation. Presenting at AIAA SciTech Forum is a great
-                  opportunity to gain valuable feedback from a community of experts
-                  and for increasing your professional stature in aerospace
-                  engineering, research, and development. Although the Call for
-                  Content has closed, <Link href="#">Registration</Link> is open.
-                  Plan to submit a technical paper abstract or session proposal for
-                  the 2026 AIAA SciTech Forum. The Call for Content will open late
-                  March 2025.
+                  scientific and technical ideas, introduce your work to
+                  aerospace colleagues, and refine your research questions.
+                  Forum paper presentations typically consist of a written
+                  document and an oral presentation. Presenting at AIAA SciTech
+                  Forum is a great opportunity to gain valuable feedback from a
+                  community of experts and for increasing your professional
+                  stature in aerospace engineering, research, and development.
+                  Although the Call for Content has closed,{" "}
+                  <Link href="#">Registration</Link> is open. Plan to submit a
+                  technical paper abstract or session proposal for the 2026 AIAA
+                  SciTech Forum. The Call for Content will open late March 2025.
                 </Paragraph>
-              <Space  className="button-group">
-              <Button size="large" type="primary">
-                Manage Submissions
-              </Button>
-              <Button size="large" type="default">
-                Call for Paper
-              </Button>
-              <Button size="large" type="default">
-                Call for Session
-              </Button>
-            </Space>
+                <Space className="button-group">
+                  <Button size="large" type="primary">
+                    Manage Submissions
+                  </Button>
+                  <Button size="large" type="default">
+                    Call for Paper
+                  </Button>
+                  <Button size="large" type="default">
+                    Call for Session
+                  </Button>
+                </Space>
+             
+                <Space direction="vertical">
+                <Title style={{fontSize:titleMedium}}>
+                  Additional Resources
+                </Title>
+                  <ul
+                    style={{
+                      fontSize: paragraphFontSize,
+                      color: "black",
+                      lineHeight: 1.8,
+                    }}
+                  >
+                    <li style={{ marginBottom: "5px" }}>
+                      <Text
+                        style={{
+                          color: "black",
+                          fontWeight: "500",
+                          fontSize: paragraphFontSize,
+                        }}
+                      >
+                        Technical Presenter Resources
+                      </Text>
+                    </li>
+                    <li style={{ marginBottom: "5px" }}>
+                      <Text
+                        style={{
+                          color: "black",
+                          fontWeight: "500",
+                          fontSize: paragraphFontSize,
+                        }}
+                      >
+                        Organizer Resources
+                      </Text>
+                    </li>
+                    <li>
+                      <Text
+                        style={{
+                          color: "black",
+                          fontWeight: "500",
+                          fontSize: paragraphFontSize,
+                        }}
+                      >
+                        Abstract Submission Process & Requirements
+                      </Text>
+                    </li>
+                  </ul>
+                </Space>
+                
               </Col>
 
               {/* Second Column for Cards */}
               <Col xs={24} lg={8}>
-  <Space direction="vertical" size="large" style={{ width: "100%" }}>
-    {/* First Card */}
-    <Card
-      style={{
-        borderRadius: "20px",
-        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-        backgroundColor:"#1E2634"
-      }}
-      bodyStyle={{ padding: "20px" }}
-      title={
-        <Title
-          level={4}
-          style={{
-            color: "white",
-            fontSize: titleMedium,
-            fontWeight: "bold",
-            textAlign:"center"
-          }}
-        >
-          Dates to Remember
-        </Title>
-      }
-    >
-      <Paragraph
-        style={{
-          fontSize: "15px",
-          color: "white",
-          fontWeight: "500",
-        }}
-      >
-        <strong style={{fontSize:paragraphFontSize}}>Abstract Submission Begins:</strong>{" "}
-        <Text
-          style={{
-            color: "#006814",
-            fontWeight: "500",
-            fontSize: paragraphFontSize,
-          }}
-        >
-          26 Nov 2024
-        </Text>
-        <br />
-        <strong style={{fontSize:paragraphFontSize}}>Abstract Submission Deadline:</strong>{" "}
-        <Text
-          style={{
-            color: "#006814",
-            fontWeight: "bold",
-            fontSize: paragraphFontSize,
-          }}
-        >
-          26 Nov 2024
-        </Text>
-        <br />
-        <strong style={{fontSize:paragraphFontSize}}>Paper Submission Begins:</strong>{" "}
-        <Text
-          style={{
-            color: "#006814",
-            fontWeight: "bold",
-            fontSize: paragraphFontSize,
-          }}
-        >
-          26 Nov 2024
-        </Text>
-        <br />
-        <strong style={{fontSize:paragraphFontSize}}>Paper Submission Deadline:</strong>{" "}
-        <Text
-          style={{
-            color: "#006814",
-            fontWeight: "bold",
-            fontSize: paragraphFontSize,
-          }}
-        >
-          26 Nov 2024
-        </Text>
-      </Paragraph>
-      
-    </Card>
-
-    {/* Second Card */}
-    <Card
-      style={{
-        borderRadius: "20px",
-        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-        backgroundColor:"#1E2634"
-      }}
-      bodyStyle={{ padding: "20px" }}
-      title={
-        <Title
-          level={4}
-          style={{
-            color: "white",
-            fontWeight: "bold",
-            fontSize: titleMedium,
-            textAlign:"center"
-
-          }}
-        >
-          Additional Resources
-        </Title>
-      }
-    >
-      <ul
-        style={{
-          fontSize: paragraphFontSize,
-          color: "white",
-          lineHeight: 1.8,
-        }}
-      >
-        <li style={{marginBottom:"5px"}} >
-          <Text
-            style={{
-              color: "white",
-              fontWeight: "500",
-              fontSize: paragraphFontSize,
-            }}
-          >
-            Technical Presenter Resources
-          </Text>
-        </li>
-        <li  style={{marginBottom:"5px"}}>
-          <Text
-            style={{
-              color: "white",
-              fontWeight: "500",
-              fontSize: paragraphFontSize,
-            }}
-          >
-            Organizer Resources
-          </Text>
-        </li>
-        <li >
-          <Text
-            style={{
-              color: "white",
-              fontWeight: "500",
-              fontSize: paragraphFontSize,
-            }}
-          >
-            Abstract Submission Process & Requirements
-          </Text>
-        </li>
-      </ul>
-    </Card>
-    </Space>
-    </Col>
+                {/* First Card */}
+                <Card
+                  style={{
+                    backgroundColor: "white",
+                  }}
+                  title={
+                    <Title
+                      level={4}
+                      style={{
+                        color: "black",
+                        fontSize: titleMedium,
+                        textAlign: "start",
+                      }}
+                    >
+                      Dates to Remember
+                    </Title>
+                  }
+                >
+                  <Paragraph
+                    style={{
+                      fontSize: "15px",
+                      color: "black",
+                      fontWeight: "500",
+                      lineHeight: "1.8", // Adjust line spacing
+                      marginBottom: "10px", // Control vertical spacing
+                    }}
+                  >
+                    <div style={{ marginBottom: "12px" }}>
+                      <Space direction="vertical" size={0}>
+                        <strong style={{ fontSize: paragraphFontSize }}>
+                          Abstract Submission Begins:
+                        </strong>{" "}
+                        <Text
+                          style={{
+                            color: "#006814",
+                            fontWeight: "400",
+                            fontSize: paragraphFontSize,
+                          }}
+                        >
+                          26 March 2024
+                        </Text>
+                      </Space>
+                    </div>
+                    <div style={{ marginBottom: "12px" }}>
+                      <Space direction="vertical" size={0}>
+                        <strong style={{ fontSize: paragraphFontSize }}>
+                          Abstract Submission Deadline:
+                        </strong>{" "}
+                        <Text
+                          style={{
+                            color: "#006814",
+                            fontWeight: "400",
+                            fontSize: paragraphFontSize,
+                          }}
+                        >
+                          23 May 2024
+                        </Text>
+                      </Space>
+                    </div>
+                    <div style={{ marginBottom: "12px" }}>
+                      <Space direction="vertical" size={0}>
+                        <strong style={{ fontSize: paragraphFontSize }}>
+                          Author Notifications:
+                        </strong>{" "}
+                        <Text
+                          style={{
+                            color: "#006814",
+                            fontWeight: "400",
+                            fontSize: paragraphFontSize,
+                          }}
+                        >
+                          26 August 2024
+                        </Text>
+                      </Space>
+                    </div>
+                    <div>
+                      <Space direction="vertical" size={0}>
+                        <strong style={{ fontSize: paragraphFontSize }}>
+                          Manuscript Deadline:
+                        </strong>{" "}
+                        <Text
+                          style={{
+                            color: "#006814",
+                            fontWeight: "400",
+                            fontSize: paragraphFontSize,
+                          }}
+                        >
+                          2 December 2024 
+                        </Text>
+                      </Space>
+                    </div>
+                  </Paragraph>
+                </Card>
+              </Col>
             </Row>
           </div>
         </Content>

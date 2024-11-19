@@ -12,7 +12,7 @@ import suparcoLogo from "../Assets/suparco.png";
 import istLogo from "../Assets/ist-logo.png";
 import { Link } from "react-router-dom";
 
-const { Text } = Typography;
+const { Text,Title } = Typography;
 
 const Footer = () => {
   return (
@@ -31,19 +31,20 @@ const Footer = () => {
         {/* Center Section: Contact Information */}
         <Col xs={24} sm={8} md={8} className="footer-contact-container">
           <Space align="start" direction="vertical">
-            <Text className="footer-text">Conference Secretariat</Text>
-            <Text className="footer-text">Institute of Space Technology</Text>
-            <Text className="footer-text">
-              1, Islamabad Highway, Islamabad 44000
+            <Title level={4} style={{fontWeight:"bold",textAlign:"center",color:"white"}}  className="footer-text">CONFERENCE SECRETARIAT</Title>
+            <Text   className="footer-text">Institute of Space Technology</Text>
+            <Text    className="footer-text">
+              1, Islamabad Highway 44000, Pakistan
             </Text>
             <Space direction="vertical" align="start">
               <Space>
-                <MailOutlined />
-                <Text className="footer-text">icast.pakistan@gmail.com</Text>
+                <MailOutlined   />
+                <Text     className="footer-text">icast.pakistan@gmail.com</Text>
               </Space>
-              <Space>
-                <PhoneOutlined />
-                <Text className="footer-text">+92-51-9075799</Text>
+          
+              <Space >
+                <PhoneOutlined   />
+                <Text     className="footer-text">+92-51-9075799</Text>
               </Space>
             </Space>
           </Space>

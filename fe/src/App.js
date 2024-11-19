@@ -23,7 +23,6 @@ function App() {
           <Route path="/governance" element={<GovernancePage/>}/>
           <Route path="/registration" element={<Registration/>}/>
           <Route path="/theme" element={<ThemePage/>}/>
-
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/map" element={<VenuMap />} />
         </Routes>
