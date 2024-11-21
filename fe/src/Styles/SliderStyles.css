@@ -63,8 +63,8 @@
 /* Countdown Timer Overlay */
 .timer-overlay {
   position: absolute;
-  bottom: 10px; /* Distance from the bottom */
-  right: 10px; /* Distance from the right */
+  top: 10px; /* Distance from the bottom */
+  left: 10px; /* Distance from the right */
   transform: none;
   display: flex;
   gap: 10px;

@@ -407,6 +407,7 @@ const ThemePage = () => {
                 padding: "20px",
                 borderRadius: "10px",
                 background: "#EEF0F2",
+                marginBottom:"20px"
               }}
             >
               <Collapse

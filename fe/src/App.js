@@ -10,6 +10,7 @@ import AimsPage from "./screens/Aims";
 import Registration from "./screens/Registration";
 import GovernancePage from "./screens/Governance";
 import ThemePage from "./screens/Themes";
+import ScreenInProgress from "./NoContent/NoContent";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/theme" element={<ThemePage/>}/>
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/map" element={<VenuMap />} />
+          <Route path="/screen-inprogress" element={<ScreenInProgress />} />
         </Routes>
       </div>
     </Router>

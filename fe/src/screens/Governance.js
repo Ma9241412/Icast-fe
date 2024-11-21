@@ -123,7 +123,7 @@ const GovernancePage = () => {
         >
           ICAST / About ICAST / ICAST Governance
         </Paragraph>
-        <div style={{padding:"10px 40px"}}>
+        <div style={{padding:"30px 40px",backgroundColor:"#EFF0F2"}}>
         <Row gutter={[16, 16]}>
           {data.map((person, index) => (
             <Col xs={24} sm={12} md={8} lg={6} key={index}>

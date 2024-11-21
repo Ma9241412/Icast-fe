@@ -13,44 +13,74 @@ const containerStyle = {
 
 const center = {
   lat: 33.519404573362294, // Latitude for IST
-  lng: 73.17496607549269,  // Longitude for IST
+  lng: 73.17496607549269, // Longitude for IST
 };
 const { useBreakpoint } = Grid;
-
+const { Title, Paragraph } = Typography;
 
 const VenuMap = () => {
   const screens = useBreakpoint();
 
   const titleFontSize = screens.xl
-  ? "45px"
-  : screens.lg
-  ? "40px"
-  : screens.md
-  ? "35px"
-  : "28px";
+    ? "45px"
+    : screens.lg
+    ? "40px"
+    : screens.md
+    ? "35px"
+    : "28px";
+  const paragraphFontSize = screens.xl
+    ? "19px"
+    : screens.lg
+    ? "17px"
+    : screens.md
+    ? "19px"
+    : "19px";
   const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: 'AIzaSyAo1viD-Ut0TzXTyihevwuf-9tv_J3dPa0' // Use your API key here
+    googleMapsApiKey: 'AIzaSyAo1viD-Ut0TzXTyihevwuf-9tv_J3dPa0', // Use your API key here
   });
 
   if (loadError) {
-    return <div style={{ textAlign: 'center', margin: '20px 0' }}>Error loading map. Please check the API key and restrictions.</div>;
+    return (
+      <div style={{ textAlign: 'center', margin: '20px 0' }}>
+        Error loading map. Please check the API key and restrictions.
+      </div>
+    );
   }
 
   return (
     <>
       <IcastHeader />
-      <Card   className="venue-map-card">
-        <Typography.Title style={{fontSize:titleFontSize,fontWeight:"bold"}}> Event Venue Map</Typography.Title>
+      <div>
+        <Title
+          style={{
+            fontSize: titleFontSize,
+            fontWeight: 'bold',
+            textAlign: 'left', // Align title to the left
+          }}
+          className="call-for-content-title"
+        >
+          Event Venue Map
+        </Title>
+      </div>
+      <Card className="venue-map-card">
         <Row gutter={[16, 16]} justify="start" align="top">
           <Col xs={24} md={10} className="info-column">
-            <Card bordered={true} className="contact-card">
+         
               <div className="contact-info">
-                <p style={{color:'white'}}><PhoneOutlined /> +92-51-9075100 | +92-51-9273310</p>
-                <p style={{color:'white'}}><MailOutlined />  info@icast.pk</p>
-                <p style={{color:'white'}}><EnvironmentOutlined /> 1, Islamabad Expressway, Islamabad</p>
-                <p style={{color:'white'}}><EnvironmentOutlined /> G59H+P2 Islamabad</p>
+                <Paragraph style={{ color: 'black', fontSize: paragraphFontSize, textAlign: 'left' }}>
+                  <PhoneOutlined /> +92-51-9075100 | +92-51-9273310
+                </Paragraph>
+                <Paragraph style={{ color: 'black', fontSize: paragraphFontSize, textAlign: 'left' }}>
+                  <MailOutlined /> info@icast.pk
+                </Paragraph>
+                <Paragraph style={{ color: 'black', fontSize: paragraphFontSize, textAlign: 'left' }}>
+                  <EnvironmentOutlined /> 1, Islamabad Expressway, Islamabad
+                </Paragraph>
+                <Paragraph style={{ color: 'black', fontSize: paragraphFontSize, textAlign: 'left' }}>
+                  <EnvironmentOutlined /> G59H+P2 Islamabad
+                </Paragraph>
               </div>
-            </Card>
+            
           </Col>
           <Col xs={24} md={12} className="map-column">
             <div className="map-container">
@@ -76,30 +106,25 @@ const VenuMap = () => {
       <Footer />
       <style jsx>{`
         .venue-map-card {
-          max-width: 80%;
+          max-width: 90%; /* Increase flexibility for smaller screens */
           margin: 20px auto;
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
           padding: 20px;
+          text-align: left; /* Align content to the left */
         }
 
-        .venue-map-card .ant-card-head-title {
-          font-size: 24px; /* Adjust font size as desired */
-          font-weight: bold;
-          color: #333; /* Customize color if needed */
-        }
-
-        .contact-card {
+        .contact-info {
           padding: 20px;
           border-radius: 8px;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-          height: 100%; /* Ensures it aligns with the map card */
+          height: 100%;
+          text-align: left; /* Align text to the left */
         }
 
         .contact-info p {
           font-size: 16px;
           margin: 10px 0;
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           color: #4a4a4a;
         }
 

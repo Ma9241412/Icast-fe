@@ -113,7 +113,7 @@ const ConferenceIntro = () => {
               exploration of interdisciplinary space applications that hold the
               potential to reshape our collective future.
             </Paragraph>
-            <Link
+            {/* <Link
               href="#"
               style={{
                 color: "#ff9f43",
@@ -125,7 +125,7 @@ const ConferenceIntro = () => {
               }}
             >
               Read more
-            </Link>
+            </Link> */}
           </div>
         </Col>
         <Col xs={24} md={12}>

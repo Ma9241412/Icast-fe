@@ -22,8 +22,9 @@ import {
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
 import "../Styles/ContactStyles.css"; // Import the CSS file
+import { Link } from "react-router-dom";
 
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph,Text } = Typography;
 const { useBreakpoint } = Grid;
 
 const ContactForm = () => {
@@ -89,53 +90,71 @@ const ContactForm = () => {
   return (
     <>
       <IcastHeader />
+      <div>
+      <Title
+            style={{ fontSize: titleFontSize, fontWeight: "bold" }}
+            className="call-for-content-title"
+          >
+           Contact Us
+          </Title>
+      </div>
       <div className="contact-form-container">
+    
         <div className="content-wrapper">
-          <Row gutter={32} className="contact-content">
+          
+          <Row  className="contact-content">
             {/* Left Column: Contact Information */}
             <Col xs={24} md={10} className="contact-info">
-              <Title style={{fontSize:titleFontSize,fontWeight:"bold"}} className="info-title">
-                Contact Information
-              </Title>
-              <Paragraph style={{fontSize:titleMedium}} className="info-description">
-                Say something to start a live chat!
-              </Paragraph>
+  <Title style={{ fontSize: titleFontSize, fontWeight: "bold" ,textAlign:"left"}} className="info-title">
+    Contact Information
+  </Title>
 
-              <Space style={{ gap: "20px" }} direction="vertical">
-                <Space align="center">
-                  <PhoneOutlined style={{fontSize:titleMedium}} className="info-icon" />
-                  <span style={{fontSize:titleMedium}}>+92-51-9075799</span>
-                </Space>
-                <Space align="center">
-                  <MailOutlined className="info-icon" />
-                  <span style={{fontSize:titleMedium}}> info@icast.pk </span>
-                </Space>
-                <Space size={0} align="center">
-                  <EnvironmentOutlined className="info-icon" />
-                  <span style={{fontSize:titleMedium}}>
-                    Institute of Space Technology, <br />
-                    <span style={{fontSize:titleMedium}}>1 Islamabad Highway, Islamabad, 44000</span>
-                  </span>
-                </Space>
-              </Space>
 
-              <Space style={{ marginTop: "30px" }}>
-                <FacebookOutlined size={10} className="social-icon" />
-                <InstagramOutlined className="social-icon" />
-                <LinkedinOutlined className="social-icon" />
-                <YoutubeOutlined className="social-icon" />
-              </Space>
-            </Col>
+  {/* Add vertical spacing between sections */}
+  <Space direction="vertical" size={20} style={{ width: "100%",textAlign:"left" }}>
+  <Text style={{ fontSize: titleMedium,color:"#666673",textAlign:"start" }} className="info-description">
+    Say something to start a live chat!
+  </Text>
+    <Space align="center">
+      <PhoneOutlined style={{ fontSize: titleMedium }} className="info-icon" />
+      <span style={{ fontSize: titleMedium, color: "black" }}>+92-51-9075799</span>
+    </Space>
+    <Space align="center">
+      <MailOutlined className="info-icon" />
+      <span style={{ fontSize: titleMedium, color: "black" }}>info@icast.pk</span>
+    </Space>
+    <Space size={0} align="start">
+      <EnvironmentOutlined className="info-icon" />
+      <span style={{ fontSize: titleMedium, color: "black" }}>
+        Institute of Space Technology, <br />
+        <span style={{ fontSize: titleMedium, color: "black" }}>
+          1 Islamabad Highway, Islamabad, 44000
+        </span>
+      </span>
+    </Space>
+
+    <Space style={{ marginTop: "20px" }}>
+      <Link to="https://www.facebook.com/ICAST.Pakistan">
+        <FacebookOutlined size={10} className="social-icon" />
+      </Link>
+      <Link to="https://www.linkedin.com/company/icast-pakistan/">
+        <LinkedinOutlined className="social-icon" />
+      </Link>
+    </Space>
+  </Space>
+</Col>
+
             {/* Right Column: Contact Form */}
             <Col xs={24} md={14}>
               <div className="form-container">
-                <Title style={{fontSize:titleFontSize,fontWeight:"bold"}} className="form-title">
+                <Title style={{fontSize:titleFontSize,fontWeight:"bold",textAlign:"start"}} className="form-title">
                   Contact Us
                 </Title>
-                <Paragraph style={{fontSize:titleMedium}} className="form-description">
+              
+                <Form layout="vertical" onFinish={onFinish} form={form}>
+                <Paragraph style={{fontSize:titleMedium,textAlign:"start"}} className="form-description">
                   Any question or remarks? Just write us a message!
                 </Paragraph>
-                <Form layout="vertical" onFinish={onFinish} form={form}>
                   <Row gutter={16}>
                     <Col span={12}>
                       <Form.Item

@@ -3,7 +3,6 @@ import { Image } from "antd";
 import "../Styles/SliderStyles.css";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
-// Import images from assets folder
 import image1 from "../Assets/banner.png";
 import image2 from "../Assets/01.jpg";
 import image3 from "../Assets/02.jpg";
@@ -70,19 +69,19 @@ const FullWidthCarousel = () => {
       <div className="timer-overlay">
         <div className="timer-box">
           <div className="timer-number">{timeLeft.days}</div>
-          <span style={{fontSize:"8px"}}>DAYS</span>
+          <span style={{ fontSize: "8px" }}>DAYS</span>
         </div>
         <div className="timer-box">
           <div className="timer-number">{timeLeft.hours}</div>
-          <span style={{fontSize:"8px"}}>HOURS</span>
+          <span style={{ fontSize: "8px" }}>HOURS</span>
         </div>
         <div className="timer-box">
           <div className="timer-number">{timeLeft.minutes}</div>
-          <span style={{fontSize:"8px"}}>MINUTES</span>
+          <span style={{ fontSize: "8px" }}>MINUTES</span>
         </div>
         <div className="timer-box">
           <div className="timer-number">{timeLeft.seconds}</div>
-          <span style={{fontSize:"8px",padding:"0px 2px"}}>SECONDS</span>
+          <span style={{ fontSize: "8px", padding: "0px 2px" }}>SECONDS</span>
         </div>
       </div>
     </div>

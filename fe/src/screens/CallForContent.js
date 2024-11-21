@@ -45,10 +45,10 @@ const CallForContent = () => {
             Call For Content
           </Title>
           <Paragraph
-            style={{ fontSize: paragraphFontSize }}
+            style={{ fontSize: paragraphFontSize,fontWeight:"bold" }}
             className="breadcrumb"
           >
-            ICAST / Call For Content
+            ICAST/ Call For Content
           </Paragraph>
           <div className="call-for-content-text">
             <Row

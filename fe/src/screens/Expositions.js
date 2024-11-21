@@ -47,7 +47,7 @@ const paragraphFontSize = screens.xl
             Exposition & Sponsors
           </Title>
           <Text
-            style={{ fontSize: paragraphFontSize, }}
+            style={{ fontSize: paragraphFontSize, fontWeight:"bold"}}
             className="expo-subtitle"
           >
             ICAST / Exposition & Sponsors
