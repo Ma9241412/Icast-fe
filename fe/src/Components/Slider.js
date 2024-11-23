@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Image } from "antd";
 import "../Styles/SliderStyles.css";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-
 import image1 from "../Assets/banner.png";
 import image2 from "../Assets/01.jpg";
 import image3 from "../Assets/02.jpg";
