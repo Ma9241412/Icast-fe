@@ -10,8 +10,9 @@ const DesktopMenu = () => {
 
   // Submenu items for "ABOUT ICAST"
   const aboutSubMenus = [
-    { key: "/aims", label: "Aims & Objectives", link: "/aims" },
-    { key: "/governance", label: "ICAST Governance", link: "/governance" },
+    { key: "/aims", label: "Genesis of ICAST", link: "/genisis" },
+    { key: "/aims", label: "ICAST 2025", link: "/icast-2025" },
+    { key: "/governance", label: "Governance Structure", link: "/governance" },
   ];
 
   // Handle menu item click
@@ -62,14 +63,15 @@ const DesktopMenu = () => {
         <Menu.Item key="/content">
           <Link to="/content">CALL FOR CONTENT</Link>
         </Menu.Item>
-        <Menu.Item key="/expo">
-          <Link to="/expo">EXPOSITION & SPONSORS</Link>
-        </Menu.Item>
+      
         <Menu.Item key="/registration">
           <Link to="/registration">REGISTRATION</Link>
         </Menu.Item>
         <Menu.Item key="/theme">
           <Link to="/theme">CONFERENCE THEME</Link>
+        </Menu.Item>
+        <Menu.Item key="/screen-inprogress">
+          <Link to="/screen-inprogress">EXPOSITION & SPONSORS</Link>
         </Menu.Item>
         <Menu.Item key="/screen-inprogress">
           <Link to="/screen-inprogress">PROGRAMME</Link>

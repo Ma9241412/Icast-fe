@@ -45,7 +45,7 @@ const CallForContent = () => {
             Call For Content
           </Title>
           <Paragraph
-            style={{ fontSize: paragraphFontSize,fontWeight:"bold" }}
+            style={{ fontSize: paragraphFontSize, fontWeight: "bold" }}
             className="breadcrumb"
           >
             ICAST/ Call For Content
@@ -65,78 +65,79 @@ const CallForContent = () => {
                     lineHeight: "2.5em",
                   }}
                 >
-                  Presentations and papers can be an effective way to hone
-                  scientific and technical ideas, introduce your work to
-                  aerospace colleagues, and refine your research questions.
-                  Forum paper presentations typically consist of a written
-                  document and an oral presentation. Presenting at AIAA SciTech
-                  Forum is a great opportunity to gain valuable feedback from a
-                  community of experts and for increasing your professional
-                  stature in aerospace engineering, research, and development.
-                  Although the Call for Content has closed,{" "}
-                  <Link href="#">Registration</Link> is open. Plan to submit a
-                  technical paper abstract or session proposal for the 2026 AIAA
-                  SciTech Forum. The Call for Content will open late March 2025.
+                  The{" "}
+                  <strong style={{ color: "black", fontWeight: "bold" }}>
+                    {" "}
+                    International Conference on Applications of Space Science
+                    and Technology (ICAST 2025)
+                  </strong>{" "}
+                  invites researchers, academicians, professionals, and industry
+                  experts to contribute to Pakistan’s largest and most
+                  prestigious space event. Under the theme{" "}
+                  <strong style={{ color: "black", fontWeight: "bold" }}>
+                    “Space for Sustainable Development,”
+                  </strong>{" "}
+                  we welcome your innovative ideas, groundbreaking research, and
+                  transformative concepts to shape the future of space science
+                  and technology.
                 </Paragraph>
                 <Space className="button-group">
-                  <Button size="large" type="primary">
+                  
+                  <Button href="https://CMS.cressofterp.com" size="large" type="default">
                     Manage Submissions
                   </Button>
-                  <Button size="large" type="default">
-                    Call for Paper
+                  <Button href="/call-for-papers" size="large" type="default">
+                    Call for Papers
+                  </Button>
+                  <Button href="/call-for-session" size="large" type="default">
+                    Call for Sessions
                   </Button>
                   <Button size="large" type="default">
-                    Call for Session
+                    Author Resources
                   </Button>
                 </Space>
-             
-                <Space direction="vertical">
-                <Title style={{fontSize:titleMedium}}>
-                  Additional Resources
-                </Title>
-                  <ul
-                    style={{
-                      fontSize: paragraphFontSize,
-                      color: "black",
-                      lineHeight: 1.8,
-                    }}
-                  >
-                    <li style={{ marginBottom: "5px" }}>
-                      <Text
-                        style={{
-                          color: "black",
-                          fontWeight: "500",
-                          fontSize: paragraphFontSize,
-                        }}
-                      >
-                        Technical Presenter Resources
-                      </Text>
-                    </li>
-                    <li style={{ marginBottom: "5px" }}>
-                      <Text
-                        style={{
-                          color: "black",
-                          fontWeight: "500",
-                          fontSize: paragraphFontSize,
-                        }}
-                      >
-                        Organizer Resources
-                      </Text>
-                    </li>
-                    <li>
-                      <Text
-                        style={{
-                          color: "black",
-                          fontWeight: "500",
-                          fontSize: paragraphFontSize,
-                        }}
-                      >
-                        Abstract Submission Process & Requirements
-                      </Text>
-                    </li>
-                  </ul>
-                </Space>
-                
+                <div>
+                  <Title style={{ fontSize: titleMedium, fontWeight: "bold" }}>
+                    Call for Papers
+                  </Title>
+                  <Paragraph style={{ fontSize: paragraphFontSize ,color:"black"}}>
+                    The International Conference on Applications of Space
+                    Science and Technology (ICAST 2025) invites researchers,
+                    academicians, and professionals from around the world to
+                    submit their original research for presentation at
+                    Pakistan’s premier space conference. Under the theme “Space
+                    for Sustainable Development,” ICAST 2025 provides a global
+                    platform to showcase cutting-edge ideas, transformative
+                    research, and innovative solutions that address critical
+                    challenges in space science and technology.
+                  </Paragraph>
+                  <Button href="/call-for-papers" size="large" type="default">
+                    Read More
+                  </Button>
+                </div>
+                <div style={{ marginTop: "20px" }}>
+                  <Title style={{ fontSize: titleMedium, fontWeight: "bold" }}>
+                    Call for Sessions
+                  </Title>
+                  <Paragraph style={{ fontSize: paragraphFontSize,color:"black" }}>
+                    
+                    The International Conference on Applications of Space
+                    Science and Technology (ICAST 2025) invites session
+                    proposals from thought leaders, researchers, industry
+                    professionals, and institutions. This is your chance to
+                    design and lead an engaging session that inspires
+                    collaboration, sparks innovation, and addresses the pressing
+                    challenges in space science and technology. We are seeking
+                    diverse and impactful sessions that align with the
+                    conference theme, “Space for Sustainable Development,” and
+                    our eight conference tracks. These sessions will complement
+                    our technical and plenary discussions, creating a holistic
+                    environment for knowledge exchange and networking.
+                  </Paragraph>
+                  <Button href="/call-for-session" size="large" type="default">
+                    Read More
+                  </Button>
+                </div>
               </Col>
 
               {/* Second Column for Cards */}
@@ -171,22 +172,6 @@ const CallForContent = () => {
                     <div style={{ marginBottom: "12px" }}>
                       <Space direction="vertical" size={0}>
                         <strong style={{ fontSize: paragraphFontSize }}>
-                          Abstract Submission Begins:
-                        </strong>{" "}
-                        <Text
-                          style={{
-                            color: "#006814",
-                            fontWeight: "400",
-                            fontSize: paragraphFontSize,
-                          }}
-                        >
-                          26 March 2024
-                        </Text>
-                      </Space>
-                    </div>
-                    <div style={{ marginBottom: "12px" }}>
-                      <Space direction="vertical" size={0}>
-                        <strong style={{ fontSize: paragraphFontSize }}>
                           Abstract Submission Deadline:
                         </strong>{" "}
                         <Text
@@ -196,39 +181,7 @@ const CallForContent = () => {
                             fontSize: paragraphFontSize,
                           }}
                         >
-                          23 May 2024
-                        </Text>
-                      </Space>
-                    </div>
-                    <div style={{ marginBottom: "12px" }}>
-                      <Space direction="vertical" size={0}>
-                        <strong style={{ fontSize: paragraphFontSize }}>
-                          Author Notifications:
-                        </strong>{" "}
-                        <Text
-                          style={{
-                            color: "#006814",
-                            fontWeight: "400",
-                            fontSize: paragraphFontSize,
-                          }}
-                        >
-                          26 August 2024
-                        </Text>
-                      </Space>
-                    </div>
-                    <div>
-                      <Space direction="vertical" size={0}>
-                        <strong style={{ fontSize: paragraphFontSize }}>
-                          Manuscript Deadline:
-                        </strong>{" "}
-                        <Text
-                          style={{
-                            color: "#006814",
-                            fontWeight: "400",
-                            fontSize: paragraphFontSize,
-                          }}
-                        >
-                          2 December 2024 
+                          January 15, 2025.
                         </Text>
                       </Space>
                     </div>

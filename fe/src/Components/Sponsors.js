@@ -44,7 +44,7 @@ const Sponsors = () => {
           color: "black",
         }}
       >
-        Executive Sponsors
+        Partners & Sponsors
       </Title>
       <Row gutter={[16, 16]} justify="center">
         {sponsors.map((sponsor, index) => (

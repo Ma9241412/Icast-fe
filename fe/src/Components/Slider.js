@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { Image } from "antd";
+import { Grid, Image } from "antd";
 import "../Styles/SliderStyles.css";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import image1 from "../Assets/banner.png";
-import image2 from "../Assets/01.jpg";
-import image3 from "../Assets/02.jpg";
-import image4 from "../Assets/03.jpg";
+import image2 from "../Assets/b1.jpg";
+import image3 from "../Assets/b2.jpg";
+import image4 from "../Assets/b3.jpg";
+import image5 from "../Assets/b4.jpg";
+import image6 from "../Assets/b5.jpg";
+import image7 from "../Assets/b6.jpg";
+import CircularCountdownTimer from "./DeadlineTimer";
+import DeadlineTimer from "./DeadlineTimer";
 
-const images = [image1, image2, image3, image4];
+const images = [image1, image2, image3, image4,image5,image6,image7];
 
 const calculateTimeLeft = () => {
   const eventDate = new Date("November 18, 2025 00:00:00").getTime();
@@ -25,6 +30,17 @@ const calculateTimeLeft = () => {
 };
 
 const FullWidthCarousel = () => {
+  const { useBreakpoint } = Grid;
+  const screens = useBreakpoint();
+
+  // Define width based on breakpoints
+  const imageWidth = screens.xl
+    ? 1900
+    : screens.lg
+    ? 1500
+    : screens.md
+    ? 1000
+    : 440;
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -49,10 +65,12 @@ const FullWidthCarousel = () => {
     <div className="carousel-container">
       <div className="carousel-slide">
         <Image
+      width={imageWidth}
           src={images[currentIndex]}
           preview={false}
           alt={`Slide ${currentIndex + 1}`}
           className="carousel-image"
+          
         />
       </div>
 
@@ -66,22 +84,7 @@ const FullWidthCarousel = () => {
 
       {/* Countdown Timer Overlay */}
       <div className="timer-overlay">
-        <div className="timer-box">
-          <div className="timer-number">{timeLeft.days}</div>
-          <span style={{ fontSize: "8px" }}>DAYS</span>
-        </div>
-        <div className="timer-box">
-          <div className="timer-number">{timeLeft.hours}</div>
-          <span style={{ fontSize: "8px" }}>HOURS</span>
-        </div>
-        <div className="timer-box">
-          <div className="timer-number">{timeLeft.minutes}</div>
-          <span style={{ fontSize: "8px" }}>MINUTES</span>
-        </div>
-        <div className="timer-box">
-          <div className="timer-number">{timeLeft.seconds}</div>
-          <span style={{ fontSize: "8px", padding: "0px 2px" }}>SECONDS</span>
-        </div>
+<DeadlineTimer/>
       </div>
     </div>
   );

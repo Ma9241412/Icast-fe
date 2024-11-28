@@ -68,7 +68,7 @@ const VenuMap = () => {
          
               <div className="contact-info">
                 <Paragraph style={{ color: 'black', fontSize: paragraphFontSize, textAlign: 'left' }}>
-                  <PhoneOutlined /> +92-51-9075100 | +92-51-9273310
+                  <PhoneOutlined /> +92-51-9075799
                 </Paragraph>
                 <Paragraph style={{ color: 'black', fontSize: paragraphFontSize, textAlign: 'left' }}>
                   <MailOutlined /> info@icast.pk

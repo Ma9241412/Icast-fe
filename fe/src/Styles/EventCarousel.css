@@ -1,68 +1,94 @@
 .event-carousel-container {
-    background-color: white;
-    padding: 20px 0; /* Remove padding from left and right */
-    width: 100%; /* Full width */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .scrolling-wrapper {
-    display: flex;
-    gap: 0; /* Remove gap between items */
-    transition: transform 0.5s ease;
-    overflow: hidden;
-  }
-  
+  background-color: white;
+  padding: 20px 0; /* Top and bottom padding */
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+  width: 95%; /* Ensure a small margin on the left and right */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px; /* Equal gap between slides */
+  flex: 1;
+}
+
+.carousel-image {
+  width: 320px; /* Adjust width for better visibility */
+  height: 220px; /* Proportional height */
+  border-radius: 10px;
+  object-fit: cover; /* Ensures images fit within the dimensions without distortion */
+}
+
+.carousel-caption {
+  width: 320px; /* Match image width */
+  color: white;
+  background-color: #186814;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-button {
+  background-color: #1e2634;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.nav-button.left-button {
+  left: 5px; /* Adjust for equal gap on the left */
+}
+
+.nav-button.right-button {
+  right: 5px; /* Adjust for equal gap on the right */
+}
+
+.nav-button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .carousel-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 300px; /* Adjust based on image size */
+    min-width: 100%; /* Show one image at a time on smaller screens */
+    margin: 0; /* Remove margin on smaller screens */
   }
-  
+
+  .scrolling-wrapper {
+    width: 100%; /* Full width for smaller screens */
+  }
+
   .carousel-image {
-    width: 70%;
-    height: 250px;
-    border-radius: 10px;
+    width: 90%; /* Adjust width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
   }
-  
+
   .carousel-caption {
-    color: #1890ff;
-    text-align: center;
-    margin-top: 10px;
+    width: 90%; /* Adjust caption width for smaller screens */
   }
-  
-  .nav-button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #1890ff;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .nav-button:disabled {
-    color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .left-button {
-    left: 10px;
-  }
-  
-  .right-button {
-    right: 10px;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .carousel-slide {
-      min-width: 100%; /* Show one image at a time on smaller screens */
-    }
-  }
-  
+}

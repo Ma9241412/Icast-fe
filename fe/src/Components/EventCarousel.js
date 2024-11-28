@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Typography, Button, Space, Grid } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "../Styles/EventCarousel.css";
-import Image1 from "../Assets/01.jpg";
-import Image2 from "../Assets/02.jpg";
-import Image3 from "../Assets/03.jpg";
+import Image1 from "../Assets/m1.jpg";
+import Image2 from "../Assets/e3.jpg";
+import Image3 from "../Assets/m3.jpg";
+
 import { Link } from "react-router-dom";
 
 const { useBreakpoint } = Grid;
@@ -20,41 +21,15 @@ const EventCarousel = () => {
     ? "35px"
     : "28px";
 
-  const eventImages = [
-    { src: Image1, alt: "Event 1" },
-    { src: Image2, alt: "Event 2" },
-    { src: Image3, alt: "Event 3" },
-    { src: Image1, alt: "Event 4" },
-    { src: Image2, alt: "Event 5" },
-    { src: Image3, alt: "Event 6" },
-    { src: Image1, alt: "Event 7" },
-  ];
-
-  const eventNames = [
-    "Drive Global Collaboration",
-    "Advance Research and Innovation",
-    "Promote Space Technology for Sustainable Development",
-    "Engage and Inspire the Next Generation",
-    "Facilitate Dialogue on Space Policy and Law",
-    "Strengthen Skills through Hands-On Training",
-    "Highlight SUPARCO and IST's Leadership in Space Science",
-  ];
+  const visibleImages = screens.xs ? 1 : 3;
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleImages, setVisibleImages] = useState(3);
 
-  useEffect(() => {
-    const updateVisibleImages = () => {
-      setVisibleImages(window.innerWidth <= 768 ? 1 : 3);
-    };
-
-    updateVisibleImages();
-    window.addEventListener("resize", updateVisibleImages);
-
-    return () => {
-      window.removeEventListener("resize", updateVisibleImages);
-    };
-  }, []);
+  const eventImages = [
+    { src: Image1, alt: "Why Attend ICAST 2025?", link: "/icast-2025" },
+    { src: Image2, alt: "Call For Content", link: "/content" },
+    { src: Image3, alt: "Grants & Awards", link: "/grants-awards" },
+  ];
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
@@ -68,57 +43,72 @@ const EventCarousel = () => {
 
   return (
     <div className="event-carousel-container">
-      <Space direction="vertical">
-        <Typography.Title
-          style={{
-            fontSize: titleFontSize,
-            color: "black",
-            letterSpacing: "1px",
-            fontWeight: "bold",
-          }}
+      <Typography.Title
+        style={{
+          fontSize: titleFontSize,
+          color: "black",
+          letterSpacing: "1px",
+          fontWeight: "bold",
+        }}
+      >
+        Conference Updates
+      </Typography.Title>
+      <div style={{ position: "relative", width: "100%" }}>
+        {/* Left Arrow Button */}
+        <button
+          className="nav-button left-button"
+          onClick={handlePrev}
+          disabled={currentIndex === 0}
         >
-          Latest Updates
-        </Typography.Title>
-        <Space>
-          <Button
-            icon={<LeftOutlined style={{backgroundColor:"#1E2634",color:"white",padding:"10px",borderRadius:"20px"}} />}
-            onClick={handlePrev}
-            disabled={currentIndex === 0}
-            className="nav-button left-button"
-          />
-          <div className="scrolling-wrapper">
-            {eventImages
-              .slice(currentIndex, currentIndex + visibleImages)
-              .map((image, index) => {
-                const globalIndex = currentIndex + index;
-                return (
-                  <div key={globalIndex} className="carousel-slide">
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="carousel-image"
-                    />
-                 <Link to={'/aims'}>
-                 <Button
-                      level={5}
-                      style={{ fontWeight: "bold" }}
-                      className="carousel-caption"
-                    >
-                      {eventNames[globalIndex]}
-                    </Button>
-                 </Link>
+          <LeftOutlined />
+        </button>
+
+        {/* Carousel Content */}
+        <div className="scrolling-wrapper">
+          {eventImages
+            .slice(currentIndex, currentIndex + visibleImages)
+            .map((image, index) => (
+              <div key={index} className="carousel-slide">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="carousel-image"
+                />
+                <Link to={image.link}>
+                  <div style={{ marginTop: "20px" }}>
+                    <Space>
+                      <Button
+                        type="primary"
+                        href=""
+                        style={{
+                          backgroundColor: "#186814",
+                          borderColor: "#186814",
+                          fontSize: "15px",
+                          fontWeight: "600",
+                          color: "white",
+                          height: "40px", // Fixed height
+                          width: "200px", // Fixed width
+                          textAlign: "center",
+                        }}
+                      >
+                        {image.alt}
+                      </Button>
+                    </Space>
                   </div>
-                );
-              })}
-          </div>
-          <Button
-            icon={<RightOutlined style={{backgroundColor:"#1E2634",color:"white",padding:"10px",borderRadius:"20px"}} />}
-            onClick={handleNext}
-            disabled={currentIndex >= eventImages.length - visibleImages}
-            className="nav-button right-button"
-          />
-        </Space>
-      </Space>
+                </Link>
+              </div>
+            ))}
+        </div>
+
+        {/* Right Arrow Button */}
+        <button
+          className="nav-button right-button"
+          onClick={handleNext}
+          disabled={currentIndex >= eventImages.length - visibleImages}
+        >
+          <RightOutlined />
+        </button>
+      </div>
     </div>
   );
 };

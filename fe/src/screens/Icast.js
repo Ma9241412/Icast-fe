@@ -9,6 +9,7 @@ import ConferenceIntro from "../Components/ConferenceIntro";
 import ICastForum from "../Components/ICastForum";
 import Sponsors from "../Components/Sponsors";
 import Footer from "../Layouts/IcastFooter";
+import SubFooter from "../Layouts/SubFooter";
 
 
 
@@ -17,7 +18,7 @@ const ICast = () => {
     <>
       <IcastHeader />
 
-      <div style={{ backgroundColor: "#272B3A" }}>
+      <div style={{ backgroundColor: "#272B3A",padding:0 }}>
         <FullWidthCarousel />
         <div>
           <EventCarousel />
@@ -28,6 +29,7 @@ const ICast = () => {
           <Sponsors />
         </div>
       </div>
+      {/* <SubFooter/> */}
       <Footer />
     </>
   );

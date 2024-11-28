@@ -12,8 +12,8 @@
 
 .carousel-image {
   width: 100%;
-  height: 85vh; /* Default height for desktop screens */
-  object-fit: cover;
+  height: 100vh; /* Default height for desktop screens */
+  object-fit: fill;
 }
 
 /* Tablet Screen */
@@ -63,48 +63,118 @@
 /* Countdown Timer Overlay */
 .timer-overlay {
   position: absolute;
-  top: 10px; /* Distance from the bottom */
-  left: 10px; /* Distance from the right */
+  bottom: 10px; 
+  left: 10px; 
   transform: none;
   display: flex;
   gap: 10px;
-  background: white;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
   font-size: 13px;
   color: rgba(96, 94, 94, 0.6);
   z-index: 1;
 }
 
-/* Timer Box Styling */
-.timer-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #eeebeb;
+/* Container Styling */
+/* Timer Row Container */
+.timer-container {
+  background: rgba(100, 99, 99, 0.8); 
+  padding: 10px 20px;
   border-radius: 5px;
-  width: 60px; /* Fixed width */
-  height: 60px; /* Fixed height */
+  color: #ffda44; /* Bright yellow text */
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.timer-box span {
-  font-size: 12px;
-  color: #0e0e0f;
+.timer-header-row {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.timer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.time-section {
+  text-align: center;
+  flex: 1;
+}
+
+.time-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffda44;
+}
+
+.time-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
   margin-top: 5px;
 }
 
-.timer-box .timer-number {
-  font-size: 20px;
-  font-weight: bold;
-  color: rgb(7, 7, 7);
+.deadline-section {
+  text-align: center;
 }
 
-/* Tablet Screen Adjustments */
-/* Mobile Screen Adjustments */
-/* Mobile Screen Adjustments */
+.deadline-date {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffda44;
+}
+
+.deadline-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.ant-divider {
+  height: 60px;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timer-overlay {
+    display: none;
+
+  }
+  .timer-container {
+    display: none;
+  }
+
+  .timer-header-row {
+    font-size: 12px;
+  }
+
+  .time-value,
+  .deadline-date {
+    font-size: 32px;
+  }
+
+  .time-label,
+  .deadline-label {
+    font-size: 10px;
+  }
+
+  .ant-divider {
+    height: 40px;
+  }
+}
+
+
+
 @media (max-width: 480px) {
   .timer-overlay {
     font-size: 8px;

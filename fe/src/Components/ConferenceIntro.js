@@ -86,33 +86,17 @@ const ConferenceIntro = () => {
                 padding: paragraphPadding,
               }}
             >
-              The International Conference on Applications of Space Science and
-              Technology (ICAST) stands as an eminent convergence of
-              distinguished global leaders, visionary researchers, and
-              pioneering industry experts, dedicated to advancing the frontiers
-              of space science, technology, and their far-reaching applications.
-              This event combines the legacies of IST’s International Conference
-              on Aerospace Science and Engineering (ICASE) and SUPARCO’s
-              International Conference on Space (ICS), uniting these platforms
-              into a biennial global forum that embodies excellence,
-              intellectual rigor, and forward-thinking collaboration.
+              The International Conference on Applications of Space Science and Technology (ICAST)
+marks a transformative milestone in Pakistan&#39;s journey through space science and
+technology. As the largest space event in the country, ICAST unites the legacies of IST’s
+International Conference on Aerospace Science and Engineering (ICASE) and
+SUPARCO’s International Conference on Space (ICS) into a biennial global forum of
+unparalleled excellence.
+ICAST bringing together visionaries, global thought leaders, pioneering researchers, and
+industry trailblazers, aspires to redefine the future of space science by fostering collaboration, presenting transformative research, and exploring interdisciplinary space
+applications with the potential to reshape our collective future.
             </Paragraph>
-            <Paragraph
-              style={{
-                color: "white",
-                fontFamily: "Arial, sans-serif",
-                lineHeight: paragraphLineHeight,
-                letterSpacing: "0.5px",
-                fontSize: paragraphFontSize,
-                textAlign: "justify",
-                padding: paragraphPadding,
-              }}
-            >
-              ICAST aspires to create an unparalleled environment for the
-              exchange of groundbreaking ideas, transformative research, and the
-              exploration of interdisciplinary space applications that hold the
-              potential to reshape our collective future.
-            </Paragraph>
+         
             {/* <Link
               href="#"
               style={{

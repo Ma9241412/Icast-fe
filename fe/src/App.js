@@ -11,6 +11,10 @@ import Registration from "./screens/Registration";
 import GovernancePage from "./screens/Governance";
 import ThemePage from "./screens/Themes";
 import ScreenInProgress from "./NoContent/NoContent";
+import Genisis from "./screens/Genesis";
+import ICAST2025 from "./screens/Icast2025";
+import CallForPapers from "./screens/CallForPapers";
+import CallForSessions from "./screens/CallForSessions";
 
 function App() {
   return (
@@ -20,8 +24,12 @@ function App() {
           <Route path="/" element={<ICast />} />
           <Route path="/content" element={<CallForContent/>}/>
           <Route path="/expo" element={<Expositions/>}/>
-          <Route path="/aims" element={<AimsPage/>}/>
+          <Route path="/why-attend" element={<AimsPage/>}/>
+          <Route path="/genisis" element={<Genisis/>}/>
+          <Route path="/icast-2025" element={<ICAST2025/>}/>
           <Route path="/governance" element={<GovernancePage/>}/>
+          <Route path="/call-for-papers" element={<CallForPapers/>}/>
+          <Route path="/call-for-session" element={<CallForSessions/>}/>
           <Route path="/registration" element={<Registration/>}/>
           <Route path="/theme" element={<ThemePage/>}/>
           <Route path="/contact" element={<ContactForm />} />

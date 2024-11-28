@@ -1,71 +1,107 @@
 import React from "react";
-import { Card, Col, Grid, Row, Typography } from "antd";
+import { Card, Col, Grid, Row, Typography, Avatar } from "antd";
+import { UserOutlined } from '@ant-design/icons';
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
+import img1 from "../Assets2/1.jpeg";
+import img2 from "../Assets2/2.jpeg";
+import img3 from "../Assets2/3.jpg";
+import img4 from "../Assets2/4.jpg";
+import img5 from "../Assets2/5.png";
+import img6 from "../Assets2/6.jpg";
+import img7 from "../Assets2/7.jpeg";
+import img10 from "../Assets2/10.jpg";
+import img11 from "../Assets2/11.jpeg";
+import img13 from "../Assets2/13.jpg";
+import SecretariatPage from "../Components/Secretariat";
 
 const { Title, Text, Paragraph } = Typography;
 const { useBreakpoint } = Grid;
 
 const data = [
   {
-    name: "Vice Chancellor IST",
-    title: "Conference Patron-In-Chief",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "ICAST President",
+    name: "Muhammad Yusuf Khan",
+    title: "Chairman SUPARCO",
+    imgSrc: img1,
   },
   {
-    name: "Secretary SUPARCO",
-    title: "Conference Chair",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Conference Patron-in-Chief",
+    name: "Brig. (Retd) Zia Ahmed",
+    title: "Vice Chancellor IST",
+    imgSrc: img2,
   },
   {
-    name: "Registrar IST",
-    title: "Conference Co-Chair",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Conference Chair",
+    name: "Brig. (Retd) Aftab Ahmad Khan Lughmani",
+    title: "Secretary SUPARCO",
+    imgSrc: img3,
   },
   {
-    name: "Head of Conference Secretariat Chairman NCGSA",
-    title: "Conference Secretary",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Conference Co-Chair / Chair of Coordination Committee",
+    name: "Dr. Abdul Waheed",
+    title: "Registrar IST",
+    imgSrc: img4,
   },
   {
-    name: "Registrar IST",
-    title: "Chair of Coordination Committee",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Conference Secretary Head of Conference Secretariat",
+    name: "Dr. Najam Abbas Naqvi",
+    title: "Chairman NCGSA",
+    imgSrc: img5,
   },
   {
-    name: "Dean IST",
-    title: "Chair of Technical Program Committee",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Chair of Technical Program Committee",
+    name: "Prof. Dr. Muhammad Abdul Rehman Khan",
+    title: "Dean IST",
+    imgSrc: img6,
   },
   {
-    name: "Director Admin IST",
-    title: "Chair of Administration Committee",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Strategic Liaison",
+    name: "Col. (Retd.) Muhammad Arham Khan",
+    title: "DH IA SUPARCO",
+    imgSrc: img7,
   },
   {
-    name: "CFO IST",
-    title: "Chair of Finance Committee",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Chair of Administration Committee (Security, Protocol & Entertainment)",
+    name: "Col. (Retd) Farooq Ahmed",
+    title: "Director Admin IST",
+    imgSrc: null, // No image
   },
   {
-    name: "Director ORIC",
-    title: "Chair of Collaboration & Industrial Linkages Committee",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Chair of Finance Committee",
+    name: "Mr. Khadim Hussain",
+    title: "CFO IST",
+    imgSrc: null, // No image
   },
   {
-    name: "Director IT",
-    title: "Chair of IT & Media Management Committee",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Chair of Exhibition & Industrial Linkages Committee",
+    name: "Dr. Ibrahim Qazi",
+    title: "Director ORIC",
+    imgSrc: img10,
   },
   {
-    name: "Director Civil Works",
-    title: "Chair of Conference Facilities Committee",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Chair of IT & Media Management Committee",
+    name: "Dr. Ch. Bilal Ahmed Khan",
+    title: "Director IT",
+    imgSrc: img11,
   },
   {
-    name: "Senior Faculty Member",
-    title: "Chair of Evaluation & Publication Committee",
-    imgSrc: "https://via.placeholder.com/150",
+    role: "Chair of Conference Facilities",
+    name: "Mr. Rehan Rasheed",
+    title: "Director Civil Works",
+    imgSrc: null, // No image
+  },
+  {
+    role: "Chair of Evaluation & Publication Committee",
+    name: "Dr. Salma Zaineb Farooq",
+    title: "Senior Faculty Member",
+    imgSrc: img13,
+  },
+  {
+    role: "Technical Sponsor Chair",
+    name: "",
+    title: "Chairman IEEE Islamabad Section",
+    imgSrc: null, // No image
   },
 ];
 
@@ -78,85 +114,178 @@ const GovernancePage = () => {
     : screens.md
     ? "35px"
     : "28px";
+
   const titleMedium = screens.xl
-    ? "30px"
+    ? "28px"
     : screens.lg
-    ? "30px"
+    ? "28px"
     : screens.md
-    ? "25px"
-    : "22px";
+    ? "20px"
+    : "20px";
+
   const paragraphFontSize = screens.xl
     ? "19px"
     : screens.lg
     ? "17px"
     : screens.md
     ? "19px"
-    : "19px";
+    : "22px";
 
   return (
     <>
       <IcastHeader />
-      <div style={{ backgroundColor: "#FFFFFF" }}>
-        <div style={{ backgroundColor: "#EEF0F2" }}>
+      <div style={{ backgroundColor: "white" }}>
+        <div style={{ backgroundColor: "white" }}>
           <Title
             style={{
+              backgroundColor: "#EEF0F2",
               textAlign: "start",
               marginBottom: "30px",
-              backgroundColor: "#EFF0F2",
               padding: "20px 40px",
               fontWeight: "bold",
               fontSize: titleFontSize,
             }}
           >
-            Registration
+            Governance Structure
           </Title>
+          <Paragraph
+            style={{
+              textAlign: "start",
+              marginBottom: "30px",
+              fontSize: paragraphFontSize,
+              color: "black",
+              padding: "0px 40px",
+              fontWeight: "bold",
+            }}
+          >
+            ICAST / About ICAST / ICAST Governance
+          </Paragraph>
         </div>
-        <Paragraph
-          style={{
-            textAlign: "start",
-            marginBottom: "30px",
-            fontSize: paragraphFontSize,
-            color: "#595959",
-            padding: "0px 40px",
-            fontWeight: "bold",
-          }}
-        >
-          ICAST / About ICAST / ICAST Governance
-        </Paragraph>
-        <div style={{padding:"30px 40px",backgroundColor:"#EFF0F2"}}>
-        <Row gutter={[16, 16]}>
-          {data.map((person, index) => (
-            <Col xs={24} sm={12} md={8} lg={6} key={index}>
-              <Card
-                hoverable
-                style={{
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Subtle shadow
-                  border: '1px solid #f0f0f0', // Light border
-                  textAlign: "center",
-                }}
-                cover={
-                  <img
-                    alt={person.name}
-                    src={person.imgSrc}
+
+        <div style={{ padding: "30px 30px", backgroundColor: "#EFF0F2" }}>
+          <Paragraph
+            style={{
+              textAlign: "start",
+              marginBottom: "30px",
+              fontSize: "18px",
+              color: "black",
+            }}
+          >
+            The success of{" "}
+            <strong style={{ color: "black", fontWeight: "bold" }}>
+              ICAST 2025
+            </strong>{" "}
+            is built upon a robust and well-defined governance structure,
+            ensuring seamless coordination, efficient management, and
+            exceptional quality across all aspects of the conference. The
+            governance comprises two principal bodies, supported by specialized
+            committees dedicated to specific conference functions.
+          </Paragraph>
+          <Title
+            style={{
+              textAlign: "start",
+              fontSize: titleMedium,
+              fontWeight: "bold",
+              color: "black",
+              margin: 0,
+            }}
+          >
+            Conference Steering Committee
+          </Title>
+          <br />
+          <Paragraph
+            style={{
+              textAlign: "start",
+              marginBottom: "30px",
+              fontSize: "18px",
+              color: "#595959",
+            }}
+          >
+            The Conference Steering Committee serves as the apex body
+            overseeing the strategic direction, planning, and execution of ICAST
+            2025.
+          </Paragraph>
+          <Row gutter={[32, 32]}>
+            {data.map((person, index) => (
+              <Col xs={24} sm={12} md={8} lg={6} key={index}>
+                <Card
+                  hoverable
+                  style={{
+                    borderRadius: "15px",
+                    textAlign: "center",
+                    border: "3px solid #186814",
+                    backgroundColor: "#1E2634",
+                    color: "#FFFFFF",
+                    height: "100%",
+                  }}
+                >
+                  {person.imgSrc ? (
+                    <div
+                      style={{
+                        width: "150px",
+                        height: "150px",
+                        margin: "0 auto",
+                        overflow: "hidden",
+                        borderRadius: "50%",
+                        border: "3px solid #186814",
+                      }}
+                    >
+                      <img
+                        alt={person.name}
+                        src={person.imgSrc}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
+                  ) : (
+                    <Avatar
+                      size={150}
+                      icon={<UserOutlined />} 
+                      style={{
+                        color: "#FFFFFF",
+                      }}
+                    />
+                  )}
+                  <Text
                     style={{
-                      width: "100%",
-                      height: "200px",
-                      objectFit: "cover",
-                      borderBottom: "1px solid #f0f0f0",
+                      display: "block",
+                      fontSize: "14px",
+                      fontWeight: "bold",
+                      color: "#FFFFFF",
+                      marginBottom: "10px",
                     }}
-                  />
-                }
-              >
-                <Text style={{ fontSize: paragraphFontSize}}>{person.title}</Text>
-                <br />
-                <Text type="secondary">{person.name}</Text>
-              </Card>
-            </Col>
-          ))}
-        </Row>
+                  >
+                    {person.role}
+                  </Text>
+                  <Text
+                    style={{
+                      display: "block",
+                      fontSize: "16px",
+                      fontWeight: "bold",
+                      marginTop: "15px",
+                      color: "#FFD700",
+                    }}
+                  >
+                    {person.name || "Name not available"}
+                  </Text>
+                  <Text
+                    style={{
+                      display: "block",
+                      fontSize: "12px",
+                      color: "#E6E6E6",
+                    }}
+                  >
+                    {person.title}
+                  </Text>
+                </Card>
+              </Col>
+            ))}
+          </Row>
         </div>
+        <SecretariatPage />
       </div>
       <Footer />
     </>

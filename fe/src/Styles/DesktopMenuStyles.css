@@ -60,8 +60,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   z-index: 1000; /* Ensure it stays above other elements */
   padding: 10px 20px; /* Add some padding for better spacing inside the drawer */
-  min-width: 180px; /* Ensure the drawer has a minimum width */
-  text-align: center; /* Center-align the content */
+  min-width: 220px; /* Ensure the drawer has a minimum width */
+  text-align: left; /* Center-align the content */
 }
 
 .submenu-list {
