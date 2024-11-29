@@ -9,10 +9,9 @@ import image4 from "../Assets/b3.jpg";
 import image5 from "../Assets/b4.jpg";
 import image6 from "../Assets/b5.jpg";
 import image7 from "../Assets/b6.jpg";
-import CircularCountdownTimer from "./DeadlineTimer";
 import DeadlineTimer from "./DeadlineTimer";
 
-const images = [image1, image2, image3, image4,image5,image6,image7];
+const images = [image1, image2, image3, image4, image5, image6, image7];
 
 const calculateTimeLeft = () => {
   const eventDate = new Date("November 18, 2025 00:00:00").getTime();
@@ -34,22 +33,35 @@ const FullWidthCarousel = () => {
   const screens = useBreakpoint();
 
   // Define width based on breakpoints
-  const imageWidth = screens.xl
-    ? 1900
+  const imageWidth = screens.xxl
+    ? "100vw"
+    : screens.xl
+    ? "100vw"
     : screens.lg
-    ? 1500
+    ? "90vw"
     : screens.md
-    ? 1000
-    : 440;
+    ? "80vw"
+    : "100vw";
+
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Update timeLeft every second
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+
+  // Autoplay functionality
+  useEffect(() => {
+    const autoplay = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Switch slide every 3 seconds
+
+    return () => clearInterval(autoplay); // Clean up timer on component unmount
+  }, [currentIndex]);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -65,12 +77,12 @@ const FullWidthCarousel = () => {
     <div className="carousel-container">
       <div className="carousel-slide">
         <Image
-      width={imageWidth}
+          width={imageWidth}
           src={images[currentIndex]}
           preview={false}
           alt={`Slide ${currentIndex + 1}`}
           className="carousel-image"
-          
+          style={{ objectFit: "cover" }}
         />
       </div>
 
@@ -84,7 +96,7 @@ const FullWidthCarousel = () => {
 
       {/* Countdown Timer Overlay */}
       <div className="timer-overlay">
-<DeadlineTimer/>
+        <DeadlineTimer />
       </div>
     </div>
   );

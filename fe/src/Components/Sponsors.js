@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Row, Col, Typography, Image, Grid } from "antd";
-import { Link } from "react-router-dom"; // For React Router. Use `next/link` if you're using Next.js.
+import { Link } from "react-router-dom"; 
 import img from "../Assets/ncgsa.png";
 import img1 from "../Assets/hec.png";
 
@@ -13,13 +13,13 @@ const sponsors = [
     name: "NATIONAL CENTER OF GIS AND SPACE APPLICATIONS, PAKISTAN",
     company: "",
     logo: img,
-    link: "https://ncgsa.org.pk/", // Replace with the actual URL you want
+    link: "https://ncgsa.org.pk/", 
   },
   {
     name: "HIGHER EDUCATION COMMISSION, PAKISTAN",
     company: "",
     logo: img1,
-    link: "https://www.hec.gov.pk/", // Replace with the actual URL you want
+    link: "https://www.hec.gov.pk/", 
   },
 ];
 
@@ -42,6 +42,7 @@ const Sponsors = () => {
           fontWeight: "bold",
           textAlign: "center",
           color: "black",
+          fontFamily: "Inter, sans-serif",
         }}
       >
         Partners & Sponsors
@@ -51,7 +52,7 @@ const Sponsors = () => {
           <Col xs={24} sm={12} md={8} lg={6} key={index}>
             <Card className="sponsor-card" hoverable>
               <div className="sponsor-logo">
-                <Link to={sponsor.link}> {/* Wrap Image with Link */}
+                <Link to={sponsor.link}> 
                   <Image
                     preview={false}
                     width={200}

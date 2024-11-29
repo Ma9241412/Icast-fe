@@ -73,27 +73,21 @@ const data = [
 
 const SecretariatPage = () => {
   const screens = useBreakpoint();
-  const titleFontSize = screens.xl
-    ? "45px"
-    : screens.lg
-    ? "40px"
-    : screens.md
-    ? "35px"
-    : "28px";
+ 
   const titleMedium = screens.xl
-    ? "28px"
-    : screens.lg
-    ? "28px"
-    : screens.md
-    ? "20px"
-    : "20px";
-  const paragraphFontSize = screens.xl
-    ? "19px"
-    : screens.lg
-    ? "17px"
-    : screens.md
-    ? "19px"
-    : "22px";
+  ? "22px"
+  : screens.lg
+  ? "22px"
+  : screens.md
+  ? "17px"
+  : "17px";
+const paragraphFontSize = screens.xl
+  ? "16px"
+  : screens.lg
+  ? "16px"
+  : screens.md
+  ? "15px"
+  : "15px";
 
   return (
     <>
@@ -103,9 +97,10 @@ const SecretariatPage = () => {
             style={{
               textAlign: "start",
               fontSize: titleMedium,
-              fontWeight: "bold",
               color: "black",
               margin: 0,
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"700",
             }}
           >
             Conference Secretariat
@@ -114,10 +109,12 @@ const SecretariatPage = () => {
           <Paragraph
             style={{
               textAlign: "start",
-
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"500",
               marginBottom: "30px",
-              fontSize: "18px",
-              color: "#595959",
+              fontSize: paragraphFontSize,
+              color: "black",
+             
             }}
           >
             The Conference Secretariat operates as the executive arm of ICAST

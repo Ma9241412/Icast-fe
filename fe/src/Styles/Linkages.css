@@ -1,3 +1,6 @@
+.body{
+  font-family: "Inter", serif;
+}
 .content-section {
   padding: 50px 20px;
   margin: 0 auto;
@@ -86,6 +89,7 @@ border: none;
   font-weight: bold;
   color: #222;
   margin-bottom: 20px;
+  font-family: 'inter' sans-serif;
 }
 
 .view-pdf-button {

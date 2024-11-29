@@ -108,28 +108,26 @@ const data = [
 const GovernancePage = () => {
   const screens = useBreakpoint();
   const titleFontSize = screens.xl
-    ? "45px"
-    : screens.lg
-    ? "40px"
-    : screens.md
-    ? "35px"
-    : "28px";
-
+  ? "48px"
+  : screens.lg
+  ? "48px"
+  : screens.md
+  ? "46px"
+  : "36px";
   const titleMedium = screens.xl
-    ? "28px"
-    : screens.lg
-    ? "28px"
-    : screens.md
-    ? "20px"
-    : "20px";
-
-  const paragraphFontSize = screens.xl
-    ? "19px"
-    : screens.lg
-    ? "17px"
-    : screens.md
-    ? "19px"
-    : "22px";
+  ? "22px"
+  : screens.lg
+  ? "22px"
+  : screens.md
+  ? "17px"
+  : "17px";
+const paragraphFontSize = screens.xl
+  ? "16px"
+  : screens.lg
+  ? "16px"
+  : screens.md
+  ? "15px"
+  : "15px";
 
   return (
     <>
@@ -142,7 +140,8 @@ const GovernancePage = () => {
               textAlign: "start",
               marginBottom: "30px",
               padding: "20px 40px",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"700",
               fontSize: titleFontSize,
             }}
           >
@@ -155,7 +154,8 @@ const GovernancePage = () => {
               fontSize: paragraphFontSize,
               color: "black",
               padding: "0px 40px",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"600",
             }}
           >
             ICAST / About ICAST / ICAST Governance
@@ -167,8 +167,10 @@ const GovernancePage = () => {
             style={{
               textAlign: "start",
               marginBottom: "30px",
-              fontSize: "18px",
+              fontSize: paragraphFontSize,
               color: "black",
+              fontFamily: "Inter, sans-serif",
+                  fontWeight:"500",
             }}
           >
             The success of{" "}
@@ -185,7 +187,8 @@ const GovernancePage = () => {
             style={{
               textAlign: "start",
               fontSize: titleMedium,
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+                  fontWeight:"700",
               color: "black",
               margin: 0,
             }}
@@ -197,8 +200,10 @@ const GovernancePage = () => {
             style={{
               textAlign: "start",
               marginBottom: "30px",
-              fontSize: "18px",
-              color: "#595959",
+              fontSize: paragraphFontSize,
+              color: "black",
+              fontFamily: "Inter, sans-serif",
+                  fontWeight:"500",
             }}
           >
             The Conference Steering Committee serves as the apex body

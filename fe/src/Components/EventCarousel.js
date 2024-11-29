@@ -14,12 +14,12 @@ const EventCarousel = () => {
   const screens = useBreakpoint();
 
   const titleFontSize = screens.xl
-    ? "45px"
+    ? "48px"
     : screens.lg
-    ? "40px"
+    ? "48px"
     : screens.md
-    ? "35px"
-    : "28px";
+    ? "46px"
+    : "36px";
 
   const visibleImages = screens.xs ? 1 : 3;
 
@@ -49,6 +49,7 @@ const EventCarousel = () => {
           color: "black",
           letterSpacing: "1px",
           fontWeight: "bold",
+          fontFamily:"Inter"
         }}
       >
         Conference Updates

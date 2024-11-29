@@ -33,26 +33,26 @@ const CallForSessions = () => {
   const screens = useBreakpoint();
 
   const titleFontSize = screens.xl
-    ? "45px"
+    ? "48px"
     : screens.lg
-    ? "40px"
+    ? "48px"
     : screens.md
-    ? "35px"
-    : "28px";
+    ? "46px"
+    : "36px";
   const titleMedium = screens.xl
-    ? "30px"
+    ? "22px"
     : screens.lg
-    ? "30px"
+    ? "22px"
     : screens.md
-    ? "25px"
-    : "22px";
-  const paragraphFontSize = screens.xl
-    ? "19px"
-    : screens.lg
     ? "17px"
+    : "17px";
+  const paragraphFontSize = screens.xl
+    ? "16px"
+    : screens.lg
+    ? "16px"
     : screens.md
-    ? "19px"
-    : "22px";
+    ? "15px"
+    : "15px";
 
   return (
     <>
@@ -66,7 +66,8 @@ const CallForSessions = () => {
             backgroundColor: "#EFF0F2",
             padding: "20px",
             fontSize: titleFontSize,
-            fontWeight: "bold",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "700",
           }}
         >
           Call for Sessions
@@ -78,7 +79,8 @@ const CallForSessions = () => {
             fontSize: paragraphFontSize,
             color: "black",
             padding: "0px 20px",
-            fontWeight: "bold",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "600",
           }}
         >
           ICAST /Call For Content / Call For Sessions
@@ -91,6 +93,9 @@ const CallForSessions = () => {
               color: "black",
               margin: 0, // Remove top and bottom margin for Title
               padding: "10px 0px",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+              lineHeight:"2rem"
             }}
           >
             The International Conference on Applications of Space Science and
@@ -115,7 +120,8 @@ const CallForSessions = () => {
               marginTop: "40px",
               fontSize: titleMedium,
               textAlign: "left",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "700",
             }}
           >
             Types of Sessions
@@ -143,13 +149,21 @@ const CallForSessions = () => {
                   level={4}
                   style={{
                     color: "#007BFF",
-                    fontWeight: "bold",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "600",
                     fontSize: "16px",
                   }}
                 >
                   {format.title}
                 </Title>
-                <Paragraph style={{ fontSize: "16px", color: "#595959" }}>
+                <Paragraph
+                  style={{
+                    fontSize: paragraphFontSize,
+                    color: "black",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "500",
+                  }}
+                >
                   {format.description}
                 </Paragraph>
               </Card>
@@ -158,40 +172,46 @@ const CallForSessions = () => {
         </Row>
 
         {/* Proposal Section */}
-        <div style={{ textAlign: "left", padding: "10px 40px" }}>
+        <div style={{ textAlign: "left", padding: "10px 30px" }}>
           <Title
             style={{
-              marginTop: "40px",
+              marginTop: "20px",
               fontSize: titleMedium,
               textAlign: "left",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "700",
             }}
           >
             What to Include in Your Proposal
           </Title>
-          <ul style={{ fontSize: paragraphFontSize, color: "black", lineHeight: "1.8" }}>
+          <ul
+            style={{
+              fontSize: paragraphFontSize,
+              color: "black",
+              lineHeight: "1.8",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+              
+            }}
+          >
             <li>
               <strong>Session Title:</strong> A concise and engaging title that
               reflects the theme.
             </li>
-            <br />
             <li>
               <strong>Abstract:</strong> A brief description (300–500 words)
               highlighting the objectives, scope, and relevance of the session.
             </li>
-            <br />
 
             <li>
               <strong>Proposed Format:</strong> Specify whether the session will
               be a panel discussion, symposium, workshop, or forum.
             </li>
-            <br />
 
             <li>
               <strong>Speakers/Panelists:</strong> Names and profiles of the
               proposed participants, if applicable.
             </li>
-            <br />
 
             <li>
               <strong>Expected Outcomes:</strong> Describe the anticipated
@@ -205,26 +225,33 @@ const CallForSessions = () => {
               marginTop: "40px",
               fontSize: titleMedium,
               textAlign: "left",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "700",
             }}
           >
             Why Host a Session?
           </Title>
-          <ul style={{ fontSize: paragraphFontSize, color: "black", lineHeight: "1.8" }}>
+          <ul
+            style={{
+              fontSize: paragraphFontSize,
+              color: "black",
+              lineHeight: "1.8",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "600",
+              
+            }}
+          >
             <li>Gain visibility as a thought leader in your field.</li>
-            <br />
 
             <li>
               Inspire global experts, policymakers, and young researchers with
               your insights.
             </li>
-            <br />
 
             <li>
               Contribute to shaping the discourse on the future of space science
               and technology.
             </li>
-            <br />
 
             <li>
               Build valuable collaborations with international stakeholders.
@@ -232,44 +259,63 @@ const CallForSessions = () => {
           </ul>
 
           {/* How to Submit Section */}
-          <Title  style={{
+          <Title
+            style={{
               marginTop: "40px",
               fontSize: titleMedium,
               textAlign: "left",
-              fontWeight: "bold",
-            }}>
-             How to Submit
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "700",
+            }}
+          >
+            How to Submit
           </Title>
           <Paragraph
-            style={{ fontSize: paragraphFontSize, color: "black", marginBottom: "20px" }}
+            style={{
+              fontSize: paragraphFontSize,
+              color: "black",
+              marginBottom: "20px",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+              
+            }}
           >
             Submit your session proposal via the Proposal Form. Ensure your
             submission includes all the required details mentioned above.
           </Paragraph>
           <Paragraph
-            style={{ fontSize: paragraphFontSize, color: "#595959", marginBottom: "30px" }}
+            style={{
+              fontSize: paragraphFontSize,
+              color: "black",
+              marginBottom: "30px",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+            }}
           >
-            <strong style={{color:"black",fontWeight:"bold",}}>Submission Deadline: September 1,2025.</strong> 
-            <br/>
-            <br/>
-            All proposals
-            will be reviewed by the ICAST Steering Committee, and selected
-            sessions will be featured in the official program.
+            <strong style={{ color: "black", fontWeight: "bold" }}>
+              Submission Deadline: September 1,2025.
+            </strong>
+            <br />
+            <br />
+            All proposals will be reviewed by the ICAST Steering Committee, and
+            selected sessions will be featured in the official program.
           </Paragraph>
         </div>
         {/* Submit Button */}
-        <div style={{ textAlign: "left", padding:"20px 20px" }}>
+        <div style={{ textAlign: "left", padding: "10px 20px" }}>
           <Space>
-          <Button
-            type="primary"
-            size="large"
-            href="/proposal-form"
-            style={{  backgroundColor: "#186814",
+            <Button
+              type="primary"
+              size="large"
+              href="/proposal-form"
+              style={{
+                backgroundColor: "#186814",
                 borderColor: "#186814",
-                color:"white"}}
-          >
-            Submit Proposal
-          </Button>
+                color: "white",
+              }}
+            >
+              Submit Proposal
+            </Button>
           </Space>
         </div>
       </div>

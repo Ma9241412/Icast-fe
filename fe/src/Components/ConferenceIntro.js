@@ -17,21 +17,21 @@ const { useBreakpoint } = Grid;
 const ConferenceIntro = () => {
   const screens = useBreakpoint();
 
-  // Responsive font sizes and spacing
   const titleFontSize = screens.xl
-    ? "45px"
+    ? "48px"
     : screens.lg
-    ? "40px"
+    ? "48px"
     : screens.md
-    ? "35px"
-    : "28px";
+    ? "46px"
+    : "36px";
+
   const paragraphFontSize = screens.xl
-    ? "19px"
+    ? "17px"
     : screens.lg
-    ? "18px"
+    ? "17px"
     : screens.md
-    ? "16px"
-    : "16px";
+    ? "15px"
+    : "15px";
   const paragraphLineHeight = screens.md ? "1.8em" : "1.6em";
   const paragraphPadding = screens.md ? "0 20px" : "0 5px";
 
@@ -60,7 +60,6 @@ const ConferenceIntro = () => {
           <div
             style={{
               color: "white",
-              fontFamily: "Arial, sans-serif",
               lineHeight: "1.6",
               letterSpacing: "0.5px",
             }}
@@ -69,7 +68,8 @@ const ConferenceIntro = () => {
               style={{
                 fontSize: titleFontSize,
                 color: "white",
-                fontFamily: "Arial, sans-serif",
+                fontFamily: "Inter, sans-serif",
+                fontWeight:"700",
                 letterSpacing: "1px",
               }}
             >
@@ -78,12 +78,15 @@ const ConferenceIntro = () => {
             <Paragraph
               style={{
                 color: "white",
-                fontFamily: "Arial, sans-serif",
+                fontFamily: "Inter, sans-serif",
+
                 lineHeight: paragraphLineHeight,
                 letterSpacing: "0.5px",
                 fontSize: paragraphFontSize,
                 textAlign: "start",
                 padding: paragraphPadding,
+        lineHeight:"2.8rem"
+
               }}
             >
               The International Conference on Applications of Space Science and Technology (ICAST)

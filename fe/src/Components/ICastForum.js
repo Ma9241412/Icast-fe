@@ -83,7 +83,7 @@ const ICastForum = () => {
 
   return (
     <div className="icast-container">
-      <Title style={{ fontSize: titleFontSize, fontWeight: "bold" }}>Conference Highlights</Title>
+      <Title style={{ fontSize: titleFontSize, fontWeight: "bold", fontFamily: "Inter, sans-serif",}}>Conference Highlights</Title>
       <Card bordered={false} className="icast-card">
         <Row gutter={[16, 16]} justify="center">
           {data.map((item, index) => (

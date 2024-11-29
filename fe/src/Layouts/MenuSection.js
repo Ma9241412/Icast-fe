@@ -4,7 +4,7 @@ import "../Styles/DesktopMenuStyles.css";
 import { Link, useLocation } from "react-router-dom";
 
 const DesktopMenu = () => {
-  const [showDrawer, setShowDrawer] = useState(false);
+  const [activeDrawer, setActiveDrawer] = useState(null); // State to track which drawer is active
   const location = useLocation(); // Get the current path from react-router
   const [currentKey, setCurrentKey] = useState(location.pathname);
 
@@ -13,6 +13,12 @@ const DesktopMenu = () => {
     { key: "/aims", label: "Genesis of ICAST", link: "/genisis" },
     { key: "/aims", label: "ICAST 2025", link: "/icast-2025" },
     { key: "/governance", label: "Governance Structure", link: "/governance" },
+  ];
+  
+  const ContentMenus = [
+    { key: "/aims", label: "Call For Papers", link: "/call-for-papers" },
+    { key: "/aims", label: "Call For Sessions", link: "/call-for-session" },
+    { key: "/governance", label: "Author Resources", link: "/author-resources" },
   ];
 
   // Handle menu item click
@@ -31,8 +37,8 @@ const DesktopMenu = () => {
         {/* About ICAST Menu Item */}
         <div
           className="menu-item-with-drawer"
-          onMouseEnter={() => setShowDrawer(true)}
-          onMouseLeave={() => setShowDrawer(false)}
+          onMouseEnter={() => setActiveDrawer("about")}
+          onMouseLeave={() => setActiveDrawer(null)}
         >
           <Menu.Item key="/about">
             <Link to="/" onClick={() => setCurrentKey("/")}>
@@ -41,7 +47,7 @@ const DesktopMenu = () => {
           </Menu.Item>
 
           {/* Submenu Drawer */}
-          {showDrawer && (
+          {activeDrawer === "about" && (
             <div className="submenu-drawer">
               <ul className="submenu-list">
                 {aboutSubMenus.map((item) => (
@@ -59,11 +65,38 @@ const DesktopMenu = () => {
           )}
         </div>
 
+        {/* Content Menu Item */}
+        <div
+          className="menu-item-with-drawer"
+          onMouseEnter={() => setActiveDrawer("content")}
+          onMouseLeave={() => setActiveDrawer(null)}
+        >
+          <Menu.Item key="/content">
+            <Link to="/content" onClick={() => setCurrentKey("content")}>
+              Call For Content
+            </Link>
+          </Menu.Item>
+
+          {/* Submenu Drawer */}
+          {activeDrawer === "content" && (
+            <div className="submenu-drawer">
+              <ul className="submenu-list">
+                {ContentMenus.map((item) => (
+                  <li key={item.key} className="submenu-item">
+                    <Link
+                      to={item.link}
+                      onClick={() => setCurrentKey(item.key)}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+
         {/* Other Menu Items */}
-        <Menu.Item key="/content">
-          <Link to="/content">CALL FOR CONTENT</Link>
-        </Menu.Item>
-      
         <Menu.Item key="/registration">
           <Link to="/registration">REGISTRATION</Link>
         </Menu.Item>
@@ -76,9 +109,9 @@ const DesktopMenu = () => {
         <Menu.Item key="/screen-inprogress">
           <Link to="/screen-inprogress">PROGRAMME</Link>
         </Menu.Item>
-        <Menu.Item key="/downloads">
+        {/* <Menu.Item key="/downloads">
           <Link to="/screen-inprogress">DOWNLOADS</Link>
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
     </div>
   );

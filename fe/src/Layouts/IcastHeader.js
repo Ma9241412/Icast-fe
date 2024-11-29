@@ -5,8 +5,6 @@ import "../Styles/IcaseHeaderStyles.css";
 
 const IcastHeader = () => {
   return (
-
-   
      <>
         <LogoSection />
         <MenuSection />

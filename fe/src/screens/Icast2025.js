@@ -8,28 +8,28 @@ const { Title, Paragraph } = Typography;
 const { useBreakpoint } = Grid;
 
 const ICAST2025 = () => {
-    const screens = useBreakpoint();
-    const titleFontSize = screens.xl
-      ? "45px"
-      : screens.lg
-      ? "40px"
-      : screens.md
-      ? "35px"
-      : "28px";
+  const screens = useBreakpoint();
+  const titleFontSize = screens.xl
+    ? "48px"
+    : screens.lg
+    ? "48px"
+    : screens.md
+    ? "46px"
+    : "36px";
     const titleMedium = screens.xl
-      ? "25px"
-      : screens.lg
-      ? "25px"
-      : screens.md
-      ? "20px"
-      : "20px";
-    const paragraphFontSize = screens.xl
-      ? "19px"
-      : screens.lg
-      ? "17px"
-      : screens.md
-      ? "19px"
-      : "19px";
+    ? "22px"
+    : screens.lg
+    ? "22px"
+    : screens.md
+    ? "17px"
+    : "17px";
+  const paragraphFontSize = screens.xl
+    ? "16px"
+    : screens.lg
+    ? "16px"
+    : screens.md
+    ? "15px"
+    : "15px";
   
   return (
  <>
@@ -42,7 +42,8 @@ const ICAST2025 = () => {
               backgroundColor: "#EFF0F2",
               padding: "20px",
               fontSize: titleFontSize,
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"700",
             }}
           >
             ICAST 2025
@@ -54,7 +55,8 @@ const ICAST2025 = () => {
               fontSize: paragraphFontSize,
               color: "black",
               padding: "0px 20px",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"600",
             }}
           >
             ICAST / About ICAST /  ICAST 2025
@@ -69,6 +71,8 @@ const ICAST2025 = () => {
                   color: "black",
                   margin: 0, // Remove top and bottom margin for Title
                   padding: "10px 20px",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight:"500",
                 }}>
             The International Conference on Applications of Space Science and Technology (ICAST 2025), scheduled to take place from November 18–20, 2025, 
             at the Institute of Space Technology (IST), Islamabad, is Pakistan's premier space event. Bringing together global leaders, researchers, and industry experts, 
@@ -81,6 +85,8 @@ const ICAST2025 = () => {
                   color: "black",
                   margin: 0, // Remove top and bottom margin for Title
                   padding: "10px 20px",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight:"500",
                 }}>
             As a unified platform combining the legacies of IST’s International Conference on Aerospace Science and Engineering (ICASE) and SUPARCO’s International Conference on Space (ICS), 
             ICAST 2025 fosters innovation, collaboration, and transformative research. Under the theme <strong>“Space for Sustainable Development,”</strong> this biennial conference addresses critical 
@@ -93,6 +99,8 @@ const ICAST2025 = () => {
                   color: "black",
                   margin: 0, // Remove top and bottom margin for Title
                   padding: "10px 20px",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight:"500",
                 }}>
             With eight conference tracks, interactive forums, and an expanded international presence, ICAST 2025 aims to cement its status as a leader in advancing space science and technology on a global scale.
           </Paragraph>
@@ -105,7 +113,8 @@ const ICAST2025 = () => {
               fontSize: titleMedium,
               color: "black",
               padding: "0px 20px",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"700",
             }}  >ICAST 2025 Highlights</Title>
           <Row style={{padding:"20px 20px",  backgroundColor: "#EFF0F2", }} gutter={[16, 16]}>
             {[
@@ -152,13 +161,20 @@ const ICAST2025 = () => {
             ].map((highlight, index) => (
                 
                   <Col style={{padding:"20px 20px",   }} xs={24} sm={12} lg={6} key={index}>
-                <Card title={<span style={{ fontSize: "18px", fontWeight: "bold", color: "#1a73e8" }}>{highlight.title}</span>} bordered={false} hoverable>
+                    <Card style={{
+                    height: "100%",
+                   
+
+                    }}  title={<span style={{ fontSize: "15px",   fontFamily: "Inter, sans-serif",
+                fontWeight:"800", color: "#1a73e8" }}>{highlight.title}</span>} bordered={false} hoverable>
                   <Paragraph style={{
                   textAlign: "start",
                   fontSize: paragraphFontSize,
                   color: "black",
-                  margin: 0, // Remove top and bottom margin for Title
+                  margin: 0,
                   padding: "10px 20px",
+                  fontFamily: "Inter, sans-serif",
+                      fontWeight:"500",
                 }}>{highlight.description}</Paragraph>
                 </Card>
               </Col>

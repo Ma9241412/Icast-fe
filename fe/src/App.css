@@ -35,6 +35,15 @@ body {
   color: #61dafb;
 }
 
+
+
+.title-imp {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -10,26 +10,26 @@ const CallForPapers = () => {
   const screens = useBreakpoint();
 
   const titleFontSize = screens.xl
-    ? "45px"
+    ? "48px"
     : screens.lg
-    ? "40px"
+    ? "48px"
     : screens.md
-    ? "35px"
-    : "28px";
-  const titleMedium = screens.xl
-    ? "30px"
+    ? "46px"
+    : "36px";
+    const titleMedium = screens.xl
+    ? "22px"
     : screens.lg
-    ? "30px"
+    ? "22px"
     : screens.md
-    ? "25px"
-    : "22px";
-  const paragraphFontSize = screens.xl
-    ? "19px"
-    : screens.lg
     ? "17px"
+    : "17px";
+  const paragraphFontSize = screens.xl
+    ? "16px"
+    : screens.lg
+    ? "16px"
     : screens.md
-    ? "19px"
-    : "22px";
+    ? "15px"
+    : "15px";
 
   return (
     <>
@@ -48,7 +48,8 @@ const CallForPapers = () => {
             backgroundColor: "#EFF0F2",
             padding: "20px",
             fontSize: titleFontSize,
-            fontWeight: "bold",
+            fontFamily: "Inter, sans-serif",
+            fontWeight:"700",
           }}
         >
           Call for Papers
@@ -60,7 +61,8 @@ const CallForPapers = () => {
             fontSize: paragraphFontSize,
             color: "black",
             padding: "0px 20px",
-            fontWeight: "bold",
+            fontFamily: "Inter, sans-serif",
+            fontWeight:"600",
           }}
         >
           ICAST /Call For Content / Call For Papers
@@ -74,6 +76,10 @@ const CallForPapers = () => {
               color: "black",
               margin: 0, // Remove top and bottom margin for Title
               padding: "10px 0px",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"500",
+              lineHeight:"2rem"
+
             }}
           >
             The International Conference on Applications of Space Science and
@@ -122,12 +128,16 @@ const CallForPapers = () => {
               marginTop: "40px",
               fontSize: titleMedium,
               textAlign: "left",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"700",
             }}
           >
             Conference Tracks
           </Title>
-          <Paragraph style={{ fontSize: paragraphFontSize, color: "black" }}>
+          <Paragraph style={{ fontSize: paragraphFontSize, color: "black" ,
+             fontFamily: "Inter, sans-serif",
+             fontWeight:"500",
+          }}>
             We welcome high-quality submissions across the following dynamic
             tracks. Detailed subtopics can be found below:
           </Paragraph>
@@ -165,11 +175,18 @@ const CallForPapers = () => {
               >
                 <Title
                   level={4}
-                  style={{ color: "#007BFF", fontWeight: "bold" }}
+                  style={{ color: "#007BFF", 
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight:"600",
+                    fontSize:titleMedium
+                  }}
                 >
                   {track.title}
                 </Title>
-                <Paragraph style={{ fontSize: "16px", color: "black" }}>
+                <Paragraph style={{ fontSize: paragraphFontSize, color: "black",
+                   fontFamily: "Inter, sans-serif",
+                   fontWeight:"500",
+                 }}>
                   {track.description}
                 </Paragraph>
               </Card>
@@ -182,14 +199,20 @@ const CallForPapers = () => {
               marginTop: "40px",
               fontSize: titleMedium,
               textAlign: "left",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"700",
             }}>
           Why Submit?
         </Title>
-        <Paragraph style={{ fontSize: paragraphFontSize, color: "black" }}>
+        <Paragraph style={{ fontSize: paragraphFontSize, color: "black",
+           fontFamily: "Inter, sans-serif",
+           fontWeight:"500",
+         }}>
+          
           By submitting your research to ICAST 2025, you will:
         </Paragraph>
-        <ul style={{ fontSize: paragraphFontSize, color: "black", paddingLeft: "20px" }}>
+        <ul style={{ fontSize: paragraphFontSize, color: "black", paddingLeft: "20px", fontFamily: "Inter, sans-serif",
+              fontWeight:"500", }}>
           <li>
             Gain recognition by presenting your work to a global audience of
             experts and stakeholders.

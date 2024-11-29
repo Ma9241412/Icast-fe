@@ -11,14 +11,11 @@ import Sponsors from "../Components/Sponsors";
 import Footer from "../Layouts/IcastFooter";
 import SubFooter from "../Layouts/SubFooter";
 
-
-
 const ICast = () => {
   return (
     <>
       <IcastHeader />
-
-      <div style={{ backgroundColor: "#272B3A",padding:0 }}>
+      <div style={{ backgroundColor: "#272B3A", padding: 0 }}>
         <FullWidthCarousel />
         <div>
           <EventCarousel />

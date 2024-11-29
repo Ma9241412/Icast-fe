@@ -21,7 +21,6 @@ const LogoSection = () => {
   return (
    <>
    <header className="header-container">
-      {/* Left Section with a Separate Background Color */}
       <div className="left-section">
         <Link to={"/"}>
         <img src={logo} alt="ICAST Logo" className="main-logo" />

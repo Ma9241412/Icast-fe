@@ -16,7 +16,7 @@ const { useBreakpoint } = Grid;
 const aimsData = [
   {
     id: 1,
-    title: "About SUPARCO & IST",
+    title: "1. About SUPARCO & IST",
     description: (
       <>
         <br />
@@ -97,7 +97,7 @@ const aimsData = [
   },
   {
     id: 2,
-    title: "A Convergence of Excellence",
+    title: "2. A Convergence of Excellence",
     description: (
       <>
         <br />
@@ -118,102 +118,70 @@ const aimsData = [
 
   {
     id: 3,
-    title: "ICAST Aims & Objectives",
+    title: "3. ICAST Aims & Objectives",
     description: (
       <>
-        <br />
-        <strong style={{ color: "black", fontWeight: "bold" }}>
-          {" "}
-          (a). Drive Global Collaboration:{" "}
-        </strong>
-        Create an international platform where scientists, researchers, and
-        industry experts can exchange insights and collaborate on innovative
-        space technologies that address today’s global challenges.
-        <br />
-        <br />
-        <strong style={{ color: "black", fontWeight: "bold" }}>
-          {" "}
-          (b). Advance Research and Innovation:{" "}
-        </strong>
-        Support pioneering research in space science by providing participants
-        with opportunities to present, share, and publish their work, fostering
-        a culture of innovation with SUPARCO and IST at the forefront.
-        <br />
-        <br />
-        <strong style={{ color: "black", fontWeight: "bold" }}>
-          {" "}
-          (c). Promote Space Technology for Sustainable Development:{" "}
-        </strong>
-        Emphasize the role of space technology in addressing sustainability
-        goals, including climate monitoring, disaster management, and
-        environmental protection, with SUPARCO leading these critical
-        initiatives.
-        <br />
-        <br />
-        <strong style={{ color: "black", fontWeight: "bold" }}>
-          {" "}
-          (d). Engage and Inspire the Next Generation:{" "}
-        </strong>
-        Encourage youth involvement in space science through specialized
-        sessions and interactive forums, promoting STEM education and empowering
-        the next generation of space leaders.
-        <br />
-        <br />
-        <strong style={{ color: "black", fontWeight: "bold" }}>
-          {" "}
-          (e). Facilitate Dialogue on Space Policy and Law:{" "}
-        </strong>
-        Foster discussions on space law, governance, and sustainability among
-        policymakers, researchers, and industry leaders, reinforcing SUPARCO’s
-        role in shaping international space policy.
-        <br />
-        <br />
-        <strong style={{ color: "black", fontWeight: "bold" }}>
-          {" "}
-          (f). Strengthen Skills through Hands-On Training:{" "}
-        </strong>
-        Empower participants with hands- on experience in advanced space
-        technologies through interactive workshops and training sessions,
-        equipping them to apply these skills across scientific, commercial, and
-        societal projects.
-        <br />
-        <br />
-        <strong style={{ color: "black", fontWeight: "bold" }}>
-          {" "}
-          (g). Highlight SUPARCO and IST’s Leadership in Space Science:{" "}
-        </strong>
-        Showcase SUPARCO and the Institute of Space Technology (IST) as leaders
-        in space science and technology, featuring their groundbreaking
-        research, collaborations, and contributions to global and national space
-        missions.
+          <br/>
+
+        <ul style={{ color: "black", fontSize: "16px", lineHeight: "1.8" }}>
+          <li>
+            <strong style={{ fontWeight: "bold" }}>Drive Global Collaboration:</strong> 
+            Create an international platform where scientists, researchers, and industry experts can exchange insights and collaborate on innovative space technologies that address today’s global challenges.
+          </li>
+          <li>
+            <strong style={{ fontWeight: "bold" }}>Advance Research and Innovation:</strong> 
+            Support pioneering research in space science by providing participants with opportunities to present, share, and publish their work, fostering a culture of innovation with SUPARCO and IST at the forefront.
+          </li>
+          <li>
+            <strong style={{ fontWeight: "bold" }}>Promote Space Technology for Sustainable Development:</strong> 
+            Emphasize the role of space technology in addressing sustainability goals, including climate monitoring, disaster management, and environmental protection, with SUPARCO leading these critical initiatives.
+          </li>
+          <li>
+            <strong style={{ fontWeight: "bold" }}>Engage and Inspire the Next Generation:</strong> 
+            Encourage youth involvement in space science through specialized sessions and interactive forums, promoting STEM education and empowering the next generation of space leaders.
+          </li>
+          <li>
+            <strong style={{ fontWeight: "bold" }}>Facilitate Dialogue on Space Policy and Law:</strong> 
+            Foster discussions on space law, governance, and sustainability among policymakers, researchers, and industry leaders, reinforcing SUPARCO’s role in shaping international space policy.
+          </li>
+          <li>
+            <strong style={{ fontWeight: "bold" }}>Strengthen Skills through Hands-On Training:</strong> 
+            Empower participants with hands-on experience in advanced space technologies through interactive workshops and training sessions, equipping them to apply these skills across scientific, commercial, and societal projects.
+          </li>
+          <li>
+            <strong style={{ fontWeight: "bold" }}>Highlight SUPARCO and IST’s Leadership in Space Science:</strong> 
+            Showcase SUPARCO and the Institute of Space Technology (IST) as leaders in space science and technology, featuring their groundbreaking research, collaborations, and contributions to global and national space missions.
+          </li>
+        </ul>
       </>
     ),
-  },
+  }
+  
 ];
 
 const Genisis = () => {
   const screens = useBreakpoint();
   const titleFontSize = screens.xl
-    ? "45px"
+    ? "48px"
     : screens.lg
-    ? "40px"
+    ? "48px"
     : screens.md
-    ? "35px"
-    : "28px";
-  const titleMedium = screens.xl
-    ? "25px"
+    ? "46px"
+    : "36px";
+    const titleMedium = screens.xl
+    ? "22px"
     : screens.lg
-    ? "25px"
+    ? "22px"
     : screens.md
-    ? "20px"
-    : "20px";
-  const paragraphFontSize = screens.xl
-    ? "19px"
-    : screens.lg
     ? "17px"
+    : "17px";
+  const paragraphFontSize = screens.xl
+    ? "16px"
+    : screens.lg
+    ? "16px"
     : screens.md
-    ? "19px"
-    : "22px";
+    ? "15px"
+    : "15px";
 
   return (
     <>
@@ -227,7 +195,8 @@ const Genisis = () => {
               backgroundColor: "#EFF0F2",
               padding: "20px",
               fontSize: titleFontSize,
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"700",
             }}
           >
             Genesis of ICAST
@@ -239,14 +208,15 @@ const Genisis = () => {
               fontSize: paragraphFontSize,
               color: "black",
               padding: "0px 20px",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"600",
             }}
           >
             ICAST / About ICAST / Genesis of ICAST
           </Paragraph>
 
                   <Row gutter={[0, 0]} style={{ margin: 0, padding: 0 ,marginBottom:"30px"}}>
-            <Col xs={24} lg={18}>
+            <Col xs={24} lg={19}>
               <Paragraph
                 style={{
                   backgroundColor: "#EFF0F2",
@@ -255,6 +225,9 @@ const Genisis = () => {
                   color: "black",
                   margin: 0, // Remove top and bottom margin for Title
                   padding: "10px 20px",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight:"500",
+                  lineHeight:"2rem"
                 }}
               >
                 The International Conference on Applications of Space Science
@@ -284,7 +257,8 @@ const Genisis = () => {
                     style={{
                       textAlign: "start",
                       fontSize: titleMedium,
-                      fontWeight: "bold",
+                      fontFamily: "Inter, sans-serif",
+                fontWeight:"700",
                       color: "black",
                       margin: 0, // Remove top and bottom margin for Title
                     }}
@@ -296,8 +270,11 @@ const Genisis = () => {
                       fontSize: paragraphFontSize,
                       lineHeight: "1.8",
                       color: "black",
-                      textAlign: "start",
-                      margin: 0, // Remove top and bottom margin for Paragraph
+                      textAlign: "start", fontFamily: "Inter, sans-serif",
+                      fontWeight:"500",
+                      margin: 0, 
+                  lineHeight:"2rem"
+
                     }}
                   >
                     {aim.description}
@@ -307,7 +284,7 @@ const Genisis = () => {
              
             </Col>
 
-            <Col xs={24} lg={6} style={{ textAlign: "center" }}>
+            <Col xs={24} lg={5} style={{ textAlign: "center" }}>
               <Image
                 src={m1}
                 alt="Drive Global Collaboration"

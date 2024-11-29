@@ -5,33 +5,33 @@ import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
 
 const { Content } = Layout;
-const { Title, Paragraph, Link, Text } = Typography;
+const { Title, Paragraph, Text } = Typography;
 const { useBreakpoint } = Grid;
 
 const CallForContent = () => {
   const screens = useBreakpoint();
 
   const titleFontSize = screens.xl
-    ? "45px"
-    : screens.lg
-    ? "40px"
-    : screens.md
-    ? "35px"
-    : "28px";
+  ? "48px"
+  : screens.lg
+  ? "48px"
+  : screens.md
+  ? "46px"
+  : "36px";
   const titleMedium = screens.xl
-    ? "30px"
-    : screens.lg
-    ? "30px"
-    : screens.md
-    ? "25px"
-    : "22px";
-  const paragraphFontSize = screens.xl
-    ? "19px"
-    : screens.lg
-    ? "17px"
-    : screens.md
-    ? "19px"
-    : "22px";
+  ? "22px"
+  : screens.lg
+  ? "22px"
+  : screens.md
+  ? "17px"
+  : "17px";
+const paragraphFontSize = screens.xl
+  ? "16px"
+  : screens.lg
+  ? "16px"
+  : screens.md
+  ? "15px"
+  : "15px";
 
   return (
     <>
@@ -39,13 +39,19 @@ const CallForContent = () => {
       <Layout className="call-for-content-layout">
         <Content className="call-for-content-container">
           <Title
-            style={{ fontSize: titleFontSize, fontWeight: "bold" }}
+            style={{ fontSize: titleFontSize, fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"700",
+             }}
             className="call-for-content-title"
           >
             Call For Content
           </Title>
           <Paragraph
-            style={{ fontSize: paragraphFontSize, fontWeight: "bold" }}
+            style={{ fontSize: paragraphFontSize, fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight:"600",
+             }}
             className="breadcrumb"
           >
             ICAST/ Call For Content
@@ -62,7 +68,9 @@ const CallForContent = () => {
                   style={{
                     fontSize: paragraphFontSize,
                     color: "black",
-                    lineHeight: "2.5em",
+                    lineHeight: "2.5rem",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight:"500",
                   }}
                 >
                   The{" "}
@@ -97,10 +105,16 @@ const CallForContent = () => {
                   </Button>
                 </Space>
                 <div>
-                  <Title style={{ fontSize: titleMedium, fontWeight: "bold" }}>
+                  <Title style={{ fontSize: titleMedium, 
+                     fontFamily: "Inter, sans-serif",
+                     fontWeight:"700",
+                  }}>
                     Call for Papers
                   </Title>
-                  <Paragraph style={{ fontSize: paragraphFontSize ,color:"black"}}>
+                  <Paragraph style={{ fontSize: paragraphFontSize ,color:"black",
+                     fontFamily: "Inter, sans-serif",
+                     fontWeight:"500",
+                  }}>
                     The International Conference on Applications of Space
                     Science and Technology (ICAST 2025) invites researchers,
                     academicians, and professionals from around the world to
@@ -116,10 +130,16 @@ const CallForContent = () => {
                   </Button>
                 </div>
                 <div style={{ marginTop: "20px" }}>
-                  <Title style={{ fontSize: titleMedium, fontWeight: "bold" }}>
+                  <Title style={{ fontSize: titleMedium, 
+                     fontFamily: "Inter, sans-serif",
+                     fontWeight:"700",
+                  }}>
                     Call for Sessions
                   </Title>
-                  <Paragraph style={{ fontSize: paragraphFontSize,color:"black" }}>
+                  <Paragraph style={{ fontSize: paragraphFontSize,color:"black",
+                     fontFamily: "Inter, sans-serif",
+                     fontWeight:"500",
+                   }}>
                     
                     The International Conference on Applications of Space
                     Science and Technology (ICAST 2025) invites session
@@ -154,6 +174,8 @@ const CallForContent = () => {
                         color: "black",
                         fontSize: titleMedium,
                         textAlign: "start",
+                        fontFamily: "Inter, sans-serif",
+                        fontWeight:"700",
                       }}
                     >
                       Dates to Remember
@@ -167,11 +189,16 @@ const CallForContent = () => {
                       fontWeight: "500",
                       lineHeight: "1.8", // Adjust line spacing
                       marginBottom: "10px", // Control vertical spacing
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight:"500",
                     }}
                   >
                     <div style={{ marginBottom: "12px" }}>
                       <Space direction="vertical" size={0}>
-                        <strong style={{ fontSize: paragraphFontSize }}>
+                        <strong style={{ fontSize: paragraphFontSize ,
+                           fontFamily: "Inter, sans-serif",
+                           fontWeight:"500",
+                        }}>
                           Abstract Submission Deadline:
                         </strong>{" "}
                         <Text

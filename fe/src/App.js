@@ -15,6 +15,7 @@ import Genisis from "./screens/Genesis";
 import ICAST2025 from "./screens/Icast2025";
 import CallForPapers from "./screens/CallForPapers";
 import CallForSessions from "./screens/CallForSessions";
+import AuthorResources from "./screens/AuthorResources";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/governance" element={<GovernancePage/>}/>
           <Route path="/call-for-papers" element={<CallForPapers/>}/>
           <Route path="/call-for-session" element={<CallForSessions/>}/>
+          <Route path="/author-resources" element={<AuthorResources/>}/>
           <Route path="/registration" element={<Registration/>}/>
           <Route path="/theme" element={<ThemePage/>}/>
           <Route path="/contact" element={<ContactForm />} />

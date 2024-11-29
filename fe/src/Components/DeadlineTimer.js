@@ -3,7 +3,7 @@ import { Row, Col, Divider, Space } from "antd";
 import "../Styles/SliderStyles.css";
 
 const calculateTimeLeft = () => {
-  const eventDate = new Date("August 18, 2025 00:00:00").getTime();
+  const eventDate = new Date("November 18, 2025 00:00:00").getTime();
   const now = new Date().getTime();
   const difference = eventDate - now;
 
@@ -59,8 +59,8 @@ const DeadlineTimer = () => {
         </Col>
         <Divider type="vertical" className="ant-divider" />
         <Col className="deadline-section">
-          <div className="deadline-date">18</div>
-          <div className="deadline-label">AUGUST</div>
+          <div className="deadline-date">1</div>
+          <div className="deadline-label">SEPTEMBER 2025</div>
         </Col>
       </Row>
     </div>
