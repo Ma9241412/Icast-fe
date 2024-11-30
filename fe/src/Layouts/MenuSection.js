@@ -104,7 +104,7 @@ const DesktopMenu = () => {
           <Link to="/theme"> THEME & TRACKS</Link>
         </Menu.Item>
         <Menu.Item key="/screen-inprogress">
-          <Link to="/screen-inprogress">EXPOSITION & SPONSORS</Link>
+          <Link to="/expo">EXPOSITION & SPONSORS</Link>
         </Menu.Item>
         <Menu.Item key="/screen-inprogress">
           <Link to="/screen-inprogress">PROGRAMME</Link>

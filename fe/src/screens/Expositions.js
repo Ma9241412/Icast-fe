@@ -1,5 +1,15 @@
 import React from "react";
-import { Layout, Typography, Row, Col, Button, Card, Space, Grid } from "antd";
+import {
+  Layout,
+  Typography,
+  Row,
+  Col,
+  Button,
+  Card,
+  Space,
+  Grid,
+  Image,
+} from "antd";
 import {
   MailOutlined,
   PhoneOutlined,
@@ -10,29 +20,39 @@ import {
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
 import "../Styles/ExpoStyles.css";
+import m1 from "../Assets/m4.jpg";
+import m2 from "../Assets/m5.jpg";
+import m3 from "../Assets/m6.jpg";
+import m4 from "../Assets/m7.jpg";
 
-const { Title, Text } = Typography;
+const { Title, Text, Paragraph } = Typography;
 const { Content } = Layout;
 const { useBreakpoint } = Grid;
 
 const Expositions = () => {
   const screens = useBreakpoint();
   const titleFontSize = screens.xl
-  ? "45px"
-  : screens.lg
-  ? "40px"
-  : screens.md
-  ? "35px"
-  : "28px";
-
-const paragraphFontSize = screens.xl
-  ? "19px"
-  : screens.lg
-  ? "17px"
-  : screens.md
-  ? "19px"
-  : "19px";
-    const buttonsize = screens.xl
+    ? "48px"
+    : screens.lg
+    ? "48px"
+    : screens.md
+    ? "46px"
+    : "36px";
+  const titleMedium = screens.xl
+    ? "22px"
+    : screens.lg
+    ? "22px"
+    : screens.md
+    ? "17px"
+    : "17px";
+  const paragraphFontSize = screens.xl
+    ? "16px"
+    : screens.lg
+    ? "16px"
+    : screens.md
+    ? "15px"
+    : "15px";
+  const buttonsize = screens.xl
     ? "15px"
     : screens.lg
     ? "18px"
@@ -42,238 +62,483 @@ const paragraphFontSize = screens.xl
   return (
     <>
       <IcastHeader />
-        <div className="expo-content">
-          <Title style={{ fontSize: titleFontSize ,fontWeight:"bold" }} className="expo-header">
-            Exposition & Sponsors
-          </Title>
-          <Text
-            style={{ fontSize: paragraphFontSize, fontWeight:"bold"}}
-            className="expo-subtitle"
-          >
-            ICAST / Exposition & Sponsors
-          </Text>
-
-          {/* Description and Contact Section */}
-          <Row
-          style={{backgroundColor:"#EFF0F2",padding:"30px",}}
-          align={"top"}
-          >
-            {/* Left Column */}
-            <Col xs={24} md={16} lg={18}>
-              <Text
-                style={{ fontSize: paragraphFontSize ,}}
-                className="expo-description"
-              >
-                AIAA SciTech Forum is the world’s largest event for aerospace
-                research, development, and technology. Following up on a strong
-                2024 forum—which set a new attendance record of 6,000+ attendees
-                from 45 countries—the 2025 AIAA SciTech Forum promises to
-                attract thousands of high-profile decision makers,
-                entrepreneurs, scientists, technologists, and other
-                professionals from government, military, industry, and academia.
-              </Text>
-              <Text
-                style={{ fontSize: paragraphFontSize }}
-                className="expo-description"
-              >
-                Through sponsoring or exhibiting, you can validate your
-                solutions of the future, showcase an exciting product, service,
-                or company project, find and/or meet with business partners,
-                make qualified sales, and recruit premier talent.
-              </Text>
-            </Col>
-
-            <Col xs={24} md={8} lg={6}>
-  <Card
-    style={{
-      backgroundColor: "white",
-      borderRadius: "0px", // No border radius
-      boxShadow: "none", // Remove shadow
-      border: "none", // Ensure no borders
-    }}
-  >
-    <div
-      className="contact-card"
-      style={{
-        backgroundColor: "#1f5223",
-        padding: "10px 15px",
-        borderRadius: "5px", // Keep the inner element rounded
-        display: "inline-block",
-      }}
-    >
-      <Title
+      <div
         style={{
-          fontSize: paragraphFontSize,
-          color: "white",
-          margin: 0,
-          fontWeight: 500,
+          overflowX: "hidden",
+          margin: "0 auto",
         }}
       >
-        Contact Our Team
-      </Title>
-    </div>
-    <div className="contact-entry"  >
-      <Text className="contact-name" style={{ fontWeight: "bold" }}>
-        Elizabeth Just
-      </Text>
-      <br />
-      <Text className="contact-details" style={{ display: "block" }}>
-        Sr. Manager, Client Executive and Sales Capture
-      </Text>
-      <Text className="contact-details" style={{ display: "block" }}>
-        New Clients A-N
-      </Text>
-      <Text className="contact-details" style={{ display: "block" }}>
-        ElizabethJ@aiaa.org
-      </Text>
-      <Text className="contact-details" style={{ display: "block" }}>
-        Cell: 571.439.4672
-      </Text>
-    </div>
-    <div className="contact-entry" style={{ marginTop: "20px" }}>
-      <Text className="contact-name" style={{ fontWeight: "bold" }}>
-        Brian Williams
-      </Text>
-      <br />
-      <Text className="contact-details" style={{ display: "block" }}>
-        Sr. Manager, Client Executive and Sales Capture
-      </Text>
-      <Text className="contact-details" style={{ display: "block" }}>
-        New Clients A-N
-      </Text>
-      <Text className="contact-details" style={{ display: "block" }}>
-        ElizabethJ@aiaa.org
-      </Text>
-      <Text className="contact-details" style={{ display: "block" }}>
-        Cell: 571.439.4672
-      </Text>
-    </div>
-  </Card>
-</Col>
+        <Title
+          style={{
+            textAlign: "start",
+            padding: "20px 40px",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "700",
+            fontSize: titleFontSize,
+            backgroundColor: "#EEF0F2",
+          }}
+          className="expo-header"
+        >
+          Exposition & Sponsors
+        </Title>
+        <Paragraph
+          style={{
+            textAlign: "start",
+            fontSize: paragraphFontSize,
+            color: "black",
+            padding: "0px 40px",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "700",
+          }}
+        >
+          ICAST / Exposition & Sponsors
+        </Paragraph>
 
-            <Col>
-            <div style={{ textAlign: "left",padding:"10px 0px" }}>
- 
-            <div className="contact-card"
-                  style={{
-                    backgroundColor: "#1f5223",
-                   width:"200px",
-                   height:"45px",
-                    borderRadius: "5px",
-                    display: "inline-block",
-                  }}
-                >
-                  <Title
-                    style={{
-                      fontSize: paragraphFontSize,
-                      color: "white",
-                      margin: 0,
-                      fontWeight:500,
-                      textAlign:"center",
-                      padding:"10px"
-                    }}
-                  >
-                    Get Started
-                  </Title>
-                </div>
-
-
-            <Row
-              gutter={[24, 24]}
-              style={{ marginTop: "2rem" }}
-              justify="start"
+        <Row style={{ backgroundColor: "white" }} align={"top"}>
+          <Col xs={24} md={16} lg={16}>
+            <Paragraph
+              style={{
+                textAlign: "start",
+                fontSize: paragraphFontSize,
+                color: "black",
+                margin: 0,
+                fontFamily: "Inter, sans-serif",
+                fontWeight: "500",
+                backgroundColor: "#EEF0F2",
+                padding: "20px 40px",
+              }}
             >
-              <Col xs={24} sm={12} md={6} lg={6}>
-                <Card  className="action-card">
-             <Space direction="vertical">
-             <Space align="start">
-                <FileTextOutlined
-                    style={{ fontSize: "24px", color: "black" }}
-                  />
-                  <Text style={{  color: "black" }} className="action-card-text">
-                    Step 1. Find the Right Opportunity For Your Organization.
-                  </Text>
+              The Exposition and Sponsorship Program at ICAST 2025 provides an
+              unparalleled platform for organizations, startups, and innovators
+              to showcase their contributions to space science and technology.
+              As the largest space event in Pakistan, ICAST 2025 attracts a
+              diverse audience of global experts, policymakers, researchers, and
+              enthusiasts, offering unmatched visibility and networking
+              opportunities. Join us in shaping the future of space science by
+              exhibiting your innovations or supporting this landmark event as a
+              sponsor.
+            </Paragraph>
+            <Title
+              style={{
+                textAlign: "start",
+                fontSize: titleMedium,
+                color: "black",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: "700",
+                padding: "10px 40px",
+              }}
+            >
+              1. Exhibit at ICAST 2025
+            </Title>
+            <div
+              style={{
+                marginBottom: "20px",
+                backgroundColor: "#EFF0F2",
+                padding: "10px 40px",
+              }}
+            >
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                (a).{" "}
+                <strong style={{ fontWeight: "bold" }}>
+                  {" "}
+                  Global Audience Reach:
+                </strong>{" "}
+                Present your ideas and innovations to researchers, industry
+                leaders, policymakers, and future space leaders from across the
+                world.
+                <br />
+                (b).{" "}
+                <strong style={{ fontWeight: "bold" }}>
+                  {" "}
+                  Networking Opportunities:{" "}
+                </strong>{" "}
+                Forge meaningful connections with decision-makers,
+                collaborators, and potential customers.
+                <br />
+                (c).{" "}
+                <strong style={{ fontWeight: "bold" }}>
+                  {" "}
+                  Brand Visibility:
+                </strong>{" "}
+                Gain recognition in conference materials, on-site branding, and
+                digital platforms.
+                <br />
+                (d).{" "}
+                <strong style={{ fontWeight: "bold" }}>
+                  {" "}
+                  Cutting-Edge Insights:
+                </strong>{" "}
+                Engage with the latest advancements in space science and
+                technology by connecting with other exhibitors and participants.
+              </Paragraph>
+              <Title
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "700",
+                }}
+              >
+                What’s Included?
+              </Title>
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                (a). Customizable booth options in a strategically designed
+                exposition area.
+                <br />
+                (b). Access to high-traffic zones with maximum attendee
+                interaction.
+                <br />
+                (c). Complimentary exhibitor badges for team members.
+                <br />
+                (d). Inclusion in the official exhibitor directory distributed
+                to all attendees.
+              </Paragraph>
+            </div>
+            <Title
+              style={{
+                textAlign: "start",
+                fontSize: titleMedium,
+                color: "black",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: "700",
+                padding: "10px 40px",
+              }}
+            >
+              2. Sponsor ICAST 2025
+            </Title>
+            <div
+              style={{
+                marginBottom: "20px",
+                backgroundColor: "#EFF0F2",
+                padding: "10px 40px",
+              }}
+            >
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                Sponsorship of ICAST 2025 places your organization in a
+                leadership position within the global space community. It
+                highlights your commitment to advancing space science while
+                offering tailored opportunities to enhance your brand’s
+                visibility.
+              </Paragraph>
+              <Title
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "700",
+                }}
+              >
+                Benefits of Sponsorship:
+              </Title>
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                (a).{" "}
+                <strong style={{ fontWeight: "bold" }}>
+                  Prime Visibility:
+                </strong>{" "}
+                Your brand will be featured on conference banners, digital
+                platforms, and marketing materials.
+                <br />
+                (b).{" "}
+                <strong style={{ fontWeight: "bold" }}>
+                  {" "}
+                  Thought Leadership:
+                </strong>{" "}
+                Gain exclusive opportunities to sponsor sessions, workshops, or
+                networking events.
+                <br />
+                (c).{" "}
+                <strong style={{ fontWeight: "bold" }}>
+                  Strategic Engagement:
+                </strong>{" "}
+                Directly connect with key stakeholders, decision-makers, and
+                policymakers.
+                <br />
+                (d).{" "}
+                <strong style={{ fontWeight: "bold" }}>
+                  Tailored Packages:
+                </strong>{" "}
+                Choose from a range of sponsorship tiers to suit your goals or
+                collaborate with us to create a custom package.
+              </Paragraph>
+            </div>
+            <Title
+              style={{
+                textAlign: "start",
+                fontSize: titleMedium,
+                color: "black",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: "700",
+                padding: "10px 40px",
+              }}
+            >
+              3. Explore Sponsorship and Exhibit Opportunities
+            </Title>
+            <div
+              style={{
+                marginBottom: "20px",
+                backgroundColor: "#EFF0F2",
+                padding: "10px 40px",
+              }}
+            >
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                Discover tailored opportunities to showcase your brand and
+                innovations at ICAST 2025. Our detailed prospectus provides
+                comprehensive information about sponsorship packages, exhibit
+                options, and the benefits of partnering with Pakistan’s largest
+                space science event.
+              </Paragraph>
+              <Title
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "700",
+                }}
+              >
+                What’s Inside the Prospectus?
+              </Title>
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                (a).Sponsorship tiers and their exclusive benefits.
+                <br />
+                (b).Booth options and details for exhibitors.
+                <br />
+                (c). Branding and visibility opportunities.
+                <br />
+                (d). Customizable packages to meet your specific goals.
+              </Paragraph>
+              <div style={{ textAlign: "left" }}>
+                <Button>Download Sponsorship &amp; Exhibit Prospectus</Button>
+              </div>
+            </div>
+            <Title
+              style={{
+                textAlign: "start",
+                fontSize: titleMedium,
+                color: "black",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: "700",
+                padding: "10px 40px",
+              }}
+            >
+              4. Featured Exhibitors and Sponsors
+            </Title>
+            <div
+              style={{
+                marginBottom: "20px",
+                backgroundColor: "#EFF0F2",
+                padding: "10px 40px",
+              }}
+            >
+              <Title
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "700",
+                }}
+              >
+                National Center of GIS & Space Applications
+              </Title>
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                The National Center of GIS and Space Applications (NCGSA) stands
+                as a cornerstone of Pakistan’s scientific and technological
+                advancement in GIS and space applications. Established in 2020
+                under the leadership of the Institute of Space Technology (IST),
+                NCGSA represents a pioneering consortium of seven specialized
+                research laboratories across leading academic institutions in
+                Pakistan. The center’s mission aligns with Pakistan’s broader
+                goals of fostering scientific innovation, enhancing
+                technological capacities, and leveraging space science for
+                socio-economic uplift. The center’s research spans diverse and
+                critical domains, including Geo Forensics, Mineral Inventory,
+                Astronomy, Satellite Design and Development, Satellite
+                Navigation Systems, and Remote Sensing Applications. NCGSA’s
+                labs also focus on pressing challenges such as climate studies,
+                urban planning, natural disaster management, and agricultural
+                remote sensing, ensuring significant contributions to the
+                nation&#39;s sustainable development goals. NCGSA’s objectives
+                extend beyond research; the center is a driving force in
+                capacity building, education, and outreach in the space sector.
+                By fostering collaboration between academia, industry, and
+                government, NCGSA continues to develop specialized human
+                resources and national capacity in space science and technology.
+                As a proud sponsor and partner of ICAST 2025, NCGSA embodies a
+                commitment to advancing space science and innovation,
+                championing Pakistan’s leadership in the global space community.
+              </Paragraph>
+            </div>
+            <Title
+              style={{
+                textAlign: "start",
+                fontSize: titleMedium,
+                color: "black",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: "700",
+                padding: "10px 40px",
+              }}
+            >
+              5. Register Now!
+            </Title>
+            <div
+              style={{
+                marginBottom: "20px",
+                backgroundColor: "#EFF0F2",
+                padding: "10px 40px",
+              }}
+            >
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                (a).<strong style={{ fontWeight: "bold" }}>Exhibitors:</strong>{" "}
+                Reserve your space today to connect with a global audience and
+                showcase your innovation at Pakistan’s premier space event.
+                <br />
+                (b)<strong style={{ fontWeight: "bold" }}>
+                  .Sponsors:
+                </strong>{" "}
+                Partner with us to amplify your brand’s impact and contribute to
+                advancing the frontiers of space science and technology.
+                <br />
+              </Paragraph>
+              <div style={{ textAlign: "left",marginBottom:"20px" }}>
+                <Space>
+                  <Button size="large">Exhibit at ICAST 2025</Button>
+                  <Button size="large">Become a Sponsor</Button>
                 </Space>
-                  <Button
-                    type="primary"
-                    icon={<DownloadOutlined />}
-                    className="action-button"
-                    style={{fontSize:buttonsize}}
-                  >
-                    Download Forum Prospectus
-                  </Button>
-             </Space>
-                </Card>
-              </Col>
-              <Col xs={24} sm={12} md={6} lg={6}>
-                <Card  className="action-card">
-                <Space direction="vertical">
-                <Space align="start">
-                 <MessageOutlined
-                    style={{ fontSize: "24px", color: "black" }}
-                  />
-                  <Text  style={{  color: "black" }} className="action-card-text">
-                    Step 2. See Who’s Attending and Find Your Space In the Expo
-                    Hall.
-                  </Text>
-                 </Space>
-                  <Button 
-                    style={{fontSize:buttonsize}}
-                    size="large"
-                    type="primary" className="action-button">
-                    View 2025 Floor Plans
-                  </Button>
-                </Space>
-                </Card>
-              </Col>
-              <Col xs={24} sm={12} md={6} lg={6}>
-                <Card  className="action-card">
-           <Space direction="vertical">
-           <Space align="start">
-                    <FileTextOutlined
-                    style={{ fontSize: "24px", color: "black" }}
-                  />
-                  <Text style={{  color: "black" }} className="action-card-text">
-                    Step 3. Complete a Sponsor or Exhibitor Contract In Minutes.
-                  </Text>
-                  </Space>
-                  <Space align="start">
-                    <Button 
-                    style={{fontSize:buttonsize}}
-                    size="large"
-                    type="primary" className="action-button">
-                      Sponsor Contacts
-                    </Button>
-                  </Space>
-           </Space>
-                </Card>
-              </Col>
-              <Col xs={24} sm={12} md={6} lg={6}>
-                <Card  className="action-card">
-                <Space direction="vertical">
-                <Space  align="start">
-                  <MessageOutlined
-                    style={{ fontSize: paragraphFontSize, color: "black" }}
-                  />
-                  <Text style={{  color: "black" }} className="action-card-text">
-                    Step 4. Have Questions Before You Sign? Get in Touch With
-                    Our Team.
-                  </Text>
-                  </Space>
-                  <Button 
-                    style={{fontSize:buttonsize}}
-                    size="large"
-                  type="primary" className="action-button">
-                    Contact Us
-                  </Button>
-                </Space>
-                </Card>
-              </Col>
-            </Row>
-          </div>
-            </Col>
-          </Row>
-        </div>
+              </div>
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                For inquiries, contact us at:
+                <br/>
+
+                (a). Email: expo@icast.pk
+                <br />
+                (b). Phone: +92-51-907-5799
+              
+              </Paragraph>
+            </div>
+          </Col>
+
+          <Col xs={24} md={8} lg={8} style={{ textAlign: "center" }}>
+            <Image
+              src={m1}
+              alt="Image 1"
+              preview={false}
+              style={{
+                width: "90%",
+                height: "auto",
+                marginBottom: "16px",
+                borderRadius: "8px",
+              }}
+            />
+            <Image
+              src={m2}
+              alt="Image 2"
+              preview={false}
+              style={{
+                width: "90%",
+                height: "auto",
+                marginBottom: "16px",
+                borderRadius: "8px",
+              }}
+            />
+            <Image
+              src={m3}
+              alt="Image 3"
+              preview={false}
+              style={{
+                width: "90%",
+                height: "auto",
+                marginBottom: "16px",
+                borderRadius: "8px",
+              }}
+            />
+            <Image
+              src={m4}
+              alt="Image 4"
+              preview={false}
+              style={{
+                width: "90%",
+                height: "auto",
+                borderRadius: "8px",
+              }}
+            />
+          </Col>
+        </Row>
+      </div>
       <Footer />
     </>
   );
