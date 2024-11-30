@@ -16,6 +16,7 @@ import ICAST2025 from "./screens/Icast2025";
 import CallForPapers from "./screens/CallForPapers";
 import CallForSessions from "./screens/CallForSessions";
 import AuthorResources from "./screens/AuthorResources";
+import Grants from "./screens/Grants";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<ICast />} />
           <Route path="/content" element={<CallForContent/>}/>
           <Route path="/expo" element={<Expositions/>}/>
+          <Route path="/grants" element={<Grants/>}/>
           <Route path="/why-attend" element={<AimsPage/>}/>
           <Route path="/genisis" element={<Genisis/>}/>
           <Route path="/icast-2025" element={<ICAST2025/>}/>
