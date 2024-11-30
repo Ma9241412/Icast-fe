@@ -163,10 +163,13 @@ const ICAST2025 = () => {
                   <Col style={{padding:"20px 20px",   }} xs={24} sm={12} lg={6} key={index}>
                     <Card style={{
                     height: "100%",
+                    width:"100%"
                    
 
                     }}  title={<span style={{ fontSize: "15px",   fontFamily: "Inter, sans-serif",
-                fontWeight:"800", color: "#1a73e8" }}>{highlight.title}</span>} bordered={false} hoverable>
+                fontWeight:"800", color: "#1a73e8",
+                wordWrap: "break-word",
+                whiteSpace: "normal" }}>{highlight.title}</span>} bordered={false} hoverable>
                   <Paragraph style={{
                   textAlign: "start",
                   fontSize: paragraphFontSize,
