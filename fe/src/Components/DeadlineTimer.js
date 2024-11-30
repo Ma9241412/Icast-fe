@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Divider, Space } from "antd";
+import { Row, Col, Divider, Space, Typography } from "antd";
 import "../Styles/SliderStyles.css";
 
 const calculateTimeLeft = () => {
@@ -28,13 +28,13 @@ const DeadlineTimer = () => {
 
   return (
     <div className="timer-container">
-      <Row justify="space-between" align="middle" className="timer-header-row">
-        <Col className="timer-header" span={12} style={{ textAlign: "left" }}>
+      <Row justify="center" align="middle" className="timer-header-row">
+        <Typography.Text className="timer-header"  style={{ textAlign: "center",color:"white" }}>
           TIME REMAINING
-        </Col>
-        <Col className="timer-header" span={12} style={{ textAlign: "right" }}>
+        </Typography.Text>
+        {/* <Col className="timer-header" span={12} style={{ textAlign: "right" }}>
           DEADLINE
-        </Col>
+        </Col> */}
       </Row>
       <Row align="middle" justify="center" className="timer-row">
         <Col className="time-section">
@@ -57,11 +57,11 @@ const DeadlineTimer = () => {
           <span className="time-label">MINUTES</span>
           </Space>
         </Col>
-        <Divider type="vertical" className="ant-divider" />
+        {/* <Divider type="vertical" className="ant-divider" />
         <Col className="deadline-section">
-          <div className="deadline-date">1</div>
-          <div className="deadline-label">SEPTEMBER 2025</div>
-        </Col>
+          <div className="deadline-date">01</div>
+          <div className="deadline-label">SEPTEMBER </div>
+        </Col> */}
       </Row>
     </div>
   );

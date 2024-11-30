@@ -22,19 +22,19 @@ const VenuMap = () => {
   const screens = useBreakpoint();
 
   const titleFontSize = screens.xl
-    ? "45px"
-    : screens.lg
-    ? "40px"
-    : screens.md
-    ? "35px"
-    : "28px";
+  ? "48px"
+  : screens.lg
+  ? "48px"
+  : screens.md
+  ? "46px"
+  : "36px";
   const paragraphFontSize = screens.xl
-    ? "19px"
-    : screens.lg
-    ? "17px"
-    : screens.md
-    ? "19px"
-    : "19px";
+  ? "16px"
+  : screens.lg
+  ? "16px"
+  : screens.md
+  ? "15px"
+  : "15px";
   const { isLoaded, loadError } = useJsApiLoader({
     googleMapsApiKey: 'AIzaSyAo1viD-Ut0TzXTyihevwuf-9tv_J3dPa0', // Use your API key here
   });

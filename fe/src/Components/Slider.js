@@ -11,7 +11,7 @@ import image6 from "../Assets/b5.jpg";
 import image7 from "../Assets/b6.jpg";
 import DeadlineTimer from "./DeadlineTimer";
 
-const images = [image1, image2, image3, image4, image5, image6, image7];
+const images = [image1, image2, image3, image5, image7];
 
 const calculateTimeLeft = () => {
   const eventDate = new Date("November 18, 2025 00:00:00").getTime();

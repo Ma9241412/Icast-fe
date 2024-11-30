@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import footerLogo from "../Assets/icastw.png";
 import suparcoLogo from "../Assets/suparco.png";
 import istLogo from "../Assets/ist-logo.png";
+import "../Styles/Subfooter.css";
+
 
 const { Text, Title } = Typography;
 const { useBreakpoint } = Grid;
@@ -113,7 +115,21 @@ const Footer = () => {
                 >
                   +92-51-9075799
                 </Text>
+              
               </Space>
+              <br/>
+
+              <Space className="icon-container">
+                <Link to="https://www.facebook.com/ICAST.Pakistan" target="_blank">
+                <FacebookOutlined className="social-icon fb" />
+              </Link>
+        <Link
+                to="https://www.linkedin.com/company/icast-pakistan/"
+                target="_blank"
+              >
+                <LinkedinOutlined className="social-icon linkedin" />
+              </Link>
+                </Space>
             </Space>
           </Space>
         </Col>
@@ -148,7 +164,7 @@ const Footer = () => {
             </Space>
             <br/>
             {/* Social Media Links */}
-            <Space size="large">
+            {/* <Space size="large">
               <Link
                 to="https://www.facebook.com/ICAST.Pakistan"
                 target="_blank"
@@ -165,7 +181,7 @@ const Footer = () => {
                   style={{ fontSize: "30px", color: "white" }}
                 />
               </Link>
-            </Space>
+            </Space> */}
             <br/>
 
             {/* Footer Links */}

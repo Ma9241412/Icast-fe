@@ -126,11 +126,22 @@ const AuthorResources = () => {
             renderItem={(item) => (
               <List.Item>
                 <a href={item.url} download>
-                  <Button type="default">{item.text}</Button>
+                  <Button
+                    type="default"
+                    size="large"
+                    style={{
+                      width: "300px",
+                      height: "50px",
+                      textAlign: "center",
+                    }}
+                  >
+                    {item.text}
+                  </Button>
                 </a>
               </List.Item>
             )}
           />
+
           <Paragraph
             style={{
               textAlign: "start",
@@ -213,19 +224,20 @@ const AuthorResources = () => {
                 Remove Author Details: Ensure that the manuscript and abstract
                 do not include any information identifying the authors or their
                 affiliations.
-                <ul  style={{
-                fontSize: paragraphFontSize,
-                color: "black",
-                lineHeight: "1.8",
-                fontFamily: "Inter, sans-serif",
-                fontWeight: "500",
-              }}>
-                    <li>
-                    Names of authors or affiliations.
-                    </li>
-                    <li>
-                    Acknowledgments or funding information that reveals the author’s identity.
-                    </li>
+                <ul
+                  style={{
+                    fontSize: paragraphFontSize,
+                    color: "black",
+                    lineHeight: "1.8",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "500",
+                  }}
+                >
+                  <li>Names of authors or affiliations.</li>
+                  <li>
+                    Acknowledgments or funding information that reveals the
+                    author’s identity.
+                  </li>
                 </ul>
               </li>
               <li>
@@ -284,8 +296,8 @@ const AuthorResources = () => {
                 The abstract should avoid mathematical equations and tables.
               </li>
               <li>
-              Must demonstrate the purpose of the paper, technical foundation, any preliminary
-              results, and expected outcomes.
+                Must demonstrate the purpose of the paper, technical foundation,
+                any preliminary results, and expected outcomes.
               </li>
             </ul>
           </div>
@@ -372,16 +384,22 @@ const AuthorResources = () => {
         </Card>
 
         <Card>
-        <div style={{ textAlign: "left" }}>
-          <Title   style={{
+          <div style={{ textAlign: "left" }}>
+            <Title
+              style={{
                 textAlign: "start",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
                 color: "black",
                 margin: 0,
-              }}> Final Manuscript Guidelines</Title>
-          <Paragraph style={{
+              }}
+            >
+              {" "}
+              Final Manuscript Guidelines
+            </Title>
+            <Paragraph
+              style={{
                 textAlign: "start",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
@@ -390,53 +408,65 @@ const AuthorResources = () => {
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "400",
                 lineHeight: "2rem",
-              }}>
-            Authors of accepted abstracts will be provided detailed instructions
-            for preparing and submitting their final manuscripts.
-            <ul style={{
-                fontSize: paragraphFontSize,
-                color: "black",
-                lineHeight: "1.8",
-                fontFamily: "Inter, sans-serif",
-                fontWeight: "500",
-              }}>
+              }}
+            >
+              Authors of accepted abstracts will be provided detailed
+              instructions for preparing and submitting their final manuscripts.
+              <ul
+                style={{
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  lineHeight: "1.8",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                <li>Formatting requirements as per IEEE Xplore standards.</li>
                 <li>
-                Formatting requirements as per IEEE Xplore standards.
+                  Instructions for submitting manuscripts via the official
+                  submission portal.
                 </li>
                 <li>
-                Instructions for submitting manuscripts via the official submission portal.
+                  Clear deadlines for manuscript submission, revisions, and
+                  final approval.
                 </li>
-                <li>
-                Clear deadlines for manuscript submission, revisions, and final approval.
-                </li>
-            </ul>
-            Authors must submit their final manuscripts by the stated deadline to be included in the
-conference proceedings.
-          </Paragraph>
+              </ul>
+              Authors must submit their final manuscripts by the stated deadline
+              to be included in the conference proceedings.
+            </Paragraph>
           </div>
         </Card>
 
         <Divider />
         <div style={{ textAlign: "left", padding: "10px 20px" }}>
-
-        <Title style={{
+          <Title
+            style={{
               fontSize: titleMedium,
               textAlign: "left",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
-            }}>3. Key Policies</Title>
+            }}
+          >
+            3. Key Policies
+          </Title>
         </div>
         <Card>
-        <div style={{ textAlign: "left" }}>
-          <Title style={{
+          <div style={{ textAlign: "left" }}>
+            <Title
+              style={{
                 textAlign: "start",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
                 color: "black",
                 margin: 0,
-              }}> Publication Policy</Title>
-          <Paragraph style={{
+              }}
+            >
+              {" "}
+              Publication Policy
+            </Title>
+            <Paragraph
+              style={{
                 textAlign: "start",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
@@ -445,26 +475,34 @@ conference proceedings.
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "400",
                 lineHeight: "2rem",
-              }}>
-            Papers submitted must not have been published or be under
-            consideration for publication elsewhere. Duplicate submissions will
-            result in rejection or withdrawal from the proceedings.Authors will be required to sign a statement confirming the originality of their
-            submission.
-          </Paragraph>
+              }}
+            >
+              Papers submitted must not have been published or be under
+              consideration for publication elsewhere. Duplicate submissions
+              will result in rejection or withdrawal from the
+              proceedings.Authors will be required to sign a statement
+              confirming the originality of their submission.
+            </Paragraph>
           </div>
         </Card>
 
         <Card>
-        <div style={{ textAlign: "left" }}>
-          <Title style={{
+          <div style={{ textAlign: "left" }}>
+            <Title
+              style={{
                 textAlign: "start",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
                 color: "black",
                 margin: 0,
-              }}> No Paper, No Podium & No Podium, No Paper</Title>
-          <Paragraph style={{
+              }}
+            >
+              {" "}
+              No Paper, No Podium & No Podium, No Paper
+            </Title>
+            <Paragraph
+              style={{
                 textAlign: "start",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
@@ -473,26 +511,33 @@ conference proceedings.
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "400",
                 lineHeight: "2rem",
-              }}>
-            Papers not submitted by the final manuscript deadline will not be
-            eligible for presentation. Papers not presented at the conference
-            will not be published in the proceedings.These policies aim to ensure high-quality contributions and eliminate no-shows.
-          </Paragraph>
+              }}
+            >
+              Papers not submitted by the final manuscript deadline will not be
+              eligible for presentation. Papers not presented at the conference
+              will not be published in the proceedings.These policies aim to
+              ensure high-quality contributions and eliminate no-shows.
+            </Paragraph>
           </div>
         </Card>
 
         <Card>
-        <div style={{ textAlign: "left" }}>
-
-          <Title style={{
+          <div style={{ textAlign: "left" }}>
+            <Title
+              style={{
                 textAlign: "start",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
                 color: "black",
                 margin: 0,
-              }}> Technology and Export Control</Title>
-          <Paragraph style={{
+              }}
+            >
+              {" "}
+              Technology and Export Control
+            </Title>
+            <Paragraph
+              style={{
                 textAlign: "start",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
@@ -501,100 +546,116 @@ conference proceedings.
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "400",
                 lineHeight: "2rem",
-              }}>
-            Submissions must not include proprietary or restricted content.
-            Authors are responsible for securing any necessary internal or
-            government approvals.
-          </Paragraph>
+              }}
+            >
+              Submissions must not include proprietary or restricted content.
+              Authors are responsible for securing any necessary internal or
+              government approvals.
+            </Paragraph>
           </div>
         </Card>
 
         <Divider />
-        <div style={{ textAlign: "left",padding: "10px 20px" }}>
-        <Title style={{
+        <div style={{ textAlign: "left", padding: "10px 20px" }}>
+          <Title
+            style={{
               fontSize: titleMedium,
               textAlign: "left",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
-            }}>4. Publications Milestones</Title>
-            <List
-          bordered
-          dataSource={[
-            {
-              key: "call-for-abstracts",
-              text: "Call for Abstracts Opens: November 15, 2024",
-            },
-            {
-              key: "abstract-deadline",
-              text: "Abstract Submission Deadline: January 15, 2025",
-            },
-            {
-              key: "abstract-notification",
-              text: "Abstract Notification: March 1, 2025",
-            },
-            {
-              key: "manuscript-deadline",
-              text: "Manuscript Submission Deadline: May 15, 2025",
-            },
-            {
-              key: "acceptance-notification",
-              text: "Acceptance Notification: July 31, 2025",
-            },
-            {
-              key: "registration-deadline",
-              text: "Registration Deadline: September 1, 2025",
-            },
-            {
-              key: "conference-dates",
-              text: "Conference Dates: November 18–20, 2025",
-            },
-          ]}
-          renderItem={(item) => <List.Item  style={{
-            textAlign: "start",
-            fontSize: paragraphFontSize, // Adjust as needed
-            color: "black",
-            margin: 0, // Remove top and bottom margin for Title
-            padding: "10px 10px",
-            fontFamily: "Inter, sans-serif",
-            fontWeight: "400",
-            lineHeight: "2rem",
-          }} >{item.text}</List.Item>}
-        />
+            }}
+          >
+            4. Publications Milestones
+          </Title>
+          <List
+            bordered
+            dataSource={[
+              {
+                key: "call-for-abstracts",
+                text: "Call for Abstracts Opens: November 15, 2024",
+              },
+              {
+                key: "abstract-deadline",
+                text: "Abstract Submission Deadline: January 15, 2025",
+              },
+              {
+                key: "abstract-notification",
+                text: "Abstract Notification: March 1, 2025",
+              },
+              {
+                key: "manuscript-deadline",
+                text: "Manuscript Submission Deadline: May 15, 2025",
+              },
+              {
+                key: "acceptance-notification",
+                text: "Acceptance Notification: July 31, 2025",
+              },
+              {
+                key: "registration-deadline",
+                text: "Registration Deadline: September 1, 2025",
+              },
+              {
+                key: "conference-dates",
+                text: "Conference Dates: November 18–20, 2025",
+              },
+            ]}
+            renderItem={(item) => (
+              <List.Item
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize, // Adjust as needed
+                  color: "black",
+                  margin: 0, // Remove top and bottom margin for Title
+                  padding: "10px 10px",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "400",
+                  lineHeight: "2rem",
+                }}
+              >
+                {item.text}
+              </List.Item>
+            )}
+          />
         </div>
-        
 
         <Divider />
-        <div style={{ textAlign: "left",padding: "10px 20px" }}>
-        <Title style={{
+        <div style={{ textAlign: "left", padding: "10px 20px" }}>
+          <Title
+            style={{
               fontSize: titleMedium,
               textAlign: "left",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
-            }}>5. Why Publish with ICAST?</Title>
-        <Paragraph style={{
-                textAlign: "start",
-                fontSize: paragraphFontSize, // Adjust as needed
-                color: "black",
-                margin: 0, // Remove top and bottom margin for Title
-                padding: "10px 0px",
-                fontFamily: "Inter, sans-serif",
-                fontWeight: "400",
-                lineHeight: "2rem",
-              }}>
-          By submitting to ICAST 2025, you contribute to shaping the future of
-          space science and technology while gaining visibility in a global
-          platform. Accepted papers will be published in the IEEE Xplore Digital
-          Library, ensuring wide dissemination among the international research
-          community.
-        </Paragraph>
+            }}
+          >
+            5. Why Publish with ICAST?
+          </Title>
+          <Paragraph
+            style={{
+              textAlign: "start",
+              fontSize: paragraphFontSize, // Adjust as needed
+              color: "black",
+              margin: 0, // Remove top and bottom margin for Title
+              padding: "10px 0px",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "400",
+              lineHeight: "2rem",
+            }}
+          >
+            By submitting to ICAST 2025, you contribute to shaping the future of
+            space science and technology while gaining visibility in a global
+            platform. Accepted papers will be published in the IEEE Xplore
+            Digital Library, ensuring wide dissemination among the international
+            research community.
+          </Paragraph>
 
-        <div style={{ textAlign: "start" }}>
-          <a href="https://yoursubmissionlink.com">
-            <Button type="default" size="large">
-              Submit Your Abstract Now
-            </Button>
-          </a>
-        </div>
+          <div style={{ textAlign: "start" }}>
+            <a href="https://yoursubmissionlink.com">
+              <Button type="default" size="large">
+                Submit Your Abstract Now
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
       <Footer />

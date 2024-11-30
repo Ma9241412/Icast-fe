@@ -24,26 +24,33 @@ import Footer from "../Layouts/IcastFooter";
 import "../Styles/ContactStyles.css"; // Import the CSS file
 import { Link } from "react-router-dom";
 
-const { Title, Paragraph,Text } = Typography;
+const { Title, Paragraph, Text } = Typography;
 const { useBreakpoint } = Grid;
 
 const ContactForm = () => {
   const screens = useBreakpoint();
 
   const titleFontSize = screens.xl
-  ? "35px"
-  : screens.lg
-  ? "40px"
-  : screens.md
-  ? "35px"
-  : "28px";
+    ? "48px"
+    : screens.lg
+    ? "48px"
+    : screens.md
+    ? "46px"
+    : "36px";
   const titleMedium = screens.xl
-  ? "18px"
-  : screens.lg
-  ? "30px"
-  : screens.md
-  ? "20px"
-  : "20px";
+    ? "22px"
+    : screens.lg
+    ? "22px"
+    : screens.md
+    ? "17px"
+    : "17px";
+  const paragraphFontSize = screens.xl
+    ? "16px"
+    : screens.lg
+    ? "16px"
+    : screens.md
+    ? "15px"
+    : "15px";
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
 
@@ -91,70 +98,170 @@ const ContactForm = () => {
     <>
       <IcastHeader />
       <div>
-      <Title
-            style={{ fontSize: titleFontSize, fontWeight: "bold" }}
-            className="call-for-content-title"
-          >
-           Contact Us
-          </Title>
+        <Title
+          style={{ fontSize: titleFontSize, fontWeight: "bold" }}
+          className="call-for-content-title"
+        >
+          Contact Us
+        </Title>
       </div>
       <div className="contact-form-container">
-    
         <div className="content-wrapper">
-          
-          <Row  className="contact-content">
+          <Row className="contact-content">
             {/* Left Column: Contact Information */}
             <Col xs={24} md={10} className="contact-info">
-  <Title style={{ fontSize: titleFontSize, fontWeight: "bold" ,textAlign:"left"}} className="info-title">
-    Contact Information
-  </Title>
+              <Title
+                style={{
+                  fontSize: titleMedium,
+                  fontWeight: "700",
+                  textAlign: "left",
+              fontFamily: "Inter, sans-serif",
 
+                }}
+                className="info-title"
+              >
+                Contact Information
+              </Title>
+              <br />
 
-  {/* Add vertical spacing between sections */}
-  <Space direction="vertical" size={20} style={{ width: "100%",textAlign:"left" }}>
-  <Text style={{ fontSize: titleMedium,color:"#666673",textAlign:"start" }} className="info-description">
+              {/* Add vertical spacing between sections */}
+              <Space
+                direction="vertical"
+                size={20}
+                style={{ width: "100%", textAlign: "left" }}
+              >
+                {/* <Text style={{ fontSize: titleMedium,color:"#666673",textAlign:"start" }} className="info-description">
     Say something to start a live chat!
-  </Text>
-    <Space align="center">
-      <PhoneOutlined style={{ fontSize: titleMedium }} className="info-icon" />
-      <span style={{ fontSize: titleMedium, color: "black" }}>+92-51-9075799</span>
-    </Space>
-    <Space align="center">
-      <MailOutlined className="info-icon" />
-      <span style={{ fontSize: titleMedium, color: "black" }}>info@icast.pk</span>
-    </Space>
-    <Space size={0} align="start">
-      <EnvironmentOutlined className="info-icon" />
-      <span style={{ fontSize: titleMedium, color: "black" }}>
-        Institute of Space Technology, <br />
-        <span style={{ fontSize: titleMedium, color: "black" }}>
-          1 Islamabad Highway, Islamabad, 44000
-        </span>
-      </span>
-    </Space>
+  </Text> */}
+                <Space align="center">
+                  <PhoneOutlined
+                    style={{
+                      fontSize: paragraphFontSize,
+                      fontWeight: "500",
+                      color: "black",
+              fontFamily: "Inter, sans-serif",
 
-    <Space style={{ marginTop: "20px" }}>
-      <Link to="https://www.facebook.com/ICAST.Pakistan">
-        <FacebookOutlined size={10} className="social-icon" />
-      </Link>
-      <Link to="https://www.linkedin.com/company/icast-pakistan/">
-        <LinkedinOutlined className="social-icon" />
-      </Link>
-    </Space>
-  </Space>
-</Col>
+                    }}
+                    className="info-icon"
+                  />
+                  <span
+                    style={{
+                      fontSize: paragraphFontSize,
+                      fontWeight: "500",
+                      color: "black",
+              fontFamily: "Inter, sans-serif",
+
+                    }}
+                  >
+                    +92-51-9075799
+                  </span>
+                </Space>
+                <Space align="center">
+                  <MailOutlined
+                    style={{
+                      fontSize: paragraphFontSize,
+                      fontWeight: "500",
+                      color: "black",
+              fontFamily: "Inter, sans-serif",
+
+                    }}
+                    className="info-icon"
+                  />
+                  <span
+                    style={{
+                      fontSize: paragraphFontSize,
+                      fontWeight: "500",
+                      color: "black",
+              fontFamily: "Inter, sans-serif",
+
+                    }}
+                  >
+                    icast.pakistan@gmail.com
+                  </span>
+                </Space>
+                <Space size={0} align="start">
+                  <EnvironmentOutlined
+                    style={{
+                      fontSize: paragraphFontSize,
+                      fontWeight: "500",
+                      color: "black",
+              fontFamily: "Inter, sans-serif",
+
+                    }}
+                    className="info-icon"
+                  />
+                  <span
+                    style={{
+                      fontSize: paragraphFontSize,
+                      fontWeight: "500",
+                      color: "black",
+              fontFamily: "Inter, sans-serif",
+
+                    }}
+                  >
+                    Institute of Space Technology, <br />
+                    <span
+                      style={{
+                        fontSize: paragraphFontSize,
+                        fontWeight: "500",
+                        color: "black",
+              fontFamily: "Inter, sans-serif",
+
+                      }}
+                    >
+                      1 Islamabad Highway, Islamabad, 44000
+                    </span>
+                  </span>
+                </Space>
+                <Paragraph
+                  style={{
+                    fontSize: paragraphFontSize,
+                    fontWeight: "500",
+                    color: "black",
+                    textAlign: "left",
+              fontFamily: "Inter, sans-serif",
+
+                  }}
+                >
+                  <EnvironmentOutlined /> G59H+P2 Islamabad
+                </Paragraph>
+                <Space style={{ marginTop: "20px" }}>
+                  <Link to="https://www.facebook.com/ICAST.Pakistan">
+                    <FacebookOutlined size={10} className="social-icon" />
+                  </Link>
+                  <Link to="https://www.linkedin.com/company/icast-pakistan/">
+                    <LinkedinOutlined className="social-icon" />
+                  </Link>
+                </Space>
+              </Space>
+            </Col>
 
             {/* Right Column: Contact Form */}
             <Col xs={24} md={14}>
               <div className="form-container">
-                <Title style={{fontSize:titleFontSize,fontWeight:"bold",textAlign:"start"}} className="form-title">
+                <Title
+                  style={{
+                    fontSize: titleMedium,
+                    fontWeight: "700",
+                    textAlign: "start",
+              fontFamily: "Inter, sans-serif",
+
+                  }}
+                  className="form-title"
+                >
                   Contact Us
                 </Title>
-              
+
                 <Form layout="vertical" onFinish={onFinish} form={form}>
-                <Paragraph style={{fontSize:titleMedium,textAlign:"start"}} className="form-description">
-                  Any question or remarks? Just write us a message!
-                </Paragraph>
+                  <Paragraph
+                    style={{ fontSize: paragraphFontSize, textAlign: "start",fontWeight:"500",color:"black",
+              fontFamily: "Inter, sans-serif",
+
+                     }}
+                    className="form-description"
+                  >
+                    Any question or remarks? Just write us a message!
+                  </Paragraph>
                   <Row gutter={16}>
                     <Col span={12}>
                       <Form.Item
@@ -168,19 +275,20 @@ const ContactForm = () => {
                         ]}
                       >
                         <Input
-                        style={{
-                          border: "none",
-                          borderBottom: "2px solid #1F5223",
-                          borderRadius: "0",
-                          boxShadow: "none",
-                        }}
-                        onFocus={(e) =>
-                          (e.target.style.borderBottom = "2px solid #0D3B16")
-                        }
-                        onBlur={(e) =>
-                          (e.target.style.borderBottom = "2px solid #1F5223")
-                        }
-                        placeholder=" Enter First Name" />
+                          style={{
+                            border: "none",
+                            borderBottom: "2px solid #1F5223",
+                            borderRadius: "0",
+                            boxShadow: "none",
+                          }}
+                          onFocus={(e) =>
+                            (e.target.style.borderBottom = "2px solid #0D3B16")
+                          }
+                          onBlur={(e) =>
+                            (e.target.style.borderBottom = "2px solid #1F5223")
+                          }
+                          placeholder=" Enter First Name"
+                        />
                       </Form.Item>
                     </Col>
                     <Col span={12}>
@@ -195,19 +303,20 @@ const ContactForm = () => {
                         ]}
                       >
                         <Input
-                        style={{
-                          border: "none",
-                          borderBottom: "2px solid #1F5223",
-                          borderRadius: "0",
-                          boxShadow: "none",
-                        }}
-                        onFocus={(e) =>
-                          (e.target.style.borderBottom = "2px solid #0D3B16")
-                        }
-                        onBlur={(e) =>
-                          (e.target.style.borderBottom = "2px solid #1F5223")
-                        }
-                        placeholder="Enter Last Name" />
+                          style={{
+                            border: "none",
+                            borderBottom: "2px solid #1F5223",
+                            borderRadius: "0",
+                            boxShadow: "none",
+                          }}
+                          onFocus={(e) =>
+                            (e.target.style.borderBottom = "2px solid #0D3B16")
+                          }
+                          onBlur={(e) =>
+                            (e.target.style.borderBottom = "2px solid #1F5223")
+                          }
+                          placeholder="Enter Last Name"
+                        />
                       </Form.Item>
                     </Col>
                   </Row>
@@ -228,19 +337,20 @@ const ContactForm = () => {
                         ]}
                       >
                         <Input
-                        style={{
-                          border: "none",
-                          borderBottom: "2px solid #1F5223",
-                          borderRadius: "0",
-                          boxShadow: "none",
-                        }}
-                        onFocus={(e) =>
-                          (e.target.style.borderBottom = "2px solid #0D3B16")
-                        }
-                        onBlur={(e) =>
-                          (e.target.style.borderBottom = "2px solid #1F5223")
-                        }
-                        placeholder="Enter Your Email" />
+                          style={{
+                            border: "none",
+                            borderBottom: "2px solid #1F5223",
+                            borderRadius: "0",
+                            boxShadow: "none",
+                          }}
+                          onFocus={(e) =>
+                            (e.target.style.borderBottom = "2px solid #0D3B16")
+                          }
+                          onBlur={(e) =>
+                            (e.target.style.borderBottom = "2px solid #1F5223")
+                          }
+                          placeholder="Enter Your Email"
+                        />
                       </Form.Item>
                     </Col>
                     <Col span={12}>
@@ -280,10 +390,10 @@ const ContactForm = () => {
                     ]}
                   >
                     <Input.TextArea
-                    bordered={false}
+                      bordered={false}
                       style={{
-                          borderBottom: "2px solid #1F5223",
-                        }}
+                        borderBottom: "2px solid #1F5223",
+                      }}
                       rows={4}
                       placeholder="Write your message.."
                     />

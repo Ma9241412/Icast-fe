@@ -1,6 +1,6 @@
 import React from "react";
 import { CaretRightOutlined } from "@ant-design/icons";
-import { Collapse, Typography, Row, Col, Card, Space, Grid } from "antd";
+import { Collapse, Typography, Row, Col, Card, Space, Grid, Button } from "antd";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
 import m1 from "../Assets/m8.jpg";
@@ -14,6 +14,10 @@ const { useBreakpoint } = Grid;
 const themes = [
   {
     title: "Aeronautics & Astronautics",
+    description: `This track explores the foundational and advanced principles of aerospace science,
+addressing the design, development, and optimization of flight systems. From traditional
+aerodynamics to cutting-edge propulsion technologies, it focuses on innovations that are
+driving the future of aviation, space exploration, and sustainable aerospace solutions.`,
     content: [
       "Aero and Astro-dynamics",
       "Aerospace Structures",
@@ -52,6 +56,10 @@ const themes = [
   },
   {
     title: "Satellite Technology",
+    description: `Dedicated to the study and advancement of satellite systems, this track encompasses the
+design, manufacture, and application of satellites. Topics range from nanosatellites to
+complex satellite constellations, highlighting their critical role in communication, Earth
+observation, and planetary exploration.`,
     content: [
       "Satellites Technology and Applications",
       "Electrical and Electronic Systems for Space Applications",
@@ -87,6 +95,10 @@ const themes = [
   },
   {
     title: "Information & Communication Technologies",
+    description: `This track focuses on the transformative role of ICT in space science, including AI, quantum
+computing, and blockchain technologies. It highlights innovations in data analytics,
+cybersecurity, and next-generation communication networks essential for modern space
+operations and beyond.`,
     content: [
       "Computer Theory and Algorithms",
       "Networking Theory & Technologies",
@@ -129,6 +141,10 @@ const themes = [
   },
   {
     title: "Positioning, Navigation & Timing",
+    description: `This track delves into the science and technology behind navigation and timing systems,
+such as GNSS and inertial navigation. It covers the integration of multi-sensor systems,
+quantum technologies, and AI to enhance precision in terrestrial, aerial, and space
+applications.`,
     content: [
       "Navigation, Estimation and Tracking Methods",
       "Ranging and Positioning Techniques",
@@ -171,6 +187,10 @@ const themes = [
   },
   {
     title: "Remote Sensing & Geographic Information Science",
+    description: `Exploring the integration of remote sensing and GIS technologies, this track addresses
+advancements in Earth observation, data processing, and geospatial analysis. It focuses on
+their applications in urban planning, environmental monitoring, and disaster management,
+enabling smarter and more sustainable decision-making.`,
     content: [
       "Remote Sensing Instruments, Sensors and Systems",
       "Image and Signal Processing for Remote Sensing",
@@ -218,6 +238,10 @@ const themes = [
   },
   {
     title: "Environmental Science & Climate Change",
+    description: `This track emphasizes the role of space science and technology in understanding and
+mitigating climate change. It covers topics such as carbon monitoring, biodiversity
+conservation, and sustainable energy, showcasing how satellite technologies can support
+global environmental resilience and sustainability.`,
     content: [
       "Environmental Chemistry",
       "Biodiversity, Conservation & Management",
@@ -254,6 +278,10 @@ const themes = [
   },
   {
     title: "Astronomy and Astrophysics",
+    description: `Dedicated to exploring the universe, this track covers the study of celestial phenomena,
+planetary systems, and cosmology. From exoplanet research to gravitational wave
+astronomy, it invites contributions that unravel the mysteries of the cosmos using advanced
+observation and computational tools.`,
     content: [
       "Galaxies and Star Clusters",
       "Variable Stars & Exoplanets",
@@ -307,6 +335,10 @@ const themes = [
   },
   {
     title: "Space Law, Management & Outreach",
+    description: `This track addresses the ethical, legal, and managerial aspects of space exploration. It
+focuses on international treaties, governance frameworks, and public engagement,
+fostering discussions on ensuring sustainability, cooperation, and inclusivity in the peaceful
+use of outer space.`,
     content: [
       "International Space Laws, Policies and Treaties",
       "National Space Laws and Regulatory Issues",
@@ -345,26 +377,27 @@ const themes = [
 const ThemePage = () => {
   const screens = useBreakpoint();
   const titleFontSize = screens.xl
-    ? "45px"
+    ? "48px"
     : screens.lg
-    ? "40px"
+    ? "48px"
     : screens.md
-    ? "35px"
-    : "28px";
+    ? "46px"
+    : "36px";
   const titleMedium = screens.xl
-    ? "20px"
+    ? "22px"
     : screens.lg
-    ? "32px"
+    ? "22px"
     : screens.md
-    ? "25px"
-    : "22px";
-  const paragraphFontSize = screens.xl
-    ? "19px"
-    : screens.lg
     ? "17px"
+    : "17px";
+  const paragraphFontSize = screens.xl
+    ? "16px"
+    : screens.lg
+    ? "16px"
     : screens.md
-    ? "19px"
-    : "19px";
+    ? "15px"
+    : "15px";
+
   return (
     <>
       <IcastHeader />
@@ -381,7 +414,8 @@ const ThemePage = () => {
               textAlign: "start",
               marginBottom: "30px",
               padding: "20px 40px",
-              fontWeight: "bold",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "700",
               fontSize: titleFontSize,
             }}
           >
@@ -394,20 +428,110 @@ const ThemePage = () => {
             fontSize: paragraphFontSize,
             color: "black",
             padding: "0px 40px",
-            fontWeight: "bold",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "700",
           }}
         >
-          ICAST / ICAST Themes
+          ICAST / Themes & Tracks
         </Paragraph>
-
+        <div
+          style={{
+            marginBottom: "20px",
+            backgroundColor: "#EFF0F2",
+            padding: "10px 40px",
+            marginTop: "20px",
+          }}
+        >
+          <Title
+            style={{
+              textAlign: "start",
+              marginBottom: "30px",
+              fontSize: titleMedium,
+              color: "black",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "700",
+            }}
+          >
+            1. Themes
+          </Title>
+          <Paragraph
+            style={{
+              textAlign: "start",
+              fontSize: paragraphFontSize,
+              color: "black",
+              margin: 0, // Remove top and bottom margin for Title
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+            }}
+          >
+            The theme of ICAST 2025,{" "}
+            <strong style={{fontWeight:"bold"}}>“Space for Sustainable Development”</strong> 
+            ,underscores the transformative potential of space science and
+            technology in addressing global challenges. As nations strive for
+            sustainability in a rapidly changing world, the role of space-based
+            solutions in climate monitoring, disaster management, urban
+            planning, and resource optimization has never been more critical.
+            Aligned with Pakistan&#39;s aspirations to leverage space technology
+            for societal benefit, ICAST 2025 offers a platform to explore
+            innovative applications that contribute to sustainable development
+            goals. Through its comprehensive tracks, ranging from Aeronautics
+            and Astronautics to Environmental Science &amp; Climate Change and
+            Space Law, the conference highlights how space technologies can
+            empower communities, industries, and policymakers to build a more
+            resilient and equitable future. By fostering collaboration across
+            disciplines and borders, ICAST 2025 aims to position Pakistan as a
+            regional leader in space innovation, while inspiring global dialogue
+            on harnessing the cosmos for the sustainable development of
+            humanity.
+          </Paragraph>
+        </div>
+        <div
+          style={{
+            marginBottom: "20px",
+            backgroundColor: "#EFF0F2",
+            padding: "10px 40px",
+            marginTop: "20px",
+          }}
+        >
+          <Title
+            style={{
+              textAlign: "start",
+              marginBottom: "30px",
+              fontSize: titleMedium,
+              color: "black",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "700",
+            }}
+          >
+            2. Tracks
+          </Title>
+          <Paragraph
+            style={{
+              textAlign: "start",
+              fontSize: paragraphFontSize,
+              color: "black",
+              margin: 0, // Remove top and bottom margin for Title
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+            }}
+          >
+            The tracks of ICAST 2025 are designed to encompass the vast and
+            ever-expanding universe of space science and technology, from
+            foundational research to cutting-edge advancements that are
+            redefining humanity&#39;s exploration of the cosmos. Each track
+            serves as a gateway to delve into interdisciplinary innovation,
+            fostering collaborations that bridge gaps between theory,
+            application, and policy.
+          </Paragraph>
+        </div>
         <Row gutter={[16, 16]} align="top">
-          <Col xs={24} md={18}>
+          <Col xs={24} md={16}>
             <Card
               style={{
                 padding: "20px",
                 borderRadius: "10px",
                 background: "#EEF0F2",
-                marginBottom:"20px"
+                marginBottom: "20px",
               }}
             >
               <Collapse
@@ -418,6 +542,8 @@ const ThemePage = () => {
                       fontSize: "16px",
                       color: isActive ? "#1890ff" : "#000",
                       textAlign: "justify",
+              fontFamily: "Inter, sans-serif",
+
                     }}
                     rotate={isActive ? 90 : 0}
                   />
@@ -437,6 +563,8 @@ const ThemePage = () => {
                           borderRadius: "5px",
                           fontSize: titleMedium,
                           fontWeight: "700",
+              fontFamily: "Inter, sans-serif",
+
                         }}
                       >
                         {theme.title}
@@ -450,6 +578,22 @@ const ThemePage = () => {
                       backgroundColor: "#fff",
                     }}
                   >
+                    {/* Render the description */}
+                    <Paragraph
+                      style={{
+                        color: "black",
+                        fontSize: paragraphFontSize,
+                        fontWeight: "700",
+                        marginBottom: "20px",
+                        textAlign:"left",
+              fontFamily: "Inter, sans-serif",
+
+                      }}
+                    >
+                      {theme.description}
+                    </Paragraph>
+
+                    {/* Render the tracks */}
                     {theme.content.length > 0 ? (
                       <Row gutter={[16, 16]}>
                         <Col xs={24} sm={12}>
@@ -463,6 +607,9 @@ const ThemePage = () => {
                                     color: "black",
                                     textAlign: "start",
                                     fontSize: paragraphFontSize,
+                                    fontFamily:"500",
+              fontFamily: "Inter, sans-serif",
+
                                   }}
                                 >
                                   {item}
@@ -481,6 +628,9 @@ const ThemePage = () => {
                                     color: "black",
                                     textAlign: "start",
                                     fontSize: paragraphFontSize,
+                                    fontWeight: "500",
+              fontFamily: "Inter, sans-serif",
+
                                   }}
                                 >
                                   {item}
@@ -498,13 +648,76 @@ const ThemePage = () => {
                 ))}
               </Collapse>
             </Card>
+            <div
+              style={{
+                marginBottom: "20px",
+                backgroundColor: "#EFF0F2",
+                padding: "10px 40px",
+                marginTop: "20px",
+              }}
+            >
+              <Title
+                style={{
+                  textAlign: "start",
+                  marginBottom: "30px",
+                  fontSize: titleMedium,
+                  color: "black",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "700",
+                }}
+              >
+                3. Call for Contributions
+              </Title>
+              <Paragraph
+                style={{
+                  textAlign: "start",
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  margin: 0, // Remove top and bottom margin for Title
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                  lineHeight:"2rem"
+                }}
+              >
+                ICAST 2025 welcomes contributions that align with the tracks and
+                their subtopics. Whether you are an academic researcher,
+                industry expert, policymaker, or student, this is your
+                opportunity to showcase your work, inspire innovation, and shape
+                the future of space science and technology.
+              <ul style={{
+              fontSize: paragraphFontSize,
+              color: "black",
+              lineHeight: "1.8",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+              textAlign: "start",
+
+              
+            }}>
+                <li><strong style={{fontWeight:"bold"}}>Call for Papers:</strong> Share your technical research for inclusion in the conference&#39;s
+                technical sessions and proceedings.</li>
+                <div style={{padding:"20px"}}>
+                <Button size="middle" type="default">Register Now</Button>
+                </div>
+
+                <li>
+                <strong style={{fontWeight:"bold"}}>Propose a Session:</strong> Organize a panel discussion, workshop, or symposium to lead
+                conversations on emerging trends.
+                </li>
+                <div style={{padding:"20px"}}>
+                <Button size="middle" type="default">Proposal Form</Button>
+                </div>
+              </ul>
+              </Paragraph>
+            
+            </div>
           </Col>
 
           {/* Image Column */}
-          <Col xs={24} md={6}>
+          <Col xs={24} md={6} lg={8}>
             <Space
               direction="vertical"
-              style={{ width: "100%", textAlign: "center" }}
+              style={{ width: "100%", textAlign: "center" ,padding:"0px 20px"}}
             >
               <img
                 src={m1}
