@@ -1,7 +1,7 @@
 .sponsors-container {
     text-align: center;
-    padding:  80px 20px;
-    background-color: #ffffff;
+    padding:  40px 20px;
+    background-color: #2C2C3E;
   }
   
   .sponsors-title {
@@ -13,10 +13,11 @@
   }
   
   .sponsor-card {
-    border-radius: 40px;
+    border-radius: 20px;
     text-align: center;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%
   }
   
   .sponsor-logo img {

@@ -16,7 +16,7 @@ const { useBreakpoint } = Grid;
 const data = [
   {
     role: "Conference Secretary",
-    name: "Dr. Najam Abbas Naqvi",
+    name: "Prof. Dr. Najam Abbas Naqvi",
     title: "Chairman NCGSA",
     imgSrc: img1,
   },

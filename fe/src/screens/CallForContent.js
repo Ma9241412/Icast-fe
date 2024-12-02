@@ -12,26 +12,26 @@ const CallForContent = () => {
   const screens = useBreakpoint();
 
   const titleFontSize = screens.xl
-  ? "48px"
-  : screens.lg
-  ? "48px"
-  : screens.md
-  ? "46px"
-  : "36px";
+    ? "48px"
+    : screens.lg
+    ? "48px"
+    : screens.md
+    ? "46px"
+    : "36px";
   const titleMedium = screens.xl
-  ? "22px"
-  : screens.lg
-  ? "22px"
-  : screens.md
-  ? "17px"
-  : "17px";
-const paragraphFontSize = screens.xl
-  ? "16px"
-  : screens.lg
-  ? "16px"
-  : screens.md
-  ? "15px"
-  : "15px";
+    ? "22px"
+    : screens.lg
+    ? "22px"
+    : screens.md
+    ? "17px"
+    : "17px";
+  const paragraphFontSize = screens.xl
+    ? "16px"
+    : screens.lg
+    ? "16px"
+    : screens.md
+    ? "15px"
+    : "15px";
 
   return (
     <>
@@ -39,19 +39,26 @@ const paragraphFontSize = screens.xl
       <Layout className="call-for-content-layout">
         <Content className="call-for-content-container">
           <Title
-            style={{ fontSize: titleFontSize, fontWeight: "bold",
+            style={{
+              padding: "20px 40px",
               fontFamily: "Inter, sans-serif",
-              fontWeight:"700",
-             }}
-            className="call-for-content-title"
+              fontWeight: "700",
+              fontSize: titleFontSize,
+              backgroundColor: "#EEF0F2",
+              textAlign: "justify",
+            }}
           >
             Call For Content
           </Title>
           <Paragraph
-            style={{ fontSize: paragraphFontSize, fontWeight: "bold",
+            style={{
+              fontSize: paragraphFontSize,
+              fontWeight: "bold",
               fontFamily: "Inter, sans-serif",
-              fontWeight:"600",
-             }}
+              fontWeight: "600",
+              padding: "0px 40px",
+              textAlign: "justify",
+            }}
             className="breadcrumb"
           >
             ICAST/ Call For Content
@@ -68,9 +75,10 @@ const paragraphFontSize = screens.xl
                   style={{
                     fontSize: paragraphFontSize,
                     color: "black",
-                    lineHeight: "2.5rem",
+                    lineHeight: "2rem",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight:"500",
+                    fontWeight: "500",
+                    textAlign: "justify",
                   }}
                 >
                   The{" "}
@@ -90,8 +98,11 @@ const paragraphFontSize = screens.xl
                   and technology.
                 </Paragraph>
                 <Space className="button-group">
-                  
-                  <Button href="https://CMS.cressofterp.com" size="large" type="default">
+                  <Button
+                    href="https://CMS.cressofterp.com"
+                    size="large"
+                    type="default"
+                  >
                     Manage Submissions
                   </Button>
                   <Button href="/call-for-papers" size="large" type="default">
@@ -105,16 +116,26 @@ const paragraphFontSize = screens.xl
                   </Button>
                 </Space>
                 <div>
-                  <Title style={{ fontSize: titleMedium, 
-                     fontFamily: "Inter, sans-serif",
-                     fontWeight:"700",
-                  }}>
+                  <Title
+                    style={{
+                      fontSize: titleMedium,
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: "700",
+                      textAlign: "justify",
+                    }}
+                  >
                     Call for Papers
                   </Title>
-                  <Paragraph style={{ fontSize: paragraphFontSize ,color:"black",
-                     fontFamily: "Inter, sans-serif",
-                     fontWeight:"500",
-                  }}>
+                  <Paragraph
+                    style={{
+                      fontSize: paragraphFontSize,
+                      color: "black",
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: "500",
+                      lineHeight: "2rem",
+                      textAlign: "justify",
+                    }}
+                  >
                     The International Conference on Applications of Space
                     Science and Technology (ICAST 2025) invites researchers,
                     academicians, and professionals from around the world to
@@ -130,17 +151,26 @@ const paragraphFontSize = screens.xl
                   </Button>
                 </div>
                 <div style={{ marginTop: "20px" }}>
-                  <Title style={{ fontSize: titleMedium, 
-                     fontFamily: "Inter, sans-serif",
-                     fontWeight:"700",
-                  }}>
+                  <Title
+                    style={{
+                      fontSize: titleMedium,
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: "700",
+                      textAlign: "justify",
+                    }}
+                  >
                     Call for Sessions
                   </Title>
-                  <Paragraph style={{ fontSize: paragraphFontSize,color:"black",
-                     fontFamily: "Inter, sans-serif",
-                     fontWeight:"500",
-                   }}>
-                    
+                  <Paragraph
+                    style={{
+                      fontSize: paragraphFontSize,
+                      color: "black",
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: "500",
+                      lineHeight: "2rem",
+                      textAlign: "justify",
+                    }}
+                  >
                     The International Conference on Applications of Space
                     Science and Technology (ICAST 2025) invites session
                     proposals from thought leaders, researchers, industry
@@ -173,9 +203,9 @@ const paragraphFontSize = screens.xl
                       style={{
                         color: "black",
                         fontSize: titleMedium,
-                        textAlign: "start",
+                        textAlign: "justify",
                         fontFamily: "Inter, sans-serif",
-                        fontWeight:"700",
+                        fontWeight: "700",
                       }}
                     >
                       Dates to Remember
@@ -187,29 +217,152 @@ const paragraphFontSize = screens.xl
                       fontSize: "15px",
                       color: "black",
                       fontWeight: "500",
-                      lineHeight: "1.8", // Adjust line spacing
-                      marginBottom: "10px", // Control vertical spacing
                       fontFamily: "Inter, sans-serif",
-                      fontWeight:"500",
+                      fontWeight: "500",
                     }}
                   >
                     <div style={{ marginBottom: "12px" }}>
-                      <Space direction="vertical" size={0}>
-                        <strong style={{ fontSize: paragraphFontSize ,
-                           fontFamily: "Inter, sans-serif",
-                           fontWeight:"500",
-                        }}>
-                          Abstract Submission Deadline:
-                        </strong>{" "}
-                        <Text
-                          style={{
-                            color: "#006814",
-                            fontWeight: "400",
-                            fontSize: paragraphFontSize,
-                          }}
-                        >
-                          January 15, 2025.
-                        </Text>
+                      <Space direction="vertical">
+                        <Space direction="vertical" size={0}>
+                          <strong
+                            style={{
+                              fontSize: paragraphFontSize,
+                              fontFamily: "Inter, sans-serif",
+                              fontWeight: "500",
+                            }}
+                          >
+                            Call for Abstracts Opens:
+                          </strong>{" "}
+                          <Text
+                            style={{
+                              color: "#006814",
+                              fontWeight: "400",
+                              fontSize: paragraphFontSize,
+                            }}
+                          >
+                            November 15, 2024.
+                          </Text>
+                        </Space>
+                        <Space direction="vertical" size={0}>
+                          <strong
+                            style={{
+                              fontSize: paragraphFontSize,
+                              fontFamily: "Inter, sans-serif",
+                              fontWeight: "500",
+                            }}
+                          >
+                            Abstract Submission Deadline:
+                          </strong>{" "}
+                          <Text
+                            style={{
+                              color: "#006814",
+                              fontWeight: "400",
+                              fontSize: paragraphFontSize,
+                            }}
+                          >
+                            January 15, 2025
+                          </Text>
+                        </Space>
+                        <Space direction="vertical" size={0}>
+                          <strong
+                            style={{
+                              fontSize: paragraphFontSize,
+                              fontFamily: "Inter, sans-serif",
+                              fontWeight: "500",
+                            }}
+                          >
+                            Abstract Notification:
+                          </strong>{" "}
+                          <Text
+                            style={{
+                              color: "#006814",
+                              fontWeight: "400",
+                              fontSize: paragraphFontSize,
+                            }}
+                          >
+                            March 1, 2025
+                          </Text>
+                        </Space>
+                        <Space direction="vertical" size={0}>
+                          <strong
+                            style={{
+                              fontSize: paragraphFontSize,
+                              fontFamily: "Inter, sans-serif",
+                              fontWeight: "500",
+                            }}
+                          >
+                            Manuscript Submission Deadline:
+                          </strong>{" "}
+                          <Text
+                            style={{
+                              color: "#006814",
+                              fontWeight: "400",
+                              fontSize: paragraphFontSize,
+                            }}
+                          >
+                            May 15, 2025
+                          </Text>
+                        </Space>
+                        <Space direction="vertical" size={0}>
+                          <strong
+                            style={{
+                              fontSize: paragraphFontSize,
+                              fontFamily: "Inter, sans-serif",
+                              fontWeight: "500",
+                            }}
+                          >
+                            Acceptance Notification:
+                          </strong>{" "}
+                          <Text
+                            style={{
+                              color: "#006814",
+                              fontWeight: "400",
+                              fontSize: paragraphFontSize,
+                            }}
+                          >
+                            July 31, 2025
+                          </Text>
+                        </Space>
+                        <Space direction="vertical" size={0}>
+                          <strong
+                            style={{
+                              fontSize: paragraphFontSize,
+                              fontFamily: "Inter, sans-serif",
+                              fontWeight: "500",
+                            }}
+                          >
+                            Registration Deadline:
+                          </strong>{" "}
+                          <Text
+                            style={{
+                              color: "#006814",
+                              fontWeight: "400",
+                              fontSize: paragraphFontSize,
+                            }}
+                          >
+                            September 1, 2025
+                          </Text>
+                        </Space>
+                        <Space direction="vertical" size={0}>
+                          <strong
+                            style={{
+                              fontSize: paragraphFontSize,
+                              fontFamily: "Inter, sans-serif",
+                              fontWeight: "500",
+                            }}
+                          >
+                            Conference Dates:
+                          </strong>{" "}
+                          <Text
+                            style={{
+                              color: "#006814",
+                              fontWeight: "400",
+                              fontSize: paragraphFontSize,
+                            }}
+                          >
+                            November 18–20, 2025
+                          </Text>
+                        </Space>
                       </Space>
                     </div>
                   </Paragraph>

@@ -5,9 +5,7 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import image1 from "../Assets/banner.png";
 import image2 from "../Assets/b1.jpg";
 import image3 from "../Assets/b2.jpg";
-import image4 from "../Assets/b3.jpg";
 import image5 from "../Assets/b4.jpg";
-import image6 from "../Assets/b5.jpg";
 import image7 from "../Assets/b6.jpg";
 import DeadlineTimer from "./DeadlineTimer";
 

@@ -54,7 +54,7 @@ const Grants = () => {
       >
         <Title
           style={{
-            textAlign: "start",
+            textAlign: "justify",
             padding: "20px 40px",
             fontFamily: "Inter, sans-serif",
             fontWeight: "700",
@@ -81,7 +81,7 @@ const Grants = () => {
           <Col xs={24} md={16} lg={16}>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 color: "black",
                 margin: 0,
@@ -99,7 +99,7 @@ const Grants = () => {
             </Paragraph>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -107,7 +107,7 @@ const Grants = () => {
                 padding: "10px 40px",
               }}
             >
-              1. Conference Grants
+           Conference Grants
             </Title>
             <div
               style={{
@@ -118,7 +118,7 @@ const Grants = () => {
             >
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -133,7 +133,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -144,7 +144,7 @@ const Grants = () => {
               </Title>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -155,26 +155,26 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "500",
                 }}
               >
-                (a).{" "}
-                <strong style={{ fontWeight: "bold" }}>
+<ul>
+  <li><strong style={{ fontWeight: "bold" }}>
                   Who Should Apply:
                 </strong>{" "}
                 First-time conference participants from schools, colleges, and
-                undergraduate programs.
-                <br />
-                (b).
-                <strong style={{ fontWeight: "bold" }}>
+                undergraduate programs.</li>
+  <li><strong style={{ fontWeight: "bold" }}>
                   What It Covers:
                 </strong>{" "}
                 Support for participation to encourage young researchers to
-                engage with the global space community.
+                engage with the global space community.</li>
+</ul>
+              
               </Paragraph>
               <Title
                 style={{
@@ -196,19 +196,20 @@ const Grants = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Applicants must submit their research paper by the
+                <ul>
+                  <li>Applicants must submit their research paper by the
                 submission deadline, the grant will be subject to the paper
-                acceptance
-                <br />
-                (b). Applicants must provide proof of their enrollment and a
+                acceptance</li>
+                  <li>Applicants must provide proof of their enrollment and a
                 brief statement about their interest in space science and
-                technology.
-                <br />
-                (c). Grant recipients must present their paper at the
-                conference.
-                <br />
-                (d). Priority will be given to participants demonstrating
-                significant scientific merit.
+                technology.</li>
+                  <li>Grant recipients must present their paper at the
+                  conference.</li>
+                  <li>Priority will be given to participants demonstrating
+                  significant scientific merit.</li>
+                  
+                </ul>
+               
               </Paragraph>
               <Paragraph
                 style={{
@@ -233,7 +234,7 @@ const Grants = () => {
                 padding: "10px 40px",
               }}
             >
-              2. Conference Awards
+               Conference Awards
             </Title>
             <div
               style={{
@@ -244,7 +245,7 @@ const Grants = () => {
             >
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -259,7 +260,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -270,7 +271,7 @@ const Grants = () => {
               </Title>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -288,11 +289,13 @@ const Grants = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Recognizes the highest quality research paper presented at
-                the conference.
-                <br />
-                (b). Open to all paper authors based on originality, clarity,
-                and impact.
+                <ul>
+                  <li>Recognizes the highest quality research paper presented at
+                  the conference.</li>
+                  <li>Open to all paper authors based on originality, clarity,
+                  and impact.</li>
+                </ul>
+               
               </Paragraph>
 
               <Title
@@ -315,10 +318,12 @@ const Grants = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Honors the most compelling poster presentation, emphasizing
-                clarity, creativity, and scientific contribution.
-                <br />
-                (b). Open to all poster presenters.
+                <ul>
+                  <li>Honors the most compelling poster presentation, emphasizing
+                  clarity, creativity, and scientific contribution.</li>
+                  <li>Open to all poster presenters.</li>
+                </ul>
+            
               </Paragraph>
               <Title
                 style={{
@@ -340,8 +345,12 @@ const Grants = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Celebrates exceptional work by early-career professionals
-                or students under the age of 35.
+                <ul>
+                  <li>
+                  Celebrates exceptional work by early-career professionals
+                  or students under the age of 35.
+                  </li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -363,8 +372,10 @@ const Grants = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Highlights outstanding contributions by female researchers in advancing space
-                science.
+                <ul>
+                  <li>Highlights outstanding contributions by female researchers in advancing space
+                  science.</li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -386,7 +397,11 @@ const Grants = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Recognizes efforts to push the boundaries of space technology and its applications.
+                <ul>
+                  <li>
+                  Recognizes efforts to push the boundaries of space technology and its applications.
+                  </li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -397,7 +412,7 @@ const Grants = () => {
                   fontWeight: "700",
                 }}
               >
-                Space Awareness &amp; Outreach Award:
+                Space Awareness & Outreach Award:
               </Title>
               <Paragraph
                 style={{
@@ -408,8 +423,12 @@ const Grants = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Celebrates initiatives that have made significant impacts in promoting space
-                awareness and education.
+                <ul>
+                  <li>
+                  Celebrates initiatives that have made significant impacts in promoting space
+                  awareness and education.
+                  </li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -431,8 +450,12 @@ const Grants = () => {
                   fontWeight: "500",
                 }}
               >
-                (a).Honors lifetime achievements or remarkable efforts in advancing the space science
-                domain.
+                <ul>
+                  <li>
+                  Honors lifetime achievements or remarkable efforts in advancing the space science
+                  domain.
+                  </li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -490,9 +513,11 @@ const Grants = () => {
                   fontWeight: "500",
                 }}
               >
-                (a).Participants can self-nominate or be nominated by peers, mentors, or institutions.
-                <br/>
-              (b).Nominations must include a detailed profile and summary of contributions.
+                <ul>
+                  <li>Participants can self-nominate or be nominated by peers, mentors, or institutions.</li>
+                  <li>Nominations must include a detailed profile and summary of contributions.</li>
+                </ul>
+              
               </Paragraph>
             </div>
             <Title
@@ -539,9 +564,11 @@ for your achievements, these opportunities are designed to inspire and empower.
               >
                 For further details or assistance, please contact:
                 <br/>
-                (a).Email: grants@icast.pk
-                <br />
-                (b).Phone: +92-51-907-5799
+                <ul>
+                  <li>Email: grants@icast.pk</li>
+                  <li>Phone: +92-51-907-5799</li>
+                </ul>
+                
                
               </Paragraph>
               

@@ -98,7 +98,7 @@ const Expositions = () => {
           <Col xs={24} md={16} lg={16}>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 color: "black",
                 margin: 0,
@@ -120,7 +120,7 @@ const Expositions = () => {
             </Paragraph>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -128,7 +128,7 @@ const Expositions = () => {
                 padding: "10px 40px",
               }}
             >
-              1. Exhibit at ICAST 2025
+               Exhibit at ICAST 2025
             </Title>
             <div
               style={{
@@ -139,49 +139,46 @@ const Expositions = () => {
             >
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "500",
                 }}
               >
-                (a).{" "}
-                <strong style={{ fontWeight: "bold" }}>
+                <ul>
+                  <li><strong style={{ fontWeight: "bold" }}>
                   {" "}
                   Global Audience Reach:
                 </strong>{" "}
                 Present your ideas and innovations to researchers, industry
                 leaders, policymakers, and future space leaders from across the
-                world.
-                <br />
-                (b).{" "}
-                <strong style={{ fontWeight: "bold" }}>
+                world.</li>
+                  <li><strong style={{ fontWeight: "bold" }}>
                   {" "}
                   Networking Opportunities:{" "}
                 </strong>{" "}
                 Forge meaningful connections with decision-makers,
-                collaborators, and potential customers.
-                <br />
-                (c).{" "}
-                <strong style={{ fontWeight: "bold" }}>
+                collaborators, and potential customers.</li>
+                  <li><strong style={{ fontWeight: "bold" }}>
                   {" "}
                   Brand Visibility:
                 </strong>{" "}
                 Gain recognition in conference materials, on-site branding, and
-                digital platforms.
-                <br />
-                (d).{" "}
-                <strong style={{ fontWeight: "bold" }}>
+                digital platforms.</li>
+                  <li><strong style={{ fontWeight: "bold" }}>
                   {" "}
                   Cutting-Edge Insights:
                 </strong>{" "}
                 Engage with the latest advancements in space science and
-                technology by connecting with other exhibitors and participants.
+                technology by connecting with other exhibitors and participants.</li>
+                </ul>
+              
+                
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -192,28 +189,28 @@ const Expositions = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "500",
                 }}
               >
-                (a). Customizable booth options in a strategically designed
-                exposition area.
-                <br />
-                (b). Access to high-traffic zones with maximum attendee
-                interaction.
-                <br />
-                (c). Complimentary exhibitor badges for team members.
-                <br />
-                (d). Inclusion in the official exhibitor directory distributed
-                to all attendees.
+                <ul>
+                  <li>Customizable booth options in a strategically designed
+                  exposition area.</li>
+                  <li>Access to high-traffic zones with maximum attendee
+                  interaction.</li>
+                  <li>Complimentary exhibitor badges for team members.</li>
+                  <li>Inclusion in the official exhibitor directory distributed
+                  to all attendees.</li>
+                </ul>
+               
               </Paragraph>
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -221,7 +218,7 @@ const Expositions = () => {
                 padding: "10px 40px",
               }}
             >
-              2. Sponsor ICAST 2025
+              Sponsor ICAST 2025
             </Title>
             <div
               style={{
@@ -232,7 +229,7 @@ const Expositions = () => {
             >
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -247,7 +244,7 @@ const Expositions = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -265,39 +262,36 @@ const Expositions = () => {
                   fontWeight: "500",
                 }}
               >
-                (a).{" "}
-                <strong style={{ fontWeight: "bold" }}>
+                <ul>
+                  <li> <strong style={{ fontWeight: "bold" }}>
                   Prime Visibility:
                 </strong>{" "}
                 Your brand will be featured on conference banners, digital
-                platforms, and marketing materials.
-                <br />
-                (b).{" "}
-                <strong style={{ fontWeight: "bold" }}>
+                platforms, and marketing materials.</li>
+                  <li><strong style={{ fontWeight: "bold" }}>
                   {" "}
                   Thought Leadership:
                 </strong>{" "}
                 Gain exclusive opportunities to sponsor sessions, workshops, or
-                networking events.
-                <br />
-                (c).{" "}
-                <strong style={{ fontWeight: "bold" }}>
+                networking events.</li>
+                  <li><strong style={{ fontWeight: "bold" }}>
                   Strategic Engagement:
                 </strong>{" "}
                 Directly connect with key stakeholders, decision-makers, and
-                policymakers.
-                <br />
-                (d).{" "}
-                <strong style={{ fontWeight: "bold" }}>
+                policymakers.</li>
+                  <li><strong style={{ fontWeight: "bold" }}>
                   Tailored Packages:
                 </strong>{" "}
                 Choose from a range of sponsorship tiers to suit your goals or
-                collaborate with us to create a custom package.
+                collaborate with us to create a custom package.</li>
+                </ul>
+               
+                
               </Paragraph>
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -305,7 +299,7 @@ const Expositions = () => {
                 padding: "10px 40px",
               }}
             >
-              3. Explore Sponsorship and Exhibit Opportunities
+              Explore Sponsorship and Exhibit Opportunities
             </Title>
             <div
               style={{
@@ -316,7 +310,7 @@ const Expositions = () => {
             >
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -331,7 +325,7 @@ const Expositions = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -342,28 +336,28 @@ const Expositions = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "500",
                 }}
               >
-                (a).Sponsorship tiers and their exclusive benefits.
-                <br />
-                (b).Booth options and details for exhibitors.
-                <br />
-                (c). Branding and visibility opportunities.
-                <br />
-                (d). Customizable packages to meet your specific goals.
+                <ul>
+                  <li>Sponsorship tiers and their exclusive benefits.</li>
+                  <li>Booth options and details for exhibitors.</li>
+                  <li>Branding and visibility opportunities.</li>
+                  <li>Customizable packages to meet your specific goals.</li>
+                </ul>
+               
               </Paragraph>
               <div style={{ textAlign: "left" }}>
-                <Button>Download Sponsorship &amp; Exhibit Prospectus</Button>
+                <Button size="large">Download Sponsorship &amp; Exhibit Prospectus</Button>
               </div>
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -371,7 +365,7 @@ const Expositions = () => {
                 padding: "10px 40px",
               }}
             >
-              4. Featured Exhibitors and Sponsors
+              Featured Exhibitors and Sponsors
             </Title>
             <div
               style={{
@@ -382,7 +376,7 @@ const Expositions = () => {
             >
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -393,7 +387,7 @@ const Expositions = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -429,7 +423,7 @@ const Expositions = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -437,7 +431,7 @@ const Expositions = () => {
                 padding: "10px 40px",
               }}
             >
-              5. Register Now!
+               Register Now!
             </Title>
             <div
               style={{
@@ -448,23 +442,24 @@ const Expositions = () => {
             >
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "500",
                 }}
               >
-                (a).<strong style={{ fontWeight: "bold" }}>Exhibitors:</strong>{" "}
+                <ul>
+                  <li><strong style={{ fontWeight: "bold" }}>Exhibitors:</strong>{" "}
                 Reserve your space today to connect with a global audience and
-                showcase your innovation at Pakistan’s premier space event.
-                <br />
-                (b)<strong style={{ fontWeight: "bold" }}>
-                  .Sponsors:
+                showcase your innovation at Pakistan’s premier space event.</li>
+                  <li><strong style={{ fontWeight: "bold" }}>
+                  Sponsors:
                 </strong>{" "}
                 Partner with us to amplify your brand’s impact and contribute to
-                advancing the frontiers of space science and technology.
-                <br />
+                advancing the frontiers of space science and technology.</li>
+                </ul>
+              
               </Paragraph>
               <div style={{ textAlign: "left",marginBottom:"20px" }}>
                 <Space>
@@ -483,10 +478,11 @@ const Expositions = () => {
               >
                 For inquiries, contact us at:
                 <br/>
+                <ul>
+                  <li>Email: expo@icast.pk</li>
+                  <li>Phone: +92-51-907-5799</li>
+                </ul>
 
-                (a). Email: expo@icast.pk
-                <br />
-                (b). Phone: +92-51-907-5799
               
               </Paragraph>
             </div>

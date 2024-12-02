@@ -60,42 +60,39 @@ const CallForSessions = () => {
       <div style={{ backgroundColor: "white", overflow: "hidden" }}>
         {/* Header Section */}
         <Title
-          style={{
-            textAlign: "start",
-            marginBottom: "30px",
+           style={{
+            textAlign: "justify",
             backgroundColor: "#EFF0F2",
-            padding: "20px",
+            padding: "20px 40px",
             fontSize: titleFontSize,
             fontFamily: "Inter, sans-serif",
-            fontWeight: "700",
+            fontWeight:"700",
           }}
         >
           Call for Sessions
         </Title>
         <Paragraph
           style={{
-            textAlign: "start",
-            marginBottom: "30px",
+            textAlign: "justify",
+            padding: "0px 40px",
             fontSize: paragraphFontSize,
             color: "black",
-            padding: "0px 20px",
             fontFamily: "Inter, sans-serif",
-            fontWeight: "600",
+            fontWeight:"600",
           }}
         >
           ICAST /Call For Content / Call For Sessions
         </Paragraph>
-        <div style={{ backgroundColor: "#EFF0F2", padding: "20px" }}>
+        <div style={{ backgroundColor: "#EFF0F2", padding: "15px 40px" }}>
           <Paragraph
-            style={{
-              textAlign: "start",
-              fontSize: paragraphFontSize, // Adjust as needed
+             style={{
+              textAlign: "justify",
+              fontSize: paragraphFontSize, 
               color: "black",
-              margin: 0, // Remove top and bottom margin for Title
-              padding: "10px 0px",
               fontFamily: "Inter, sans-serif",
-              fontWeight: "500",
+              fontWeight:"500",
               lineHeight:"2rem"
+
             }}
           >
             The International Conference on Applications of Space Science and
@@ -114,10 +111,10 @@ const CallForSessions = () => {
           </Paragraph>
         </div>
 
-        <div style={{ textAlign: "left", padding: "10px 20px" }}>
+        <div style={{ textAlign: "left", padding: "10px 40px" }}>
           <Title
             style={{
-              marginTop: "40px",
+              marginTop: "20px",
               fontSize: titleMedium,
               textAlign: "left",
               fontFamily: "Inter, sans-serif",
@@ -129,7 +126,7 @@ const CallForSessions = () => {
         </div>
 
         <Row
-          style={{ padding: "20px 20px", backgroundColor: "#EFF0F2" }}
+          style={{ padding: "20px 40px", backgroundColor: "#EFF0F2" }}
           gutter={[16, 16]}
         >
           {sessionFormats.map((format, index) => (
@@ -170,20 +167,21 @@ const CallForSessions = () => {
             </Col>
           ))}
         </Row>
-
-        {/* Proposal Section */}
-        <div style={{ textAlign: "left", padding: "10px 30px" }}>
-          <Title
+        <Title
             style={{
               marginTop: "20px",
               fontSize: titleMedium,
               textAlign: "left",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
+              padding: "10px 40px"
             }}
           >
             What to Include in Your Proposal
           </Title>
+        {/* Proposal Section */}
+        <div style={{ textAlign: "left", padding: "10px 40px",backgroundColor: "#EFF0F2" }}>
+         
           <ul
             style={{
               fontSize: paragraphFontSize,
@@ -220,24 +218,31 @@ const CallForSessions = () => {
           </ul>
 
           {/* Why Host a Session Section */}
-          <Title
+         
+        </div>
+        <Title
             style={{
-              marginTop: "40px",
+              marginTop: "20px",
               fontSize: titleMedium,
               textAlign: "left",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
+              padding: "10px 40px",
             }}
           >
             Why Host a Session?
           </Title>
+       <div  style={{ textAlign: "left", padding: "10px 40px",backgroundColor: "#EFF0F2" }}>
+      
           <ul
             style={{
               fontSize: paragraphFontSize,
               color: "black",
-              lineHeight: "1.8",
+              lineHeight: "2rem",
               fontFamily: "Inter, sans-serif",
               fontWeight: "600",
+              textAlign: "justify",
+
               
             }}
           >
@@ -258,18 +263,21 @@ const CallForSessions = () => {
             </li>
           </ul>
 
+       </div>
           {/* How to Submit Section */}
           <Title
             style={{
-              marginTop: "40px",
+              marginTop: "20px",
               fontSize: titleMedium,
-              textAlign: "left",
+              textAlign: "justify",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
+              padding: "10px 40px"
             }}
           >
             How to Submit
           </Title>
+          <div style={{ textAlign: "left", padding: "10px 40px",backgroundColor: "#EFF0F2" }}>
           <Paragraph
             style={{
               fontSize: paragraphFontSize,
@@ -300,9 +308,7 @@ const CallForSessions = () => {
             All proposals will be reviewed by the ICAST Steering Committee, and
             selected sessions will be featured in the official program.
           </Paragraph>
-        </div>
-        {/* Submit Button */}
-        <div style={{ textAlign: "left", padding: "10px 20px" }}>
+          <div style={{ textAlign: "left", }}>
           <Space>
             <Button
               type="primary"
@@ -318,6 +324,9 @@ const CallForSessions = () => {
             </Button>
           </Space>
         </div>
+          </div>
+        {/* Submit Button */}
+      
       </div>
       <Footer />
     </>

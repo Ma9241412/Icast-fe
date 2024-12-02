@@ -27,13 +27,33 @@ const Sponsors = () => {
   const { useBreakpoint } = Grid;
   const screens = useBreakpoint();
   const titleFontSize = screens.xl
-    ? "45px"
-    : screens.lg
-    ? "40px"
-    : screens.md
-    ? "35px"
-    : "28px";
-    
+  ? "48px"
+  : screens.lg
+  ? "48px"
+  : screens.md
+  ? "46px"
+  : "36px";
+const titleMedium = screens.xl
+  ? "22px"
+  : screens.lg
+  ? "22px"
+  : screens.md
+  ? "17px"
+  : "17px";
+const paragraphFontSize = screens.xl
+  ? "16px"
+  : screens.lg
+  ? "16px"
+  : screens.md
+  ? "15px"
+  : "15px";
+const buttonsize = screens.xl
+  ? "15px"
+  : screens.lg
+  ? "18px"
+  : screens.md
+  ? "16px"
+  : "16px";
   return (
     <div className="sponsors-container">
       <Title
@@ -41,7 +61,7 @@ const Sponsors = () => {
           fontSize: titleFontSize,
           fontWeight: "bold",
           textAlign: "center",
-          color: "black",
+          color: "white",
           fontFamily: "Inter, sans-serif",
         }}
       >
@@ -61,10 +81,15 @@ const Sponsors = () => {
                   />
                 </Link>
               </div>
-              <Title className="sponsor-name">
+              <Title  style={{
+          fontSize: titleMedium,
+          fontWeight: "bold",
+          textAlign: "center",
+          color: "black",
+          fontFamily: "Inter, sans-serif",
+        }}  className="sponsor-name">
                 {sponsor.name}
               </Title>
-              <Text className="sponsor-company">{sponsor.company}</Text>
             </Card>
           </Col>
         ))}

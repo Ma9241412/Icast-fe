@@ -16,7 +16,7 @@ const CallForPapers = () => {
     : screens.md
     ? "46px"
     : "36px";
-    const titleMedium = screens.xl
+  const titleMedium = screens.xl
     ? "22px"
     : screens.lg
     ? "22px"
@@ -43,26 +43,24 @@ const CallForPapers = () => {
       >
         <Title
           style={{
-            textAlign: "start",
-            marginBottom: "30px",
+            textAlign: "justify",
             backgroundColor: "#EFF0F2",
-            padding: "20px",
+            padding: "20px 40px",
             fontSize: titleFontSize,
             fontFamily: "Inter, sans-serif",
-            fontWeight:"700",
+            fontWeight: "700",
           }}
         >
           Call for Papers
         </Title>
         <Paragraph
           style={{
-            textAlign: "start",
-            marginBottom: "30px",
+            textAlign: "justify",
+            padding: "0px 40px",
             fontSize: paragraphFontSize,
             color: "black",
-            padding: "0px 20px",
             fontFamily: "Inter, sans-serif",
-            fontWeight:"600",
+            fontWeight: "600",
           }}
         >
           ICAST /Call For Content / Call For Papers
@@ -71,15 +69,13 @@ const CallForPapers = () => {
         <div style={{ backgroundColor: "#EFF0F2", padding: "20px" }}>
           <Paragraph
             style={{
-              textAlign: "start",
-              fontSize: paragraphFontSize, // Adjust as needed
+              textAlign: "justify",
+              fontSize: paragraphFontSize,
               color: "black",
-              margin: 0, // Remove top and bottom margin for Title
-              padding: "10px 0px",
+              padding: "0px 15px",
               fontFamily: "Inter, sans-serif",
-              fontWeight:"500",
-              lineHeight:"2rem"
-
+              fontWeight: "500",
+              lineHeight: "2rem",
             }}
           >
             The International Conference on Applications of Space Science and
@@ -93,27 +89,29 @@ const CallForPapers = () => {
             critical challenges in space science and technology.
           </Paragraph>
 
-          <div style={{ textAlign: "left", padding: "10px 0px" }}>
+          <div style={{ textAlign: "justify", padding: "10px 15px" }}>
             <Space direction="horizontal">
               <Button
                 type="default"
+                size="large"
                 href="https://cms.cressofterp.com/"
                 target="_blank"
                 style={{
                   backgroundColor: "#186814",
                   borderColor: "#186814",
-                  color:"white"
+                  color: "white",
                 }}
               >
                 Manage Submissions
               </Button>
               <Button
                 type="primary"
+                size="large"
                 href="/author-resources"
                 style={{
                   backgroundColor: "#186814",
                   borderColor: "#186814",
-                  color:"white"
+                  color: "white",
                 }}
               >
                 Author Resources
@@ -122,33 +120,41 @@ const CallForPapers = () => {
           </div>
         </div>
 
-        <div style={{ textAlign: "left", padding: "10px 20px" }}>
+        <div style={{ textAlign: "left", padding: "10px 35px" }}>
           <Title
             style={{
-              marginTop: "40px",
+              marginTop: "20px",
               fontSize: titleMedium,
-              textAlign: "left",
+              textAlign: "justify",
               fontFamily: "Inter, sans-serif",
-              fontWeight:"700",
+              fontWeight: "700",
             }}
           >
             Conference Tracks
           </Title>
-          <Paragraph style={{ fontSize: paragraphFontSize, color: "black" ,
-             fontFamily: "Inter, sans-serif",
-             fontWeight:"500",
-          }}>
+          <Paragraph
+            style={{
+              fontSize: paragraphFontSize,
+              color: "black",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+              textAlign: "justify",
+            }}
+          >
             We welcome high-quality submissions across the following dynamic
             tracks. Detailed subtopics can be found below:
           </Paragraph>
           <div style={{ textAlign: "start", marginBottom: "30px" }}>
             <Space>
               <Button
+                size="large"
                 type="primary"
                 href=""
-                style={{  backgroundColor: "#186814",
+                style={{
+                  backgroundColor: "#186814",
                   borderColor: "#186814",
-                  color:"white"}}
+                  color: "white",
+                }}
               >
                 Tracks and Subtopics Page
               </Button>
@@ -157,84 +163,126 @@ const CallForPapers = () => {
         </div>
 
         <Row
-          style={{ padding: "20px 20px", backgroundColor: "#EFF0F2" }}
+          style={{ padding: "20px 35px", backgroundColor: "#EFF0F2" }}
           gutter={[24, 24]}
         >
           {conferenceTracks.map((track, index) => (
             <Col xs={24} sm={12} md={6} key={index}>
               <Card
-                hoverable
                 style={{
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                  border: "1px solid #e6e6e6",
-                  textAlign: "left",
-                  height: "100%",
-                  backgroundColor: "#fff",
+                  height: "100%", // Remove fixed height for flexibility
+                  width: "100%",
                 }}
+                title={
+                  <span
+                    style={{
+                      fontSize: paragraphFontSize, // Slightly smaller font size
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: "700",
+                      color: "#1a73e8",
+                      lineHeight: "1.2", // Reduce line height for closer spacing
+                      wordWrap: "break-word",
+                      whiteSpace: "normal",
+                    }}
+                  >
+                    {track.title}
+                  </span>
+                }
+                hoverable
               >
-                <Title
-                  level={4}
-                  style={{ color: "#007BFF", 
+                <Paragraph
+                  style={{
+                    textAlign: "left",
+                    fontSize: "13px", // Reduce font size for compactness
+                    color: "black",
+                    margin: "0", // Remove margin
                     fontFamily: "Inter, sans-serif",
-                    fontWeight:"600",
-                    fontSize:titleMedium
+                    fontWeight: "600", // Slightly lighter font weight
+                    lineHeight: "1.4", // Compact line height for tighter spacing
                   }}
                 >
-                  {track.title}
-                </Title>
-                <Paragraph style={{ fontSize: paragraphFontSize, color: "black",
-                   fontFamily: "Inter, sans-serif",
-                   fontWeight:"500",
-                 }}>
                   {track.description}
                 </Paragraph>
               </Card>
             </Col>
           ))}
         </Row>
-
-       <div style={{ textAlign: "left", padding: "10px 20px" }}>
-       <Title     style={{
-              marginTop: "40px",
-              fontSize: titleMedium,
-              textAlign: "left",
-              fontFamily: "Inter, sans-serif",
-              fontWeight:"700",
-            }}>
+        <Title
+          style={{
+            marginTop: "40px",
+            fontSize: titleMedium,
+            textAlign: "left",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "700",
+            padding: "10px 35px",
+          }}
+        >
           Why Submit?
         </Title>
-        <Paragraph style={{ fontSize: paragraphFontSize, color: "black",
-           fontFamily: "Inter, sans-serif",
-           fontWeight:"500",
-         }}>
-          
-          By submitting your research to ICAST 2025, you will:
-        </Paragraph>
-        <ul style={{ fontSize: paragraphFontSize, color: "black", paddingLeft: "20px", fontFamily: "Inter, sans-serif",
-              fontWeight:"500", }}>
-          <li>
-            Gain recognition by presenting your work to a global audience of
-            experts and stakeholders.
-          </li>
-          <br/>
-          <li>
-            Contribute to advancing the field of space science and technology.
-          </li>
-          <br/>
+        <div
+          style={{
+            textAlign: "left",
+            padding: "10px 35px",
+            backgroundColor: "#EFF0F2",
+          }}
+        >
+          <Paragraph
+            style={{
+              fontSize: paragraphFontSize,
+              color: "black",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+            }}
+          >
+            By submitting your research to ICAST 2025, you will:
+          </Paragraph>
+          <ul
+            style={{
+              fontSize: paragraphFontSize,
+              color: "black",
+              paddingLeft: "20px",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+            }}
+          >
+            <li>
+              Gain recognition by presenting your work to a global audience of
+              experts and stakeholders.
+            </li>
+            <br />
+            <li>
+              Contribute to advancing the field of space science and technology.
+            </li>
+            <br />
 
-          <li>
-            Have the opportunity for your paper to be published in reputable
-            conference proceedings and indexed journals.
-          </li>
-          <br/>
+            <li>
+              Have the opportunity for your paper to be published in reputable
+              conference proceedings and indexed journals.
+            </li>
+            <br />
 
-          <li>
-            Network with leading scientists, policymakers, and industry
-            professionals shaping the future of space innovation.
-          </li>
-        </ul>
-       </div>
+            <li>
+              Network with leading scientists, policymakers, and industry
+              professionals shaping the future of space innovation.
+            </li>
+          </ul>
+          <div>
+            <Space>
+              <Button
+                size="large"
+                type="primary"
+                href="https://cms.cressofterp.com/"
+                style={{
+                  backgroundColor: "#186814",
+                  borderColor: "#186814",
+                  color: "white",
+                }}
+              >
+                Register Now
+              </Button>
+            </Space>
+          </div>
+        </div>
       </div>
       <Footer />
     </>
@@ -315,40 +363,43 @@ const conferenceTracks = [
   },
   {
     title: "Information & Communication Technologies",
-    description:(
+    description: (
       <>
-      Contribute to the evolving role of ICT in space science, from AI-powered data analytics to
-quantum computing. Topics include cybersecurity for autonomous space operations, next-
-generation communication networks, and blockchain applications in space technologies.
-Submissions are encouraged on space-based IoT systems, edge computing, and virtual
-reality applications for mission planning and human-computer interactions in space
-exploration.
+        Contribute to the evolving role of ICT in space science, from AI-powered
+        data analytics to quantum computing. Topics include cybersecurity for
+        autonomous space operations, next- generation communication networks,
+        and blockchain applications in space technologies. Submissions are
+        encouraged on space-based IoT systems, edge computing, and virtual
+        reality applications for mission planning and human-computer
+        interactions in space exploration.
       </>
-    )
+    ),
   },
   {
     title: "Astronomy & Astrophysics",
-    description:(
+    description: (
       <>
-      Explore the universe’s mysteries through contributions on exoplanet exploration, dark
-matter detection, and gravitational wave astronomy. This track focuses on multi-messenger
-astronomy, AI-driven astronomical data analysis, and the future of interstellar travel.
-Researchers are also invited to delve into planetary habitability, astroecology, and the
-impact of space weather on planetary environments.
+        Explore the universe’s mysteries through contributions on exoplanet
+        exploration, dark matter detection, and gravitational wave astronomy.
+        This track focuses on multi-messenger astronomy, AI-driven astronomical
+        data analysis, and the future of interstellar travel. Researchers are
+        also invited to delve into planetary habitability, astroecology, and the
+        impact of space weather on planetary environments.
       </>
-    )
+    ),
   },
   {
     title: "Space Law, Management & Outreach",
-    description:(
-      <> 
-      This track focuses on the governance and ethical considerations of space exploration.
-Contributions are invited on topics such as international space treaties, commercialization
-of space, and debris mitigation. Researchers can also address the role of public
-engagement, STEM education, and policies shaping sustainable and inclusive space
-exploration.
+    description: (
+      <>
+        This track focuses on the governance and ethical considerations of space
+        exploration. Contributions are invited on topics such as international
+        space treaties, commercialization of space, and debris mitigation.
+        Researchers can also address the role of public engagement, STEM
+        education, and policies shaping sustainable and inclusive space
+        exploration.
       </>
-    )
+    ),
   },
 ];
 

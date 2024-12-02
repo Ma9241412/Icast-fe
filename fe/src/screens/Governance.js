@@ -45,7 +45,8 @@ const data = [
   },
   {
     role: "Conference Secretary Head of Conference Secretariat",
-    name: "Dr. Najam Abbas Naqvi",
+    name: "Prof. Dr. Najam Abbas Naqvi",
+
     title: "Chairman NCGSA",
     imgSrc: img5,
   },
@@ -137,7 +138,7 @@ const paragraphFontSize = screens.xl
           <Title
             style={{
               backgroundColor: "#EEF0F2",
-              textAlign: "start",
+              textAlign: "justify",
               marginBottom: "30px",
               padding: "20px 40px",
               fontFamily: "Inter, sans-serif",
@@ -165,7 +166,8 @@ const paragraphFontSize = screens.xl
         <div style={{ padding: "30px 30px", backgroundColor: "#EFF0F2" }}>
           <Paragraph
             style={{
-              textAlign: "start",
+              textAlign: "justify",
+
               marginBottom: "30px",
               fontSize: paragraphFontSize,
               color: "black",
@@ -198,7 +200,8 @@ const paragraphFontSize = screens.xl
           <br />
           <Paragraph
             style={{
-              textAlign: "start",
+              textAlign: "justify",
+
               marginBottom: "30px",
               fontSize: paragraphFontSize,
               color: "black",

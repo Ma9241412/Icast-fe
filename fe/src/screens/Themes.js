@@ -419,12 +419,12 @@ const ThemePage = () => {
               fontSize: titleFontSize,
             }}
           >
-            ICAST Themes
+            ICAST Theme
           </Title>
         </div>
         <Paragraph
           style={{
-            textAlign: "start",
+            textAlign: "justify",
             fontSize: paragraphFontSize,
             color: "black",
             padding: "0px 40px",
@@ -432,7 +432,7 @@ const ThemePage = () => {
             fontWeight: "700",
           }}
         >
-          ICAST / Themes & Tracks
+          ICAST / Theme & Tracks
         </Paragraph>
         <div
           style={{
@@ -444,7 +444,7 @@ const ThemePage = () => {
         >
           <Title
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               marginBottom: "30px",
               fontSize: titleMedium,
               color: "black",
@@ -452,14 +452,14 @@ const ThemePage = () => {
               fontWeight: "700",
             }}
           >
-            1. Themes
+            Theme
           </Title>
           <Paragraph
             style={{
               textAlign: "start",
               fontSize: paragraphFontSize,
               color: "black",
-              margin: 0, // Remove top and bottom margin for Title
+              margin: 0, 
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
             }}

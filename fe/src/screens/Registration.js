@@ -1,5 +1,13 @@
 import React from "react";
-import { Card, Button, Typography, List, Grid, Row, Col, Image } from "antd";
+import {
+  Button,
+  Typography,
+  Grid,
+  Row,
+  Col,
+  Image,
+  Table,
+} from "antd";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
 import "../Styles/Resgister.css";
@@ -8,7 +16,7 @@ import m2 from "../Assets/m5.jpg";
 import m3 from "../Assets/m6.jpg";
 import m4 from "../Assets/m7.jpg";
 
-const { Title, Text, Paragraph } = Typography;
+const { Title,  Paragraph } = Typography;
 const { useBreakpoint } = Grid;
 
 const Registration = () => {
@@ -34,6 +42,120 @@ const Registration = () => {
     : screens.md
     ? "15px"
     : "15px";
+  const columns = [
+    {
+      title: "Serial No.",
+      dataIndex: "key", // 'key' represents the serial number for each row
+      align: "left", // Left-align the serial numbers
+      render: (text, record, index) => index + 1, // Automatically generate serial numbers starting from 1
+    },
+    {
+      title: "Author",
+      dataIndex: "author", // Assuming you have an 'author' field in your data
+      align: "left", // Left-align the author names
+    },
+    {
+      title: "Fees",
+      dataIndex: "fees", // Assuming you have a 'fees' field in your data
+      align: "left", // Left-align the fee values
+    },
+  ];
+
+  const data = [
+    {
+      key: "1",
+      author: "Pakistani Professionals",
+      fees: "10,000 PKR",
+    },
+    {
+      key: "2",
+      author: "Pakistani Students",
+      fees: "5,000 PKR",
+    },
+    {
+      key: "3",
+      author: "International Professionals",
+      fees: "200 USD",
+    },
+    {
+      key: "4",
+      author: "International Students",
+      fees: "100 USD",
+    },
+  ];
+
+  const columns2 = [
+    {
+      title: "Serial No.",
+      dataIndex: "key", // 'key' represents the serial number for each row
+      align: "left", // Left-align the serial numbers
+      render: (text, record, index) => index + 1, // Automatically generate serial numbers starting from 1
+    },
+    {
+      title: "Author",
+      dataIndex: "author", // Assuming you have an 'author' field in your data
+      align: "left", // Left-align the author names
+    },
+    {
+      title: "Fees",
+      dataIndex: "fees", // Assuming you have a 'fees' field in your data
+      align: "left", // Left-align the fee values
+    },
+  ];
+
+  const data1 = [
+    {
+      key: "1",
+      author: "Pakistani Accompanying Authors",
+      fees: "5,000 PKR",
+    },
+    {
+      key: "2",
+      author: "International Accompanying Authors",
+      fees: "50 USD",
+    },
+  ];
+  const columns3 = [
+    {
+      title: "Serial No.",
+      dataIndex: "key", // 'key' represents the serial number for each row
+      align: "left", // Left-align the serial numbers
+      render: (text, record, index) => index + 1, // Automatically generate serial numbers starting from 1
+    },
+    {
+      title: "Workshop Attendee",
+      dataIndex: "workshopAttendee", // Match the key in `data3`
+      align: "left", // Left-align the attendee names
+    },
+    {
+      title: "Fee (Per Workshop)",
+      dataIndex: "fees", // Match the key in `data3`
+      align: "left", // Left-align the fee values
+    },
+  ];
+
+  const data3 = [
+    {
+      key: "1",
+      workshopAttendee: "Professionals", // Consistent key name
+      fees: "10,000 PKR", // Ensuring alignment with the column definition
+    },
+    {
+      key: "2",
+      workshopAttendee: "Students", // Consistent key name
+      fees: "5,000 PKR",
+    },
+    {
+      key: "3",
+      workshopAttendee: "International Professionals", // Consistent key name
+      fees: "100 USD",
+    },
+    {
+      key: "4",
+      workshopAttendee: "International Students", // Consistent key name
+      fees: "50 USD", // Adding a default value for missing data
+    },
+  ];
 
   return (
     <>
@@ -83,7 +205,7 @@ const Registration = () => {
             >
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   margin: 0, // Remove top and bottom margin for Title
@@ -101,7 +223,12 @@ const Registration = () => {
                 space event. Tailored to meet the needs of every participant,
                 ICAST 2025 ensures an enriching and seamless experience for all.
               </Paragraph>
-              <div style={{ textAlign: "left", marginTop: "20px" }}>
+              <div
+                style={{
+                  textAlign: "justify",
+                  marginTop: "20px",
+                }}
+              >
                 <Button href="https://CMS.cressofterp.com" size="large">
                   Register Now
                 </Button>
@@ -117,7 +244,7 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-              1. Paper Presenters / Authors
+               Paper Presenters / Authors
             </Title>
             <div
               style={{
@@ -169,18 +296,23 @@ const Registration = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Present your research to a global audience.
-                <br />
-                (b). Inclusion of your paper in the IEEE Xplore Digital Library
-                for international visibility.
-                <br />
-                (c). Access to all technical sessions, plenary talks, and
-                exhibitions.
-                <br />
-                (d). Networking opportunities with industry leaders,
-                policymakers, and fellow researchers.
-                <br />
-                (e). Certificate of presentation and conference materials.
+                <ul>
+                  <li>Present your research to a global audience.</li>
+                  <li>
+                    Inclusion of your paper in the IEEE Xplore Digital Library
+                    for international visibility.
+                  </li>
+                  <li>
+                    {" "}
+                    Access to all technical sessions, plenary talks, and
+                    exhibitions.
+                  </li>
+                  <li>
+                    Networking opportunities with industry leaders,
+                    policymakers, and fellow researchers.
+                  </li>
+                  <li>Certificate of presentation and conference materials.</li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -193,126 +325,20 @@ const Registration = () => {
               >
                 Fee Structure:
               </Title>
-              <Card
-                title={
-                  <span
-                    style={{
-                      textAlign: "left",
-                      display: "block",
-                      fontSize: titleMedium,
-                      fontFamily: "Inter, sans-serif",
-                      fontWeight: "600",
-                    }}
-                  >
-                    Paper Presenters / Author
-                  </span>
-                }
-                style={{ marginBottom: "20px", marginTop: "20px" }}
-              >
-                <Text
-                  strong
-                  style={{
-                    position: "absolute",
-                    top: "5%",
-                    right: "4%",
-                    fontSize: titleMedium,
-                    fontFamily: "Inter, sans-serif",
-                    fontWeight: "600",
-                  }}
-                >
-                  Fees
-                </Text>
-                <List>
-                  <List.Item>
-                    <Text
-                      style={{
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      Pakistani Professionals
-                    </Text>
-                    <Text
-                      strong
-                      style={{
-                        marginLeft: "auto",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      10,000 PKR
-                    </Text>
-                  </List.Item>
-                  <List.Item>
-                    <Text
-                      style={{
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      Pakistani Students
-                    </Text>
-                    <Text
-                      strong
-                      style={{
-                        marginLeft: "auto",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      5,000 PKR
-                    </Text>
-                  </List.Item>
-                  <List.Item>
-                    <Text
-                      style={{
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      International Professionals
-                    </Text>
-                    <Text
-                      strong
-                      style={{
-                        marginLeft: "auto",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      200 USD
-                    </Text>
-                  </List.Item>
-                  <List.Item>
-                    <Text
-                      style={{
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      International Students
-                    </Text>
-                    <Text
-                      strong
-                      style={{
-                        marginLeft: "auto",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      100 USD
-                    </Text>
-                  </List.Item>
-                </List>
-              </Card>
+
+              <Table
+                columns={columns2}
+                dataSource={data}
+                pagination={false}
+                bordered={false}
+                scroll={{ x: "max-content" }}
+                size="middle"
+                style={{
+                  fontFamily: "Inter, sans-serif", // Use a clean font
+                  borderRadius: "8px", // Optional rounded corners for the table
+                  boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)", // Optional subtle shadow effect
+                }}
+              />
               <Title
                 style={{
                   textAlign: "start",
@@ -320,6 +346,7 @@ const Registration = () => {
                   color: "black",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "700",
+                  marginTop: "10px",
                 }}
               >
                 Special Notes:
@@ -333,11 +360,25 @@ const Registration = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Authors must submit their manuscripts by the final deadline
-                to ensure inclusion in proceedings.
-                <br />
-                (b). Failure to present will result in withdrawal of the paper
-                as per the No Paper, No Podium policy.
+                <ul
+                  style={{
+                    textAlign: "start",
+                    fontSize: paragraphFontSize,
+                    color: "black",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "500",
+                  }}
+                >
+                  <li>
+                    Authors must submit their manuscripts by the final deadline
+                    to ensure inclusion in proceedings.
+                  </li>
+                  <li>
+                    {" "}
+                    Failure to present will result in withdrawal of the paper as
+                    per the No Paper, No Podium policy.
+                  </li>
+                </ul>
               </Paragraph>
             </div>
             <Title
@@ -350,7 +391,7 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-              2. Accompanying Authors
+              Accompanying Authors
             </Title>
             <div
               style={{
@@ -402,13 +443,21 @@ const Registration = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Acknowledgment as an author with a certificate of
-                authorship, and conference materials.
-                <br />
-                (b). Access to conference sessions, exhibitions, and networking
-                events.
-                <br />
-                (c). Inclusion in the conference proceedings as a co-author.
+                <ul>
+                  <li>
+                    {" "}
+                    Acknowledgment as an author with a certificate of
+                    authorship, and conference materials.
+                  </li>
+                  <li>
+                    Access to conference sessions, exhibitions, and networking
+                    events.
+                  </li>
+                  <li>
+                    {" "}
+                    Inclusion in the conference proceedings as a co-author.
+                  </li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -421,82 +470,19 @@ const Registration = () => {
               >
                 Fee Structure:
               </Title>
-              <Card
-                title={
-                  <span
-                    style={{
-                      textAlign: "left",
-                      display: "block",
-                      fontSize: titleMedium,
-                      fontFamily: "Inter, sans-serif",
-                      fontWeight: "600",
-                    }}
-                  >
-                    Worksop Attendee
-                  </span>
-                }
-                style={{ marginBottom: "20px", marginTop: "20px" }}
-              >
-                <Text
-                  strong
-                  style={{
-                    position: "absolute",
-                    top: "5%",
-                    right: "4%",
-                    fontSize: titleMedium,
-                    fontFamily: "Inter, sans-serif",
-                    fontWeight: "600",
-                  }}
-                >
-                  Fees
-                </Text>
-                <List>
-                  <List.Item>
-                    <Text
-                      style={{
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      Pakistani Accompanying Authors
-                    </Text>
-                    <Text
-                      strong
-                      style={{
-                        marginLeft: "auto",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      5,000 PKR
-                    </Text>
-                  </List.Item>
-                  <List.Item>
-                    <Text
-                      style={{
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      International Accompanying Authors
-                    </Text>
-                    <Text
-                      strong
-                      style={{
-                        marginLeft: "auto",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      50 USD
-                    </Text>
-                  </List.Item>
-                </List>
-              </Card>
+              <Table
+                columns={columns}
+                dataSource={data1}
+                pagination={false}
+                bordered={false}
+                scroll={{ x: "max-content" }}
+                size="middle"
+                style={{
+                  fontFamily: "Inter, sans-serif", // Use a clean font
+                  borderRadius: "8px", // Optional rounded corners for the table
+                  boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)", // Optional subtle shadow effect
+                }}
+              />
             </div>
             <Title
               style={{
@@ -508,7 +494,7 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-              3. Workshop Attendees
+               Workshop Attendees
             </Title>
             <div
               style={{
@@ -560,17 +546,22 @@ const Registration = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Participate in expert-led workshops to enhance your
-                technical skills.
-                <br />
-                (b). Access workshop-specific materials and resources.
-                <br />
-                (c). Gain insights into cutting-edge technologies in focused,
-                interactive sessions.
-                <br />
-                (d). Entry to exhibitions and select non-technical sessions.
-                <br />
-                (e). Certificate of participation.
+                <ul>
+                  <li>
+                    {" "}
+                    Participate in expert-led workshops to enhance your
+                    technical skills.
+                  </li>
+                  <li>Access workshop-specific materials and resources.</li>
+                  <li>
+                    Gain insights into cutting-edge technologies in focused,
+                    interactive sessions.
+                  </li>
+                  <li>
+                    Entry to exhibitions and select non-technical sessions.
+                  </li>
+                  <li>Certificate of participation.</li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -583,186 +574,38 @@ const Registration = () => {
               >
                 Fee Structure:
               </Title>
-              <Card
-                title={
-                  <div style={{ position: "relative" }}>
-                    <span
-                      style={{
-                        textAlign: "left",
-                        display: "block",
-                        fontSize: titleMedium,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "600",
-                      }}
-                    >
-                      Workshop Attendee
-                    </span>
-                    <Text
-                      strong
-                      style={{
-                        position: "absolute",
-                        top: "0",
-                        right: "0",
-                        fontSize: titleMedium,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "600",
-                      }}
-                    >
-                      Fee (Per Workshop)
-                    </Text>
-                  </div>
-                }
-                style={{ marginBottom: "20px", marginTop: "20px" }}
-              >
-                <List>
-                  <List.Item
-                    style={{
-                      position: "relative", // Allow absolute positioning of the fee
-                      paddingTop: "10px", // Ensure there is space for the fee at the top
-                    }}
-                  >
-                    {/* Fee positioned at the top right */}
-                    <Text
-                      strong
-                      style={{
-                        position: "absolute",
-                        top: "0",
-                        right: "0",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      10,000 PKR
-                    </Text>
-                    <div>
-                      <Text
-                        style={{
-                          fontSize: paragraphFontSize,
-                          fontFamily: "Inter, sans-serif",
-                          fontWeight: "500",
-                        }}
-                      >
-                        Professionals
-                      </Text>
-                    </div>
-                  </List.Item>
-
-                  <List.Item
-                    style={{
-                      position: "relative", // Allow absolute positioning of the fee
-                      paddingTop: "10px", // Ensure there is space for the fee at the top
-                    }}
-                  >
-                    {/* Fee positioned at the top right */}
-                    <Text
-                      strong
-                      style={{
-                        position: "absolute",
-                        top: "0",
-                        right: "0",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      5,000 PKR
-                    </Text>
-                    <div>
-                      <Text
-                        style={{
-                          fontSize: paragraphFontSize,
-                          fontFamily: "Inter, sans-serif",
-                          fontWeight: "500",
-                        }}
-                      >
-                        Students
-                      </Text>
-                    </div>
-                  </List.Item>
-                  <List.Item
-                    style={{
-                      position: "relative", // Allow absolute positioning of the fee
-                      paddingTop: "10px", // Ensure there is space for the fee at the top
-                    }}
-                  >
-                    <Text
-                      strong
-                      style={{
-                        position: "absolute",
-                        top: "0",
-                        right: "0",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      100 USD
-                    </Text>
-                    <div>
-                      <Text
-                        style={{
-                          fontSize: paragraphFontSize,
-                          fontFamily: "Inter, sans-serif",
-                          fontWeight: "500",
-                        }}
-                      >
-                        International Professionals
-                      </Text>
-                    </div>
-                  </List.Item>
-                  <List.Item
-                    style={{
-                      position: "relative", // Allow absolute positioning of the fee
-                      paddingTop: "10px", // Ensure there is space for the fee at the top
-                    }}
-                  >
-                    {/* Fee positioned at the top right */}
-                    <Text
-                      strong
-                      style={{
-                        position: "absolute",
-                        top: "0",
-                        right: "0",
-                        fontSize: paragraphFontSize,
-                        fontFamily: "Inter, sans-serif",
-                        fontWeight: "500",
-                      }}
-                    >
-                      50 USD
-                    </Text>
-                    <div>
-                      <Text
-                        style={{
-                          fontSize: paragraphFontSize,
-                          fontFamily: "Inter, sans-serif",
-                          fontWeight: "500",
-                        }}
-                      >
-                        International Students
-                      </Text>
-                    </div>
-                  </List.Item>
-                </List>
-                <div style={{ backgroundColor: "#EFF6FF" }}>
-                  <Paragraph
-                    style={{
-                      padding: "10px",
-                      fontSize: paragraphFontSize,
-                      color: "black",
-                      textAlign: "center",
-                      fontFamily: "Inter, sans-serif",
-                      fontWeight: "500",
-                    }}
-                    type="secondary"
-                  >
-                    <strong>Note:</strong> Workshops require separate
-                    registration. Select your workshop during the registration
-                    process.
-                  </Paragraph>
-                </div>
-              </Card>
+              <Table
+                columns={columns3}
+                dataSource={data3}
+                pagination={false}
+                bordered={false}
+                scroll={{ x: "max-content" }}
+                size="middle"
+                style={{
+                  fontFamily: "Inter, sans-serif", // Use a clean font
+                  borderRadius: "8px", // Optional rounded corners for the table
+                  boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)", // Optional subtle shadow effect
+                }}
+              />
+              <div style={{ backgroundColor: "#EFF6FF" }}>
+                <Paragraph
+                  style={{
+                    padding: "10px",
+                    fontSize: paragraphFontSize,
+                    color: "black",
+                    textAlign: "center",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "500",
+                  }}
+                  type="secondary"
+                >
+                  <strong>Note:</strong> Workshops require separate
+                  registration. Select your workshop during the registration
+                  process.
+                </Paragraph>
+              </div>
             </div>
+
             <Title
               style={{
                 textAlign: "start",
@@ -773,7 +616,7 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-              4. Visitors
+               Visitors
             </Title>
             <div
               style={{
@@ -825,14 +668,25 @@ const Registration = () => {
                   fontWeight: "500",
                 }}
               >
-                (a).Free access to the exhibition hall and interactive displays.
-                <br />
-                (b). Opportunity to network with presenters, exhibitors, and
-                attendees.
-                <br />
-                (c). Explore space-related innovations and technologies.
-                <br />
-                (d). Certificate of participation.
+                <ul
+                  style={{
+                    textAlign: "start",
+                    fontSize: paragraphFontSize,
+                    color: "black",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "500",
+                  }}
+                >
+                  <li>
+                    Free access to the exhibition hall and interactive displays.
+                  </li>
+                  <li>
+                    Opportunity to network with presenters, exhibitors, and
+                    attendees.
+                  </li>
+                  <li>Explore space-related innovations and technologies.</li>
+                  <li>Certificate of participation.</li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -868,7 +722,7 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-              5. Media Representatives
+               Media Representatives
             </Title>
             <div
               style={{
@@ -921,20 +775,36 @@ const Registration = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Free Access to all conference sessions, plenary talks,
-                exhibitions, and public events.
-                <br />
-                (b). Exclusive access to media briefings and press conferences
-                with keynote speakers and organizers.
-                <br />
-                (c). A press kit containing event schedules, speaker profiles,
-                and conference highlights.
-                <br />
-                (d). Opportunities to interview researchers, policymakers, and
-                industry leaders.
-                <br />
-                (e). Networking opportunities with other journalists and
-                attendees.
+                <ul
+                  style={{
+                    textAlign: "start",
+                    fontSize: paragraphFontSize,
+                    color: "black",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "500",
+                  }}
+                >
+                  <li>
+                    Free Access to all conference sessions, plenary talks,
+                    exhibitions, and public events.
+                  </li>
+                  <li>
+                    Exclusive access to media briefings and press conferences
+                    with keynote speakers and organizers.
+                  </li>
+                  <li>
+                    A press kit containing event schedules, speaker profiles,
+                    and conference highlights.
+                  </li>
+                  <li>
+                    Opportunities to interview researchers, policymakers, and
+                    industry leaders.
+                  </li>
+                  <li>
+                    Networking opportunities with other journalists and
+                    attendees.
+                  </li>
+                </ul>
               </Paragraph>
 
               <Title
@@ -957,12 +827,17 @@ const Registration = () => {
                   fontWeight: "500",
                 }}
               >
-                (a). Media representatives are required to present valid
-                credentials (e.g., press ID or a letter from their media
-                organization) upon registration.
-                <br />
-                (b). Media coverage guidelines, including photography and
-                recording permissions, will be shared upon registration.
+                <ul>
+                  <li>
+                    Media representatives are required to present valid
+                    credentials (e.g., press ID or a letter from their media
+                    organization) upon registration.
+                  </li>
+                  <li>
+                    Media coverage guidelines, including photography and
+                    recording permissions, will be shared upon registration.
+                  </li>
+                </ul>
               </Paragraph>
             </div>
             <Title
@@ -975,7 +850,7 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-              6. Registration Guidelines
+               Registration Guidelines
             </Title>
             <div
               style={{
@@ -1031,23 +906,39 @@ const Registration = () => {
                   fontWeight: "500",
                 }}
               >
-                (a).{" "}
-                <strong style={{ fontWeight: "bold" }}>Refund Policy:</strong>{" "}
-                Conference registration fee is non-transferable, non-refundable.
-                <br />
-                (b).{" "}
-                <strong style={{ fontWeight: "bold" }}>
-                  No-Show Policy:
-                </strong>{" "}
-                Registrants who fail to attend will forfeit their registration
-                benefits.
-                <br />
-                (c).{" "}
-                <strong style={{ fontWeight: "bold" }}>
-                  Visa Support:
-                </strong>{" "}
-                International participants may request visa support letters upon
-                completing their registration.
+                <ul
+                  style={{
+                    textAlign: "start",
+                    fontSize: paragraphFontSize,
+                    color: "black",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "500",
+                  }}
+                >
+                  <li>
+                    {" "}
+                    <strong style={{ fontWeight: "bold" }}>
+                      Refund Policy:
+                    </strong>{" "}
+                    Conference registration fee is non-transferable,
+                    non-refundable.
+                  </li>
+                  <li>
+                    {" "}
+                    <strong style={{ fontWeight: "bold" }}>
+                      No-Show Policy:
+                    </strong>{" "}
+                    Registrants who fail to attend will forfeit their
+                    registration benefits.
+                  </li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>
+                      Visa Support:
+                    </strong>{" "}
+                    International participants may request visa support letters
+                    upon completing their registration.
+                  </li>
+                </ul>
               </Paragraph>
               <Title
                 style={{
@@ -1071,15 +962,20 @@ const Registration = () => {
               >
                 By registering for ICAST 2025, you will:
                 <br />
-                (a). Access all technical sessions, workshops, and exhibitions.
-                <br />
-                (b). Network with global experts and policymakers in space
-                science and technology.
-                <br />
-                (c). Obtain conference materials, including proceedings and
-                certificates.
-                <br />
-                (d). Participate in cultural and networking events.
+                <ul>
+                  <li>
+                    Access all technical sessions, workshops, and exhibitions.
+                  </li>
+                  <li>
+                    Network with global experts and policymakers in space
+                    science and technology.
+                  </li>
+                  <li>
+                    Obtain conference materials, including proceedings and
+                    certificates.
+                  </li>
+                  <li>Participate in cultural and networking events.</li>
+                </ul>
               </Paragraph>
             </div>
             <Title
@@ -1092,7 +988,7 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-              7. Helpful Information
+               Helpful Information
             </Title>
             <div
               style={{
@@ -1112,10 +1008,18 @@ const Registration = () => {
               >
                 For any queries related to registration, please contact us:
                 <br />
-                (a). Email: registration@icast.pk
-                <br />
-                (b). Phone: +92-51-907-5799
-                <br />
+                <ul
+                  style={{
+                    textAlign: "start",
+                    fontSize: paragraphFontSize,
+                    color: "black",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "500",
+                  }}
+                >
+                  <li>Email: registration@icast.pk</li>
+                  <li>Phone: +92-51-907-5799</li>
+                </ul>
                 All communications regarding registration will come from
                 icast.pk. Please ensure you whitelist this domain to receive
                 important updates.
@@ -1131,7 +1035,7 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-              8. Ready to join?
+               Ready to join?
             </Title>
             <div
               style={{
@@ -1140,27 +1044,29 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-             <div style={{ textAlign: "left" }}>
-  <Button
-  
-    style={{
-      backgroundColor: "#006814",
-      color: "white", // Ensure the text is visible against the dark green background
-      fontSize: "16px", // Make the text size larger for prominence
-      fontWeight: "600", // Make the text bold for visibility
-      padding: "20px 40px", // Add padding to make the button larger and more clickable
-      border: "none", // Remove default border to make it cleaner
-      borderRadius: "5px", // Add rounded corners for a modern look
-      cursor: "pointer", // Indicate it's clickable
-      transition: "background-color 0.3s", // Smooth transition for hover effect
-    }}
-    onMouseEnter={(e) => e.target.style.backgroundColor = "#004b0f"} // Darker green on hover
-    onMouseLeave={(e) => e.target.style.backgroundColor = "#006814"} // Revert back on mouse leave
-  >
-    Register Now
-  </Button>
-</div>
-
+              <div style={{ textAlign: "left" }}>
+                <Button
+                  style={{
+                    backgroundColor: "#006814",
+                    color: "white",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    padding: "20px 40px",
+                    border: "none",
+                    borderRadius: "5px",
+                    cursor: "pointer",
+                    transition: "background-color 0.3s",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.target.style.backgroundColor = "#004b0f")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.target.style.backgroundColor = "#006814")
+                  }
+                >
+                  Register Now
+                </Button>
+              </div>
             </div>
           </Col>
 

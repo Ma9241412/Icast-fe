@@ -39,9 +39,9 @@ const AuthorResources = () => {
         <Title
           style={{
             textAlign: "start",
-            marginBottom: "30px",
             backgroundColor: "#EFF0F2",
-            padding: "20px",
+            padding: "20px 40px",
+
             fontSize: titleFontSize,
             fontFamily: "Inter, sans-serif",
             fontWeight: "700",
@@ -52,24 +52,22 @@ const AuthorResources = () => {
         <Paragraph
           style={{
             textAlign: "start",
-            marginBottom: "30px",
             fontSize: paragraphFontSize,
             color: "black",
-            padding: "0px 20px",
+            padding: "0px 40px",
             fontFamily: "Inter, sans-serif",
             fontWeight: "600",
           }}
         >
           ICAST /Call For Content / Author Resources
         </Paragraph>
-        <div style={{ backgroundColor: "#EFF0F2", padding: "20px" }}>
+        <div style={{ backgroundColor: "#EFF0F2", padding: "20px 40px" }}>
           <Paragraph
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               fontSize: paragraphFontSize, // Adjust as needed
               color: "black",
               margin: 0, // Remove top and bottom margin for Title
-              padding: "10px 0px",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
               lineHeight: "2rem",
@@ -82,18 +80,25 @@ const AuthorResources = () => {
             in compliance with IEEE Xplore standards.
           </Paragraph>
         </div>
-        <div style={{ textAlign: "left", padding: "10px 20px" }}>
-          <Title
-            style={{
-              marginTop: "40px",
-              fontSize: titleMedium,
-              textAlign: "left",
-              fontFamily: "Inter, sans-serif",
-              fontWeight: "700",
-            }}
-          >
-            1. Templates
-          </Title>
+        <Title
+          style={{
+            marginTop: "20px",
+            fontSize: titleMedium,
+            textAlign: "left",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "700",
+            padding: "10px 40px",
+          }}
+        >
+         Templates
+        </Title>
+        <div
+          style={{
+            textAlign: "left",
+            padding: "10px 40px",
+            backgroundColor: "#EFF0F2",
+          }}
+        >
           <Paragraph
             style={{
               textAlign: "start",
@@ -144,9 +149,9 @@ const AuthorResources = () => {
 
           <Paragraph
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               fontSize: paragraphFontSize, // Adjust as needed
-              color: "#055EDD",
+              color: "black",
               margin: 0, // Remove top and bottom margin for Title
               padding: "10px 0px",
               fontFamily: "Inter, sans-serif",
@@ -157,99 +162,97 @@ const AuthorResources = () => {
             Note: These templates are designed to meet IEEE formatting
             standards. Please do not alter the formatting or style settings. For
             more information on the templates, please visit:
+            <br/>
             <a
               href="https://www.ieee.org/conferences/publishing/templates.html"
               target="_blank"
               rel="noopener noreferrer"
-            >
+              style={{color:"green"}}            >
               IEEE Xplore Publishing Templates
             </a>
           </Paragraph>
         </div>
-
-        <div style={{ textAlign: "left", padding: "10px 20px" }}>
+        <Title
+          style={{
+            marginTop: "20px",
+            fontSize: titleMedium,
+            textAlign: "justify",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "700",
+            padding: "10px 40px",
+          }}
+        >
+           Submission Guidelines
+        </Title>
+        <div
+          style={{
+            textAlign: "left",
+            padding: "15px 40px",
+            backgroundColor: "#EFF0F2",
+          }}
+        >
           <Title
             style={{
-              marginTop: "40px",
-              fontSize: titleMedium,
-              textAlign: "left",
+              fontSize: paragraphFontSize,
               fontFamily: "Inter, sans-serif",
-              fontWeight: "700",
+              fontWeight: "800",
+              color: "black",
+              margin: 0,
             }}
           >
-            2. Submission Guidelines
+            Double-Blind Peer Review
           </Title>
-        </div>
-
-        <Card>
-          <div style={{ textAlign: "left" }}>
-            <Title
-              style={{
-                textAlign: "start",
-                fontSize: paragraphFontSize,
-                fontFamily: "Inter, sans-serif",
-                fontWeight: "800",
-                color: "black",
-                margin: 0,
-              }}
-            >
-              Double-Blind Peer Review
-            </Title>
-            <Paragraph
-              style={{
-                textAlign: "start",
-                fontSize: paragraphFontSize, // Adjust as needed
-                color: "black",
-                margin: 0, // Remove top and bottom margin for Title
-                padding: "10px 0px",
-                fontFamily: "Inter, sans-serif",
-                fontWeight: "400",
-                lineHeight: "2rem",
-              }}
-            >
-              ICAST 2025 follows a double-blind peer review methodology to
-              ensure fairness and objectivity in the review process. To comply
-              with this requirement:
-            </Paragraph>
-            <ul
-              style={{
-                fontSize: paragraphFontSize,
-                color: "black",
-                lineHeight: "1.8",
-                fontFamily: "Inter, sans-serif",
-                fontWeight: "500",
-              }}
-            >
-              <li>
-                Remove Author Details: Ensure that the manuscript and abstract
-                do not include any information identifying the authors or their
-                affiliations.
-                <ul
-                  style={{
-                    fontSize: paragraphFontSize,
-                    color: "black",
-                    lineHeight: "1.8",
-                    fontFamily: "Inter, sans-serif",
-                    fontWeight: "500",
-                  }}
-                >
-                  <li>Names of authors or affiliations.</li>
-                  <li>
-                    Acknowledgments or funding information that reveals the
-                    author’s identity.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Consequences of Non-Compliance: Submissions containing
-                identifiable information will be disqualified from the review
-                process.
-              </li>
-            </ul>
-          </div>
-        </Card>
-
-        <Card>
+          <Paragraph
+            style={{
+              textAlign: "start",
+              fontSize: paragraphFontSize, // Adjust as needed
+              color: "black",
+              margin: 0, // Remove top and bottom margin for Title
+              padding: "10px 0px",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "400",
+              lineHeight: "2rem",
+            }}
+          >
+            ICAST 2025 follows a double-blind peer review methodology to ensure
+            fairness and objectivity in the review process. To comply with this
+            requirement:
+          </Paragraph>
+          <ul
+            style={{
+              fontSize: paragraphFontSize,
+              color: "black",
+              lineHeight: "1.8",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: "500",
+            }}
+          >
+            <li>
+              Remove Author Details: Ensure that the manuscript and abstract do
+              not include any information identifying the authors or their
+              affiliations.
+              <ul
+                style={{
+                  fontSize: paragraphFontSize,
+                  color: "black",
+                  lineHeight: "1.8",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                <li>Names of authors or affiliations.</li>
+                <li>
+                  Acknowledgments or funding information that reveals the
+                  author’s identity.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Consequences of Non-Compliance: Submissions containing
+              identifiable information will be disqualified from the review
+              process.
+            </li>
+          </ul>
           <div style={{ textAlign: "left" }}>
             <Title
               style={{
@@ -301,9 +304,6 @@ const AuthorResources = () => {
               </li>
             </ul>
           </div>
-        </Card>
-
-        <Card>
           <div style={{ textAlign: "left" }}>
             <Title
               style={{
@@ -347,9 +347,6 @@ const AuthorResources = () => {
               <li>Clarity of presentation</li>
             </ul>
           </div>
-        </Card>
-
-        <Card>
           <div style={{ textAlign: "left" }}>
             <Title
               style={{
@@ -381,9 +378,6 @@ const AuthorResources = () => {
               section below.
             </Paragraph>
           </div>
-        </Card>
-
-        <Card>
           <div style={{ textAlign: "left" }}>
             <Title
               style={{
@@ -435,10 +429,9 @@ const AuthorResources = () => {
               to be included in the conference proceedings.
             </Paragraph>
           </div>
-        </Card>
+        </div>
 
-        <Divider />
-        <div style={{ textAlign: "left", padding: "10px 20px" }}>
+        <div style={{ textAlign: "left", padding: "20px 40px" }}>
           <Title
             style={{
               fontSize: titleMedium,
@@ -447,10 +440,16 @@ const AuthorResources = () => {
               fontWeight: "700",
             }}
           >
-            3. Key Policies
+            Key Policies
           </Title>
         </div>
-        <Card>
+        <div
+          style={{
+            textAlign: "left",
+            padding: "10px 40px",
+            backgroundColor: "#EFF0F2",
+          }}
+        >
           <div style={{ textAlign: "left" }}>
             <Title
               style={{
@@ -484,9 +483,6 @@ const AuthorResources = () => {
               confirming the originality of their submission.
             </Paragraph>
           </div>
-        </Card>
-
-        <Card>
           <div style={{ textAlign: "left" }}>
             <Title
               style={{
@@ -519,9 +515,6 @@ const AuthorResources = () => {
               ensure high-quality contributions and eliminate no-shows.
             </Paragraph>
           </div>
-        </Card>
-
-        <Card>
           <div style={{ textAlign: "left" }}>
             <Title
               style={{
@@ -553,10 +546,9 @@ const AuthorResources = () => {
               government approvals.
             </Paragraph>
           </div>
-        </Card>
+        </div>
 
-        <Divider />
-        <div style={{ textAlign: "left", padding: "10px 20px" }}>
+        <div style={{ textAlign: "left", padding: "20px 40px" }}>
           <Title
             style={{
               fontSize: titleMedium,
@@ -565,9 +557,17 @@ const AuthorResources = () => {
               fontWeight: "700",
             }}
           >
-            4. Publications Milestones
+             Publications Milestones
           </Title>
-          <List
+         
+        </div>
+        <div style={{
+            textAlign: "left",
+            padding: "10px 40px",
+            backgroundColor: "#EFF0F2",
+          }}>
+
+<List
             bordered
             dataSource={[
               {
@@ -610,16 +610,17 @@ const AuthorResources = () => {
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "400",
                   lineHeight: "2rem",
+                  backgroundColor:"white"
                 }}
               >
                 {item.text}
               </List.Item>
             )}
           />
-        </div>
+          </div>
 
-        <Divider />
-        <div style={{ textAlign: "left", padding: "10px 20px" }}>
+       
+          <div style={{ textAlign: "left", padding: "20px 40px" }}>
           <Title
             style={{
               fontSize: titleMedium,
@@ -628,15 +629,24 @@ const AuthorResources = () => {
               fontWeight: "700",
             }}
           >
-            5. Why Publish with ICAST?
+            Why Publish with ICAST?
           </Title>
+         
+        </div>
+        <div style={{
+            textAlign: "left",
+            padding: "10px 40px",
+            backgroundColor: "#EFF0F2",
+          }}>
+  <div style={{ textAlign: "left", padding: "10px 0px" }}>
+        
+         
           <Paragraph
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               fontSize: paragraphFontSize, // Adjust as needed
               color: "black",
               margin: 0, // Remove top and bottom margin for Title
-              padding: "10px 0px",
               fontFamily: "Inter, sans-serif",
               fontWeight: "400",
               lineHeight: "2rem",
@@ -649,14 +659,16 @@ const AuthorResources = () => {
             research community.
           </Paragraph>
 
-          <div style={{ textAlign: "start" }}>
+          <div style={{ textAlign: "justify",padding:"20px 0px" }}>
             <a href="https://yoursubmissionlink.com">
               <Button type="default" size="large">
                 Submit Your Abstract Now
               </Button>
             </a>
           </div>
+
         </div>
+          </div>
       </div>
       <Footer />
     </>

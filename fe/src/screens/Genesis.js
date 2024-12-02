@@ -116,7 +116,7 @@ const Genisis = () => {
                   padding: "10px 40px",
                 }}
               >
-                1. About Suparco & ICS
+                1. About SUPARCO & ICS
               </Title>
               <div
                 style={{
@@ -139,7 +139,8 @@ const Genisis = () => {
                 </Title>
                 <Paragraph
                   style={{
-                    textAlign: "start",
+                    textAlign: "justify",
+
                     fontSize: paragraphFontSize,
                     color: "black",
                     fontFamily: "Inter, sans-serif",
@@ -163,14 +164,18 @@ const Genisis = () => {
                   with organizations such as APSCO and ISNET, SUPARCO has
                   enhanced Pakistan’s technical expertise and positioned the
                   country as an emerging player in the global space arena.
-                  SUPARCO’s International Conference on Space (ICS), initiated
-                  in 2012, brought together policymakers, researchers, and
-                  industry leaders to discuss space technology applications and
-                  governance. Over three successful editions, ICS became a
-                  platform for shaping the discourse on space policy and
-                  fostering international partnerships. This legacy now thrives
-                  under ICAST, amplifying SUPARCO’s vision of advancing space
-                  science for societal benefit.
+                  <br />
+                  <br />
+                  <strong style={{ fontWeight: "bold" }}>
+                    SUPARCO’s International Conference on Space (ICS)
+                  </strong>
+                  , initiated in 2012, brought together policymakers,
+                  researchers, and industry leaders to discuss space technology
+                  applications and governance. Over three successful editions,
+                  ICS became a platform for shaping the discourse on space
+                  policy and fostering international partnerships. This legacy
+                  now thrives under ICAST, amplifying SUPARCO’s vision of
+                  advancing space science for societal benefit.
                 </Paragraph>
               </div>
               <Title
@@ -183,7 +188,7 @@ const Genisis = () => {
                   padding: "10px 40px",
                 }}
               >
-                2. IST & ICASE
+                2.About IST & ICASE
               </Title>
               <div
                 style={{
@@ -205,7 +210,7 @@ const Genisis = () => {
                 </Title>
                 <Paragraph
                   style={{
-                    textAlign: "start",
+                    textAlign: "justify",
                     fontSize: paragraphFontSize,
                     color: "black",
                     fontFamily: "Inter, sans-serif",
@@ -230,9 +235,15 @@ const Genisis = () => {
                   industry and government institutions further bridge the gap
                   between theoretical knowledge and practical applications,
                   promoting indigenous technological solutions for national and
-                  global challenges. The legacy of IST’s International
-                  Conference on Aerospace Science and Engineering (ICASE),
-                  launched in 2009, is a testament to its leadership in
+                  global challenges.
+                  <br />
+                  <br />
+                  <strong style={{ fontWeight: "bold" }}>
+                    {" "}
+                    The legacy of IST’s International Conference on Aerospace
+                    Science and Engineering (ICASE)
+                  </strong>
+                  , launched in 2009, is a testament to its leadership in
                   aerospace research. Over its seven editions, ICASE provided a
                   global platform for cutting-edge research, featuring technical
                   presentations, collaborative opportunities, and publications
@@ -262,7 +273,8 @@ const Genisis = () => {
               >
                 <Paragraph
                   style={{
-                    textAlign: "start",
+                    textAlign: "justify",
+
                     fontSize: paragraphFontSize,
                     color: "black",
                     fontFamily: "Inter, sans-serif",
@@ -275,14 +287,26 @@ const Genisis = () => {
                   platform for:
                   <br />
                   <br />
-                  (a). Showcasing groundbreaking research in Space Science,
-                  Technology, and their Applications.
-                  <br />
-                  (b). Discussing space policies and governance.
-                  <br />
-                  (c).Exploring the role of space science in solving global
-                  challenges like climate change, disaster management, and
-                  resource sustainability.
+                  <ul
+                    style={{
+                      textAlign: "start",
+                      fontSize: paragraphFontSize,
+                      color: "black",
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: "500",
+                    }}
+                  >
+                    <li>
+                      Showcasing groundbreaking research in Space Science,
+                      Technology, and their Applications.
+                    </li>
+                    <li> Discussing space policies and governance.</li>
+                    <li>
+                      Exploring the role of space science in solving global
+                      challenges like climate change, disaster management, and
+                      resource sustainability.
+                    </li>
+                  </ul>
                 </Paragraph>
               </div>
               <Title
@@ -313,82 +337,98 @@ const Genisis = () => {
                     fontWeight: "500",
                   }}
                 >
+                  <ul>
+                    <li>
+                      <strong
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {" "}
+                        Drive Global Collaboration:
+                      </strong>{" "}
+                      Create an international platform where scientists,
+                      researchers, and industry experts can exchange insights
+                      and collaborate on innovative space technologies that
+                      address today’s global challenges.
+                    </li>
+
+                    <br />
+                    <li>
+                      <strong
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {" "}
+                        Advance Research and Innovation:
+                      </strong>{" "}
+                      Support pioneering research in space science by providing
+                      participants with opportunities to present, share, and
+                      publish their work, fostering a culture of innovation with
+                      SUPARCO and IST at the forefront.
+                    </li>
+                    <br />
+                    <li>
+                      <strong
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Promote Space Technology for Sustainable Development:
+                      </strong>
+                      Emphasize the role of space technology in addressing
+                      sustainability goals, including climate monitoring,
+                      disaster management, and environmental protection, with
+                      SUPARCO leading these critical initiatives.
+                    </li>
+                    <br />
+
+                    <li>
+                      <strong
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Facilitate Dialogue on Space Policy and Law:
+                      </strong>
+                      Foster discussions on space law, governance, and
+                      sustainability among policymakers, researchers, and
+                      industry leaders, reinforcing SUPARCO’s role in shaping
+                      international space policy.
+                    </li>
+                    <br />
+                    <li>
+                      <strong
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {" "}
+                        Strengthen Skills through Hands-On Training:
+                      </strong>
+                      Empower participants with hands- on experience in advanced
+                      space technologies through interactive workshops and
+                      training sessions, equipping them to apply these skills
+                      across scientific, commercial, and societal projects.
+                    </li>
+                    <br />
+                    <li>
+                      <strong
+                        style={{
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {" "}
+                        Highlight SUPARCO and IST’s Leadership in Space Science:
+                      </strong>{" "}
+                      Showcase SUPARCO and the Institute of Space Technology
+                      (IST) as leaders in space science and technology,
+                      featuring their groundbreaking research, collaborations,
+                      and contributions to global and national space missions.
+                    </li>
+                  </ul>{" "}
                 
-                  <strong
-                    style={{
-                      fontWeight: "bold",
-                    }}
-                  >
-                    (a).{" "}  Drive Global Collaboration:
-                  </strong>{" "}
-                  Create an international platform where scientists,
-                  researchers, and industry experts can exchange insights and
-                  collaborate on innovative space technologies that address
-                  today’s global challenges.
-                  <br />
-                  <br />
-                 <strong  style={{
-                      fontWeight: "bold",
-                    }}>   (b). Advance Research and Innovation:</strong> Support
-                  pioneering research in space science by providing participants
-                  with opportunities to present, share, and publish their work,
-                  fostering a culture of innovation with SUPARCO and IST at the
-                  forefront.
-                  <br />
-                  <br />
-                  
-                  <strong  style={{
-                      fontWeight: "bold",
-                    }}>
-                   (c). Promote Space Technology for Sustainable Development:
-                  </strong>
-                  Emphasize the role of space technology in addressing
-                  sustainability goals, including climate monitoring, disaster
-                  management, and environmental protection, with SUPARCO leading
-                  these critical initiatives.
-                  <br />
-                  <br />
-                 <strong  style={{
-                      fontWeight: "bold",
-                    }}>
-                    {" "}
-                    (d). Engage and Inspire the Next Generation:
-                  </strong>{" "}
-                  Encourage youth involvement in space science through
-                  specialized sessions and interactive forums, promoting STEM
-                  education and empowering the next generation of space leaders.
-                  <br />
-                  <br />
-                  {" "}
-                  <strong  style={{
-                      fontWeight: "bold",
-                    }}>(e).Facilitate Dialogue on Space Policy and Law:</strong>
-                  Foster discussions on space law, governance, and
-                  sustainability among policymakers, researchers, and industry
-                  leaders, reinforcing SUPARCO’s role in shaping international
-                  space policy.
-                  <br />
-                  <br />
-                  
-                  <strong  style={{
-                      fontWeight: "bold",
-                    }}>(f).{" "} Strengthen Skills through Hands-On Training:</strong>
-                  Empower participants with hands- on experience in advanced
-                  space technologies through interactive workshops and training
-                  sessions, equipping them to apply these skills across
-                  scientific, commercial, and societal projects.
-                  <br />
-                  <br />
-                  
-                  <strong  style={{
-                      fontWeight: "bold",
-                    }}>
-                   (g).{" "} Highlight SUPARCO and IST’s Leadership in Space Science:
-                  </strong>{" "}
-                  Showcase SUPARCO and the Institute of Space Technology (IST)
-                  as leaders in space science and technology, featuring their
-                  groundbreaking research, collaborations, and contributions to
-                  global and national space missions.
                 </Paragraph>
               </div>
             </Col>
