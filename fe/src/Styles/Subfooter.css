@@ -15,14 +15,11 @@
   
   .icon-container .anticon {
     background-color: #ffffff; /* White background for icons */
-    color: #1e2634; /* Icon color */
     font-size: 20px; /* Adjust icon size as needed */
-    width: 40px; /* Width of the circular icon */
-    height: 40px; /* Height of the circular icon */
     display: flex;
+    color:#1890ff;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* Makes the background circular */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }

@@ -10,8 +10,9 @@ import { Link } from "react-router-dom";
 import footerLogo from "../Assets/icastw.png";
 import suparcoLogo from "../Assets/suparco.png";
 import istLogo from "../Assets/ist-logo.png";
+import fb from "../Assets/fb.png";
+import ld from "../Assets/ld.png";
 import "../Styles/Subfooter.css";
-
 
 const { Text, Title } = Typography;
 const { useBreakpoint } = Grid;
@@ -19,7 +20,6 @@ const { useBreakpoint } = Grid;
 const Footer = () => {
   const screens = useBreakpoint();
 
-  
   const titleMedium = screens.xl
     ? "19px"
     : screens.lg
@@ -103,7 +103,7 @@ const Footer = () => {
                   icast.pakistan@gmail.com
                 </Text>
               </Space>
-              <br/>
+              <br />
               <Space size="small">
                 <PhoneOutlined style={{ color: "white" }} />
                 <Text
@@ -115,21 +115,48 @@ const Footer = () => {
                 >
                   +92-51-9075799
                 </Text>
-              
               </Space>
-              <br/>
+              <br />
 
               <Space className="icon-container">
-                <Link to="https://www.facebook.com/ICAST.Pakistan" target="_blank">
-                <FacebookOutlined className="social-icon fb" />
-              </Link>
-        <Link
-                to="https://www.linkedin.com/company/icast-pakistan/"
-                target="_blank"
-              >
-                <LinkedinOutlined className="social-icon linkedin" />
-              </Link>
-                </Space>
+  <Link
+    to="https://www.facebook.com/ICAST.Pakistan"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Image
+      preview={false}
+      src={fb} // Replace with the actual path to your Facebook image
+      alt="Facebook"
+      className="social-icon fb"
+      style={{
+        width: "40px",
+        height: "40px",
+        backgroundColor: "white",
+        borderRadius: "5px", // Explicitly setting to 0 to remove border radius
+      }} // Adjust the size as needed
+    />
+  </Link>
+  <Link
+    to="https://www.linkedin.com/company/icast-pakistan/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Image
+      preview={false}
+      src={ld} // Replace with the actual path to your LinkedIn image
+      alt="LinkedIn"
+      className="social-icon linkedin"
+      style={{
+        width: "40px",
+        height: "40px",
+        backgroundColor: "white",
+        borderRadius: "5px", // Explicitly setting to 0 to remove border radius
+      }} // Adjust the size as needed
+    />
+  </Link>
+</Space>
+
             </Space>
           </Space>
         </Col>
@@ -162,7 +189,7 @@ const Footer = () => {
                 />
               </Link>
             </Space>
-            <br/>
+            <br />
             {/* Social Media Links */}
             {/* <Space size="large">
               <Link
@@ -182,7 +209,7 @@ const Footer = () => {
                 />
               </Link>
             </Space> */}
-            <br/>
+            <br />
 
             {/* Footer Links */}
             <Space size="large">
