@@ -37,7 +37,7 @@ const LogoSection = () => {
       <div className="right-section">
         <div className="partners-background">
           <Link to="https://suparco.gov.pk/">
-          <Image preview={false} src={supcarco} alt="SUPARCO Logo" className="partner-logo" />
+          <Image  preview={false} src={supcarco} alt="SUPARCO Logo" className="partner-logo" />
 
           </Link>
           <Link to={"https://ist.edu.pk/"}>

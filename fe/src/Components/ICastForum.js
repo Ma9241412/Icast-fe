@@ -85,19 +85,19 @@ const ICastForum = () => {
   const { useBreakpoint } = Grid;
   const screens = useBreakpoint();
   const titleFontSize = screens.xl
-    ? "45px"
+    ? "48px"
     : screens.lg
-    ? "40px"
+    ? "48px"
     : screens.md
-    ? "35px"
-    : "28px";
+    ? "46px"
+    : "36px";
 
   return (
     <div className="icast-container">
       <Title
         style={{
           fontSize: titleFontSize,
-          fontWeight: "bold",
+          fontWeight: "700",
           fontFamily: "Inter, sans-serif",
         }}
       >
