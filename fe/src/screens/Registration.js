@@ -15,6 +15,7 @@ import m1 from "../Assets/m4.jpg";
 import m2 from "../Assets/m5.jpg";
 import m3 from "../Assets/m6.jpg";
 import m4 from "../Assets/m7.jpg";
+import { Link } from "react-router-dom";
 
 const { Title,  Paragraph } = Typography;
 const { useBreakpoint } = Grid;
@@ -229,9 +230,11 @@ const Registration = () => {
                   marginTop: "20px",
                 }}
               >
-                <Button href="https://CMS.cressofterp.com" size="large">
+              <Link to={"/screen-inprogress"}>
+              <Button size="large">
                   Register Now
                 </Button>
+              </Link>
               </div>
             </div>
             <Title
@@ -1045,7 +1048,8 @@ const Registration = () => {
               }}
             >
               <div style={{ textAlign: "left" }}>
-                <Button
+               <Link to={"/screen-inprogress"}>
+               <Button
                   style={{
                     backgroundColor: "#006814",
                     color: "white",
@@ -1066,6 +1070,7 @@ const Registration = () => {
                 >
                   Register Now
                 </Button>
+               </Link>
               </div>
             </div>
           </Col>

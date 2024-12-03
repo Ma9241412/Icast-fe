@@ -6,6 +6,7 @@ import Footer from "../Layouts/IcastFooter";
 import m1 from "../Assets/m8.jpg";
 import m2 from "../Assets/m9.jpg";
 import m3 from "../Assets/m10.jpg";
+import { Link } from "react-router-dom";
 
 const { Panel } = Collapse;
 const { Title, Paragraph } = Typography;
@@ -697,7 +698,9 @@ const ThemePage = () => {
                 <li><strong style={{fontWeight:"bold"}}>Call for Papers:</strong> Share your technical research for inclusion in the conference&#39;s
                 technical sessions and proceedings.</li>
                 <div style={{padding:"20px"}}>
-                <Button size="middle" type="default">Register Now</Button>
+               <Link to={"/screen-inprogress"}>
+               <Button size="middle" type="default">Register Now</Button>
+               </Link>
                 </div>
 
                 <li>
@@ -705,7 +708,10 @@ const ThemePage = () => {
                 conversations on emerging trends.
                 </li>
                 <div style={{padding:"20px"}}>
+                <Link to={"/screen-inprogress"}>
                 <Button size="middle" type="default">Proposal Form</Button>
+               </Link>
+
                 </div>
               </ul>
               </Paragraph>

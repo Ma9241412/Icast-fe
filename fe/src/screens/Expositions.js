@@ -24,6 +24,7 @@ import m1 from "../Assets/m4.jpg";
 import m2 from "../Assets/m5.jpg";
 import m3 from "../Assets/m6.jpg";
 import m4 from "../Assets/m7.jpg";
+import { Link } from "react-router-dom";
 
 const { Title, Text, Paragraph } = Typography;
 const { Content } = Layout;
@@ -352,7 +353,9 @@ const Expositions = () => {
                
               </Paragraph>
               <div style={{ textAlign: "left" }}>
-                <Button size="large">Download Sponsorship &amp; Exhibit Prospectus</Button>
+                <Link to={"/screen-inprogress"}>
+                <Button size="large">Download Sponsorship & Exhibit Prospectus</Button>
+                </Link>
               </div>
             </div>
             <Title
@@ -463,8 +466,10 @@ const Expositions = () => {
               </Paragraph>
               <div style={{ textAlign: "left",marginBottom:"20px" }}>
                 <Space>
-                  <Button size="large">Exhibit at ICAST 2025</Button>
-                  <Button size="large">Become a Sponsor</Button>
+                 <Link to={"/screen-inprogress"}>
+                 <Button size="large">Exhibit at ICAST 2025</Button>
+                 <Button size="large">Become a Sponsor</Button>
+                 </Link>
                 </Space>
               </div>
               <Paragraph

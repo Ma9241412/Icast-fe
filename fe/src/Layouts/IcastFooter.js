@@ -169,10 +169,10 @@ const Footer = () => {
           lg={6}
           style={{ textAlign: "center", marginBottom: "20px" }}
         >
-          <Space direction="vertical" size="large">
+          <Space direction="vertical" size="large" >
             {/* Partner Logos */}
             <Space size="large">
-              <Link to="https://suparco.gov.pk/">
+              <Link to="https://suparco.gov.pk/" target="_blank" rel="noopener noreferrer">
                 <Image
                   src={suparcoLogo}
                   alt="SUPARCO Logo"
@@ -180,7 +180,7 @@ const Footer = () => {
                   style={{ maxWidth: "100px", width: "100%" }}
                 />
               </Link>
-              <Link to="https://ist.edu.pk/">
+              <Link to="https://ist.edu.pk/" target="_blank" rel="noopener noreferrer">
                 <Image
                   src={istLogo}
                   alt="IST Logo"

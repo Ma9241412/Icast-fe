@@ -87,8 +87,8 @@ const EventCarousel = () => {
                           fontSize: "15px",
                           fontWeight: "600",
                           color: "white",
-                          height: "40px", // Fixed height
-                          width: "200px", // Fixed width
+                          height: "40px", 
+                          width: "200px", 
                           textAlign: "center",
                         }}
                       >

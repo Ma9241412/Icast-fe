@@ -660,11 +660,13 @@ const AuthorResources = () => {
           </Paragraph>
 
           <div style={{ textAlign: "justify",padding:"20px 0px" }}>
-            <a href="https://yoursubmissionlink.com">
-              <Button type="default" size="large">
+           
+           <Link to={"/screen-inprogress"}>
+           <Button type="default" size="large">
                 Submit Your Abstract Now
               </Button>
-            </a>
+           </Link>
+            
           </div>
 
         </div>

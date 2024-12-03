@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Card, Col, Row, Typography, Space, Grid } from "antd";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
+import { Link } from "react-router-dom";
 
 const { Title, Paragraph } = Typography;
 const { useBreakpoint } = Grid;
@@ -310,6 +311,7 @@ const CallForSessions = () => {
           </Paragraph>
           <div style={{ textAlign: "left", }}>
           <Space>
+           <Link to={"/screen-inprogress"}>
             <Button
               type="primary"
               size="large"
@@ -322,6 +324,7 @@ const CallForSessions = () => {
             >
               Submit Proposal
             </Button>
+           </Link>
           </Space>
         </div>
           </div>

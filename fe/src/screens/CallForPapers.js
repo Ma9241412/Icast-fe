@@ -1,7 +1,8 @@
 import React from "react";
-import { Button, Card, Col, Grid, Row, Space, Typography } from "antd";
+import { Button, Card, Col, Divider, Grid, Row, Space, Typography } from "antd";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
+import { Link } from "react-router-dom";
 
 const { Title, Paragraph, Text } = Typography;
 const { useBreakpoint } = Grid;
@@ -91,10 +92,10 @@ const CallForPapers = () => {
 
           <div style={{ textAlign: "justify", padding: "10px 15px" }}>
             <Space direction="horizontal">
-              <Button
+            <Link to={"/screen-inprogress"}>
+            <Button
                 type="default"
                 size="large"
-                href="https://cms.cressofterp.com/"
                 target="_blank"
                 style={{
                   backgroundColor: "#186814",
@@ -104,6 +105,7 @@ const CallForPapers = () => {
               >
                 Manage Submissions
               </Button>
+            </Link>
               <Button
                 type="primary"
                 size="large"
@@ -173,9 +175,10 @@ const CallForPapers = () => {
                   height: "100%", // Remove fixed height for flexibility
                   width: "100%",
                 }}
-                title={
-                  <span
-                    style={{
+             
+                hoverable
+              >
+                <Title style={{
                       fontSize: paragraphFontSize, // Slightly smaller font size
                       fontFamily: "Inter, sans-serif",
                       fontWeight: "700",
@@ -183,22 +186,16 @@ const CallForPapers = () => {
                       lineHeight: "1.2", // Reduce line height for closer spacing
                       wordWrap: "break-word",
                       whiteSpace: "normal",
-                    }}
-                  >
-                    {track.title}
-                  </span>
-                }
-                hoverable
-              >
+                      textAlign:"left"
+                    }}>{track.title}</Title>
                 <Paragraph
                   style={{
                     textAlign: "left",
-                    fontSize: "13px", // Reduce font size for compactness
+                    fontSize: paragraphFontSize, // Reduce font size for compactness
                     color: "black",
                     margin: "0", // Remove margin
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: "600", // Slightly lighter font weight
-                    lineHeight: "1.4", // Compact line height for tighter spacing
+                    fontWeight: "400", // Slightly lighter font weight
                   }}
                 >
                   {track.description}
@@ -268,10 +265,10 @@ const CallForPapers = () => {
           </ul>
           <div>
             <Space>
-              <Button
+           <Link to={"/screen-inprogress"}>
+           <Button
                 size="large"
                 type="primary"
-                href="https://cms.cressofterp.com/"
                 style={{
                   backgroundColor: "#186814",
                   borderColor: "#186814",
@@ -280,6 +277,7 @@ const CallForPapers = () => {
               >
                 Register Now
               </Button>
+           </Link>
             </Space>
           </div>
         </div>
