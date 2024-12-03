@@ -176,7 +176,7 @@ const ContactForm = () => {
 
                     }}
                   >
-                    icast.pakistan@gmail.com
+                    info@icast.pk
                   </span>
                 </Space>
                 <Space size={0} align="start">

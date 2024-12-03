@@ -148,6 +148,7 @@ const CallForPapers = () => {
           </Paragraph>
           <div style={{ textAlign: "start", marginBottom: "30px" }}>
             <Space>
+              <Link to={"/theme"}>
               <Button
                 size="large"
                 type="primary"
@@ -160,6 +161,7 @@ const CallForPapers = () => {
               >
                 Tracks and Subtopics Page
               </Button>
+              </Link>
             </Space>
           </div>
         </div>

@@ -71,7 +71,7 @@ const VenuMap = () => {
                   <PhoneOutlined /> +92-51-9075799
                 </Paragraph>
                 <Paragraph style={{ color: 'black', fontSize: paragraphFontSize, textAlign: 'left' }}>
-                  <MailOutlined /> icast.pakistan@gmail.com
+                  <MailOutlined /> info@icast.pk
                 </Paragraph>
                 <Paragraph style={{ color: 'black', fontSize: paragraphFontSize, textAlign: 'left' }}>
                   <EnvironmentOutlined /> 1, Islamabad Expressway, Islamabad

@@ -100,7 +100,7 @@ const Footer = () => {
                     fontFamily: "Inter, sans-serif",
                   }}
                 >
-                  icast.pakistan@gmail.com
+                  info@icast.pk
                 </Text>
               </Space>
               <br />
@@ -117,46 +117,44 @@ const Footer = () => {
                 </Text>
               </Space>
               <br />
-
               <Space className="icon-container">
-  <Link
-    to="https://www.facebook.com/ICAST.Pakistan"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Image
-      preview={false}
-      src={fb} // Replace with the actual path to your Facebook image
-      alt="Facebook"
-      className="social-icon fb"
-      style={{
-        width: "40px",
-        height: "40px",
-        backgroundColor: "white",
-        borderRadius: "5px", // Explicitly setting to 0 to remove border radius
-      }} // Adjust the size as needed
-    />
-  </Link>
-  <Link
-    to="https://www.linkedin.com/company/icast-pakistan/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Image
-      preview={false}
-      src={ld} // Replace with the actual path to your LinkedIn image
-      alt="LinkedIn"
-      className="social-icon linkedin"
-      style={{
-        width: "40px",
-        height: "40px",
-        backgroundColor: "white",
-        borderRadius: "5px", // Explicitly setting to 0 to remove border radius
-      }} // Adjust the size as needed
-    />
-  </Link>
-</Space>
-
+                <Link
+                  to="https://www.facebook.com/ICAST.Pakistan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    preview={false}
+                    src={fb} // Replace with the actual path to your Facebook image
+                    alt="Facebook"
+                    className="social-icon fb"
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      backgroundColor: "white",
+                      borderRadius: "5px", // Explicitly setting to 0 to remove border radius
+                    }} // Adjust the size as needed
+                  />
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/company/icast-pakistan/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    preview={false}
+                    src={ld} // Replace with the actual path to your LinkedIn image
+                    alt="LinkedIn"
+                    className="social-icon linkedin"
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      backgroundColor: "white",
+                      borderRadius: "5px", // Explicitly setting to 0 to remove border radius
+                    }} // Adjust the size as needed
+                  />
+                </Link>
+              </Space>
             </Space>
           </Space>
         </Col>
@@ -169,10 +167,14 @@ const Footer = () => {
           lg={6}
           style={{ textAlign: "center", marginBottom: "20px" }}
         >
-          <Space direction="vertical" size="large" >
+          <Space direction="vertical" size="large">
             {/* Partner Logos */}
             <Space size="large">
-              <Link to="https://suparco.gov.pk/" target="_blank" rel="noopener noreferrer">
+              <Link
+                to="https://suparco.gov.pk/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src={suparcoLogo}
                   alt="SUPARCO Logo"
@@ -180,7 +182,11 @@ const Footer = () => {
                   style={{ maxWidth: "100px", width: "100%" }}
                 />
               </Link>
-              <Link to="https://ist.edu.pk/" target="_blank" rel="noopener noreferrer">
+              <Link
+                to="https://ist.edu.pk/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src={istLogo}
                   alt="IST Logo"
