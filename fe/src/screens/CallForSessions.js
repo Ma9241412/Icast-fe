@@ -112,7 +112,7 @@ const CallForSessions = () => {
           </Paragraph>
         </div>
 
-        <div style={{ textAlign: "left", padding: "10px 40px" }}>
+        <div style={{ textAlign: "justify", padding: "10px 40px" }}>
           <Title
             style={{
               marginTop: "20px",
@@ -138,7 +138,7 @@ const CallForSessions = () => {
                   borderRadius: "10px",
                   overflow: "hidden",
                   border: "1px solid #e6e6e6",
-                  textAlign: "left",
+                  textAlign: "justify",
                   backgroundColor: "#fff",
                   height: "100%",
                 }}
@@ -150,6 +150,7 @@ const CallForSessions = () => {
                     fontFamily: "Inter, sans-serif",
                     fontWeight: "600",
                     fontSize: "16px",
+
                   }}
                 >
                   {format.title}
@@ -160,6 +161,7 @@ const CallForSessions = () => {
                     color: "black",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: "500",
+                    textAlign: "justify"
                   }}
                 >
                   {format.description}
@@ -172,7 +174,7 @@ const CallForSessions = () => {
             style={{
               marginTop: "20px",
               fontSize: titleMedium,
-              textAlign: "left",
+              textAlign: "justify",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
               padding: "10px 40px"
@@ -181,7 +183,7 @@ const CallForSessions = () => {
             What to Include in Your Proposal
           </Title>
         {/* Proposal Section */}
-        <div style={{ textAlign: "left", padding: "10px 40px",backgroundColor: "#EFF0F2" }}>
+        <div style={{ textAlign: "justify", padding: "10px 40px",backgroundColor: "#EFF0F2" }}>
          
           <ul
             style={{
@@ -190,6 +192,7 @@ const CallForSessions = () => {
               lineHeight: "1.8",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
+              textAlign: "justify"
               
             }}
           >
@@ -225,7 +228,7 @@ const CallForSessions = () => {
             style={{
               marginTop: "20px",
               fontSize: titleMedium,
-              textAlign: "left",
+              textAlign: "justify",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
               padding: "10px 40px",
@@ -233,7 +236,7 @@ const CallForSessions = () => {
           >
             Why Host a Session?
           </Title>
-       <div  style={{ textAlign: "left", padding: "10px 40px",backgroundColor: "#EFF0F2" }}>
+       <div  style={{ textAlign: "justify", padding: "10px 40px",backgroundColor: "#EFF0F2" }}>
       
           <ul
             style={{
@@ -278,7 +281,7 @@ const CallForSessions = () => {
           >
             How to Submit
           </Title>
-          <div style={{ textAlign: "left", padding: "10px 40px",backgroundColor: "#EFF0F2" }}>
+          <div style={{textAlign: "justify", padding: "10px 40px",backgroundColor: "#EFF0F2" }}>
           <Paragraph
             style={{
               fontSize: paragraphFontSize,
@@ -286,6 +289,7 @@ const CallForSessions = () => {
               marginBottom: "20px",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
+              textAlign: "justify"
               
             }}
           >
@@ -299,6 +303,7 @@ const CallForSessions = () => {
               marginBottom: "30px",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
+              textAlign: "justify"
             }}
           >
             <strong style={{ color: "black", fontWeight: "bold" }}>
@@ -309,7 +314,7 @@ const CallForSessions = () => {
             All proposals will be reviewed by the ICAST Steering Committee, and
             selected sessions will be featured in the official program.
           </Paragraph>
-          <div style={{ textAlign: "left", }}>
+          <div style={{textAlign: "justify", }}>
           <Space>
            <Link to={"/screen-inprogress"}>
             <Button

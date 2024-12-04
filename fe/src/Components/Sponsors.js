@@ -40,20 +40,8 @@ const titleMedium = screens.xl
   : screens.md
   ? "17px"
   : "17px";
-const paragraphFontSize = screens.xl
-  ? "16px"
-  : screens.lg
-  ? "16px"
-  : screens.md
-  ? "15px"
-  : "15px";
-const buttonsize = screens.xl
-  ? "15px"
-  : screens.lg
-  ? "18px"
-  : screens.md
-  ? "16px"
-  : "16px";
+
+
   return (
     <div className="sponsors-container">
       <Title

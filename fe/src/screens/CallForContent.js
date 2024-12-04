@@ -3,6 +3,7 @@ import { Layout, Typography, Button, Space, Grid, Row, Col, Card } from "antd";
 import "../Styles/CallForContent.css";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
+import { Link } from "react-router-dom";
 
 const { Content } = Layout;
 const { Title, Paragraph, Text } = Typography;
@@ -98,13 +99,14 @@ const CallForContent = () => {
                   and technology.
                 </Paragraph>
                 <Space className="button-group">
+                  <Link to={"/screen-inprogress"}>
                   <Button
-                    href="https://CMS.cressofterp.com"
                     size="large"
                     type="default"
                   >
                     Manage Submissions
                   </Button>
+                  </Link>
                   <Button href="/call-for-papers" size="large" type="default">
                     Call for Papers
                   </Button>

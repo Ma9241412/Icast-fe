@@ -17,6 +17,7 @@ import CallForPapers from "./screens/CallForPapers";
 import CallForSessions from "./screens/CallForSessions";
 import AuthorResources from "./screens/AuthorResources";
 import Grants from "./screens/Grants";
+import Press from "./screens/Press";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/author-resources" element={<AuthorResources/>}/>
           <Route path="/registration" element={<Registration/>}/>
           <Route path="/theme" element={<ThemePage/>}/>
+          <Route path="/press-release" element={<Press/>}/>
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/map" element={<VenuMap />} />
           <Route path="/screen-inprogress" element={<ScreenInProgress />} />

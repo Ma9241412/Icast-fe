@@ -71,7 +71,7 @@ const Expositions = () => {
       >
         <Title
           style={{
-            textAlign: "start",
+            textAlign: "justify",
             padding: "20px 40px",
             fontFamily: "Inter, sans-serif",
             fontWeight: "700",
@@ -84,7 +84,7 @@ const Expositions = () => {
         </Title>
         <Paragraph
           style={{
-            textAlign: "start",
+            textAlign: "justify",
             fontSize: paragraphFontSize,
             color: "black",
             padding: "0px 40px",
@@ -256,7 +256,7 @@ const Expositions = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -352,7 +352,7 @@ const Expositions = () => {
                 </ul>
                
               </Paragraph>
-              <div style={{ textAlign: "left" }}>
+              <div style={{ textAlign: "justify" }}>
                 <Link to={"/screen-inprogress"}>
                 <Button size="large">Download Sponsorship & Exhibit Prospectus</Button>
                 </Link>
@@ -464,17 +464,18 @@ const Expositions = () => {
                 </ul>
               
               </Paragraph>
-              <div style={{ textAlign: "left",marginBottom:"20px" }}>
+              <div style={{ textAlign: "justify",marginBottom:"20px",}}>
                 <Space>
                  <Link to={"/screen-inprogress"}>
-                 <Button size="large">Exhibit at ICAST 2025</Button>
-                 <Button size="large">Become a Sponsor</Button>
+                 <Button style={{marginBottom:"10px",width:"200px"}} size="large">Exhibit at ICAST 2025</Button>
+                 <br/>
+                 <Button style={{width:"200px"}} size="large">Become a Sponsor</Button>
                  </Link>
                 </Space>
               </div>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -493,7 +494,7 @@ const Expositions = () => {
             </div>
           </Col>
 
-          <Col xs={24} md={8} lg={8} style={{ textAlign: "center" }}>
+          <Col xs={24} md={8} lg={8} style={{ textAlign: "justify" }}>
             <Image
               src={m1}
               alt="Image 1"

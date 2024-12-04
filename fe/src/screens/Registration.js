@@ -170,7 +170,7 @@ const Registration = () => {
       >
         <Title
           style={{
-            textAlign: "start",
+            textAlign: "justify" ,
             marginBottom: "30px",
             padding: "20px 40px",
             fontFamily: "Inter, sans-serif",
@@ -186,7 +186,7 @@ const Registration = () => {
           <Col xs={24} md={16}>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 color: "black",
                 padding: "0px 40px",
@@ -239,7 +239,7 @@ const Registration = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -258,7 +258,7 @@ const Registration = () => {
             >
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -269,7 +269,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -281,7 +281,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -292,7 +292,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -319,7 +319,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -344,7 +344,7 @@ const Registration = () => {
               />
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -356,7 +356,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -365,7 +365,7 @@ const Registration = () => {
               >
                 <ul
                   style={{
-                    textAlign: "start",
+                    textAlign: "justify",
                     fontSize: paragraphFontSize,
                     color: "black",
                     fontFamily: "Inter, sans-serif",
@@ -386,7 +386,7 @@ const Registration = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -405,7 +405,7 @@ const Registration = () => {
             >
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -416,7 +416,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -428,7 +428,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -439,7 +439,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -464,7 +464,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -489,7 +489,7 @@ const Registration = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -508,7 +508,7 @@ const Registration = () => {
             >
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -519,7 +519,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -531,7 +531,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -542,7 +542,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -568,7 +568,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -596,7 +596,7 @@ const Registration = () => {
                     padding: "10px",
                     fontSize: paragraphFontSize,
                     color: "black",
-                    textAlign: "center",
+                    textAlign: "justify",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: "500",
                   }}
@@ -611,7 +611,7 @@ const Registration = () => {
 
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -630,7 +630,7 @@ const Registration = () => {
             >
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -641,7 +641,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -653,7 +653,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -664,7 +664,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -673,7 +673,7 @@ const Registration = () => {
               >
                 <ul
                   style={{
-                    textAlign: "start",
+                    textAlign: "justify",
                     fontSize: paragraphFontSize,
                     color: "black",
                     fontFamily: "Inter, sans-serif",
@@ -693,7 +693,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -704,7 +704,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -717,7 +717,7 @@ const Registration = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -736,7 +736,7 @@ const Registration = () => {
             >
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -747,7 +747,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -760,7 +760,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -771,7 +771,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -780,7 +780,7 @@ const Registration = () => {
               >
                 <ul
                   style={{
-                    textAlign: "start",
+                    textAlign: "justify",
                     fontSize: paragraphFontSize,
                     color: "black",
                     fontFamily: "Inter, sans-serif",
@@ -812,7 +812,7 @@ const Registration = () => {
 
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -823,7 +823,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -845,7 +845,7 @@ const Registration = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -864,7 +864,7 @@ const Registration = () => {
             >
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -875,7 +875,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -891,7 +891,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -902,7 +902,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -911,7 +911,7 @@ const Registration = () => {
               >
                 <ul
                   style={{
-                    textAlign: "start",
+                    textAlign: "justify",
                     fontSize: paragraphFontSize,
                     color: "black",
                     fontFamily: "Inter, sans-serif",
@@ -945,7 +945,7 @@ const Registration = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -956,7 +956,7 @@ const Registration = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -983,7 +983,7 @@ const Registration = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -1002,7 +1002,7 @@ const Registration = () => {
             >
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -1013,7 +1013,7 @@ const Registration = () => {
                 <br />
                 <ul
                   style={{
-                    textAlign: "start",
+                    textAlign: "justify",
                     fontSize: paragraphFontSize,
                     color: "black",
                     fontFamily: "Inter, sans-serif",
@@ -1030,7 +1030,7 @@ const Registration = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -1047,7 +1047,7 @@ const Registration = () => {
                 padding: "10px 40px",
               }}
             >
-              <div style={{ textAlign: "left" }}>
+              <div style={{ textAlign: "justify" }}>
                <Link to={"/screen-inprogress"}>
                <Button
                   style={{
@@ -1076,7 +1076,7 @@ const Registration = () => {
           </Col>
 
           {/* Right Column */}
-          <Col xs={24} md={8} style={{ textAlign: "center" }}>
+          <Col xs={24} md={8} style={{ textAlign: "justify" }}>
             <Image
               src={m1}
               alt="Image 1"

@@ -38,7 +38,7 @@ const AuthorResources = () => {
       <div style={{ backgroundColor: "white", overflow: "hidden" }}>
         <Title
           style={{
-            textAlign: "start",
+            textAlign: "justify",
             backgroundColor: "#EFF0F2",
             padding: "20px 40px",
 
@@ -51,7 +51,7 @@ const AuthorResources = () => {
         </Title>
         <Paragraph
           style={{
-            textAlign: "start",
+            textAlign: "justify",
             fontSize: paragraphFontSize,
             color: "black",
             padding: "0px 40px",
@@ -84,7 +84,7 @@ const AuthorResources = () => {
           style={{
             marginTop: "20px",
             fontSize: titleMedium,
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Inter, sans-serif",
             fontWeight: "700",
             padding: "10px 40px",
@@ -94,14 +94,14 @@ const AuthorResources = () => {
         </Title>
         <div
           style={{
-            textAlign: "left",
+            textAlign: "justify",
             padding: "10px 40px",
             backgroundColor: "#EFF0F2",
           }}
         >
           <Paragraph
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               fontSize: paragraphFontSize, // Adjust as needed
               color: "black",
               margin: 0, // Remove top and bottom margin for Title
@@ -137,7 +137,7 @@ const AuthorResources = () => {
                     style={{
                       width: "300px",
                       height: "50px",
-                      textAlign: "center",
+                      textAlign: "justify",
                     }}
                   >
                     {item.text}
@@ -186,7 +186,7 @@ const AuthorResources = () => {
         </Title>
         <div
           style={{
-            textAlign: "left",
+            textAlign: "justify",
             padding: "15px 40px",
             backgroundColor: "#EFF0F2",
           }}
@@ -204,7 +204,7 @@ const AuthorResources = () => {
           </Title>
           <Paragraph
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               fontSize: paragraphFontSize, // Adjust as needed
               color: "black",
               margin: 0, // Remove top and bottom margin for Title
@@ -225,38 +225,29 @@ const AuthorResources = () => {
               lineHeight: "1.8",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
+              textAlign: "justify"
             }}
           >
             <li>
               Remove Author Details: Ensure that the manuscript and abstract do
               not include any information identifying the authors or their
-              affiliations.
-              <ul
-                style={{
-                  fontSize: paragraphFontSize,
-                  color: "black",
-                  lineHeight: "1.8",
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: "500",
-                }}
-              >
+              affiliations.</li>
+           
                 <li>Names of authors or affiliations.</li>
                 <li>
                   Acknowledgments or funding information that reveals the
                   author’s identity.
                 </li>
-              </ul>
-            </li>
             <li>
               Consequences of Non-Compliance: Submissions containing
               identifiable information will be disqualified from the review
               process.
             </li>
           </ul>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "justify"}}>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
@@ -269,7 +260,7 @@ const AuthorResources = () => {
             </Title>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
                 margin: 0, // Remove top and bottom margin for Title
@@ -288,6 +279,7 @@ const AuthorResources = () => {
                 lineHeight: "1.8",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "500",
+                textAlign: "justify"
               }}
             >
               <li>The abstract should be between 100 and 250 words long.</li>
@@ -304,10 +296,10 @@ const AuthorResources = () => {
               </li>
             </ul>
           </div>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "justify" }}>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
@@ -319,7 +311,7 @@ const AuthorResources = () => {
             </Title>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
                 margin: 0, // Remove top and bottom margin for Title
@@ -339,6 +331,7 @@ const AuthorResources = () => {
                 lineHeight: "1.8",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "500",
+                textAlign: "justify"
               }}
             >
               <li>Originality</li>
@@ -347,10 +340,10 @@ const AuthorResources = () => {
               <li>Clarity of presentation</li>
             </ul>
           </div>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "justify" }}>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
@@ -363,7 +356,7 @@ const AuthorResources = () => {
             </Title>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
                 margin: 0, // Remove top and bottom margin for Title
@@ -378,14 +371,16 @@ const AuthorResources = () => {
               section below.
             </Paragraph>
           </div>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "justify" }}>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
                 color: "black",
+                padding: "10px 0px",
+
                 margin: 0,
               }}
             >
@@ -394,7 +389,7 @@ const AuthorResources = () => {
             </Title>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
                 margin: 0, // Remove top and bottom margin for Title
@@ -406,6 +401,8 @@ const AuthorResources = () => {
             >
               Authors of accepted abstracts will be provided detailed
               instructions for preparing and submitting their final manuscripts.
+              </Paragraph>
+     
               <ul
                 style={{
                   fontSize: paragraphFontSize,
@@ -413,6 +410,7 @@ const AuthorResources = () => {
                   lineHeight: "1.8",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "500",
+                  textAlign: "justify"
                 }}
               >
                 <li>Formatting requirements as per IEEE Xplore standards.</li>
@@ -425,17 +423,26 @@ const AuthorResources = () => {
                   final approval.
                 </li>
               </ul>
+              <Paragraph   style={{
+                textAlign: "justify",
+                fontSize: paragraphFontSize, // Adjust as needed
+                color: "black",
+                margin: 0, // Remove top and bottom margin for Title
+                fontFamily: "Inter, sans-serif",
+                fontWeight: "400",
+                lineHeight: "2rem",
+              }} >
               Authors must submit their final manuscripts by the stated deadline
               to be included in the conference proceedings.
             </Paragraph>
           </div>
         </div>
 
-        <div style={{ textAlign: "left", padding: "20px 40px" }}>
+        <div style={{ textAlign: "justify", padding: "20px 40px" }}>
           <Title
             style={{
               fontSize: titleMedium,
-              textAlign: "left",
+              textAlign: "justify",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
             }}
@@ -445,15 +452,15 @@ const AuthorResources = () => {
         </div>
         <div
           style={{
-            textAlign: "left",
+            textAlign: "justify",
             padding: "10px 40px",
             backgroundColor: "#EFF0F2",
           }}
         >
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "justify" }}>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
@@ -466,7 +473,7 @@ const AuthorResources = () => {
             </Title>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
                 margin: 0, // Remove top and bottom margin for Title
@@ -483,10 +490,10 @@ const AuthorResources = () => {
               confirming the originality of their submission.
             </Paragraph>
           </div>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "justify" }}>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
@@ -499,7 +506,7 @@ const AuthorResources = () => {
             </Title>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
                 margin: 0, // Remove top and bottom margin for Title
@@ -515,10 +522,10 @@ const AuthorResources = () => {
               ensure high-quality contributions and eliminate no-shows.
             </Paragraph>
           </div>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "justify" }}>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize,
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "800",
@@ -531,7 +538,7 @@ const AuthorResources = () => {
             </Title>
             <Paragraph
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
                 margin: 0, // Remove top and bottom margin for Title
@@ -548,11 +555,11 @@ const AuthorResources = () => {
           </div>
         </div>
 
-        <div style={{ textAlign: "left", padding: "20px 40px" }}>
+        <div style={{ textAlign: "justify", padding: "20px 40px" }}>
           <Title
             style={{
               fontSize: titleMedium,
-              textAlign: "left",
+              textAlign: "justify",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
             }}
@@ -562,7 +569,7 @@ const AuthorResources = () => {
          
         </div>
         <div style={{
-            textAlign: "left",
+            textAlign: "justify",
             padding: "10px 40px",
             backgroundColor: "#EFF0F2",
           }}>
@@ -602,7 +609,7 @@ const AuthorResources = () => {
             renderItem={(item) => (
               <List.Item
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize, // Adjust as needed
                   color: "black",
                   margin: 0, // Remove top and bottom margin for Title
@@ -620,11 +627,11 @@ const AuthorResources = () => {
           </div>
 
        
-          <div style={{ textAlign: "left", padding: "20px 40px" }}>
+          <div style={{textAlign: "justify", padding: "20px 40px" }}>
           <Title
             style={{
               fontSize: titleMedium,
-              textAlign: "left",
+              textAlign: "justify",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
             }}
@@ -634,11 +641,11 @@ const AuthorResources = () => {
          
         </div>
         <div style={{
-            textAlign: "left",
+            textAlign: "justify",
             padding: "10px 40px",
             backgroundColor: "#EFF0F2",
           }}>
-  <div style={{ textAlign: "left", padding: "10px 0px" }}>
+  <div style={{ textAlign: "justify", padding: "10px 0px" }}>
         
          
           <Paragraph

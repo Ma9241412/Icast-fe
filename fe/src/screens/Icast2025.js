@@ -87,47 +87,24 @@ const ICAST2025 = () => {
               Islamabad, is Pakistan's premier space event. Bringing together
               global leaders, researchers, and industry experts, it aims to
               advance the frontiers of space science and technology.
-            </Paragraph>
-            <Paragraph
-              style={{
-                backgroundColor: "#EFF0F2",
-                textAlign: "justify",
-                fontSize: paragraphFontSize,
-                color: "black",
-                margin: 0, // Remove top and bottom margin for Title
-                padding: "10px 40px",
-                fontFamily: "Inter, sans-serif",
-                fontWeight: "500",
-              }}
-            >
               As a unified platform combining the legacies of IST’s
               International Conference on Aerospace Science and Engineering
               (ICASE) and SUPARCO’s International Conference on Space (ICS),
               ICAST 2025 fosters innovation, collaboration, and transformative
-              research. Under the theme{" "}
-              <strong>“Space for Sustainable Development,”</strong> this
+              research.
+              <br/>
+              Under the theme{" "}<strong>“Space for Sustainable Development,”</strong> this
               biennial conference addresses critical global challenges through
               space technology, showcasing cutting-edge research, interactive
               sessions, and interdisciplinary discussions that inspire and shape
               the future of space exploration.
-            </Paragraph>
-            <Paragraph
-              style={{
-                backgroundColor: "#EFF0F2",
-                textAlign: "justify",
-                fontSize: paragraphFontSize,
-                color: "black",
-                margin: 0, // Remove top and bottom margin for Title
-                padding: "10px 40px",
-                fontFamily: "Inter, sans-serif",
-                fontWeight: "500",
-              }}
-            >
+              <br/>
               With eight conference tracks, interactive forums, and an expanded
               international presence, ICAST 2025 aims to cement its status as a
               leader in advancing space science and technology on a global
               scale.
             </Paragraph>
+           
           </div>
 
           <div style={{ marginTop: "20px" }}>
@@ -215,6 +192,7 @@ const ICAST2025 = () => {
         title={
           <span
             style={{
+              
               fontSize: paragraphFontSize, // Slightly smaller font size
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
@@ -233,7 +211,7 @@ const ICAST2025 = () => {
         <Paragraph
           style={{
             textAlign: "left",
-            fontSize: "13px", // Reduce font size for compactness
+            fontSize: "15px", // Reduce font size for compactness
             color: "black",
             margin: "0", // Remove margin
             fontFamily: "Inter, sans-serif",

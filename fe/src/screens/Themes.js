@@ -412,7 +412,7 @@ const ThemePage = () => {
         <div style={{ backgroundColor: "#EEF0F2" }}>
           <Title
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               marginBottom: "30px",
               padding: "20px 40px",
               fontFamily: "Inter, sans-serif",
@@ -457,7 +457,7 @@ const ThemePage = () => {
           </Title>
           <Paragraph
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               fontSize: paragraphFontSize,
               color: "black",
               margin: 0, 
@@ -496,7 +496,7 @@ const ThemePage = () => {
         >
           <Title
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               marginBottom: "30px",
               fontSize: titleMedium,
               color: "black",
@@ -508,7 +508,7 @@ const ThemePage = () => {
           </Title>
           <Paragraph
             style={{
-              textAlign: "start",
+              textAlign: "justify",
               fontSize: paragraphFontSize,
               color: "black",
               margin: 0, // Remove top and bottom margin for Title
@@ -606,7 +606,7 @@ const ThemePage = () => {
                                   key={idx}
                                   style={{
                                     color: "black",
-                                    textAlign: "start",
+                                    textAlign: "justify",
                                     fontSize: paragraphFontSize,
                                     fontFamily:"500",
               fontFamily: "Inter, sans-serif",
@@ -627,7 +627,7 @@ const ThemePage = () => {
                                   key={idx}
                                   style={{
                                     color: "black",
-                                    textAlign: "start",
+                                    textAlign: "justify",
                                     fontSize: paragraphFontSize,
                                     fontWeight: "500",
               fontFamily: "Inter, sans-serif",
@@ -659,7 +659,7 @@ const ThemePage = () => {
             >
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   marginBottom: "30px",
                   fontSize: titleMedium,
                   color: "black",
@@ -671,7 +671,7 @@ const ThemePage = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   margin: 0, // Remove top and bottom margin for Title
@@ -685,13 +685,15 @@ const ThemePage = () => {
                 industry expert, policymaker, or student, this is your
                 opportunity to showcase your work, inspire innovation, and shape
                 the future of space science and technology.
+                <br/>
+                <br/>
               <ul style={{
               fontSize: paragraphFontSize,
               color: "black",
               lineHeight: "1.8",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
-              textAlign: "start",
+              textAlign: "justify",
 
               
             }}>
@@ -723,7 +725,7 @@ const ThemePage = () => {
           <Col xs={24} md={6} lg={8}>
             <Space
               direction="vertical"
-              style={{ width: "100%", textAlign: "center" ,padding:"0px 20px"}}
+              style={{ width: "100%", textAlign: "justify" ,padding:"0px 20px"}}
             >
               <img
                 src={m1}

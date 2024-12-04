@@ -197,24 +197,22 @@ const Footer = () => {
             </Space>
             <br />
             {/* Social Media Links */}
-            {/* <Space size="large">
+            <Space size="large">
+         
               <Link
-                to="https://www.facebook.com/ICAST.Pakistan"
+                to="/press-release"
                 target="_blank"
               >
-                <FacebookOutlined
-                  style={{ fontSize: "30px", color: "white" }}
-                />
+                <Title  style={{
+                  color: "#FD7527",
+                  fontSize: titleMedium,
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: "700",
+                }}>
+                PRESS RELEASE
+                </Title>
               </Link>
-              <Link
-                to="https://www.linkedin.com/company/icast-pakistan/"
-                target="_blank"
-              >
-                <LinkedinOutlined
-                  style={{ fontSize: "30px", color: "white" }}
-                />
-              </Link>
-            </Space> */}
+            </Space>
             <br />
 
             {/* Footer Links */}

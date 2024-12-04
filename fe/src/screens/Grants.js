@@ -66,7 +66,7 @@ const Grants = () => {
         </Title>
         <Paragraph
           style={{
-            textAlign: "start",
+            textAlign: "justify",
             fontSize: paragraphFontSize,
             color: "black",
             padding: "0px 40px",
@@ -178,7 +178,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -189,7 +189,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -213,7 +213,7 @@ const Grants = () => {
               </Paragraph>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -226,7 +226,7 @@ const Grants = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -282,7 +282,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -300,7 +300,7 @@ const Grants = () => {
 
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -311,7 +311,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -327,7 +327,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -338,7 +338,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -354,7 +354,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -365,7 +365,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -379,7 +379,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -390,7 +390,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -405,7 +405,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -416,7 +416,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -432,7 +432,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -443,7 +443,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -459,7 +459,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -470,7 +470,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -479,7 +479,7 @@ const Grants = () => {
               >
                 Each award category has specific eligibility and selection criteria:
                 <ul style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -495,7 +495,7 @@ const Grants = () => {
               </Paragraph>
               <Title
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -506,7 +506,7 @@ const Grants = () => {
               </Title>
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -522,7 +522,7 @@ const Grants = () => {
             </div>
             <Title
               style={{
-                textAlign: "start",
+                textAlign: "justify",
                 fontSize: titleMedium,
                 color: "black",
                 fontFamily: "Inter, sans-serif",
@@ -541,7 +541,7 @@ const Grants = () => {
             >
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",
@@ -555,7 +555,7 @@ for your achievements, these opportunities are designed to inspire and empower.
             
               <Paragraph
                 style={{
-                  textAlign: "start",
+                  textAlign: "justify",
                   fontSize: paragraphFontSize,
                   color: "black",
                   fontFamily: "Inter, sans-serif",

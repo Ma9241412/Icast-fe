@@ -122,7 +122,7 @@ const CallForPapers = () => {
           </div>
         </div>
 
-        <div style={{ textAlign: "left", padding: "10px 35px" }}>
+        <div style={{ textAlign: "justify", padding: "10px 35px" }}>
           <Title
             style={{
               marginTop: "20px",
@@ -146,7 +146,7 @@ const CallForPapers = () => {
             We welcome high-quality submissions across the following dynamic
             tracks. Detailed subtopics can be found below:
           </Paragraph>
-          <div style={{ textAlign: "start", marginBottom: "30px" }}>
+          <div style={{ textAlign: "justify", marginBottom: "30px" }}>
             <Space>
               <Link to={"/theme"}>
               <Button
@@ -188,11 +188,11 @@ const CallForPapers = () => {
                       lineHeight: "1.2", // Reduce line height for closer spacing
                       wordWrap: "break-word",
                       whiteSpace: "normal",
-                      textAlign:"left"
+                      textAlign: "justify"
                     }}>{track.title}</Title>
                 <Paragraph
                   style={{
-                    textAlign: "left",
+                    textAlign: "justify",
                     fontSize: paragraphFontSize, // Reduce font size for compactness
                     color: "black",
                     margin: "0", // Remove margin
@@ -210,7 +210,7 @@ const CallForPapers = () => {
           style={{
             marginTop: "40px",
             fontSize: titleMedium,
-            textAlign: "left",
+            textAlign: "justify",
             fontFamily: "Inter, sans-serif",
             fontWeight: "700",
             padding: "10px 35px",
@@ -231,6 +231,7 @@ const CallForPapers = () => {
               color: "black",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
+              textAlign: "justify"
             }}
           >
             By submitting your research to ICAST 2025, you will:
@@ -242,6 +243,7 @@ const CallForPapers = () => {
               paddingLeft: "20px",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
+              textAlign: "justify"
             }}
           >
             <li>
