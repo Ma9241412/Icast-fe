@@ -44,7 +44,7 @@ const data = [
     imgSrc: img4,
   },
   {
-    role: "Conference Secretary Head of Conference Secretariat",
+    role: "Conference Secretary ",
     name: "Prof. Dr. Najam Abbas Naqvi",
 
     title: "Chairman NCGSA",

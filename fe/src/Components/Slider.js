@@ -3,13 +3,18 @@ import { Grid, Image } from "antd";
 import "../Styles/SliderStyles.css";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import image1 from "../Assets/banner.png";
-import image2 from "../Assets/b1.jpg";
-import image3 from "../Assets/b2.jpg";
-import image5 from "../Assets/b4.jpg";
-import image7 from "../Assets/b6.jpg";
+import image2 from "../Assets/b1.png";
+import image3 from "../Assets/b2.png";
+import image4 from "../Assets/b3.png";
+import image5 from "../Assets/b4.png";
+import image6 from "../Assets/b5.png";
+import image7 from "../Assets/b6.png";
+import image8 from "../Assets/b7.jpg";
+import image9 from "../Assets/b8.jpg";
+import image10 from "../Assets/b9.jpg";
 import DeadlineTimer from "./DeadlineTimer";
 
-const images = [image1, image2, image3, image5, image7];
+const images = [image1, image2, image3,image4, image5,image6,image7,image8,image9,image10 ];
 
 const calculateTimeLeft = () => {
   const eventDate = new Date("November 18, 2025 00:00:00").getTime();
@@ -48,7 +53,7 @@ const FullWidthCarousel = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
-    }, 1000);
+    }, 2000);
     return () => clearInterval(timer);
   }, []);
 

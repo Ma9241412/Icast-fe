@@ -67,8 +67,8 @@
 /* Countdown Timer Overlay */
 .timer-overlay {
   position: absolute;
-  bottom: 10px; 
-  left: 10px; 
+  bottom: 0%; 
+  right: 0%; 
   transform: none;
   display: flex;
   gap: 10px;
@@ -83,10 +83,10 @@
 /* Container Styling */
 /* Timer Row Container */
 .timer-container {
-  background: rgba(100, 99, 99, 0.8); 
-  padding: 10px 20px;
+  background: rgba(94, 89, 182, 0.8); 
+  padding: 5px 20px;
   border-radius: 5px;
-  color: #ffda44; /* Bright yellow text */
+  color: green; /* Bright yellow text */
   max-width: 800px;
   width: 100%;
   margin: auto;
@@ -113,9 +113,9 @@
 }
 
 .time-value {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
-  color: #ffda44;
+  color: white;
 }
 
 .time-label {
@@ -129,7 +129,7 @@
 }
 
 .deadline-date {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
   color: #ffda44;
 }

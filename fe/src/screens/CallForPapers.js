@@ -1,8 +1,16 @@
 import React from "react";
-import { Button, Card, Col, Divider, Grid, Row, Space, Typography } from "antd";
+import { Button, Card, Col, Divider, Grid, Image, Row, Space, Typography } from "antd";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
 import { Link } from "react-router-dom";
+import icon1 from "../Assets/icn1.png"
+import icon2 from "../Assets/icn2.png"
+import icon3 from "../Assets/icn3.png"
+import icon4 from "../Assets/icn4.png"
+import icon5 from "../Assets/icn5.png"
+import icon6 from "../Assets/icn6.png"
+import icon7 from "../Assets/icn7.png"
+import icon8 from "../Assets/icn8.png"
 
 const { Title, Paragraph, Text } = Typography;
 const { useBreakpoint } = Grid;
@@ -176,6 +184,7 @@ const CallForPapers = () => {
                 style={{
                   height: "100%", // Remove fixed height for flexibility
                   width: "100%",
+                  backgroundColor:"#1E2634"
                 }}
              
                 hoverable
@@ -184,24 +193,20 @@ const CallForPapers = () => {
                       fontSize: paragraphFontSize, // Slightly smaller font size
                       fontFamily: "Inter, sans-serif",
                       fontWeight: "700",
-                      color: "#1a73e8",
+                      color: "white",
                       lineHeight: "1.2", // Reduce line height for closer spacing
                       wordWrap: "break-word",
                       whiteSpace: "normal",
-                      textAlign: "justify"
+                      textAlign: "center"
                     }}>{track.title}</Title>
-                <Paragraph
+                <Image
                   style={{
-                    textAlign: "justify",
-                    fontSize: paragraphFontSize, // Reduce font size for compactness
-                    color: "black",
-                    margin: "0", // Remove margin
-                    fontFamily: "Inter, sans-serif",
-                    fontWeight: "400", // Slightly lighter font weight
+                   width:"80px",
+                   height:"80px"
                   }}
+                  src={track.icon}
                 >
-                  {track.description}
-                </Paragraph>
+                </Image>
               </Card>
             </Col>
           ))}
@@ -294,115 +299,37 @@ const CallForPapers = () => {
 const conferenceTracks = [
   {
     title: "Aeronautics & Astronautics",
-    description: (
-      <>
-        Explore the cutting-edge advancements shaping the future of aerospace
-        systems and technologies. This track covers a wide array of topics,
-        including advanced propulsion systems, hypersonic and supersonic
-        aerodynamics, and sustainable aerospace innovations. With a focus on
-        space mission design, autonomous aerospace vehicles, and urban air
-        mobility, it invites contributions that redefine flight mechanics,
-        orbital trajectories, and sustainable aviation. Researchers are
-        encouraged to address challenges in materials science, AI-driven design,
-        and the next generation of space exploration technologies
-      </>
-    ),
+    icon: icon1, // Replace with actual icon path
   },
   {
     title: "Satellite Technology",
-    description: (
-      <>
-        Delve into the innovations transforming satellite systems, from
-        nanosatellites and CubeSats to next-generation communication
-        constellations. This track highlights advancements in satellite
-        autonomy, quantum communication technologies, and resilient satellite
-        networks. Contributions are invited on topics such as sustainable
-        satellite manufacturing, AI and machine learning in satellite
-        operations, and emerging applications like lunar relay systems and
-        blockchain-based data processing.
-      </>
-    ),
+    icon: icon2, // Replace with actual icon path
   },
   {
     title: "Positioning, Navigation & Timing",
-    description: (
-      <>
-        This track invites groundbreaking research on the latest PNT systems,
-        including advanced guidance and navigation systems, multi-sensor fusion,
-        and resilient timing technologies. Topics include navigation for lunar
-        and planetary missions, autonomous navigation for drones and spacecraft,
-        and quantum navigation systems. Researchers can also explore AI- driven
-        real-time positioning and cybersecurity measures for navigation systems
-        in extreme environments.
-      </>
-    ),
+    icon: icon3, // Replace with actual icon path
   },
   {
     title: "Remote Sensing & Geographic Information Science",
-    description: (
-      <>
-        Focus on the integration of remote sensing and GIS technologies to
-        address critical societal challenges. Topics include advancements in
-        Earth observation, 3D mapping, and geospatial AI. Contributions are
-        welcomed on applications in smart agriculture, urban analytics, and
-        climate monitoring, alongside innovative methods like LiDAR and IoT-
-        enabled remote sensing for sustainable development.
-      </>
-    ),
+    icon: icon4, // Replace with actual icon path
   },
   {
     title: "Environmental Science & Climate Change",
-    description: (
-      <>
-        This track emphasizes space-based approaches to monitor, mitigate, and
-        adapt to climate change. Researchers are invited to contribute to topics
-        such as biodiversity conservation, carbon cycle monitoring, and disaster
-        risk reduction. Additional focus areas include the role of satellite
-        technology in climate modeling, sustainable agriculture, and the
-        development of eco-friendly energy solutions for a sustainable future.
-      </>
-    ),
+    icon: icon5, // Replace with actual icon path
   },
   {
     title: "Information & Communication Technologies",
-    description: (
-      <>
-        Contribute to the evolving role of ICT in space science, from AI-powered
-        data analytics to quantum computing. Topics include cybersecurity for
-        autonomous space operations, next- generation communication networks,
-        and blockchain applications in space technologies. Submissions are
-        encouraged on space-based IoT systems, edge computing, and virtual
-        reality applications for mission planning and human-computer
-        interactions in space exploration.
-      </>
-    ),
+    icon: icon6, // Replace with actual icon path
   },
   {
     title: "Astronomy & Astrophysics",
-    description: (
-      <>
-        Explore the universe’s mysteries through contributions on exoplanet
-        exploration, dark matter detection, and gravitational wave astronomy.
-        This track focuses on multi-messenger astronomy, AI-driven astronomical
-        data analysis, and the future of interstellar travel. Researchers are
-        also invited to delve into planetary habitability, astroecology, and the
-        impact of space weather on planetary environments.
-      </>
-    ),
+    icon: icon7, // Replace with actual icon path
   },
   {
     title: "Space Law, Management & Outreach",
-    description: (
-      <>
-        This track focuses on the governance and ethical considerations of space
-        exploration. Contributions are invited on topics such as international
-        space treaties, commercialization of space, and debris mitigation.
-        Researchers can also address the role of public engagement, STEM
-        education, and policies shaping sustainable and inclusive space
-        exploration.
-      </>
-    ),
+    icon: icon8, // Replace with actual icon path
   },
 ];
+
 
 export default CallForPapers;

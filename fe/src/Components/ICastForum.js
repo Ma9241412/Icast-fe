@@ -17,6 +17,17 @@ import Image12 from "../Assets/i12.png";
 
 const data = [
   {
+    image: img3,
+    value: "04",
+    label: "Distinguished Keynote Speakers ",
+  },
+
+  {
+    image: Image7,
+    value: "07",
+    label: "Invited Speakers",
+  },
+  {
     image: Image10,
     value: "01",
     label: "Technical Sessions",
@@ -41,17 +52,7 @@ const data = [
     value: "05",
     label: "Exclusive Students Programs",
   },
-  {
-    image: img3,
-    value: "04",
-    label: "Distinguished Keynote Speakers ",
-  },
 
-  {
-    image: Image7,
-    value: "07",
-    label: "Invited Speakers",
-  },
   {
     image: Image8,
     value: "08",

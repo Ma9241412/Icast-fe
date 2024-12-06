@@ -99,6 +99,16 @@ const CallForContent = () => {
                   and technology.
                 </Paragraph>
                 <Space className="button-group">
+                 
+                  <Button href="/call-for-papers" size="large" type="default">
+                    Call for Papers
+                  </Button>
+                  <Button href="/call-for-session" size="large" type="default">
+                    Call for Sessions
+                  </Button>
+                  <Button href="/author-resources"  size="large" type="default">
+                    Author Resources
+                  </Button>
                   <Link to={"/screen-inprogress"}>
                   <Button
                     size="large"
@@ -107,15 +117,6 @@ const CallForContent = () => {
                     Manage Submissions
                   </Button>
                   </Link>
-                  <Button href="/call-for-papers" size="large" type="default">
-                    Call for Papers
-                  </Button>
-                  <Button href="/call-for-session" size="large" type="default">
-                    Call for Sessions
-                  </Button>
-                  <Button size="large" type="default">
-                    Author Resources
-                  </Button>
                 </Space>
                 <div>
                   <Title
