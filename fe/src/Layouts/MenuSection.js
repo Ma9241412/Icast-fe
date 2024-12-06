@@ -73,7 +73,7 @@ const DesktopMenu = () => {
         >
           <Menu.Item key="/content">
             <Link to="/content" onClick={() => setCurrentKey("content")}>
-              Call For Content
+               CALL FOR CONTENT
             </Link>
           </Menu.Item>
 

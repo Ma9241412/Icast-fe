@@ -4,7 +4,7 @@ import Footer from "../Layouts/IcastFooter";
 import IcastHeader from "../Layouts/IcastHeader";
 import { Link } from "react-router-dom";
 
-const { Header, Content } = Layout;
+const {  Content } = Layout;
 const { Title, Paragraph } = Typography;
 const { useBreakpoint } = Grid;
 
@@ -17,13 +17,7 @@ const Press = () => {
     : screens.md
     ? "46px"
     : "36px";
-  const titleMedium = screens.xl
-    ? "22px"
-    : screens.lg
-    ? "22px"
-    : screens.md
-    ? "17px"
-    : "17px";
+
   const paragraphFontSize = screens.xl
     ? "16px"
     : screens.lg
@@ -65,14 +59,10 @@ const Press = () => {
             fontWeight: "600",
           }}
         >
-          CAST / Press Release
+          ICAST / Press Release
         </Paragraph>
         <Content>
-          <div      style={{
-            
-         
-
-              }}>
+          <div style={{}}>
             <Paragraph
               style={{
                 backgroundColor: "#EFF0F2",
@@ -84,20 +74,21 @@ const Press = () => {
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "500",
                 lineHeight: "2rem",
-
               }}
             >
-              Islamabad, December 2024 <strong style={{fontWeight:"bold"}}>The Pakistan Space & Upper Atmosphere
-              Research Commission (SUPARCO) and the Institute of Space
-              Technology (IST)</strong> announce the International Conference on
-              Applications of Space Science and Technology (ICAST 2025),
-              scheduled to take place from November 18 to 20, 2025, at the
-              Institute of Space Technology, Islamabad. This groundbreaking
-              conference is set to become the largest gathering of space science
-              and technology experts ever hosted in Pakistan, bringing together
-              renowned global leaders, visionary researchers, and pioneering
-              industry professionals under the theme "Space for Sustainable
-              Development. "
+              Islamabad, December 2024{" "}
+              <strong style={{ fontWeight: "bold" }}>
+                The Pakistan Space & Upper Atmosphere Research Commission
+                (SUPARCO) and the Institute of Space Technology (IST)
+              </strong>{" "}
+              announce the International Conference on Applications of Space
+              Science and Technology (ICAST 2025), scheduled to take place from
+              November 18 to 20, 2025, at the Institute of Space Technology,
+              Islamabad. This groundbreaking conference is set to become the
+              largest gathering of space science and technology experts ever
+              hosted in Pakistan, bringing together renowned global leaders,
+              visionary researchers, and pioneering industry professionals under
+              the theme "Space for Sustainable Development. "
               <br />
               ICAST 2025 represents the fusion of the rich legacies of IST’s
               International Conference on Aerospace Science and Engineering
@@ -150,11 +141,13 @@ const Press = () => {
               Join us for ICAST 2025, where innovation meets collaboration, and
               the future of space science takes center stage. For more details
               on abstract submissions, registration, and sponsorship
-              opportunities,visit <strong style={{fontWeight:"bold"}}><Link to={"https://icast.pk/"}>www.icast.pk</Link></strong>.
+              opportunities,visit{" "}
+              <strong style={{ fontWeight: "bold" }}>
+                <Link to={"https://icast.pk/"}>www.icast.pk</Link>
+              </strong>
+              .
             </Paragraph>
           </div>
-
-          
         </Content>
       </Layout>
       <Footer />

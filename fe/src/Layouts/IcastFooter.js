@@ -37,7 +37,6 @@ const Footer = () => {
   return (
     <div style={{ background: "#001529", padding: "40px 20px" }}>
       <Row gutter={[32, 32]} justify="space-around" align="top">
-        {/* Left Section: ICAST Logo */}
         <Col
           xs={24}
           sm={12}
@@ -49,11 +48,10 @@ const Footer = () => {
             src={footerLogo}
             alt="ICAST Logo"
             preview={false}
-            style={{ maxWidth: "250px", width: "100%" }}
+            style={{ maxWidth: "350px", width: "100%" }}
           />
         </Col>
 
-        {/* Center Section: Contact Information */}
         <Col
           xs={24}
           sm={12}
@@ -125,15 +123,15 @@ const Footer = () => {
                 >
                   <Image
                     preview={false}
-                    src={fb} // Replace with the actual path to your Facebook image
+                    src={fb} 
                     alt="Facebook"
                     className="social-icon fb"
                     style={{
                       width: "40px",
                       height: "40px",
                       backgroundColor: "white",
-                      borderRadius: "5px", // Explicitly setting to 0 to remove border radius
-                    }} // Adjust the size as needed
+                      borderRadius: "5px", 
+                    }} 
                   />
                 </Link>
                 <Link
@@ -143,15 +141,15 @@ const Footer = () => {
                 >
                   <Image
                     preview={false}
-                    src={ld} // Replace with the actual path to your LinkedIn image
+                    src={ld}
                     alt="LinkedIn"
                     className="social-icon linkedin"
                     style={{
                       width: "40px",
                       height: "40px",
                       backgroundColor: "white",
-                      borderRadius: "5px", // Explicitly setting to 0 to remove border radius
-                    }} // Adjust the size as needed
+                      borderRadius: "5px",
+                    }} 
                   />
                 </Link>
               </Space>
@@ -159,7 +157,6 @@ const Footer = () => {
           </Space>
         </Col>
 
-        {/* Right Section: Partner Logos and Social Media Links */}
         <Col
           xs={24}
           sm={24}
@@ -198,18 +195,16 @@ const Footer = () => {
             <br />
             {/* Social Media Links */}
             <Space size="large">
-         
-              <Link
-                to="/press-release"
-                target="_blank"
-              >
-                <Title  style={{
-                  color: "#FD7527",
-                  fontSize: titleMedium,
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: "700",
-                }}>
-                PRESS RELEASE
+              <Link to="/press-release" target="_blank">
+                <Title
+                  style={{
+                    color: "#FD7527",
+                    fontSize: titleMedium,
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "700",
+                  }}
+                >
+                  PRESS RELEASE
                 </Title>
               </Link>
             </Space>

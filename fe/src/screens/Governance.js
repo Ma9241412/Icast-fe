@@ -21,19 +21,19 @@ const { useBreakpoint } = Grid;
 const data = [
   {
     role: "ICAST President",
-    name: "Muhammad Yusuf Khan",
+    name: "Mr. Muhammad Yusuf Khan",
     title: "Chairman SUPARCO",
     imgSrc: img1,
   },
   {
     role: "Conference Patron-in-Chief",
-    name: "Brig. (Retd) Zia Ahmed",
+    name: "Mr. Zia Ahmed",
     title: "Vice Chancellor IST",
     imgSrc: img2,
   },
   {
     role: "Conference Chair",
-    name: "Brig. (Retd) Aftab Ahmad Khan Lughmani",
+    name: "Mr. Aftab Ahmad Khan Lughmani",
     title: "Secretary SUPARCO",
     imgSrc: img3,
   },
@@ -58,13 +58,13 @@ const data = [
   },
   {
     role: "Strategic Liaison",
-    name: "Col. (Retd.) Muhammad Arham Khan",
+    name: "Mr. Muhammad Arham Khan",
     title: "DH IA SUPARCO",
     imgSrc: img7,
   },
   {
     role: "Chair of Administration Committee (Security, Protocol & Entertainment)",
-    name: "Col. (Retd) Farooq Ahmed",
+    name: "Mr. Farooq Ahmed",
     title: "Director Admin IST",
     imgSrc: null, // No image
   },
