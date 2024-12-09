@@ -10,8 +10,10 @@ import img4 from "../Assets2/4.jpg";
 import img5 from "../Assets2/5.png";
 import img6 from "../Assets2/6.jpg";
 import img7 from "../Assets2/7.jpeg";
+import img9 from "../Assets2/9.jpg";
 import img10 from "../Assets2/10.jpg";
 import img11 from "../Assets2/11.jpeg";
+import img12 from "../Assets2/12.jpg";
 import img13 from "../Assets2/13.jpg";
 import SecretariatPage from "../Components/Secretariat";
 
@@ -72,7 +74,7 @@ const data = [
     role: "Chair of Finance Committee",
     name: "Mr. Khadim Hussain",
     title: "CFO IST",
-    imgSrc: null, // No image
+    imgSrc: img9,
   },
   {
     role: "Chair of Exhibition & Industrial Linkages Committee",
@@ -90,7 +92,7 @@ const data = [
     role: "Chair of Conference Facilities",
     name: "Mr. Rehan Rasheed",
     title: "Director Civil Works",
-    imgSrc: null, // No image
+    imgSrc: img12, 
   },
   {
     role: "Chair of Evaluation & Publication Committee",

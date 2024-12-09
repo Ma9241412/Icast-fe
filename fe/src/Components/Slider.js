@@ -14,10 +14,10 @@ import image9 from "../Assets/b8.jpg";
 import image10 from "../Assets/b9.jpg";
 import DeadlineTimer from "./DeadlineTimer";
 
-const images = [image1, image2, image3,image4, image5,image6,image7,image8,image9,image10 ];
+const images = [image1, image2,image5,image8, image3,image6,image9, image4, image7,image10 ];
 
 const calculateTimeLeft = () => {
-  const eventDate = new Date("November 18, 2025 00:00:00").getTime();
+  const eventDate = new Date("November 18, 2025 10:00:00").getTime(); // Updated to 10 AM
   const now = new Date().getTime();
   const difference = eventDate - now;
 
@@ -80,6 +80,7 @@ const FullWidthCarousel = () => {
     <div className="carousel-container">
       <div className="carousel-slide">
         <Image
+        aut
           width={imageWidth}
           src={images[currentIndex]}
           preview={false}

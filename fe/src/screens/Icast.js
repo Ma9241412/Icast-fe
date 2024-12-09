@@ -13,7 +13,7 @@ const ICast = () => {
   return (
     <>
       <IcastHeader />
-      <div style={{ backgroundColor: "#272B3A", padding: 0 }}>
+      <div style={{ backgroundColor: "#272B3A", }}>
         <FullWidthCarousel />
         <div>
           <EventCarousel />
