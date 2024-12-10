@@ -427,13 +427,13 @@ const ThemePage = () => {
           style={{
             textAlign: "justify",
             fontSize: paragraphFontSize,
-            color: "black",
+            color: "#055EDD",
             padding: "0px 40px",
             fontFamily: "Inter, sans-serif",
             fontWeight: "700",
           }}
         >
-          ICAST / Theme & Tracks
+          <Link to={"/"}>ICAST</Link> / Theme & Tracks
         </Paragraph>
         <div
           style={{

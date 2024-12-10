@@ -59,10 +59,11 @@ const CallForContent = () => {
               fontWeight: "600",
               padding: "0px 40px",
               textAlign: "justify",
+              color:"#055EDD"
             }}
             className="breadcrumb"
           >
-            ICAST/ Call For Content
+           <Link to={"/"}>ICAST</Link> / Call For Content
           </Paragraph>
           <div className="call-for-content-text">
             <Row

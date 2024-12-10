@@ -86,13 +86,13 @@ const Expositions = () => {
           style={{
             textAlign: "justify",
             fontSize: paragraphFontSize,
-            color: "black",
+            color: "#055EDD",
             padding: "0px 40px",
             fontFamily: "Inter, sans-serif",
             fontWeight: "700",
           }}
         >
-          ICAST / Exposition & Sponsors
+          <Link to={"/"}>ICAST</Link> / Exposition & Sponsors
         </Paragraph>
 
         <Row style={{ backgroundColor: "white" }} align={"top"}>

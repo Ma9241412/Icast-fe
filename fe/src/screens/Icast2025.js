@@ -2,6 +2,7 @@ import React from "react";
 import { Layout, Typography, Row, Col, Card, Grid } from "antd";
 import Footer from "../Layouts/IcastFooter";
 import IcastHeader from "../Layouts/IcastHeader";
+import { Link } from "react-router-dom";
 
 const { Header, Content } = Layout;
 const { Title, Paragraph } = Typography;
@@ -59,13 +60,13 @@ const ICAST2025 = () => {
             textAlign: "start",
             marginBottom: "30px",
             fontSize: paragraphFontSize,
-            color: "black",
+            color: "#055EDD",
             padding: "0px 40px",
             fontFamily: "Inter, sans-serif",
             fontWeight: "600",
           }}
         >
-          ICAST / About ICAST / ICAST 2025
+          ICAST / <Link style={{color:"#055EDD"}} to={"/"}>About ICAST</Link> / ICAST 2025
         </Paragraph>
         <Content>
           <div>

@@ -53,13 +53,13 @@ const Press = () => {
             textAlign: "start",
             marginBottom: "30px",
             fontSize: paragraphFontSize,
-            color: "black",
+            color: "#055EDD",
             padding: "0px 40px",
             fontFamily: "Inter, sans-serif",
             fontWeight: "600",
           }}
         >
-          ICAST / Press Release
+          <Link to={"/"}>ICAST</Link> / Press Release
         </Paragraph>
         <Content>
           <div style={{}}>

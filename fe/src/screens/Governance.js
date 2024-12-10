@@ -16,6 +16,7 @@ import img11 from "../Assets2/11.jpeg";
 import img12 from "../Assets2/12.jpg";
 import img13 from "../Assets2/13.jpg";
 import SecretariatPage from "../Components/Secretariat";
+import { Link } from "react-router-dom";
 
 const { Title, Text, Paragraph } = Typography;
 const { useBreakpoint } = Grid;
@@ -155,13 +156,13 @@ const paragraphFontSize = screens.xl
               textAlign: "start",
               marginBottom: "30px",
               fontSize: paragraphFontSize,
-              color: "black",
+              color: "#055EDD",
               padding: "0px 40px",
               fontFamily: "Inter, sans-serif",
               fontWeight:"600",
             }}
           >
-            ICAST / About ICAST / ICAST Governance
+            ICAST / <Link style={{color:"#055EDD"}} to={"/"}>About ICAST</Link> / ICAST Governance
           </Paragraph>
         </div>
 

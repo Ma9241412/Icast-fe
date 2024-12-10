@@ -1,16 +1,26 @@
 import React from "react";
-import { Button, Card, Col, Divider, Grid, Image, Row, Space, Typography } from "antd";
+import {
+  Button,
+  Card,
+  Col,
+  Divider,
+  Grid,
+  Image,
+  Row,
+  Space,
+  Typography,
+} from "antd";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
 import { Link } from "react-router-dom";
-import icon1 from "../Assets/icn1.png"
-import icon2 from "../Assets/icn2.png"
-import icon3 from "../Assets/icn3.png"
-import icon4 from "../Assets/icn4.png"
-import icon5 from "../Assets/icn5.png"
-import icon6 from "../Assets/icn6.png"
-import icon7 from "../Assets/icn7.png"
-import icon8 from "../Assets/icn8.png"
+import icon1 from "../Assets/icn1.png";
+import icon2 from "../Assets/icn2.png";
+import icon3 from "../Assets/icn3.png";
+import icon4 from "../Assets/icn4.png";
+import icon5 from "../Assets/icn5.png";
+import icon6 from "../Assets/icn6.png";
+import icon7 from "../Assets/icn7.png";
+import icon8 from "../Assets/icn8.png";
 
 const { Title, Paragraph, Text } = Typography;
 const { useBreakpoint } = Grid;
@@ -67,12 +77,12 @@ const CallForPapers = () => {
             textAlign: "justify",
             padding: "0px 40px",
             fontSize: paragraphFontSize,
-            color: "black",
+            color: "#055EDD",
             fontFamily: "Inter, sans-serif",
             fontWeight: "600",
           }}
         >
-          ICAST /Call For Content / Call For Papers
+          <Link to={"/"}>ICAST</Link>  /  <Link to={"/content"}>Call For Content </Link>  /  Call For Papers
         </Paragraph>
 
         <div style={{ backgroundColor: "#EFF0F2", padding: "20px" }}>
@@ -100,20 +110,20 @@ const CallForPapers = () => {
 
           <div style={{ textAlign: "justify", padding: "10px 15px" }}>
             <Space direction="horizontal">
-            <Link to={"/screen-inprogress"}>
-            <Button
-                type="default"
-                size="large"
-                target="_blank"
-                style={{
-                  backgroundColor: "#186814",
-                  borderColor: "#186814",
-                  color: "white",
-                }}
-              >
-                Manage Submissions
-              </Button>
-            </Link>
+              <Link to={"/screen-inprogress"}>
+                <Button
+                  type="default"
+                  size="large"
+                  target="_blank"
+                  style={{
+                    backgroundColor: "#186814",
+                    borderColor: "#186814",
+                    color: "white",
+                  }}
+                >
+                  Manage Submissions
+                </Button>
+              </Link>
               <Button
                 type="primary"
                 size="large"
@@ -157,18 +167,18 @@ const CallForPapers = () => {
           <div style={{ textAlign: "justify", marginBottom: "30px" }}>
             <Space>
               <Link to={"/theme"}>
-              <Button
-                size="large"
-                type="primary"
-                href=""
-                style={{
-                  backgroundColor: "#186814",
-                  borderColor: "#186814",
-                  color: "white",
-                }}
-              >
-                Tracks and Subtopics Page
-              </Button>
+                <Button
+                  size="large"
+                  type="primary"
+                  href=""
+                  style={{
+                    backgroundColor: "#186814",
+                    borderColor: "#186814",
+                    color: "white",
+                  }}
+                >
+                  Tracks and Subtopics Page
+                </Button>
               </Link>
             </Space>
           </div>
@@ -184,29 +194,31 @@ const CallForPapers = () => {
                 style={{
                   height: "100%", // Remove fixed height for flexibility
                   width: "100%",
-                  backgroundColor:"#1E2634"
+                  backgroundColor: "#1E2634",
                 }}
-             
                 hoverable
               >
-                <Title style={{
-                      fontSize: paragraphFontSize, // Slightly smaller font size
-                      fontFamily: "Inter, sans-serif",
-                      fontWeight: "700",
-                      color: "white",
-                      lineHeight: "1.2", // Reduce line height for closer spacing
-                      wordWrap: "break-word",
-                      whiteSpace: "normal",
-                      textAlign: "center"
-                    }}>{track.title}</Title>
+                <Title
+                  style={{
+                    fontSize: paragraphFontSize, // Slightly smaller font size
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: "700",
+                    color: "white",
+                    lineHeight: "1.2", // Reduce line height for closer spacing
+                    wordWrap: "break-word",
+                    whiteSpace: "normal",
+                    textAlign: "center",
+                  }}
+                >
+                  {track.title}
+                </Title>
                 <Image
                   style={{
-                   width:"80px",
-                   height:"80px"
+                    width: "80px",
+                    height: "80px",
                   }}
                   src={track.icon}
-                >
-                </Image>
+                ></Image>
               </Card>
             </Col>
           ))}
@@ -236,7 +248,7 @@ const CallForPapers = () => {
               color: "black",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
-              textAlign: "justify"
+              textAlign: "justify",
             }}
           >
             By submitting your research to ICAST 2025, you will:
@@ -248,7 +260,7 @@ const CallForPapers = () => {
               paddingLeft: "20px",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
-              textAlign: "justify"
+              textAlign: "justify",
             }}
           >
             <li>
@@ -274,19 +286,19 @@ const CallForPapers = () => {
           </ul>
           <div>
             <Space>
-           <Link to={"/screen-inprogress"}>
-           <Button
-                size="large"
-                type="primary"
-                style={{
-                  backgroundColor: "#186814",
-                  borderColor: "#186814",
-                  color: "white",
-                }}
-              >
-                Register Now
-              </Button>
-           </Link>
+              <Link to={"/screen-inprogress"}>
+                <Button
+                  size="large"
+                  type="primary"
+                  style={{
+                    backgroundColor: "#186814",
+                    borderColor: "#186814",
+                    color: "white",
+                  }}
+                >
+                  Register Now
+                </Button>
+              </Link>
             </Space>
           </div>
         </div>
@@ -330,6 +342,5 @@ const conferenceTracks = [
     icon: icon8, // Replace with actual icon path
   },
 ];
-
 
 export default CallForPapers;

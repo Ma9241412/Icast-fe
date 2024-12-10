@@ -5,6 +5,7 @@ import { UserOutlined } from '@ant-design/icons';
 import img1 from "../Assets3/1.png";
 import img2 from "../Assets3/2.JPG";
 import img3 from "../Assets3/3.png";
+import img4 from "../Assets3/4.jpg";
 import img5 from "../Assets3/5.jpg";
 import img6 from "../Assets3/6.JPG";
 import img7 from "../Assets3/7.jpg";
@@ -37,6 +38,8 @@ const data = [
     role: "Media Management",
     name: "Ms. Marya Tariq",
     title: "Manager SEAD",
+    imgSrc: img4,
+
   },
   {
     role: "International Affairs",
@@ -51,7 +54,7 @@ const data = [
     imgSrc: img6,
   },
   {
-    role: "Web Manager",
+    role: "Website Manager",
     name: "Mr. Syed Muhammad Ali",
     title: "Web Developer NCGSA",
     imgSrc: img7,

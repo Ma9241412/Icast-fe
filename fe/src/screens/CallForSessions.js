@@ -77,12 +77,12 @@ const CallForSessions = () => {
             textAlign: "justify",
             padding: "0px 40px",
             fontSize: paragraphFontSize,
-            color: "black",
+            color: "#055EDD",
             fontFamily: "Inter, sans-serif",
             fontWeight:"600",
           }}
         >
-          ICAST /Call For Content / Call For Sessions
+         <Link to={"/"}>ICAST</Link> / <Link to={"/content"}>Call For Content</Link> / Call For Sessions
         </Paragraph>
         <div style={{ backgroundColor: "#EFF0F2", padding: "15px 40px" }}>
           <Paragraph

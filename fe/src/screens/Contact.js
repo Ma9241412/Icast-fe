@@ -104,6 +104,19 @@ const ContactForm = () => {
         >
           Contact Us
         </Title>
+        <Paragraph
+          style={{
+            textAlign: "start",
+            marginBottom: "20px",
+            fontSize: paragraphFontSize,
+            color: "#055EDD",
+            padding: "0px 40px",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "600",
+          }}
+        >
+          <Link to={"/"}>ICAST</Link> / Contact
+        </Paragraph>
       </div>
       <div className="contact-form-container">
         <div className="content-wrapper">

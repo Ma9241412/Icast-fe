@@ -53,13 +53,13 @@ const AuthorResources = () => {
           style={{
             textAlign: "justify",
             fontSize: paragraphFontSize,
-            color: "black",
+            color: "#055EDD",
             padding: "0px 40px",
             fontFamily: "Inter, sans-serif",
             fontWeight: "600",
           }}
         >
-          ICAST /Call For Content / Author Resources
+          <Link to={"/"}>ICAST</Link> / <Link to={"/content"}>Call For Content</Link> / Author Resources
         </Paragraph>
         <div style={{ backgroundColor: "#EFF0F2", padding: "20px 40px" }}>
           <Paragraph

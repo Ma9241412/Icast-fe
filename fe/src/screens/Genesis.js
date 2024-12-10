@@ -19,6 +19,7 @@ import m5 from "../Assets/e4.jpg";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
 import "../Styles/HomeStyles.css";
+import { Link } from "react-router-dom";
 const { Content } = Layout;
 const { Title, Paragraph } = Typography;
 const { useBreakpoint } = Grid;
@@ -69,13 +70,13 @@ const Genisis = () => {
             style={{
               textAlign: "start",
               fontSize: paragraphFontSize,
-              color: "black",
+              color: "#055EDD",
               padding: "0px 40px",
               fontFamily: "Inter, sans-serif",
               fontWeight: "700",
             }}
           >
-            ICAST / About ICAST / Genisis
+            ICAST / <Link style={{color:"#055EDD"}} to={"/"}>About ICAST</Link> / Genisis
           </Paragraph>
 
           <Row

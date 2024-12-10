@@ -4,6 +4,7 @@ import { PhoneOutlined, MailOutlined, EnvironmentOutlined } from '@ant-design/ic
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 import IcastHeader from '../Layouts/IcastHeader';
 import Footer from '../Layouts/IcastFooter';
+import { Link } from 'react-router-dom';
 
 const containerStyle = {
   width: '100%',
@@ -61,6 +62,19 @@ const VenuMap = () => {
         >
           Event Venue Map
         </Title>
+        <Paragraph
+          style={{
+            textAlign: "start",
+            marginBottom: "30px",
+            fontSize: paragraphFontSize,
+            color: "#055EDD",
+            padding: "0px 40px",
+            fontFamily: "Inter, sans-serif",
+            fontWeight: "600",
+          }}
+        >
+          <Link to={"/"}>ICAST</Link> / Venue Map
+        </Paragraph>
       </div>
       <Card className="venue-map-card">
         <Row gutter={[16, 16]} justify="start" align="top">

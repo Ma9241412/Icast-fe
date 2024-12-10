@@ -188,13 +188,13 @@ const Registration = () => {
               style={{
                 textAlign: "justify",
                 fontSize: paragraphFontSize,
-                color: "black",
+                color: "#055EDD",
                 padding: "0px 40px",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "700",
               }}
             >
-              ICAST / Registration
+              <Link to={"/"}>ICAST</Link> / Registration
             </Paragraph>
             <div
               style={{
