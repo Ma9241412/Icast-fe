@@ -8,6 +8,7 @@ import m1 from "../Assets/m4.jpg";
 import m2 from "../Assets/m5.jpg";
 import m3 from "../Assets/m6.jpg";
 import m4 from "../Assets/m7.jpg";
+import { Link } from "react-router-dom";
 
 const { Title, Paragraph } = Typography;
 const { Content } = Layout;
@@ -68,13 +69,13 @@ const Grants = () => {
           style={{
             textAlign: "justify",
             fontSize: paragraphFontSize,
-            color: "black",
+            color: "#055EDD",
             padding: "0px 40px",
             fontFamily: "Inter, sans-serif",
-            fontWeight: "700",
+            fontWeight: "600",
           }}
         >
-          ICAST / Grants & Awards
+          <Link to={"/"}>ICAST</Link> / Grants
         </Paragraph>
 
         <Row style={{ backgroundColor: "white" }} align={"top"}>

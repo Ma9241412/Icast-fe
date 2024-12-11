@@ -2,12 +2,12 @@ import React from "react";
 import { Card, Row, Col, Typography, Grid } from "antd";
 
 import "../Styles/Icastforum.css";
-import img1 from "../Assets/i1.png";
-import img2 from "../Assets/i2.png";
-import img3 from "../Assets/i3.png";
+import Image1 from "../Assets/i1.png";
+import Image2 from "../Assets/i2.png";
+import Image3 from "../Assets/i3.png";
 import Image4 from "../Assets/i4.png";
 import Image5 from "../Assets/i5.png";
-import image6 from "../Assets/i6.png";
+import Image6 from "../Assets/i6.png";
 import Image7 from "../Assets/i7.png";
 import Image8 from "../Assets/i8.png";
 import Image9 from "../Assets/i9.png";
@@ -17,67 +17,67 @@ import Image12 from "../Assets/i12.png";
 
 const data = [
   {
-    image: img3,
+    image: Image1,
     value: "04",
-    label: "Distinguished Keynote Speakers ",
+    label: "Thematic Plenary Sessions ",
   },
 
   {
-    image: Image7,
+    image: Image2,
     value: "07",
-    label: "Invited Speakers",
-  },
-  {
-    image: Image10,
-    value: "01",
     label: "Technical Sessions",
   },
   {
-    image: Image12,
+    image: Image3,
+    value: "01",
+    label: "Astronauts’ Meet",
+  },
+  {
+    image: Image4,
     value: "02",
-    label: "Workshops & Trainings",
+    label: "Panel Discussions & Forums",
   },
   {
     image: Image5,
     value: "06",
-    label: "Exhibitions",
+    label: "Research Poster Presentations",
   },
   {
-    image: img1,
+    image: Image6,
     value: "03",
-    label: "Awards & Recognitions",
+    label: "Technology Demonstrations & Exhibits",
   },
   {
-    image: Image4,
+    image: Image7,
     value: "05",
-    label: "Exclusive Students Programs",
+    label: "Workshops & Training Sessions",
   },
 
   {
     image: Image8,
     value: "08",
-    label: "Live Demonstration",
-  },
-  {
-    image: image6,
-    value: "09",
-    label: "Interactive Networking Events",
+    label: "Student & Youth Engagement Programs",
   },
   {
     image: Image9,
+    value: "09",
+    label: "Awards & Recognitions",
+  },
+  {
+    image: Image10,
     value: "10",
-    label: "Public Oppurtunites",
+    label: "Travel & Registration Sponsorship Opportunities",
   },
 
   {
     image: Image11,
     value: "11",
-    label: "Travel & Registration Fee Sponsorships",
+    label: "Networking Sessions",
   },
   {
-    image: img2,
+    image: Image12,
     value: "12",
-    label: "Cultural Visits & Tours",
+    label: "Cultural Visits & Sightseeing",
   },
 ];
 

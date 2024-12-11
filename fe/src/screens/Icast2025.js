@@ -128,54 +128,64 @@ const ICAST2025 = () => {
 >
   {[
     {
-      title: "Technical Sessions",
-      description:
-        "Presentations featuring peer-reviewed research highlighting advancements in space science and technology.",
-    },
-    {
       title: "Thematic Plenary Sessions",
       description:
-        "Discussions led by world-renowned speakers focusing on transformative ideas and global challenges.",
+        "Join thought-provoking discussions led by international experts, addressing critical global challenges and the future of space exploration.",
+    },
+    {
+      title: "Technical Sessions",
+      description:
+        "Explore cutting-edge, peer-reviewed research showcasing the latest advancements in space science and its applications.",
     },
     {
       title: "Astronauts’ Meet",
       description:
-        "Exclusive sessions offering rare insights and inspiring stories from astronauts and space explorers.",
+        "Engage with astronauts and space explorers in exclusive sessions, sharing firsthand experiences and inspiring personal stories.",
     },
     {
-      title: "Symposiums and Seminars",
+      title: "Panel Discussions & Forums",
       description:
-        "Focused discussions on cutting-edge topics and innovative applications in space science.",
+        "Participate in dynamic debates and collaborative conversations on space policy, innovation, and emerging trends.",
     },
     {
-      title: "Webinars",
+      title: "Research Poster Presentations",
       description:
-        "Interactive online sessions connecting international experts with participants worldwide.",
+        "Discover innovative research ideas and creative solutions through engaging poster displays by emerging and established scientists.",
     },
     {
-      title: "Panel Discussions and Forums",
+      title: "Technology Demonstrations & Exhibits",
       description:
-        "Debates and conversations exploring pressing issues and future trends in space policy and technology.",
+        "Witness live demonstrations of groundbreaking technologies and innovations presented by leading industry players and academia.",
     },
     {
       title: "Workshops and Training Sessions",
       description:
-        "Practical, hands-on sessions to develop skills and expertise in advanced space technologies.",
+        "Gain practical skills and hands-on experience in advanced space technologies through specialized sessions led by international specialists.",
     },
     {
-      title: "Research Poster Display",
+      title: "Student & Youth Engagement Programs",
       description:
-        "A showcase of creative and innovative research by emerging and established scientists.",
+        "Attend sessions designed to inspire and empower the next generation of space professionals through interactive learning experiences.",
     },
     {
-      title: "Product Exhibition and Technology Demonstration",
+      title: "Awards & Recognitions",
       description:
-        "An exhibition of groundbreaking technologies and solutions from industry and academia.",
+        "9.Celebrate excellence with prestigious accolades, including the Best Paper Award, Young Researcher Award, and Innovation in Space Technology Award.",
     },
     {
-      title: "Cultural Visit and Sightseeing",
+      title: "Travel & Registration Sponsorship Opportunities",
       description:
-        "Opportunities to explore the vibrant heritage of Pakistan, blending science with culture.",
+        "Benefit from exclusive travel support and registration fee waivers, made possible by our esteemed sponsors and partners.",
+    },
+    {
+      title: "Networking Sessions",
+      description:
+        "Connect with global experts, peers, and industry leaders through curated events such as high tea, gala dinners, and social gatherings.",
+    },
+    {
+      title: "Cultural Visits & Sightseeing",
+      description:
+        "Experience the vibrant heritage and breathtaking landscapes of Pakistan through guided cultural tours and sightseeing opportunities.",
     },
   ].map((highlight, index) => (
     <Col
