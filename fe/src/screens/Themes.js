@@ -700,7 +700,7 @@ const ThemePage = () => {
                 <li><strong style={{fontWeight:"bold"}}>Call for Papers:</strong> Share your technical research for inclusion in the conference&#39;s
                 technical sessions and proceedings.</li>
                 <div style={{padding:"20px"}}>
-               <Link to={"/screen-inprogress"}>
+               <Link to={"https://cms.cressofterp.com/"}>
                <Button size="middle" type="default">Register Now</Button>
                </Link>
                 </div>

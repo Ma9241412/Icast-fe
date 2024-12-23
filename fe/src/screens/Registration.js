@@ -230,7 +230,7 @@ const Registration = () => {
                   marginTop: "20px",
                 }}
               >
-              <Link to={"/screen-inprogress"}>
+              <Link to={"https://cms.cressofterp.com/"}>
               <Button size="large">
                   Register Now
                 </Button>
@@ -1048,7 +1048,7 @@ const Registration = () => {
               }}
             >
               <div style={{ textAlign: "justify" }}>
-               <Link to={"/screen-inprogress"}>
+               <Link to={"https://cms.cressofterp.com/"}>
                <Button
                   style={{
                     backgroundColor: "#006814",

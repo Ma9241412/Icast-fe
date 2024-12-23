@@ -36,7 +36,7 @@ function App() {
           <Route path="/call-for-session" element={<CallForSessions/>}/>
           <Route path="/author-resources" element={<AuthorResources/>}/>
           <Route path="/registration" element={<Registration/>}/>
-          <Route path="/theme" element={<ThemePage/>}/>
+          <Route path="/tracks" element={<ThemePage/>}/>
           <Route path="/press-release" element={<Press/>}/>
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/map" element={<VenuMap />} />

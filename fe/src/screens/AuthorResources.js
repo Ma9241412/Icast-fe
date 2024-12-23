@@ -668,7 +668,7 @@ const AuthorResources = () => {
 
           <div style={{ textAlign: "justify",padding:"20px 0px" }}>
            
-           <Link to={"/screen-inprogress"}>
+           <Link to={"https://cms.cressofterp.com/"}>
            <Button type="default" size="large">
                 Submit Your Abstract Now
               </Button>

@@ -110,7 +110,7 @@ const CallForPapers = () => {
 
           <div style={{ textAlign: "justify", padding: "10px 15px" }}>
             <Space direction="horizontal">
-              <Link to={"/screen-inprogress"}>
+              <Link to={"https://cms.cressofterp.com/"}>
                 <Button
                   type="default"
                   size="large"
@@ -166,7 +166,7 @@ const CallForPapers = () => {
           </Paragraph>
           <div style={{ textAlign: "justify", marginBottom: "30px" }}>
             <Space>
-              <Link to={"/theme"}>
+              <Link to={"/tracks"}>
                 <Button
                   size="large"
                   type="primary"
@@ -192,7 +192,7 @@ const CallForPapers = () => {
             <Col xs={24} sm={12} md={6} key={index}>
               <Card
                 style={{
-                  height: "100%", // Remove fixed height for flexibility
+                  height: "100%", 
                   width: "100%",
                   backgroundColor: "#1E2634",
                 }}
@@ -286,7 +286,7 @@ const CallForPapers = () => {
           </ul>
           <div>
             <Space>
-              <Link to={"/screen-inprogress"}>
+              <Link to={"https://cms.cressofterp.com/"}>
                 <Button
                   size="large"
                   type="primary"
