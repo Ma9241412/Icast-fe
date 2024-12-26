@@ -100,7 +100,7 @@ const DesktopMenu = () => {
         <Menu.Item key="/registration">
           <Link to="/registration">REGISTRATION</Link>
         </Menu.Item>
-        <Menu.Item key="/theme">
+        <Menu.Item key="/tracks">
           <Link to="/tracks"> THEME & TRACKS</Link>
         </Menu.Item>
         <Menu.Item key="/screen-inprogress">

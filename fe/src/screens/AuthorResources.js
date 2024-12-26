@@ -583,7 +583,7 @@ const AuthorResources = () => {
               },
               {
                 key: "abstract-deadline",
-                text: "Abstract Submission Deadline: January 15, 2025",
+                text: "Abstract Submission Deadline: January 31, 2025",
               },
               {
                 key: "abstract-notification",

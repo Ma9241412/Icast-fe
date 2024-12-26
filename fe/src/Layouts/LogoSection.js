@@ -220,14 +220,14 @@ const LogoSection = () => {
               <Link to="/registration">Registration</Link>
             </Menu.Item>
 
-            <Link to={"/theme"}>
+            <Link to={"/tracks"}>
               <Menu.Item
                 style={{
                   backgroundColor: "white",
                   marginBottom: "10px",
                   padding: "10px 20px", // Ensure consistent padding
                 }}
-                key="theme"
+                key="tracks"
               >
                 Theme & Tracks
               </Menu.Item>

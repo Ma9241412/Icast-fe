@@ -264,7 +264,7 @@ const CallForContent = () => {
                               fontSize: paragraphFontSize,
                             }}
                           >
-                            January 15, 2025
+                            January 31, 2025
                           </Text>
                         </Space>
                         <Space direction="vertical" size={0}>
