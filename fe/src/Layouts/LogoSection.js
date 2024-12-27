@@ -21,7 +21,7 @@ const LogoSection = () => {
   };
 
   const handleSubMenuClick = () => {
-    setSubMenuOpen(prevState => !prevState); // Toggle the submenu open state
+    setSubMenuOpen(prevState => !prevState); 
   };
 
   return (
@@ -62,7 +62,7 @@ const LogoSection = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Icon */}
+    
           <Button
             type="text"
             icon={<MenuOutlined />}
