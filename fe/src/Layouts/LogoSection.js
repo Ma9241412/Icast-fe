@@ -245,6 +245,18 @@ const LogoSection = () => {
                 Exposition & Sponsors
               </Menu.Item>
             </Link>
+            <Link to={"/press-release"}>
+              <Menu.Item
+                style={{
+                  backgroundColor: "white",
+                  marginBottom: "10px",
+                  padding: "10px 20px", // Ensure consistent padding
+                }}
+                key="sponsors"
+              >
+              Media Release 
+              </Menu.Item>
+            </Link>
           </Menu>
         </Drawer>
       </header>

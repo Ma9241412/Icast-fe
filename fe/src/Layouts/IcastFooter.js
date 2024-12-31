@@ -204,7 +204,7 @@ const Footer = () => {
                     fontWeight: "700",
                   }}
                 >
-                  PRESS RELEASE
+                  MEDIA RELEASE
                 </Title>
               </Link>
             </Space>

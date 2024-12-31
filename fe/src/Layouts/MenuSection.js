@@ -106,9 +106,9 @@ const DesktopMenu = () => {
         <Menu.Item key="/screen-inprogress">
           <Link to="/expo">EXPOSITION & SPONSORS</Link>
         </Menu.Item>  
-        {/* <Menu.Item key="/grants">
-          <Link to="/grants">GRANTS & AWARDS</Link>
-        </Menu.Item> */}
+        <Menu.Item key="/press-release">
+          <Link to="/press-release">MEDIA  RELEASE</Link>
+        </Menu.Item>
         {/* <Menu.Item key="/screen-inprogress">
           <Link to="/screen-inprogress">PROGRAMME</Link>
         </Menu.Item> */}
