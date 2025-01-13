@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Menu, Drawer, Button, Image } from 'antd';
-import { MenuOutlined } from '@ant-design/icons';
+import React, { useState } from "react";
+import { Menu, Drawer, Button, Image } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
 import "../Styles/IcaseHeaderStyles.css";
 import logo from "../Assets/logoicast.svg";
 import supcarco from "../Assets/suparco.png";
@@ -21,7 +21,7 @@ const LogoSection = () => {
   };
 
   const handleSubMenuClick = () => {
-    setSubMenuOpen(prevState => !prevState); 
+    setSubMenuOpen((prevState) => !prevState);
   };
 
   return (
@@ -44,7 +44,11 @@ const LogoSection = () => {
 
         <div className="right-section">
           <div className="partners-background">
-            <Link to="https://suparco.gov.pk/" target="_blank" rel="noopener noreferrer">
+            <Link
+              to="https://suparco.gov.pk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 preview={false}
                 src={supcarco}
@@ -52,7 +56,11 @@ const LogoSection = () => {
                 className="partner-logo"
               />
             </Link>
-            <Link to="https://ist.edu.pk/" target="_blank" rel="noopener noreferrer">
+            <Link
+              to="https://ist.edu.pk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 preview={false}
                 src={ist}
@@ -62,7 +70,6 @@ const LogoSection = () => {
             </Link>
           </div>
 
-    
           <Button
             type="text"
             icon={<MenuOutlined />}
@@ -107,13 +114,8 @@ const LogoSection = () => {
           >
             {/* Dropdown for About ICAST */}
             <SubMenu
-          
               key="about-icast"
-              title={
-                <span style={{ color: "black",  }}>
-                  About ICAST
-                </span>
-              }
+              title={<span style={{ color: "black" }}>About ICAST</span>}
               style={{
                 backgroundColor: "white",
                 color: "white",
@@ -123,7 +125,7 @@ const LogoSection = () => {
               onTitleClick={handleSubMenuClick} // Handle click on the title (redirect)
               open={subMenuOpen} // Control submenu open state
             >
-               <Menu.Item
+              <Menu.Item
                 key="About ICAST"
                 style={{
                   backgroundColor: "white",
@@ -163,7 +165,7 @@ const LogoSection = () => {
 
             {/* Other Menu Items */}
             <SubMenu
-              title={<span style={{ color: "black",  }}>Call For Content</span>}
+              title={<span style={{ color: "black" }}>Call For Content</span>}
               style={{
                 backgroundColor: "white",
                 marginBottom: "10px",
@@ -225,7 +227,7 @@ const LogoSection = () => {
                 style={{
                   backgroundColor: "white",
                   marginBottom: "10px",
-                  padding: "10px 20px", // Ensure consistent padding
+                  padding: "10px 20px",
                 }}
                 key="tracks"
               >
@@ -250,11 +252,11 @@ const LogoSection = () => {
                 style={{
                   backgroundColor: "white",
                   marginBottom: "10px",
-                  padding: "10px 20px", // Ensure consistent padding
+                  padding: "10px 20px",
                 }}
                 key="sponsors"
               >
-              Media Release 
+                Media Release
               </Menu.Item>
             </Link>
           </Menu>
