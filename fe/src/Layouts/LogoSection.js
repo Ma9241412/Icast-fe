@@ -41,7 +41,6 @@ const LogoSection = () => {
             <button className="date-button">November 18-20, 2025</button>
           </div>
         </div>
-
         <div className="right-section">
           <div className="partners-background">
             <Link
@@ -122,8 +121,8 @@ const LogoSection = () => {
                 marginBottom: "10px",
                 padding: "0", // Ensure no additional padding
               }}
-              onTitleClick={handleSubMenuClick} // Handle click on the title (redirect)
-              open={subMenuOpen} // Control submenu open state
+              onTitleClick={handleSubMenuClick} 
+              open={subMenuOpen}
             >
               <Menu.Item
                 key="About ICAST"
