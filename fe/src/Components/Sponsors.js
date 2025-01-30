@@ -3,6 +3,8 @@ import { Card, Row, Col, Typography, Image, Grid } from "antd";
 import { Link } from "react-router-dom"; 
 import img from "../Assets/ncgsa.png";
 import img1 from "../Assets/hec.png";
+import img2 from "../Assets/ieee.png";
+import img3 from "../Assets/isnet.png";
 
 import "../Styles/SponsorStyles.css";
 
@@ -21,6 +23,18 @@ const sponsors = [
     logo: img1,
     link: "https://www.hec.gov.pk/", 
   },
+  {
+    name: "THE INSTITUTION OF ELECTRICAL AND ELECTRONICS ENGINEERS",
+    company: "",
+    logo: img2,
+    link: "https://www.ieee.org/", 
+  },
+  {
+    name: "INTER ISLAMIC NETWORK ON SPACE SCIENCES & TECHNOLOGY",
+    company: "",
+    logo: img3,
+    link: "https://www.ieee.org/", 
+  },  
 ];
 
 const Sponsors = () => {
@@ -56,32 +70,37 @@ const titleMedium = screens.xl
         Partners & Sponsors
       </Title>
       <Row gutter={[16, 16]} justify="center">
-        {sponsors.map((sponsor, index) => (
-          <Col xs={24} sm={12} md={8} lg={6} key={index}>
-            <Card className="sponsor-card" hoverable>
-              <div className="sponsor-logo">
-                <Link to={sponsor.link}> 
-                  <Image
-                    preview={false}
-                    width={200}
-                    src={sponsor.logo}
-                    alt={`${sponsor.name} logo`}
-                  />
-                </Link>
-              </div>
-              <Title  style={{
-          fontSize: titleMedium,
-          fontWeight: "bold",
-          textAlign: "center",
-          color: "black",
-          fontFamily: "Inter, sans-serif",
-        }}  className="sponsor-name">
-                {sponsor.name}
-              </Title>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+  {sponsors.map((sponsor, index) => (
+    <Col xs={24} sm={12} md={8} lg={6} key={index}>
+      <Card className="sponsor-card" hoverable style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '60%',borderRadius:"20px",paddingBlock:"40px" }}>
+        <Link to={sponsor.link}>
+          <Image
+            preview={false}
+            width={180}
+            src={sponsor.logo}
+            alt={`${sponsor.name} logo`}
+            style={{ marginBottom: '16px' }}
+          />
+        </Link>
+     
+      </Card>
+      <Title
+          style={{
+            fontSize: titleMedium,
+            fontWeight: "bold",
+            textAlign: "center",
+            color: "white",
+            fontFamily: "Inter, sans-serif",
+            margin: '0',
+            paddingTop:"10px"
+          }}
+          className="sponsor-name"
+        >
+          {sponsor.name}
+        </Title>
+    </Col>
+  ))}
+</Row>
     </div>
   );
 };
