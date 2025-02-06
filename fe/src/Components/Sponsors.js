@@ -33,7 +33,7 @@ const sponsors = [
     name: "INTER ISLAMIC NETWORK ON SPACE SCIENCES & TECHNOLOGY",
     company: "",
     logo: img3,
-    link: "https://www.ieee.org/", 
+    link: "https://isnet.org.pk/", 
   },  
 ];
 

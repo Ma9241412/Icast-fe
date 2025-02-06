@@ -583,8 +583,9 @@ const AuthorResources = () => {
               },
               {
                 key: "abstract-deadline",
-                text: "Abstract Submission Deadline: January 31, 2025",
+                text: <span style={{ color: "red" }}>Abstract Submission Deadline Extended: February 07, 2025</span>,
               },
+              
               {
                 key: "abstract-notification",
                 text: "Abstract Notification: March 1, 2025",

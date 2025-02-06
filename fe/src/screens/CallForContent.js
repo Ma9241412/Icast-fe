@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Layout, Typography, Button, Space, Grid, Row, Col, Card } from "antd";
 import "../Styles/CallForContent.css";
 import IcastHeader from "../Layouts/IcastHeader";
+import AOS from "aos";
+
 import Footer from "../Layouts/IcastFooter";
 import { Link } from "react-router-dom";
 
@@ -10,6 +12,12 @@ const { Title, Paragraph, Text } = Typography;
 const { useBreakpoint } = Grid;
 
 const CallForContent = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
   const screens = useBreakpoint();
 
   const titleFontSize = screens.xl
@@ -59,11 +67,11 @@ const CallForContent = () => {
               fontWeight: "600",
               padding: "0px 40px",
               textAlign: "justify",
-              color:"#055EDD"
+              color: "#055EDD",
             }}
             className="breadcrumb"
           >
-           <Link to={"/"}>ICAST</Link> / Call For Content
+            <Link to={"/"}>ICAST</Link> / Call For Content
           </Paragraph>
           <div className="call-for-content-text">
             <Row
@@ -100,23 +108,19 @@ const CallForContent = () => {
                   and technology.
                 </Paragraph>
                 <Space className="button-group">
-                 
                   <Button href="/call-for-papers" size="large" type="default">
                     Call for Papers
                   </Button>
                   <Button href="/call-for-session" size="large" type="default">
                     Call for Sessions
                   </Button>
-                  <Button href="/author-resources"  size="large" type="default">
+                  <Button href="/author-resources" size="large" type="default">
                     Author Resources
                   </Button>
                   <Link to={"https://cms.cressofterp.com/"}>
-                  <Button
-                    size="large"
-                    type="default"
-                  >
-                    Manage Submissions
-                  </Button>
+                    <Button size="large" type="default">
+                      Manage Submissions
+                    </Button>
                   </Link>
                 </Space>
                 <div>
@@ -255,17 +259,24 @@ const CallForContent = () => {
                               fontWeight: "500",
                             }}
                           >
-                            Abstract Submission Deadline:
+                             Abstract Submission Deadline Extended:
                           </strong>{" "}
+                          <div data-aos="fade-up">
+                            
                           <Text
                             style={{
-                              color: "#006814",
-                              fontWeight: "400",
+                              color: "red",
+                              fontWeight: "bold",
                               fontSize: paragraphFontSize,
                             }}
+                            data-aos="fade-up" // AOS animation type
+                            data-aos-delay="200" // Delay before animation starts
+                            data-aos-duration="1000" // Animation duration
                           >
-                            January 31, 2025
+                            Feb 07, 2025
                           </Text>
+                          </div>
+
                         </Space>
                         <Space direction="vertical" size={0}>
                           <strong
