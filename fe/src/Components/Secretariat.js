@@ -56,7 +56,7 @@ const data = [
   {
     role: "Website Manager",
     name: "Mr. Syed Muhammad Ali",
-    title: "Web Developer NCGSA",
+    title: "Web & Application Developer NCGSA",
     imgSrc: img7,
   },
   {
