@@ -15,13 +15,11 @@ import {
   PhoneOutlined,
   EnvironmentOutlined,
   FacebookOutlined,
-  InstagramOutlined,
   LinkedinOutlined,
-  YoutubeOutlined,
 } from "@ant-design/icons";
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
-import "../Styles/ContactStyles.css"; // Import the CSS file
+import "../Styles/ContactStyles.css"; 
 import { Link } from "react-router-dom";
 
 const { Title, Paragraph, Text } = Typography;

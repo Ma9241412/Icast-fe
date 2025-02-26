@@ -69,7 +69,7 @@ const data = [
     role: "Chair of Administration Committee (Security, Protocol & Entertainment)",
     name: "Mr. Farooq Ahmed",
     title: "Director Admin IST",
-    imgSrc: null, // No image
+    imgSrc: null, 
   },
   {
     role: "Chair of Finance Committee",
@@ -105,7 +105,7 @@ const data = [
     role: "Technical Sponsor Chair",
     name: "",
     title: "Chairman IEEE Islamabad Section",
-    imgSrc: null, // No image
+    imgSrc: null, 
   },
 ];
 
@@ -193,7 +193,7 @@ const paragraphFontSize = screens.xl
               textAlign: "start",
               fontSize: titleMedium,
               fontFamily: "Inter, sans-serif",
-                  fontWeight:"700",
+              fontWeight:"700",
               color: "black",
               margin: 0,
             }}
