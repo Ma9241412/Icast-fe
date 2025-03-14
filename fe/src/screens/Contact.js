@@ -119,7 +119,7 @@ const ContactForm = () => {
       <div className="contact-form-container">
         <div className="content-wrapper">
           <Row className="contact-content">
-            {/* Left Column: Contact Information */}
+            
             <Col xs={24} md={10} className="contact-info">
               <Title
                 style={{

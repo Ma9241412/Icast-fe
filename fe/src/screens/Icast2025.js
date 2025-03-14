@@ -170,7 +170,7 @@ const ICAST2025 = () => {
     {
       title: "Awards & Recognitions",
       description:
-        "9.Celebrate excellence with prestigious accolades, including the Best Paper Award, Young Researcher Award, and Innovation in Space Technology Award.",
+        "Celebrate excellence with prestigious accolades, including the Best Paper Award, Young Researcher Award, and Innovation in Space Technology Award.",
     },
     {
       title: "Travel & Registration Sponsorship Opportunities",
