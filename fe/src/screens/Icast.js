@@ -8,6 +8,7 @@ import ConferenceIntro from "../Components/ConferenceIntro";
 import ICastForum from "../Components/ICastForum";
 import Sponsors from "../Components/Sponsors";
 import Footer from "../Layouts/IcastFooter";
+import SocialFeeds from "./SocialFeeds";
 
 const ICast = () => {
   return (
@@ -20,6 +21,7 @@ const ICast = () => {
           <ConferenceIntro />
           <ICastForum />
           <Sponsors />
+          <SocialFeeds/>
         </div>
       </div>
       <Footer />
