@@ -46,7 +46,7 @@ const Press = () => {
             fontWeight: "700",
           }}
         >
-          PAKISTAN TO LEAD GLOBAL DIALOGUE ON SPACE APPLICATIONS WITH ICAST 2025
+          Pakistan to lead global dialogue on space applications with ICAST 2025 
         </Title>
         <Paragraph
           style={{

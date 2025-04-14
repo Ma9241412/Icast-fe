@@ -579,17 +579,17 @@ const AuthorResources = () => {
             dataSource={[
               {
                 key: "call-for-abstracts",
-                text: "Call for Abstracts Opens: November 15, 2024",
+                text: "Call for Papers Open: March 01, 2025",
               },
-              {
-                key: "abstract-deadline",
-                text: <span style={{ color: "red" }}>Abstract Submission Deadline Extended: February 07, 2025</span>,
-              },
+              // {
+              //   key: "abstract-deadline",
+              //   text: <span style={{ color: "red" }}>Abstract Submission Deadline Extended: February 07, 2025</span>,
+              // },
               
-              {
-                key: "abstract-notification",
-                text: "Abstract Notification: March 1, 2025",
-              },
+              // {
+              //   key: "abstract-notification",
+              //   text: "Abstract Notification: March 1, 2025",
+              // },
               {
                 key: "manuscript-deadline",
                 text: "Manuscript Submission Deadline: May 15, 2025",

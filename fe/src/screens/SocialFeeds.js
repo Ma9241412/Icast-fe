@@ -76,7 +76,7 @@ const SocialFeeds = () => {
               }}
             >
               <iframe
-                src="https://widgets.sociablekit.com/linkedin-page-posts/iframe/25536837"
+                src="https://widgets.sociablekit.com/linkedin-page-posts/iframe/25537040"
                 frameBorder="0"
                 width="100%"
                 height="600px"

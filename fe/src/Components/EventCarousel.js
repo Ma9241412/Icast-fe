@@ -26,6 +26,7 @@ const EventCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const eventImages = [
+    
     { src: Image1, alt: "Why Attend ICAST 2025?", link: "/icast-2025" },
     { src: Image2, alt: "Call For Content", link: "/content" },
     { src: Image3, alt: "Grants & Awards", link: "/grants" },
