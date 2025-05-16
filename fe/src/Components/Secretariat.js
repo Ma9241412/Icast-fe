@@ -49,9 +49,8 @@ const data = [
   },
   {
     role: "Publications Manager",
-    name: "Ms. Aqsa Zouq",
+    name: "Name Not Available",
     title: "Research M&E Officer NCGSA",
-    imgSrc: img6,
   },
   {
     role: "Website Manager",

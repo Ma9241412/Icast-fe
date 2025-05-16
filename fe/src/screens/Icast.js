@@ -75,11 +75,20 @@ const ICast = () => {
       </p>
 
       <p>
-        <strong>📝 Full Manuscript Submissions</strong> are now being accepted.
+       <div>
+  <strong>📝 Full Manuscript Submissions</strong> are now open under two tracks:
+  <ul>
+    <li><b>Abstract-Based Submissions</b> (for accepted abstracts)</li>
+    <li><b>Direct Submissions</b> (no prior abstract required)</li>
+  </ul>
+</div>
+
+          <p>
+      
       </p>
 
-      <p>
-        Contribute to the <strong>largest space science conference in Pakistan</strong> and be part of a global dialogue on space innovation and sustainability.
+    
+       Be a part of the <strong>largest space science conference in Pakistan</strong> and contribute to the global dialogue on space innovation, sustainability, and technology advancement.
       </p>
 
       <p style={{ fontSize: "18px", fontWeight: "bold" }}>
@@ -95,7 +104,7 @@ const ICast = () => {
 
       <p>
         <strong>🕓 Submissions accepted until:</strong>{" "}
-        <span style={{ color: "red", fontWeight: "bold" }}>May 15, 2025</span>
+        <span style={{ color: "red", fontWeight: "bold" }}>May 25, 2025</span>
       </p>
     </Modal>
 

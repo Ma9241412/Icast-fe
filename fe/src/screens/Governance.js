@@ -30,9 +30,8 @@ const data = [
   },
   {
     role: "Conference Patron-in-Chief",
-    name: "Mr. Zia Ahmed",
+    name: "Dr. Syed Najeeb Ahmad",
     title: "Vice Chancellor IST",
-    imgSrc: img2,
   },
   {
     role: "Conference Chair",
@@ -67,7 +66,7 @@ const data = [
   },
   {
     role: "Chair of Administration Committee (Security, Protocol & Entertainment)",
-    name: "Mr. Farooq Ahmed",
+    name: "",
     title: "Director Admin IST",
     imgSrc: null, 
   },
