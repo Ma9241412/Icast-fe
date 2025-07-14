@@ -1,76 +1,72 @@
-/* Container for the entire carousel section */
+/* EventCarousel.css */
+
 .event-carousel-container {
   background-color: white;
   padding: 40px 0;
   position: relative;
   width: 100%;
   text-align: center;
+  overflow: hidden;
 }
 
-/* Viewport for slide area */
 .carousel-viewport {
   width: 100%;
-  height: 300px;
-  position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Layered positioning for 3 visible slides */
 .carousel-layered {
   position: relative;
   width: 100%;
-  height: 100%;
-}
-
-/* Common style for all 3 slide positions */
-.carousel-slide-layered {
-  position: absolute;
-  top: 0;
-  width: 320px;
-  transition: all 0.6s ease-in-out;
+  max-width: 1200px;
+  height: 300px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
-/* LEFT slide (1st of the group) */
+.carousel-slide-layered {
+  width: 320px;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
 .slide-left {
-  left: 10%;
+  left: 0%;
   transform: scale(0.9);
-  opacity: 0.8;
+  opacity: 1;
   z-index: 1;
 }
 
-/* CENTER slide (2nd of the group) */
 .slide-center {
   left: 50%;
   transform: translateX(-50%) scale(1);
   opacity: 1;
-  z-index: 3;
+  z-index: 2;
 }
 
-/* RIGHT slide (3rd of the group) */
 .slide-right {
-  right: 10%;
+  right: 0%;
   transform: scale(0.9);
-  opacity: 0.8;
+  opacity: 1;
   z-index: 1;
 }
 
-/* Image styling inside each card */
 .carousel-image {
   width: 100%;
   height: 220px;
-  border-radius: 10px;
   object-fit: cover;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
 }
 
-/* Navigation buttons */
 .nav-button {
   background-color: #1e2634;
   border: none;
@@ -83,7 +79,6 @@
   z-index: 10;
   padding: 10px;
   border-radius: 50%;
-  transition: background-color 0.3s ease;
 }
 
 .nav-button.left-button {
@@ -94,29 +89,42 @@
   right: 10px;
 }
 
-.nav-button:hover {
-  background-color: #2e3a4f;
-}
-
-/* Responsive styles */
+/* Mobile View - Only 1 card visible */
 @media (max-width: 768px) {
-  .carousel-slide-layered {
-    width: 90%;
-  }
-
-  .slide-left {
-    left: 5%;
-  }
-
-  .slide-right {
-    right: 5%;
-  }
-
-  .carousel-viewport {
+  .carousel-layered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: auto;
+    position: relative;
+  }
+
+  .carousel-slide-layered {
+    position: relative;
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .slide-left,
+  .slide-right {
+    display: none;
+  }
+
+  .slide-center {
+    position: relative;
+    left: auto;
+    right: auto;
+    transform: none;
+    opacity: 1;
+    z-index: 1;
   }
 
   .carousel-image {
+    width: 100%;
     height: auto;
   }
 }
