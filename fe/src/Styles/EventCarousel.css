@@ -1,50 +1,76 @@
+/* Container for the entire carousel section */
 .event-carousel-container {
   background-color: white;
-  padding: 20px 0; /* Top and bottom padding */
-  width: 100%; /* Full width */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 40px 0;
   position: relative;
+  width: 100%;
+  text-align: center;
 }
 
-.scrolling-wrapper {
-  display: flex;
-  transition: transform 0.5s ease;
+/* Viewport for slide area */
+.carousel-viewport {
+  width: 100%;
+  height: 300px;
+  position: relative;
   overflow: hidden;
-  width: 95%; /* Ensure a small margin on the left and right */
-  margin: 0 auto; /* Center the carousel */
-}
-
-.carousel-slide {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 15px; /* Equal gap between slides */
-  flex: 1;
 }
 
+/* Layered positioning for 3 visible slides */
+.carousel-layered {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Common style for all 3 slide positions */
+.carousel-slide-layered {
+  position: absolute;
+  top: 0;
+  width: 320px;
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* LEFT slide (1st of the group) */
+.slide-left {
+  left: 10%;
+  transform: scale(0.9);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* CENTER slide (2nd of the group) */
+.slide-center {
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+/* RIGHT slide (3rd of the group) */
+.slide-right {
+  right: 10%;
+  transform: scale(0.9);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* Image styling inside each card */
 .carousel-image {
-  width: 320px; /* Adjust width for better visibility */
-  height: 220px; /* Proportional height */
+  width: 100%;
+  height: 220px;
   border-radius: 10px;
-  object-fit: cover; /* Ensures images fit within the dimensions without distortion */
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-.carousel-caption {
-  width: 320px; /* Match image width */
-  color: white;
-  background-color: #186814;
-  text-align: center;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
+/* Navigation buttons */
 .nav-button {
   background-color: #1e2634;
   border: none;
@@ -52,43 +78,45 @@
   color: white;
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   padding: 10px;
   border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
 .nav-button.left-button {
-  left: 5px; /* Adjust for equal gap on the left */
+  left: 10px;
 }
 
 .nav-button.right-button {
-  right: 5px; /* Adjust for equal gap on the right */
+  right: 10px;
 }
 
-.nav-button:disabled {
-  color: #ccc;
-  cursor: not-allowed;
+.nav-button:hover {
+  background-color: #2e3a4f;
 }
 
-/* Responsive adjustments */
+/* Responsive styles */
 @media (max-width: 768px) {
-  .carousel-slide {
-    min-width: 100%; /* Show one image at a time on smaller screens */
-    margin: 0; /* Remove margin on smaller screens */
+  .carousel-slide-layered {
+    width: 90%;
   }
 
-  .scrolling-wrapper {
-    width: 100%; /* Full width for smaller screens */
+  .slide-left {
+    left: 5%;
+  }
+
+  .slide-right {
+    right: 5%;
+  }
+
+  .carousel-viewport {
+    height: auto;
   }
 
   .carousel-image {
-    width: 90%; /* Adjust width for smaller screens */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .carousel-caption {
-    width: 90%; /* Adjust caption width for smaller screens */
+    height: auto;
   }
 }

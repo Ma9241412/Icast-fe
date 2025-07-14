@@ -4,7 +4,7 @@ import { UserOutlined } from '@ant-design/icons';
 import IcastHeader from "../Layouts/IcastHeader";
 import Footer from "../Layouts/IcastFooter";
 import img1 from "../Assets2/1.jpeg";
-import img2 from "../Assets2/2.jpeg";
+import img2 from "../Assets2/2.jpg";
 import img3 from "../Assets2/3.jpg";
 import img4 from "../Assets2/4.jpg";
 import img5 from "../Assets2/5.png";
@@ -32,6 +32,8 @@ const data = [
     role: "Conference Patron-in-Chief",
     name: "Dr. Syed Najeeb Ahmad",
     title: "Vice Chancellor IST",
+    imgSrc: img2,
+
   },
   {
     role: "Conference Chair",
@@ -41,7 +43,7 @@ const data = [
   },
   {
     role: "Conference Co-Chair / Chair of Coordination Committee",
-    name: "Dr. Abdul Waheed",
+    name: "Dr. Syed Adnan Qasim",
     title: "Registrar IST",
     imgSrc: img4,
   },

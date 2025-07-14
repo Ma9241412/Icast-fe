@@ -39,7 +39,7 @@ const ICast = () => {
 
   return (
     <>
-    <Modal
+    {/* <Modal
       title="🚀 Call for Papers Now Open!"
       open={isModalVisible}
       onOk={handleOk}
@@ -106,7 +106,7 @@ const ICast = () => {
         <strong>🕓 Submissions accepted until:</strong>{" "}
         <span style={{ color: "red", fontWeight: "bold" }}>May 25, 2025</span>
       </p>
-    </Modal>
+    </Modal> */}
 
 
       <IcastHeader />
