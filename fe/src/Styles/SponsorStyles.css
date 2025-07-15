@@ -10,13 +10,16 @@
     font-weight: bold !important;
     margin-bottom: 20px;
     font-family: "Inter", serif;
+    text-align: justify !important;
   }
   
   .sponsor-card {
+    background-color: transparent !important;
     border-radius: 20px;
     text-align: center;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   box-shadow: none !important;
+  border: transparent !important;
     height: 50%
   }
   

@@ -1,10 +1,14 @@
 import React from "react";
 import { Card, Row, Col, Typography, Image, Grid } from "antd";
 import { Link } from "react-router-dom"; 
-import img from "../Assets/ncgsa.png";
-import img1 from "../Assets/hec.png";
-import img2 from "../Assets/ieee.png";
-import img3 from "../Assets/isnet.png";
+import img from "../Assets/BARIA.jpg";
+import img1 from "../Assets/HEC.jpg";
+import img2 from "../Assets/IEEE.jpg";
+import img3 from "../Assets/ISNET.jpg";
+import img4 from "../Assets/NCGSA.jpg";
+import img5 from "../Assets/NPU.jpg";
+import img6 from "../Assets/PSF.jpg";
+import img7 from "../Assets/SGAC.jpg";
 
 import "../Styles/SponsorStyles.css";
 
@@ -14,7 +18,7 @@ const sponsors = [
   {
     name: "NATIONAL CENTER OF GIS AND SPACE APPLICATIONS, PAKISTAN",
     company: "",
-    logo: img,
+    logo: img4,
     link: "https://ncgsa.org.pk/", 
   },
   {
@@ -33,7 +37,25 @@ const sponsors = [
     name: "INTER ISLAMIC NETWORK ON SPACE SCIENCES & TECHNOLOGY",
     company: "",
     logo: img3,
-    link: "https://isnet.org.pk/", 
+    link: "https://isnet.org.pk", 
+  },  
+  {
+    name: "NORTHWESTREN POLYTECHNIC UNIVERSITY",
+    company: "",
+    logo: img5,
+    link: "https://en.nwpu.edu.cn/", 
+  },  
+   {
+    name: "PAKISTAN SCIENCE FOUNDATION",
+    company: "",
+    logo: img6,
+    link: "https://psf.gov.pk/", 
+  },
+   {
+    name: "SPACE GENERATION ADVISORY COUNCIL",
+    company: "",
+    logo: img7,
+    link: "https://spacegeneration.org/", 
   },  
 ];
 
@@ -85,19 +107,31 @@ const titleMedium = screens.xl
      
       </Card>
       <Title
-          style={{
-            fontSize: titleMedium,
-            fontWeight: "bold",
-            textAlign: "center",
-            color: "white",
-            fontFamily: "Inter, sans-serif",
-            margin: '0',
-            paddingTop:"10px"
-          }}
-          className="sponsor-name"
-        >
-          {sponsor.name}
-        </Title>
+  style={{
+    fontSize: titleMedium,
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "white",
+    fontFamily: "Inter, sans-serif",
+    margin: '0',
+    paddingTop: "10px"
+  }}
+  className="sponsor-name"
+>
+  {sponsor.name
+    .split(" ")
+    .map((word, index) => 
+      (index + 1) % 3 === 0
+        ? word + "\n"
+        : word + " "
+    )
+    .join("")
+    .split("\n")
+    .map((line, idx) => (
+      <div key={idx}>{line.trim()}</div>
+    ))}
+</Title>
+
     </Col>
   ))}
 </Row>
