@@ -4,11 +4,11 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import "../Styles/EventCarousel.css";
 
-import Image1 from "../Assets/m1.jpg";
-import Image2 from "../Assets/e3.jpg";
-import Image3 from "../Assets/m3.jpg";
-import Image4 from "../Assets/m5.jpg";
-import Image5 from "../Assets4/5.jpg";
+import Image1 from "../Conference Updates Images/Why attend ICAST.jpg";
+import Image2 from "../Conference Updates Images/Call for content.jpg";
+import Image3 from "../Conference Updates Images/Awards & Grants.jpg";
+import Image4 from "../Conference Updates Images/Sponsors & Exhibitors.jpg";
+import Image5 from "../Conference Updates Images/iCAST BROCHURE.jpeg";
 
 const { useBreakpoint } = Grid;
 
@@ -21,7 +21,7 @@ const EventCarousel = () => {
     { src: Image2, alt: "Call For Content", link: "/content" },
     { src: Image3, alt: "Grants & Awards", link: "/grants" },
     { src: Image4, alt: "Sponsor & Exhibitor", link: "https://icast.pk/PDF/ICAST%20Sponsor%20%26%20Exhibitor%20Prospectus%20-%20A4.pdf" },
-    { src: Image5, alt: "ICAST Brochure", link: "https://icast.pk/PDF/ICAST%20Brochure%20(Updated%20March%2013%2C%202025)(1).pdf" },
+    { src: Image5, alt: "ICAST Brochure", link: "https://icast.pk/PDF/ICAST%20Brochure%20(Updated).pdf" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

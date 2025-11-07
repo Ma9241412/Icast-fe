@@ -123,15 +123,15 @@ const Footer = () => {
                 >
                   <Image
                     preview={false}
-                    src={fb} 
+                    src={fb}
                     alt="Facebook"
                     className="social-icon fb"
                     style={{
                       width: "40px",
                       height: "40px",
                       backgroundColor: "white",
-                      borderRadius: "5px", 
-                    }} 
+                      borderRadius: "5px",
+                    }}
                   />
                 </Link>
                 <Link
@@ -149,7 +149,7 @@ const Footer = () => {
                       height: "40px",
                       backgroundColor: "white",
                       borderRadius: "5px",
-                    }} 
+                    }}
                   />
                 </Link>
               </Space>
@@ -194,11 +194,11 @@ const Footer = () => {
             </Space>
             <br />
             {/* Social Media Links */}
-            <Space size="large">
+            <Space size="large" direction="vertical">
               <Link to="/press-release" target="_blank">
                 <Title
                   style={{
-                    color: "#FD7527",
+                    color: "white",
                     fontSize: titleMedium,
                     fontFamily: "Inter, sans-serif",
                     fontWeight: "700",
@@ -207,15 +207,10 @@ const Footer = () => {
                   MEDIA RELEASE
                 </Title>
               </Link>
-            </Space>
-            <br />
-
-            {/* Footer Links */}
-            <Space size="large">
               <Link
                 to="/contact"
                 style={{
-                  color: "#FD7527",
+                  color: "white",
                   fontSize: titleMedium,
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "700",
@@ -226,7 +221,8 @@ const Footer = () => {
               <Link
                 to="/map"
                 style={{
-                  color: "#FD7527",
+                  color: "white",
+
                   fontSize: titleMedium,
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "700",
@@ -235,6 +231,10 @@ const Footer = () => {
                 VENUE MAP
               </Link>
             </Space>
+            <br />
+
+            {/* Footer Links */}
+            <Space size="large" direction="vertical"></Space>
           </Space>
         </Col>
       </Row>

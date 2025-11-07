@@ -1,43 +1,97 @@
 .sponsors-container {
-    text-align: center;
-    padding:  40px 20px;
-    background-color: #2C2C3E;
+  padding: 60px 0;
+  background: linear-gradient(180deg, #0d0f2c 0%, #11143b 100%);
+  overflow: hidden;
+}
+
+/* Marquee Wrapper */
+.sponsor-marquee {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Smooth infinite scrolling track */
+.sponsor-track {
+  display: flex;
+  align-items: center;
+  animation: scroll 45s linear infinite;
+}
+
+/* Each sponsor block */
+.sponsor-item {
+  flex: 0 0 auto;
+  text-align: center;
+  margin: 0 50px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Circular logo container */
+.sponsor-logo-circle {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ffffff33;
+  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sponsor-logo-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.25);
+}
+
+/* Keep all logos uniform */
+.sponsor-logo {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Text under logo */
+.sponsor-name {
+  margin-top: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  line-height: 1.3;
+  max-width: 160px;
+}
+
+/* Smooth scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .sponsors-title {
-    color: #2f2f2f;
-    font-size: 45px !important;
-    font-weight: bold !important;
-    margin-bottom: 20px;
-    font-family: "Inter", serif;
-    text-align: justify !important;
+  100% {
+    transform: translateX(-50%);
   }
-  
-  .sponsor-card {
-    background-color: transparent !important;
-    border-radius: 20px;
-    text-align: center;
-    padding: 10px;
-   box-shadow: none !important;
-  border: transparent !important;
-    height: 50%
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .sponsor-item {
+    margin: 0 25px;
+    width: 120px;
   }
-  
-  .sponsor-logo img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-    margin-bottom: 15px;
+
+  .sponsor-logo-circle {
+    width: 100px;
+    height: 100px;
   }
-  
+
   .sponsor-name {
-    color: black;
-    font-size: 15px !important;    margin: 0;
-    font-weight: bold !important;
-    font-family: "Inter", serif !important;
+    font-size: 12px;
   }
-  
-  .sponsor-company {
-    color: #6c6c6c;
-  }
-  
+}

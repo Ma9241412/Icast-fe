@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, Row, Col, Typography, Image, Grid } from "antd";
-import { Link } from "react-router-dom"; 
+import { Typography, Image } from "antd";
+import { Link } from "react-router-dom";
+
 import img from "../Assets/BARIA.jpg";
 import img1 from "../Assets/HEC.jpg";
 import img2 from "../Assets/IEEE.jpg";
@@ -9,132 +10,76 @@ import img4 from "../Assets/NCGSA.jpg";
 import img5 from "../Assets/NPU.jpg";
 import img6 from "../Assets/PSF.jpg";
 import img7 from "../Assets/SGAC.jpg";
+import img8 from "../Assets/Icesco.jpg";
+import img9 from "../Assets/Mino-Space.png";
+import img10 from "../Assets/apsco.png";
+import img11 from "../Assets/tsa.png";
+import img12 from "../Assets/azercosmos-logo-0.png";
+import img13 from "../Assets/keo-scientific-1200x630-1.jpg";
+import img14 from "../Assets/uraan.jpg";
+
+
 
 import "../Styles/SponsorStyles.css";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 const sponsors = [
-  {
-    name: "NATIONAL CENTER OF GIS AND SPACE APPLICATIONS, PAKISTAN",
-    company: "",
-    logo: img4,
-    link: "https://ncgsa.org.pk/", 
-  },
-  {
-    name: "HIGHER EDUCATION COMMISSION, PAKISTAN",
-    company: "",
-    logo: img1,
-    link: "https://www.hec.gov.pk/", 
-  },
-  {
-    name: "THE INSTITUTION OF ELECTRICAL AND ELECTRONICS ENGINEERS",
-    company: "",
-    logo: img2,
-    link: "https://www.ieee.org/", 
-  },
-  {
-    name: "INTER ISLAMIC NETWORK ON SPACE SCIENCES & TECHNOLOGY",
-    company: "",
-    logo: img3,
-    link: "https://isnet.org.pk", 
-  },  
-  {
-    name: "NORTHWESTREN POLYTECHNIC UNIVERSITY",
-    company: "",
-    logo: img5,
-    link: "https://en.nwpu.edu.cn/", 
-  },  
-   {
-    name: "PAKISTAN SCIENCE FOUNDATION",
-    company: "",
-    logo: img6,
-    link: "https://psf.gov.pk/", 
-  },
-   {
-    name: "SPACE GENERATION ADVISORY COUNCIL",
-    company: "",
-    logo: img7,
-    link: "https://spacegeneration.org/", 
-  },  
+  { name: "HEC", logo: img1, link: "https://www.hec.gov.pk/" },
+  { name: "NCGSA", logo: img4, link: "https://ncgsa.org.pk/" },
+  { name: "IEEE", logo: img2, link: "https://www.ieee.org/" }, 
+  { name: "ISNET", logo: img3, link: "https://isnet.org.pk" },
+  { name: "ICESCO", logo: img8, link: "https://icesco.org/en/" },
+  { name: "BRAIA", logo: img, link: "https://braia.nwpu.edu.cn/english/Home.htm" },
+  { name: "MINOSPACE", logo: img9, link: "https://www.minospace.cn/" },
+  { name: "PSF", logo: img6, link: "https://psf.gov.pk/" },
+  { name: "URAAN PAKISTAN", logo: img14, link: "https://uraanpakistan.pk/" },
+  { name: "APSCO", logo: img10, link: "http://www.apsco.int/" }, 
+  { name:"TSA", logo: img11, link: "https://tua.gov.tr/en/" }, 
+  { name:"AZERCOSMOS", logo: img12, link: "https://azercosmos.az/en" }, 
+  { name: "SGAC", logo: img7, link: "https://spacegeneration.org/" },
+  { name: "NPU", logo: img5, link: "https://en.nwpu.edu.cn/" },
+  { name: "KEO SCIENTIFIC", logo: img13, link: "https://keoscientific.com/" },
+  // { name: "ISA", logo: img15, link: "https://keoscientific.com/" },
 ];
 
+
 const Sponsors = () => {
-  const { useBreakpoint } = Grid;
-  const screens = useBreakpoint();
-  const titleFontSize = screens.xl
-  ? "48px"
-  : screens.lg
-  ? "48px"
-  : screens.md
-  ? "46px"
-  : "36px";
-const titleMedium = screens.xl
-  ? "22px"
-  : screens.lg
-  ? "22px"
-  : screens.md
-  ? "17px"
-  : "17px";
-
-
   return (
     <div className="sponsors-container">
       <Title
         style={{
-          fontSize: titleFontSize,
+          fontSize: "46px",
           fontWeight: "bold",
-          textAlign: "center",
+          textAlign: "left",
           color: "white",
           fontFamily: "Inter, sans-serif",
+          padding: "0 50px",
+          marginBottom: "40px",
         }}
       >
         Partners & Sponsors
       </Title>
-      <Row gutter={[16, 16]} justify="center">
-  {sponsors.map((sponsor, index) => (
-    <Col xs={24} sm={12} md={8} lg={6} key={index}>
-      <Card className="sponsor-card" hoverable style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '60%',borderRadius:"20px",paddingBlock:"40px" }}>
-        <Link to={sponsor.link}>
-          <Image
-            preview={false}
-            width={180}
-            src={sponsor.logo}
-            alt={`${sponsor.name} logo`}
-            style={{ marginBottom: '16px' }}
-          />
-        </Link>
-     
-      </Card>
-      <Title
-  style={{
-    fontSize: titleMedium,
-    fontWeight: "bold",
-    textAlign: "center",
-    color: "white",
-    fontFamily: "Inter, sans-serif",
-    margin: '0',
-    paddingTop: "10px"
-  }}
-  className="sponsor-name"
->
-  {sponsor.name
-    .split(" ")
-    .map((word, index) => 
-      (index + 1) % 3 === 0
-        ? word + "\n"
-        : word + " "
-    )
-    .join("")
-    .split("\n")
-    .map((line, idx) => (
-      <div key={idx}>{line.trim()}</div>
-    ))}
-</Title>
 
-    </Col>
-  ))}
-</Row>
+      <div className="sponsor-marquee">
+        <div className="sponsor-track">
+          {[...sponsors, ...sponsors].map((sponsor, i) => (
+            <div className="sponsor-item" key={i}>
+              <Link to={sponsor.link} target="_blank" rel="noopener noreferrer">
+                <div className="sponsor-logo-circle">
+                  <Image
+                    preview={false}
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    className="sponsor-logo"
+                  />
+                </div>
+              </Link>
+              <div className="sponsor-name">{sponsor.name}</div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

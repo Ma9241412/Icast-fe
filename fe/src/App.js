@@ -19,6 +19,8 @@ import AuthorResources from "./screens/AuthorResources";
 import Grants from "./screens/Grants";
 import Press from "./screens/Press";
 import SocialFeeds from "./screens/SocialFeeds";
+import DownloadsSection from "./screens/DownloadSection";
+import FeedbackForm from "./Components/FeedbackForm";
 
 function App() {
   return (
@@ -39,10 +41,12 @@ function App() {
           <Route path="/registration" element={<Registration/>}/>
           <Route path="/tracks" element={<ThemePage/>}/>
           <Route path="/press-release" element={<Press/>}/>
+          <Route path="/downloads" element={<DownloadsSection/>}/>
           <Route path="/social-feeds" element={<SocialFeeds/>}/>
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/map" element={<VenuMap />} />
           <Route path="/screen-inprogress" element={<ScreenInProgress />} />
+          <Route path="/feedback" element={<FeedbackForm />} />
         </Routes>
       </div>
     </Router>

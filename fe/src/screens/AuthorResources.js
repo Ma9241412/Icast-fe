@@ -59,15 +59,16 @@ const AuthorResources = () => {
             fontWeight: "600",
           }}
         >
-          <Link to={"/"}>ICAST</Link> / <Link to={"/content"}>Call For Content</Link> / Author Resources
+          <Link to={"/"}>ICAST</Link> /{" "}
+          <Link to={"/content"}>Call For Content</Link> / Author Resources
         </Paragraph>
         <div style={{ backgroundColor: "#EFF0F2", padding: "20px 40px" }}>
           <Paragraph
             style={{
               textAlign: "justify",
-              fontSize: paragraphFontSize, // Adjust as needed
+              fontSize: paragraphFontSize,
               color: "black",
-              margin: 0, // Remove top and bottom margin for Title
+              margin: 0, 
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
               lineHeight: "2rem",
@@ -90,7 +91,7 @@ const AuthorResources = () => {
             padding: "10px 40px",
           }}
         >
-         Templates
+          Templates
         </Title>
         <div
           style={{
@@ -162,12 +163,13 @@ const AuthorResources = () => {
             Note: These templates are designed to meet IEEE formatting
             standards. Please do not alter the formatting or style settings. For
             more information on the templates, please visit:
-            <br/>
+            <br />
             <a
               href="https://www.ieee.org/conferences/publishing/templates.html"
               target="_blank"
               rel="noopener noreferrer"
-              style={{color:"green"}}            >
+              style={{ color: "green" }}
+            >
               IEEE Xplore Publishing Templates
             </a>
           </Paragraph>
@@ -182,7 +184,7 @@ const AuthorResources = () => {
             padding: "10px 40px",
           }}
         >
-           Submission Guidelines
+          Submission Guidelines
         </Title>
         <div
           style={{
@@ -205,9 +207,9 @@ const AuthorResources = () => {
           <Paragraph
             style={{
               textAlign: "justify",
-              fontSize: paragraphFontSize, // Adjust as needed
+              fontSize: paragraphFontSize, 
               color: "black",
-              margin: 0, // Remove top and bottom margin for Title
+              margin: 0, 
               padding: "10px 0px",
               fontFamily: "Inter, sans-serif",
               fontWeight: "400",
@@ -225,26 +227,27 @@ const AuthorResources = () => {
               lineHeight: "1.8",
               fontFamily: "Inter, sans-serif",
               fontWeight: "500",
-              textAlign: "justify"
+              textAlign: "justify",
             }}
           >
             <li>
               Remove Author Details: Ensure that the manuscript and abstract do
               not include any information identifying the authors or their
-              affiliations.</li>
-           
-                <li>Names of authors or affiliations.</li>
-                <li>
-                  Acknowledgments or funding information that reveals the
-                  author’s identity.
-                </li>
+              affiliations.
+            </li>
+
+            <li>Names of authors or affiliations.</li>
+            <li>
+              Acknowledgments or funding information that reveals the author’s
+              identity.
+            </li>
             <li>
               Consequences of Non-Compliance: Submissions containing
               identifiable information will be disqualified from the review
               process.
             </li>
           </ul>
-          <div style={{ textAlign: "justify"}}>
+          <div style={{ textAlign: "justify" }}>
             <Title
               style={{
                 textAlign: "justify",
@@ -261,9 +264,9 @@ const AuthorResources = () => {
             <Paragraph
               style={{
                 textAlign: "justify",
-                fontSize: paragraphFontSize, // Adjust as needed
+                fontSize: paragraphFontSize,
                 color: "black",
-                margin: 0, // Remove top and bottom margin for Title
+                margin: 0, 
                 padding: "10px 0px",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "400",
@@ -279,7 +282,7 @@ const AuthorResources = () => {
                 lineHeight: "1.8",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "500",
-                textAlign: "justify"
+                textAlign: "justify",
               }}
             >
               <li>The abstract should be between 100 and 250 words long.</li>
@@ -331,7 +334,7 @@ const AuthorResources = () => {
                 lineHeight: "1.8",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "500",
-                textAlign: "justify"
+                textAlign: "justify",
               }}
             >
               <li>Originality</li>
@@ -401,29 +404,30 @@ const AuthorResources = () => {
             >
               Authors of accepted abstracts will be provided detailed
               instructions for preparing and submitting their final manuscripts.
-              </Paragraph>
-     
-              <ul
-                style={{
-                  fontSize: paragraphFontSize,
-                  color: "black",
-                  lineHeight: "1.8",
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: "500",
-                  textAlign: "justify"
-                }}
-              >
-                <li>Formatting requirements as per IEEE Xplore standards.</li>
-                <li>
-                  Instructions for submitting manuscripts via the official
-                  submission portal.
-                </li>
-                <li>
-                  Clear deadlines for manuscript submission, revisions, and
-                  final approval.
-                </li>
-              </ul>
-              <Paragraph   style={{
+            </Paragraph>
+
+            <ul
+              style={{
+                fontSize: paragraphFontSize,
+                color: "black",
+                lineHeight: "1.8",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: "500",
+                textAlign: "justify",
+              }}
+            >
+              <li>Formatting requirements as per IEEE Xplore standards.</li>
+              <li>
+                Instructions for submitting manuscripts via the official
+                submission portal.
+              </li>
+              <li>
+                Clear deadlines for manuscript submission, revisions, and final
+                approval.
+              </li>
+            </ul>
+            <Paragraph
+              style={{
                 textAlign: "justify",
                 fontSize: paragraphFontSize, // Adjust as needed
                 color: "black",
@@ -431,7 +435,8 @@ const AuthorResources = () => {
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "400",
                 lineHeight: "2rem",
-              }} >
+              }}
+            >
               Authors must submit their final manuscripts by the stated deadline
               to be included in the conference proceedings.
             </Paragraph>
@@ -564,17 +569,17 @@ const AuthorResources = () => {
               fontWeight: "700",
             }}
           >
-             Publications Milestones
+            Publications Milestones
           </Title>
-         
         </div>
-        <div style={{
+        <div
+          style={{
             textAlign: "justify",
             padding: "10px 40px",
             backgroundColor: "#EFF0F2",
-          }}>
-
-<List
+          }}
+        >
+          <List
             bordered
             dataSource={[
               {
@@ -585,7 +590,7 @@ const AuthorResources = () => {
               //   key: "abstract-deadline",
               //   text: <span style={{ color: "red" }}>Abstract Submission Deadline Extended: February 07, 2025</span>,
               // },
-              
+
               // {
               //   key: "abstract-notification",
               //   text: "Abstract Notification: March 1, 2025",
@@ -600,7 +605,7 @@ const AuthorResources = () => {
               },
               {
                 key: "registration-deadline",
-                text: "Registration Deadline: September 1, 2025",
+                text: "Registration Deadline: September 30, 2025",
               },
               {
                 key: "conference-dates",
@@ -618,17 +623,16 @@ const AuthorResources = () => {
                   fontFamily: "Inter, sans-serif",
                   fontWeight: "400",
                   lineHeight: "2rem",
-                  backgroundColor:"white"
+                  backgroundColor: "white",
                 }}
               >
                 {item.text}
               </List.Item>
             )}
           />
-          </div>
+        </div>
 
-       
-          <div style={{textAlign: "justify", padding: "20px 40px" }}>
+        <div style={{ textAlign: "justify", padding: "20px 40px" }}>
           <Title
             style={{
               fontSize: titleMedium,
@@ -639,46 +643,42 @@ const AuthorResources = () => {
           >
             Why Publish with ICAST?
           </Title>
-         
         </div>
-        <div style={{
+        <div
+          style={{
             textAlign: "justify",
             padding: "10px 40px",
             backgroundColor: "#EFF0F2",
-          }}>
-  <div style={{ textAlign: "justify", padding: "10px 0px" }}>
-        
-         
-          <Paragraph
-            style={{
-              textAlign: "justify",
-              fontSize: paragraphFontSize, // Adjust as needed
-              color: "black",
-              margin: 0, // Remove top and bottom margin for Title
-              fontFamily: "Inter, sans-serif",
-              fontWeight: "400",
-              lineHeight: "2rem",
-            }}
-          >
-            By submitting to ICAST 2025, you contribute to shaping the future of
-            space science and technology while gaining visibility in a global
-            platform. Accepted papers will be published in the IEEE Xplore
-            Digital Library, ensuring wide dissemination among the international
-            research community.
-          </Paragraph>
+          }}
+        >
+          <div style={{ textAlign: "justify", padding: "10px 0px" }}>
+            <Paragraph
+              style={{
+                textAlign: "justify",
+                fontSize: paragraphFontSize, // Adjust as needed
+                color: "black",
+                margin: 0, // Remove top and bottom margin for Title
+                fontFamily: "Inter, sans-serif",
+                fontWeight: "400",
+                lineHeight: "2rem",
+              }}
+            >
+              By submitting to ICAST 2025, you contribute to shaping the future
+              of space science and technology while gaining visibility in a
+              global platform. Accepted papers will be published in the IEEE
+              Xplore Digital Library, ensuring wide dissemination among the
+              international research community.
+            </Paragraph>
 
-          <div style={{ textAlign: "justify",padding:"20px 0px" }}>
-           
-           <Link to={"https://cms.cressofterp.com/"}>
-           <Button type="default" size="large">
-                Submit Your Abstract Now
-              </Button>
-           </Link>
-            
+            <div style={{ textAlign: "justify", padding: "20px 0px" }}>
+              <Link to={"https://cms.cressofterp.com/"}>
+                <Button type="default" size="large">
+                  Submit Your Abstract Now
+                </Button>
+              </Link>
+            </div>
           </div>
-
         </div>
-          </div>
       </div>
       <Footer />
     </>

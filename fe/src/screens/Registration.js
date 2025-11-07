@@ -139,23 +139,23 @@ const Registration = () => {
     {
       key: "1",
       workshopAttendee: "Professionals", // Consistent key name
-      fees: "10,000 PKR", // Ensuring alignment with the column definition
+      fees: "5,000 PKR", // Ensuring alignment with the column definition
     },
     {
       key: "2",
       workshopAttendee: "Students", // Consistent key name
-      fees: "5,000 PKR",
+      fees: "2,000 PKR",
     },
-    {
-      key: "3",
-      workshopAttendee: "International Professionals", // Consistent key name
-      fees: "100 USD",
-    },
-    {
-      key: "4",
-      workshopAttendee: "International Students", // Consistent key name
-      fees: "50 USD", // Adding a default value for missing data
-    },
+    // {
+    //   key: "3",
+    //   workshopAttendee: "International Professionals", // Consistent key name
+    //   fees: "100 USD",
+    // },
+    // {
+    //   key: "4",
+    //   workshopAttendee: "International Students", // Consistent key name
+    //   fees: "50 USD", // Adding a default value for missing data
+    // },
   ];
 
   return (

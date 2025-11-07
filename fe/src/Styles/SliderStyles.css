@@ -83,11 +83,11 @@
 /* Container Styling */
 /* Timer Row Container */
 .timer-container {
-  background: rgba(94, 89, 182, 0.8); 
+  background: #055EDD; 
   padding: 5px 20px;
   border-radius: 5px;
   color: green; /* Bright yellow text */
-  max-width: 800px;
+  max-width: 1000px !important;
   width: 100%;
   margin: auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);

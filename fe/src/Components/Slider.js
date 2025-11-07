@@ -12,7 +12,6 @@ import image7 from "../Assets/b6.png";
 import image8 from "../Assets/b7.jpg";
 import image9 from "../Assets/b8.jpg";
 import image10 from "../Assets/b9.jpg";
-import DeadlineTimer from "./DeadlineTimer";
 
 const images = [image1, image2,image5,image8, image3,image6,image9, image4, image7,image10 ];
 
@@ -99,9 +98,9 @@ const FullWidthCarousel = () => {
       </button>
 
       {/* Countdown Timer Overlay */}
-      <div className="timer-overlay">
+      {/* <div className="timer-overlay">
         <DeadlineTimer />
-      </div>
+      </div> */}
     </div>
   );
 };

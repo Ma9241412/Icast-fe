@@ -95,7 +95,7 @@ const Expositions = () => {
           <Link to={"/"}>ICAST</Link> / Exposition & Sponsors
         </Paragraph>
 
-        <Row style={{ backgroundColor: "white" }} align={"top"}>
+        <Row   gutter={[32, 32]} style={{ backgroundColor: "white" }} align={"top"}>
           <Col xs={24} md={16} lg={16}>
             <Paragraph
               style={{
@@ -129,7 +129,7 @@ const Expositions = () => {
                 padding: "10px 40px",
               }}
             >
-               Exhibit at ICAST 2025
+              Exhibit at ICAST 2025
             </Title>
             <div
               style={{
@@ -148,34 +148,41 @@ const Expositions = () => {
                 }}
               >
                 <ul>
-                  <li><strong style={{ fontWeight: "bold" }}>
-                  {" "}
-                  Global Audience Reach:
-                </strong>{" "}
-                Present your ideas and innovations to researchers, industry
-                leaders, policymakers, and future space leaders from across the
-                world.</li>
-                  <li><strong style={{ fontWeight: "bold" }}>
-                  {" "}
-                  Networking Opportunities:{" "}
-                </strong>{" "}
-                Forge meaningful connections with decision-makers,
-                collaborators, and potential customers.</li>
-                  <li><strong style={{ fontWeight: "bold" }}>
-                  {" "}
-                  Brand Visibility:
-                </strong>{" "}
-                Gain recognition in conference materials, on-site branding, and
-                digital platforms.</li>
-                  <li><strong style={{ fontWeight: "bold" }}>
-                  {" "}
-                  Cutting-Edge Insights:
-                </strong>{" "}
-                Engage with the latest advancements in space science and
-                technology by connecting with other exhibitors and participants.</li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>
+                      {" "}
+                      Global Audience Reach:
+                    </strong>{" "}
+                    Present your ideas and innovations to researchers, industry
+                    leaders, policymakers, and future space leaders from across
+                    the world.
+                  </li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>
+                      {" "}
+                      Networking Opportunities:{" "}
+                    </strong>{" "}
+                    Forge meaningful connections with decision-makers,
+                    collaborators, and potential customers.
+                  </li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>
+                      {" "}
+                      Brand Visibility:
+                    </strong>{" "}
+                    Gain recognition in conference materials, on-site branding,
+                    and digital platforms.
+                  </li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>
+                      {" "}
+                      Cutting-Edge Insights:
+                    </strong>{" "}
+                    Engage with the latest advancements in space science and
+                    technology by connecting with other exhibitors and
+                    participants.
+                  </li>
                 </ul>
-              
-                
               </Paragraph>
               <Title
                 style={{
@@ -198,15 +205,20 @@ const Expositions = () => {
                 }}
               >
                 <ul>
-                  <li>Customizable booth options in a strategically designed
-                  exposition area.</li>
-                  <li>Access to high-traffic zones with maximum attendee
-                  interaction.</li>
+                  <li>
+                    Customizable booth options in a strategically designed
+                    exposition area.
+                  </li>
+                  <li>
+                    Access to high-traffic zones with maximum attendee
+                    interaction.
+                  </li>
                   <li>Complimentary exhibitor badges for team members.</li>
-                  <li>Inclusion in the official exhibitor directory distributed
-                  to all attendees.</li>
+                  <li>
+                    Inclusion in the official exhibitor directory distributed to
+                    all attendees.
+                  </li>
                 </ul>
-               
               </Paragraph>
             </div>
             <Title
@@ -264,30 +276,37 @@ const Expositions = () => {
                 }}
               >
                 <ul>
-                  <li> <strong style={{ fontWeight: "bold" }}>
-                  Prime Visibility:
-                </strong>{" "}
-                Your brand will be featured on conference banners, digital
-                platforms, and marketing materials.</li>
-                  <li><strong style={{ fontWeight: "bold" }}>
-                  {" "}
-                  Thought Leadership:
-                </strong>{" "}
-                Gain exclusive opportunities to sponsor sessions, workshops, or
-                networking events.</li>
-                  <li><strong style={{ fontWeight: "bold" }}>
-                  Strategic Engagement:
-                </strong>{" "}
-                Directly connect with key stakeholders, decision-makers, and
-                policymakers.</li>
-                  <li><strong style={{ fontWeight: "bold" }}>
-                  Tailored Packages:
-                </strong>{" "}
-                Choose from a range of sponsorship tiers to suit your goals or
-                collaborate with us to create a custom package.</li>
+                  <li>
+                    {" "}
+                    <strong style={{ fontWeight: "bold" }}>
+                      Prime Visibility:
+                    </strong>{" "}
+                    Your brand will be featured on conference banners, digital
+                    platforms, and marketing materials.
+                  </li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>
+                      {" "}
+                      Thought Leadership:
+                    </strong>{" "}
+                    Gain exclusive opportunities to sponsor sessions, workshops,
+                    or networking events.
+                  </li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>
+                      Strategic Engagement:
+                    </strong>{" "}
+                    Directly connect with key stakeholders, decision-makers, and
+                    policymakers.
+                  </li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>
+                      Tailored Packages:
+                    </strong>{" "}
+                    Choose from a range of sponsorship tiers to suit your goals
+                    or collaborate with us to create a custom package.
+                  </li>
                 </ul>
-               
-                
               </Paragraph>
             </div>
             <Title
@@ -350,11 +369,12 @@ const Expositions = () => {
                   <li>Branding and visibility opportunities.</li>
                   <li>Customizable packages to meet your specific goals.</li>
                 </ul>
-               
               </Paragraph>
               <div style={{ textAlign: "justify" }}>
                 <Link to={"/screen-inprogress"}>
-                <Button size="large">Download Sponsorship & Exhibit Prospectus</Button>
+                  <Button size="large">
+                    Download Sponsorship & Exhibit Prospectus
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -434,7 +454,7 @@ const Expositions = () => {
                 padding: "10px 40px",
               }}
             >
-               Register Now!
+              Register Now!
             </Title>
             <div
               style={{
@@ -453,24 +473,32 @@ const Expositions = () => {
                 }}
               >
                 <ul>
-                  <li><strong style={{ fontWeight: "bold" }}>Exhibitors:</strong>{" "}
-                Reserve your space today to connect with a global audience and
-                showcase your innovation at Pakistan’s premier space event.</li>
-                  <li><strong style={{ fontWeight: "bold" }}>
-                  Sponsors:
-                </strong>{" "}
-                Partner with us to amplify your brand’s impact and contribute to
-                advancing the frontiers of space science and technology.</li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>Exhibitors:</strong>{" "}
+                    Reserve your space today to connect with a global audience
+                    and showcase your innovation at Pakistan’s premier space
+                    event.
+                  </li>
+                  <li>
+                    <strong style={{ fontWeight: "bold" }}>Sponsors:</strong>{" "}
+                    Partner with us to amplify your brand’s impact and
+                    contribute to advancing the frontiers of space science and
+                    technology.
+                  </li>
                 </ul>
-              
               </Paragraph>
-              <div style={{ textAlign: "justify",marginBottom:"20px",}}>
+              <div style={{ textAlign: "justify", marginBottom: "20px" }}>
                 <Space>
-                 <Link to={"/screen-inprogress"}>
-                 <Button style={{marginBottom:"10px",width:"200px"}} size="large">Exhibit at ICAST 2025</Button>
-                 <br/>
-                 <Button style={{width:"200px"}} size="large">Become a Sponsor</Button>
-                 </Link>
+                  <Link
+                    to={
+                      "https://icast.pk/PDF/ICAST%20Sponsor%20%26%20Exhibitor%20Prospectus%20-%20A4.pdf"
+                    }
+                  >
+                    <Button style={{ marginBottom: "10px" }} size="large">
+                      Sponsor & Exhibit at ICAST 2025
+                    </Button>
+                    <br />
+                  </Link>
                 </Space>
               </div>
               <Paragraph
@@ -483,13 +511,11 @@ const Expositions = () => {
                 }}
               >
                 For inquiries, contact us at:
-                <br/>
+                <br />
                 <ul>
                   <li>Email: expo@icast.pk</li>
                   <li>Phone: +92-51-907-5799</li>
                 </ul>
-
-              
               </Paragraph>
             </div>
           </Col>

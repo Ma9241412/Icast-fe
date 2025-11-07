@@ -131,7 +131,7 @@ const ICAST2025 = () => {
                   {
                     key: "Brochure",
                     text: "Explore ICAST",
-                    url: "https://icast.pk/PDF/ICAST%20Brochure%20(Updated%20March%2013%2C%202025)(1).pdf",
+                    url: "https://icast.pk/PDF/ICAST%20Brochure%20(Updated).pdf",
                   },
                 ].map((item) => (
                   <div

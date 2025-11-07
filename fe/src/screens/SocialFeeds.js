@@ -1,12 +1,12 @@
 import React from "react";
 import { Row, Col, Typography, Grid } from "antd";
-import IcastHeader from "../Layouts/IcastHeader";
-import Footer from "../Layouts/IcastFooter";
+
 
 const { Title, Text } = Typography;
 
 const SocialFeeds = () => {
   const screens = Grid.useBreakpoint();
+    const paragraphPadding = screens.md ? "0 50px" : "0 5px";
 
   const titleFontSize = screens.xl
     ? "48px"
@@ -45,14 +45,15 @@ const SocialFeeds = () => {
             fontFamily: "Inter, sans-serif",
             fontWeight: "700",
             fontSize: titleFontSize,
-            textAlign: "center",
+            padding:paragraphPadding,
+            textAlign: "left",
             color: "black",
           }}
         >
           Social Feeds
         </Title>
 
-        <Row gutter={[16, 16]} justify="center" style={{ display: "flex", alignItems: "stretch" }}>
+        <Row gutter={[16, 16]} justify="center" style={{ display: "flex",padding:paragraphPadding }}>
           {/* Facebook Column */}
           <Col xs={24} md={12} lg={8} xxl={6} style={{ display: "flex", flexDirection: "column" }}>
             <Text
@@ -93,7 +94,7 @@ const SocialFeeds = () => {
             </Text>
             <div style={embedContainerStyle}>
               <iframe
-                src="https://widgets.sociablekit.com/linkedin-page-posts/iframe/25537040"
+                src='https://widgets.sociablekit.com/linkedin-page-posts/iframe/25537040'
                 style={iframeStyle}
                 frameBorder="0"
                 allowFullScreen

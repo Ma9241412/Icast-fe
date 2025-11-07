@@ -5,7 +5,7 @@ import { UserOutlined } from '@ant-design/icons';
 import img1 from "../Assets3/1.png";
 import img2 from "../Assets3/2.JPG";
 import img3 from "../Assets3/3.png";
-import img4 from "../Assets3/4.jpg";
+import img4 from "../Assets3/4.jpeg";
 import img5 from "../Assets3/5.jpg";
 import img6 from "../Assets3/6.JPG";
 import img7 from "../Assets3/7.jpg";

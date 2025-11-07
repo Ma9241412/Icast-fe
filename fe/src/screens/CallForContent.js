@@ -244,7 +244,7 @@ const CallForContent = () => {
                           <Text
                             style={{
                               color: "#006814",
-                              fontWeight: "400",
+                              fontWeight: "400",  
                               fontSize: paragraphFontSize,
                             }}
                           >
@@ -259,24 +259,23 @@ const CallForContent = () => {
                               fontWeight: "500",
                             }}
                           >
-                             Abstract Submission Deadline Extended:
+                            Abstract Submission Deadline Extended:
                           </strong>{" "}
                           <div data-aos="fade-up">
-                            
-                          <Text
-                            style={{
-                              color: "red",
-                              fontWeight: "bold",
-                              fontSize: paragraphFontSize,
-                            }}
-                            data-aos="fade-up" // AOS animation type
-                            data-aos-delay="200" // Delay before animation starts
-                            data-aos-duration="1000" // Animation duration
-                          >
-                            Feb 07, 2025
-                          </Text>
-                          </div>
+                            <Text
+                              style={{
+                                color: "#006814",
+                              fontWeight: "400",  
 
+                                fontSize: paragraphFontSize,
+                              }}
+                              data-aos="fade-up" // AOS animation type
+                              data-aos-delay="200" // Delay before animation starts
+                              data-aos-duration="1000" // Animation duration
+                            >
+                              Feb 07, 2025
+                            </Text>
+                          </div>
                         </Space>
                         <Space direction="vertical" size={0}>
                           <strong
@@ -355,7 +354,7 @@ const CallForContent = () => {
                               fontSize: paragraphFontSize,
                             }}
                           >
-                            September 1, 2025
+                            September 30, 2025
                           </Text>
                         </Space>
                         <Space direction="vertical" size={0}>

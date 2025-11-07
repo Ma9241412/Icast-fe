@@ -12,8 +12,9 @@ const calculateTimeLeft = () => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
       }
-    : { days: 0, hours: 0, minutes: 0 };
+    : { days: 0, hours: 0, minutes: 0 ,seconds:0};
 };
 
 const DeadlineTimer = () => {
@@ -55,6 +56,13 @@ const DeadlineTimer = () => {
           <Space direction="vertical" align="center">
           <span className="time-value">{timeLeft.minutes}</span>
           <span className="time-label">MINUTES</span>
+          </Space>
+        </Col>
+        <Divider type="vertical" className="ant-divider" />
+         <Col className="time-section">
+          <Space direction="vertical" align="center">
+          <span className="time-value">{timeLeft.seconds}</span>
+          <span className="time-label">SECONDS</span>
           </Space>
         </Col>
         {/* <Divider type="vertical" className="ant-divider" />

@@ -307,7 +307,7 @@ const CallForSessions = () => {
             }}
           >
             <strong style={{ color: "black", fontWeight: "bold" }}>
-              Submission Deadline: September 1,2025.
+              Submission Deadline: September 30,2025.
             </strong>
             <br />
             <br />

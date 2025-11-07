@@ -85,6 +85,7 @@ const ICastForum = () => {
   const { Title, Text } = Typography;
   const { useBreakpoint } = Grid;
   const screens = useBreakpoint();
+    const paragraphPadding = screens.md ? "0 50px" : "0 5px";
   const titleFontSize = screens.xl
     ? "48px"
     : screens.lg
@@ -100,6 +101,9 @@ const ICastForum = () => {
           fontSize: titleFontSize,
           fontWeight: "700",
           fontFamily: "Inter, sans-serif",
+          textAlign:"left",
+          padding: paragraphPadding,
+
         }}
       >
         Conference Highlights

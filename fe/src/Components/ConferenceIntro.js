@@ -72,10 +72,13 @@ const ConferenceIntro = () => {
             <Title
               style={{
                 fontSize: titleFontSize,
+                padding: paragraphPadding,
+
                 color: "white",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: "700",
                 letterSpacing: "1px",
+                textAlign:"left"
               }}
             >
               Introduction
